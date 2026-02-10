@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------------ */
+/*                          Mod-Morphs                                */
+/* ------------------------------------------------------------------ */
+
+/* Grave/Escape key - Grave when held with Shift/Cmd, Escape otherwise */
+gresc: grave_escape {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp ESC>, <&kp GRAVE>;
+    mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+};
+
+/* N9 key - outputs 9 normally, pair_paren macro when any modifier is held */
+n9_paren: n9_parentheses {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp N9>, <&pair_paren>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+};
+
+/* Comma key - outputs comma normally, pair_angle (<>) when any modifier is held */
+comma_angle: comma_angle_brackets {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp COMMA>, <&pair_angle>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+};
+
+/* Double quote key - outputs ' normally, pair_dquote ("") when any modifier is held */
+dqt_pair: double_quote_pair {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp SQT>, <&pair_dquote>;
+    mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+};

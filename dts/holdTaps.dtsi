@@ -1,0 +1,43 @@
+/* ------------------------------------------------------------------ */
+/*                      Special Hold-Taps                             */
+/* ------------------------------------------------------------------ */
+
+/* Hold backspace = delete word (Option+Backspace on macOS) */
+bspc_word: backspace_word {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <0>;
+    require-prior-idle-ms = <200>;
+    bindings = <&kp>, <&kp>;
+};
+
+/* Arrow keys with word jump on hold */
+arrow_left: arrow_word_left {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <150>;
+    bindings = <&kp>, <&kp>;
+};
+
+arrow_right: arrow_word_right {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "balanced";
+    tapping-term-ms = <250>;
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <150>;
+    bindings = <&kp>, <&kp>;
+};
+
+/* Tab with Hyper key on double-tap */
+tab_hyper: tab_hyper {
+    compatible = "zmk,behavior-tap-dance";
+    #binding-cells = <0>;
+    tapping-term-ms = <200>;
+    bindings = <&kp TAB>, <&hyper_key>;
+};

@@ -1,0 +1,138 @@
+/* ------------------------------------------------------------------ */
+/*                         Home Row Mods                              */
+/* ------------------------------------------------------------------ */
+
+// AutoShift Helper - &AS main macro is chained to &AS_HT hold tap and &AS_Shifted macro.
+// More: https://github.com/nickcoutsos/keymap-editor/wiki/Autoshift-using-ZMK-behaviors
+AS_HT_v2_TKZ: AS_HT_v2_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <150>;
+    bindings = <&AS_Shifted_TKZ>, <&kp>;
+    flavor = "tap-preferred";
+};
+
+// Homerow Mod for the left index finger - TailorKey.
+// For advanced tuning of HRM values, see: https://docs.google.com/spreadsheets/d/1ESgObQelyz4lnKlfwLYsmofLJulOMK5RdGBsopLe2o8
+HRM_lh_index_TKZ: HRM_lh_index_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <160>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_RH_T3 POS_RH_T2 POS_RH_T1 POS_RH_C1R1 POS_RH_C2R1 POS_RH_C3R1 POS_RH_C4R1 POS_RH_C5R1 POS_RH_C1R2 POS_RH_C2R2 POS_RH_C3R2 POS_RH_C4R2 POS_RH_C5R2 POS_RH_C1R3 POS_RH_C2R3 POS_RH_C3R3 POS_RH_C4R3 POS_RH_C5R3 POS_RH_C1R4 POS_RH_C2R4 POS_RH_C3R4 POS_RH_C4R4 POS_RH_C5R4 POS_RH_C2R5 POS_RH_C3R5 POS_RH_C4R5 POS_RH_C6R1 POS_RH_C6R2 POS_RH_C6R3 POS_RH_C6R4 POS_LH_T2 POS_LH_T3 POS_LH_T1>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the left middle finger - TailorKey
+HRM_lh_middy_TKZ: HRM_lh_middy_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <175>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_RH_T3 POS_RH_T2 POS_RH_T1 POS_RH_C1R1 POS_RH_C2R1 POS_RH_C3R1 POS_RH_C4R1 POS_RH_C5R1 POS_RH_C1R2 POS_RH_C2R2 POS_RH_C3R2 POS_RH_C4R2 POS_RH_C5R2 POS_RH_C1R3 POS_RH_C2R3 POS_RH_C3R3 POS_RH_C4R3 POS_RH_C5R3 POS_RH_C1R4 POS_RH_C2R4 POS_RH_C3R4 POS_RH_C4R4 POS_RH_C5R4 POS_RH_C2R5 POS_RH_C3R5 POS_RH_C4R5 POS_RH_C6R1 POS_RH_C6R2 POS_RH_C6R3 POS_RH_C6R4 POS_LH_T1 POS_LH_T2 POS_LH_T3>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the left pinky - TailorKey
+HRM_lh_pinky_TKZ: HRM_lh_pinky_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <190>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_RH_T3 POS_RH_T2 POS_RH_T1 POS_RH_C1R1 POS_RH_C2R1 POS_RH_C3R1 POS_RH_C4R1 POS_RH_C5R1 POS_RH_C6R1 POS_RH_C2R2 POS_RH_C3R2 POS_RH_C4R2 POS_RH_C5R2 POS_RH_C6R2 POS_RH_C3R3 POS_RH_C4R3 POS_RH_C5R3 POS_RH_C6R3 POS_RH_C3R4 POS_RH_C4R4 POS_RH_C5R4 POS_RH_C6R4 POS_RH_C1R2 POS_RH_C1R3 POS_RH_C2R3 POS_RH_C1R4 POS_RH_C2R4 POS_RH_C2R5 POS_RH_C3R5 POS_RH_C4R5 POS_LH_T1 POS_LH_T2 POS_LH_T3>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the left ring finger 1 - TailorKey
+HRM_lh_ring_TKZ: HRM_lh_ring_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_RH_T3 POS_RH_T2 POS_RH_T1 POS_RH_C1R1 POS_RH_C2R1 POS_RH_C3R1 POS_RH_C4R1 POS_RH_C5R1 POS_RH_C1R2 POS_RH_C2R2 POS_RH_C3R2 POS_RH_C4R2 POS_RH_C5R2 POS_RH_C1R3 POS_RH_C2R3 POS_RH_C3R3 POS_RH_C4R3 POS_RH_C5R3 POS_RH_C1R4 POS_RH_C2R4 POS_RH_C3R4 POS_RH_C4R4 POS_RH_C5R4 POS_RH_C2R5 POS_RH_C3R5 POS_RH_C4R5 POS_RH_C6R1 POS_RH_C6R2 POS_RH_C6R3 POS_RH_C6R4 POS_LH_T1 POS_LH_T2 POS_LH_T3>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the right index finger - TailorKey
+HRM_rh_index_TKZ: HRM_rh_index_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <160>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_LH_T3 POS_LH_T2 POS_LH_T1 POS_LH_C6R1 POS_LH_C5R1 POS_LH_C4R1 POS_LH_C3R1 POS_LH_C2R1 POS_LH_C6R2 POS_LH_C5R2 POS_LH_C4R2 POS_LH_C3R2 POS_LH_C2R2 POS_LH_C1R2 POS_LH_C6R3 POS_LH_C5R3 POS_LH_C4R3 POS_LH_C3R3 POS_LH_C2R3 POS_LH_C1R3 POS_LH_C6R4 POS_LH_C5R4 POS_LH_C4R4 POS_LH_C3R4 POS_LH_C2R4 POS_LH_C1R4 POS_LH_C4R5 POS_LH_C3R5 POS_LH_C2R5 POS_LH_C1R1 POS_RH_T3 POS_RH_T2 POS_RH_T1>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the right middle finger - TailorKey
+HRM_rh_middy_TKZ: HRM_rh_middy_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <175>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_LH_T3 POS_LH_T2 POS_LH_T1 POS_LH_C6R1 POS_LH_C5R1 POS_LH_C4R1 POS_LH_C3R1 POS_LH_C2R1 POS_LH_C6R2 POS_LH_C5R2 POS_LH_C4R2 POS_LH_C3R2 POS_LH_C2R2 POS_LH_C1R2 POS_LH_C6R3 POS_LH_C5R3 POS_LH_C4R3 POS_LH_C3R3 POS_LH_C2R3 POS_LH_C1R3 POS_LH_C6R4 POS_LH_C5R4 POS_LH_C4R4 POS_LH_C3R4 POS_LH_C2R4 POS_LH_C1R4 POS_LH_C4R5 POS_LH_C3R5 POS_LH_C2R5 POS_LH_C1R1 POS_RH_T3 POS_RH_T2 POS_RH_T1>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the right pinky - TailorKey
+HRM_rh_pinky_TKZ: HRM_rh_pinky_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <190>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_LH_T3 POS_LH_T2 POS_LH_T1 POS_LH_C6R1 POS_LH_C5R1 POS_LH_C4R1 POS_LH_C3R1 POS_LH_C2R1 POS_LH_C6R2 POS_LH_C5R2 POS_LH_C4R2 POS_LH_C3R2 POS_LH_C2R2 POS_LH_C1R2 POS_LH_C6R3 POS_LH_C5R3 POS_LH_C4R3 POS_LH_C3R3 POS_LH_C2R3 POS_LH_C1R3 POS_LH_C6R4 POS_LH_C5R4 POS_LH_C4R4 POS_LH_C3R4 POS_LH_C2R4 POS_LH_C1R4 POS_LH_C4R5 POS_LH_C3R5 POS_LH_C2R5 POS_LH_C1R1 POS_RH_T3 POS_RH_T2 POS_RH_T1>;
+    hold-trigger-on-release;
+};
+
+// Homerow Mod for the right ring 1 - TailorKey
+HRM_rh_ring_TKZ: HRM_rh_ring_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    bindings = <&kp>, <&kp>;
+    flavor = "hold-preferred";
+    quick-tap-ms = <175>;
+    require-prior-idle-ms = <125>;
+    hold-trigger-key-positions = <POS_LH_T3 POS_LH_T2 POS_LH_T1 POS_LH_C6R1 POS_LH_C5R1 POS_LH_C4R1 POS_LH_C3R1 POS_LH_C2R1 POS_LH_C6R2 POS_LH_C5R2 POS_LH_C4R2 POS_LH_C3R2 POS_LH_C2R2 POS_LH_C1R2 POS_LH_C6R3 POS_LH_C5R3 POS_LH_C4R3 POS_LH_C3R3 POS_LH_C2R3 POS_LH_C1R3 POS_LH_C6R4 POS_LH_C5R4 POS_LH_C4R4 POS_LH_C3R4 POS_LH_C2R4 POS_LH_C1R4 POS_LH_C4R5 POS_LH_C3R5 POS_LH_C2R5 POS_LH_C1R1 POS_RH_T3 POS_RH_T2 POS_RH_T1>;
+    hold-trigger-on-release;
+};
+
+// space_LAYER_access - TailorKey
+space_v3_TKZ: space_v3_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&kp>;
+    flavor = "balanced";
+    quick-tap-ms = <150>;
+};
+
+// thumb_LAYER_access - TailorKey
+lt_v2_TKZ: lt_v2_TKZ {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <200>;
+    bindings = <&mo>, <&kp>;
+    flavor = "balanced";
+    quick-tap-ms = <300>;
+};

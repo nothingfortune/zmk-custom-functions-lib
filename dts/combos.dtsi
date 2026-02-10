@@ -1,0 +1,136 @@
+/* ========================================================================== */
+/*                                 Combos                                     */
+/* ========================================================================== */
+
+
+/* Combos trigger an action when multiple specific keys are pressed simultaneously or within a short timeframe  */
+/* Combos detect a chord and execute a single binding in response  */
+
+// toggle gaming layer - TailorKey
+combo_gaming_layer_TKZ {
+    timeout-ms = <50>;
+    key-positions = <POS_LH_C1R4 POS_LH_C2R5>;
+    bindings = <&tog LAYER_Gaming>;
+};
+
+// F1 combo for Go60 - TailorKey
+combo_F1_cb_TKZ {
+    key-positions = <POS_LH_C5R1 POS_LH_C5R2>;
+    bindings = <&kp F1>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F10 combo for Go60 - TailorKey
+combo_F10_cb_TKZ {
+    key-positions = <POS_RH_C5R1 POS_RH_C5R2>;
+    bindings = <&kp F10>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F11 combo for Go60 - TailorKey
+combo_F11_cb_TKZ {
+    key-positions = <POS_RH_C6R1 POS_RH_C6R2>;
+    bindings = <&kp F11>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F12 combo for Go60 - TailorKey
+combo_F12_cb_TKZ {
+    key-positions = <POS_RH_C5R1 POS_RH_C6R1>;
+    bindings = <&kp F12>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F2 combo for Go60 - TailorKey
+combo_F2_cb_TKZ {
+    key-positions = <POS_LH_C4R2 POS_LH_C4R1>;
+    bindings = <&kp F2>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F3 combo for Go60 - TailorKey
+combo_F3_cb_TKZ {
+    key-positions = <POS_LH_C3R2 POS_LH_C3R1>;
+    bindings = <&kp F3>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F4 combo for Go60 - TailorKey
+combo_F4_cb_TKZ {
+    key-positions = <POS_LH_C2R2 POS_LH_C2R1>;
+    bindings = <&kp F4>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F5 combo for Go60 - TailorKey
+combo_F5_cb_TKZ {
+    key-positions = <POS_LH_C1R2 POS_LH_C1R1>;
+    bindings = <&kp F5>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F6 combo for Go60 - TailorKey
+combo_F6_cb_TKZ {
+    key-positions = <POS_RH_C1R1 POS_RH_C1R2>;
+    bindings = <&kp F6>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F7 combo for Go60 - TailorKey
+combo_F7_cb_TKZ {
+    key-positions = <POS_RH_C2R1 POS_RH_C2R2>;
+    bindings = <&kp F7>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F8 combo for Go60 - TailorKey
+combo_F8_cb_TKZ {
+    key-positions = <POS_RH_C3R1 POS_RH_C3R2>;
+    bindings = <&kp F8>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F9 combo for Go60 - TailorKey
+combo_F9_cb_TKZ {
+    key-positions = <POS_RH_C4R1 POS_RH_C4R2>;
+    bindings = <&kp F9>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// sticky "hyper" modifiers (Win + Alt + Ctrl + Shift) - Use with Tab - TailorKey
+combo_sticky_hyp_rght_TKZ {
+    timeout-ms = <50>;
+    key-positions = <POS_RH_C2R5 POS_RH_C2R4>;
+    bindings = <&sk LG(LA(LC(LSHFT)))>;
+    layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;
+};
+
+// sticky "meh" modifiers (Alt + Ctrl + Shift) - Use with Tab - TailorKey
+combo_sticky_meh_rght_TKZ {
+    timeout-ms = <50>;
+    key-positions = <POS_RH_C3R5 POS_RH_C3R4>;
+    bindings = <&sk LA(LC(LSHFT))>;
+    layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;
+};
+
+// capslock when pressing both T1's - TailorKey
+combo_capslock_TKZ {
+    timeout-ms = <50>;
+    key-positions = <POS_LH_T1 POS_RH_T1>;
+    bindings = <&kp CAPS>;
+    layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;
+};
+
+// Alt Tab Switcher (Cursor Layer) - TailorKey
+combo_tabswitch_ctrl_TKZ {
+    key-positions = <POS_LH_C2R4 POS_LH_C2R5>;
+    bindings = <&mod_tab_chord_v2_TKZ LCTRL LAYER_Cursor>;
+    layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;
+};
+
+// Alt Tab Switcher (Cursor Layer) - TailorKey
+combo_tabswitch_gui_TKZ {
+    key-positions = <POS_LH_T1 POS_LH_C1R4>;
+    bindings = <&mod_tab_chord_v2_TKZ LGUI LAYER_Cursor>;
+    layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;
+};
