@@ -13,6 +13,9 @@
 #define THUMB_TAPPING_TERM       200
 #define THUMB_QUICK_TAP          300
 
+#define SPACE_TAPPING_TERM       200
+#define SPACE_QUICK_TAP          300
+
 #define NUM_HT_TAPPING_TERM      170
 #define NUM_HT_QUICK_TAP         175
 #define NUM_HT_PRIOR_IDLE        125
