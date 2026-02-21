@@ -1,0 +1,30 @@
+/*
+ * Glove80 Board Metadata & Hardware-Specific Config
+ */
+
+#define KB_TYPE_GLOVE_80 1
+#define KB_TYPE_GO_60    2
+
+#define KB_TYPE        KB_TYPE_GLOVE_80
+#define EDITOR_HOST_OS 'M'
+
+/* RGB status macro */
+/ {
+    macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            label = "RGB_UG_STATUS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_STATUS>;
+        };
+    };
+};
+
+/* Lower tap-dance */
+/ {
+    behaviors {
+        ZMK_TD_LAYER(lower, LAYER_Lower)
+    };
+};
+
+/* TODO: Glove80 hardware config (ext_power, listeners) */

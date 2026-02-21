@@ -1,0 +1,100 @@
+/* Glove80 Position Mapping — logical names → physical key numbers (80 keys) */
+
+/* ── Row 0 (function row) ───────────────────────────────────── */
+#define POS_LH_C5R0 0
+#define POS_LH_C4R0 1
+#define POS_LH_C3R0 2
+#define POS_LH_C2R0 3
+#define POS_LH_C1R0 4
+#define POS_RH_C1R0 5
+#define POS_RH_C2R0 6
+#define POS_RH_C3R0 7
+#define POS_RH_C4R0 8
+#define POS_RH_C5R0 9
+
+/* ── Row 1 ─────────────────────────────────────── */
+#define POS_LH_C6R1 10
+#define POS_LH_C5R1 11
+#define POS_LH_C4R1 12
+#define POS_LH_C3R1 13
+#define POS_LH_C2R1 14
+#define POS_LH_C1R1 15
+#define POS_RH_C1R1 16
+#define POS_RH_C2R1 17
+#define POS_RH_C3R1 18
+#define POS_RH_C4R1 19
+#define POS_RH_C5R1 20
+#define POS_RH_C6R1 21
+
+/* ── Row 2 ─────────────────────────────────────────── */
+#define POS_LH_C6R2 22
+#define POS_LH_C5R2 23
+#define POS_LH_C4R2 24
+#define POS_LH_C3R2 25
+#define POS_LH_C2R2 26
+#define POS_LH_C1R2 27
+#define POS_RH_C1R2 28
+#define POS_RH_C2R2 29
+#define POS_RH_C3R2 30
+#define POS_RH_C4R2 31
+#define POS_RH_C5R2 32
+#define POS_RH_C6R2 33
+
+/* ── Row 3 ─────────────────────────────────── */
+#define POS_LH_C6R3 34
+#define POS_LH_C5R3 35
+#define POS_LH_C4R3 36
+#define POS_LH_C3R3 37
+#define POS_LH_C2R3 38
+#define POS_LH_C1R3 39
+#define POS_RH_C1R3 40
+#define POS_RH_C2R3 41
+#define POS_RH_C3R3 42
+#define POS_RH_C4R3 43
+#define POS_RH_C5R3 44
+#define POS_RH_C6R3 45
+
+/* ── Row 4 ───────────────────────────────────────────── */
+#define POS_LH_C6R4 46
+#define POS_LH_C5R4 47
+#define POS_LH_C4R4 48
+#define POS_LH_C3R4 49
+#define POS_LH_C2R4 50
+#define POS_LH_C1R4 51
+
+/* ── Inner column R4i ───────────────────────────────────── */
+#define POS_LH_C1R4i 52
+#define POS_LH_C2R4i 53
+#define POS_LH_C3R4i 54
+#define POS_RH_C3R4i 55
+#define POS_RH_C2R4i 56
+#define POS_RH_C1R4i 57
+
+#define POS_RH_C1R4 58
+#define POS_RH_C2R4 59
+#define POS_RH_C3R4 60
+#define POS_RH_C4R4 61
+#define POS_RH_C5R4 62
+#define POS_RH_C6R4 63
+
+/* ── Row 5 — Glove80 only ──────────────────────── */
+#define POS_LH_C5R5 64
+#define POS_LH_C4R5 65
+#define POS_LH_C3R5 66
+#define POS_LH_C2R5 67
+#define POS_LH_C1R5 68
+
+/* ── Thumbs ──────────────────────────────────────────────── */
+#define POS_LH_T1 69
+#define POS_LH_T2 70
+#define POS_LH_T3 71
+#define POS_RH_T3 72
+#define POS_RH_T2 73
+#define POS_RH_T1 74
+
+/* ── Row 5 (RH) — Glove80 only ─────────────────── */
+#define POS_RH_C1R5 75
+#define POS_RH_C2R5 76
+#define POS_RH_C3R5 77
+#define POS_RH_C4R5 78
+#define POS_RH_C5R5 79

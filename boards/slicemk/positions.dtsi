@@ -1,0 +1,103 @@
+/* SliceMK Position Mapping — logical names → physical key numbers (77 keys) */
+
+/* ── Special top key ──────────────────────────────────── */
+#define POS_SPECIAL_R0 0
+
+/* ── Row 1 ─────────────────────────────────────── */
+#define POS_LH_C6R1 1
+#define POS_LH_C5R1 2
+#define POS_LH_C4R1 3
+#define POS_LH_C3R1 4
+#define POS_LH_C2R1 5
+#define POS_LH_C1R1 6
+
+#define POS_LH_C0R1 7
+#define POS_RH_C0R1 8
+
+#define POS_RH_C1R1 9
+#define POS_RH_C2R1 10
+#define POS_RH_C3R1 11
+#define POS_RH_C4R1 12
+#define POS_RH_C5R1 13
+#define POS_RH_C6R1 14
+
+/* ── Row 2 ─────────────────────────────────────────── */
+#define POS_LH_C6R2 15
+#define POS_LH_C5R2 16
+#define POS_LH_C4R2 17
+#define POS_LH_C3R2 18
+#define POS_LH_C2R2 19
+#define POS_LH_C1R2 20
+
+#define POS_LH_C0R2 21
+#define POS_RH_C0R2 22
+
+#define POS_RH_C1R2 23
+#define POS_RH_C2R2 24
+#define POS_RH_C3R2 25
+#define POS_RH_C4R2 26
+#define POS_RH_C5R2 27
+#define POS_RH_C6R2 28
+
+/* ── Row 3 ─────────────────────────────────── */
+#define POS_LH_C6R3 29
+#define POS_LH_C5R3 30
+#define POS_LH_C4R3 31
+#define POS_LH_C3R3 32
+#define POS_LH_C2R3 33
+#define POS_LH_C1R3 34
+
+#define POS_RH_C1R3 35
+#define POS_RH_C2R3 36
+#define POS_RH_C3R3 37
+#define POS_RH_C4R3 38
+#define POS_RH_C5R3 39
+#define POS_RH_C6R3 40
+
+/* ── Row 4 ───────────────────────────────────────────── */
+#define POS_LH_C6R4 41
+#define POS_LH_C5R4 42
+#define POS_LH_C4R4 43
+#define POS_LH_C3R4 44
+#define POS_LH_C2R4 45
+#define POS_LH_C1R4 46
+
+#define POS_LH_C0R4 47
+#define POS_RH_C0R4 48
+
+#define POS_RH_C1R4 49
+#define POS_RH_C2R4 50
+#define POS_RH_C3R4 51
+#define POS_RH_C4R4 52
+#define POS_RH_C5R4 53
+#define POS_RH_C6R4 54
+
+/* ── Row 5 ─────────────────────────────────────── */
+#define POS_LH_C5R5 55
+#define POS_LH_C4R5 56
+#define POS_LH_C3R5 57
+#define POS_LH_C2R5 58
+#define POS_LH_C1R5 59
+#define POS_RH_C1R5 60
+#define POS_RH_C2R5 61
+#define POS_RH_C3R5 62
+#define POS_RH_C4R5 63
+#define POS_RH_C5R5 64
+
+/* ── Extra thumbs T4-T5 ─────────────────────────────────── */
+#define POS_LH_T4 65
+#define POS_LH_T5 66
+#define POS_RH_T5 67
+#define POS_RH_T4 68
+
+/* ── Primary thumbs T1-T3 ───────────────────────────────── */
+#define POS_LH_T1 69
+#define POS_LH_T2 70
+#define POS_LH_T3 71
+#define POS_RH_T3 72
+#define POS_RH_T2 73
+#define POS_RH_T1 74
+
+/* ── Extra thumbs T6 ──────────────────────────────────── */
+#define POS_LH_T6 75
+#define POS_RH_T6 76

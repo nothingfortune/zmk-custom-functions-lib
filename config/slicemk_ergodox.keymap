@@ -1,0 +1,2 @@
+/* SliceMK ErgoDox — config entry point */
+#include "../boards/slicemk/slicemk.keymap"

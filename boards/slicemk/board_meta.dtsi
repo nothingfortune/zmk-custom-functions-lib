@@ -1,0 +1,17 @@
+/*
+ * SliceMK ErgoDox Lite Board Metadata & Hardware-Specific Config
+ */
+
+#define KB_TYPE_SLICEMK_ERGODOX 3
+
+#define KB_TYPE        KB_TYPE_SLICEMK_ERGODOX
+#define EDITOR_HOST_OS 'M'
+
+/* Lower tap-dance */
+/ {
+    behaviors {
+        ZMK_TD_LAYER(lower, LAYER_Lower)
+    };
+};
+
+/* TODO: SliceMK hardware config (mouse, listeners) */

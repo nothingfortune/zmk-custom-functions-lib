@@ -1,0 +1,5 @@
+# SliceMK ErgoDox build matrix
+---
+include:
+  - board: slicemk_ergodox_202109
+    shield: slicemk_ergodox_leftcentral

@@ -1,0 +1,85 @@
+name: Build ZMK Firmware (all boards)
+
+# Builds firmware for all 3 keyboards in parallel on every commit to main.
+# Artifacts are uploaded for each board and available for download on the
+# Actions run page for ~90 days.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  # Go60 (Nix)
+  build-go60:
+    name: Build Go60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout moergo-sc/zmk
+        uses: actions/checkout@v4
+        with:
+          repository: moergo-sc/zmk
+          ref: main
+          path: src
+
+      - uses: cachix/install-nix-action@v25
+        with:
+          nix_path: nixpkgs=channel:nixos-22.05
+
+      - uses: cachix/cachix-action@v14
+        with:
+          name: moergo-glove80-zmk-dev
+          skipPush: true
+
+      - name: Build Go60 firmware
+        run: nix-build build/go60.nix --arg firmware 'import ./src {}' -o result-go60
+
+      - name: Upload Go60 firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: go60-firmware
+          path: result-go60/go60.uf2
+          retention-days: 90
+
+  # Glove80 (Nix — same fork as Go60)
+  build-glove80:
+    name: Build Glove80
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Checkout moergo-sc/zmk
+        uses: actions/checkout@v4
+        with:
+          repository: moergo-sc/zmk
+          ref: main
+          path: src
+
+      - uses: cachix/install-nix-action@v25
+        with:
+          nix_path: nixpkgs=channel:nixos-22.05
+
+      - uses: cachix/cachix-action@v14
+        with:
+          name: moergo-glove80-zmk-dev
+          skipPush: true
+
+      - name: Build Glove80 firmware
+        run: nix-build build/glove80.nix --arg firmware 'import ./src {}' -o result-glove80
+
+      - name: Upload Glove80 firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: glove80-firmware
+          path: result-glove80/glove80.uf2
+          retention-days: 90
+
+  # SliceMK (west)
+  
+  
+  build-slicemk:
+    name: Build SliceMK ErgoDox
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3

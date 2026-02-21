@@ -1,0 +1,104 @@
+/*
+ * Go60 Board Metadata & Hardware-Specific Config
+ * Cirque trackpad input processors, KB_TYPE, host OS
+ */
+
+/* Board identity */
+#define KB_TYPE_GLOVE_80 1
+#define KB_TYPE_GO_60    2
+
+#define KB_TYPE        KB_TYPE_GO_60
+#define EDITOR_HOST_OS 'M'
+
+/* Cirque trackpad */
+/ {
+    input_processors {
+        zip_click_to_right_click_mapper: zip_click_to_right_click_mapper {
+            compatible = "zmk,input-processor-code-mapper";
+            #input-processor-cells = <0>;
+            type = <INPUT_EV_KEY>;
+            map = <INPUT_BTN_0 INPUT_BTN_1>;
+        };
+    };
+};
+
+&mmv_input_listener {
+    LAYER_MouseSlow {
+        layers = <LAYER_MouseSlow>;
+        input-processors = <&zip_xy_scaler 1 9>;
+    };
+    LAYER_MouseFast {
+        layers = <LAYER_MouseFast>;
+        input-processors = <&zip_xy_scaler 3 1>;
+    };
+    LAYER_MouseWarp {
+        layers = <LAYER_MouseWarp>;
+        input-processors = <&zip_xy_scaler 12 1>;
+    };
+};
+
+&msc_input_listener {
+    LAYER_MouseSlow {
+        layers = <LAYER_MouseSlow>;
+        input-processors = <&zip_scroll_scaler 1 9>;
+    };
+    LAYER_MouseFast {
+        layers = <LAYER_MouseFast>;
+        input-processors = <&zip_scroll_scaler 3 1>;
+    };
+    LAYER_MouseWarp {
+        layers = <LAYER_MouseWarp>;
+        input-processors = <&zip_scroll_scaler 12 1>;
+    };
+};
+
+&cirque_lh_listener {
+    input-processors = <&zip_xy_scaler 11 12>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>, <&zip_click_to_right_click_mapper>, <&zip_temp_layer 14 250>, <&zip_scroll_scaler 1 8>;
+    layer_8 {
+        layers = <LAYER_MouseSlow>;
+        input-processors = <&zip_xy_scaler 5 14>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>, <&zip_click_to_right_click_mapper>, <&zip_temp_layer 14 250>, <&zip_scroll_scaler 1 8>;
+    };
+    layer_9 {
+        layers = <LAYER_MouseWarp>;
+        input-processors = <&zip_xy_scaler 13 3>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>, <&zip_click_to_right_click_mapper>, <&zip_temp_layer 14 250>, <&zip_scroll_scaler 1 8>;
+    };
+    layer_10 {
+        layers = <LAYER_MouseFast>;
+        input-processors = <&zip_xy_scaler 3 2>, <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>, <&zip_xy_to_scroll_mapper>, <&zip_click_to_right_click_mapper>, <&zip_temp_layer 14 250>, <&zip_scroll_scaler 1 8>;
+    };
+};
+
+&cirque_rh_listener {
+    input-processors = <&zip_xy_scaler 5 2>, <&zip_temp_layer 14 250>;
+    layer_8 {
+        layers = <LAYER_MouseSlow>;
+        input-processors = <&zip_xy_scaler 1 1>, <&zip_temp_layer 14 250>;
+    };
+    layer_9 {
+        layers = <LAYER_MouseWarp>;
+        input-processors = <&zip_xy_scaler 6 1>, <&zip_temp_layer 14 250>;
+    };
+    layer_10 {
+        layers = <LAYER_MouseFast>;
+        input-processors = <&zip_xy_scaler 4 1>, <&zip_temp_layer 14 250>;
+    };
+};
+
+/* RGB status macro */
+/ {
+    macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            label = "RGB_UG_STATUS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_STATUS>;
+        };
+    };
+};
+
+/* Lower tap-dance */
+/ {
+    behaviors {
+        ZMK_TD_LAYER(lower, LAYER_Lower)
+    };
+};
