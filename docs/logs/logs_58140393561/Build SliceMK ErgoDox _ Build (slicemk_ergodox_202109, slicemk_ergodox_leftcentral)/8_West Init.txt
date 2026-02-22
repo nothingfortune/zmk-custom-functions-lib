@@ -1,0 +1,15 @@
+﻿2026-02-22T00:08:03.8180890Z ##[group]Run west init -l "/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/config"
+2026-02-22T00:08:03.8181543Z [36;1mwest init -l "/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/config"[0m
+2026-02-22T00:08:03.8182022Z shell: sh -e {0}
+2026-02-22T00:08:03.8182194Z env:
+2026-02-22T00:08:03.8182371Z   build_dir: /tmp/tmp.iTCcxhcfzQ
+2026-02-22T00:08:03.8182684Z   base_dir: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T00:08:03.8183011Z   zephyr_version: 4.1.0
+2026-02-22T00:08:03.8183214Z   extra_west_args: 
+2026-02-22T00:08:03.8183454Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-22T00:08:03.8183853Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202109
+2026-02-22T00:08:03.8184276Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202109-zmk
+2026-02-22T00:08:03.8184616Z ##[endgroup]
+2026-02-22T00:08:04.0001901Z === Initializing from existing manifest repository config
+2026-02-22T00:08:04.0003041Z --- Creating /__w/zmk-custom-functions-lib/zmk-custom-functions-lib/.west and local configuration file
+2026-02-22T00:08:04.0011696Z === Initialized. Now run "west update" inside /__w/zmk-custom-functions-lib/zmk-custom-functions-lib.

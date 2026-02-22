@@ -45,14 +45,20 @@
 /* ── Board-specific (requires LAYER_* macros) ──────── */
 #include "board_meta.dtsi"
 #include "../../shared/homeRowMods/hrm_timings.dtsi"
-#include "../../shared/macros.dtsi"
-#include "../../shared/homeRowMods/hrm_macros.dtsi"
-#include "../../shared/behaviors.dtsi"
-#include "../../shared/modMorphs.dtsi"
-#include "../../shared/autoshift.dtsi"
-#include "../../shared/bluetooth.dtsi"
-#include "../../shared/magic.dtsi"
-#include "../../shared/homeRowMods/hrm_behaviors.dtsi"
+
+/* ── Shared behaviors & macros ─────────────────────── */
+/ {
+    behaviors {
+        #include "../../shared/macros.dtsi"
+        #include "../../shared/homeRowMods/hrm_macros.dtsi"
+        #include "../../shared/behaviors.dtsi"
+        #include "../../shared/modMorphs.dtsi"
+        #include "../../shared/autoshift.dtsi"
+        #include "../../shared/bluetooth.dtsi"
+        #include "../../shared/magic.dtsi"
+        #include "../../shared/homeRowMods/hrm_behaviors.dtsi"
+    };
+};
 
 /* ── Combos ─────────────────────────────────────────── */
 / {

@@ -11,9 +11,19 @@ on:
   workflow_dispatch:
 
 jobs:
+  # Validation (runs first; build jobs depend on it)
+  validate:
+    name: Validate config
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run validation script
+        run: bash scripts/validation.sh
+
   # Go60 (Nix)
   build-go60:
     name: Build Go60
+    needs: validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -47,6 +57,7 @@ jobs:
   # Glove80 (Nix — same fork as Go60)
   build-glove80:
     name: Build Glove80
+    needs: validate
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -82,4 +93,5 @@ jobs:
   
   build-slicemk:
     name: Build SliceMK ErgoDox
+    needs: validate
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3

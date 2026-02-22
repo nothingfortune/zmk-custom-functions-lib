@@ -4,7 +4,8 @@
 # Usage: ./scripts/validation.sh
 # Exit code: 0 = all pass, 1 = one or more failures
 
-set -euo pipefail
+set -u  # error on undefined variables; do NOT use -e or -o pipefail —
+        # grep returning 1 (no match) must not abort the script
 
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 PASS=0
@@ -36,9 +37,10 @@ LAYER_NAMES=(
 # Count & binding tokens in a layer file (strips block comments)
 count_bindings() {
   local file="$1"
+  # grep may return 1 (no match) — that's fine, wc -l handles empty input → 0
   perl -0777 -pe 's|/\*.*?\*/||gs' "$file" \
     | awk '/bindings = </{f=1;next} f && />;/{f=0;next} f{print}' \
-    | grep -oE '&[A-Za-z][A-Za-z0-9_]*' \
+    | { grep -oE '&[A-Za-z][A-Za-z0-9_]*' || true; } \
     | wc -l \
     | tr -d ' '
 }
@@ -48,9 +50,8 @@ count_non_trans() {
   local file="$1"
   perl -0777 -pe 's|/\*.*?\*/||gs' "$file" \
     | awk '/bindings = </{f=1;next} f && />;/{f=0;next} f{print}' \
-    | grep -oE '&[A-Za-z][A-Za-z0-9_]*' \
-    | grep -cv '^&trans$' \
-    || true
+    | { grep -oE '&[A-Za-z][A-Za-z0-9_]*' || true; } \
+    | { grep -cv '^&trans$' || true; }
 }
 
 # ══════════════════════════════════════════════════════════════
@@ -338,6 +339,124 @@ for board in glove80 slicemk; do
     pass "boards/$board/layers/ — all layers have real bindings"
   fi
 done
+
+# ══════════════════════════════════════════════════════════════
+section "12. Include ordering: layers.dtsi before board_meta.dtsi"
+# ══════════════════════════════════════════════════════════════
+# board_meta.dtsi uses LAYER_* macros defined in shared/layers.dtsi,
+# so layers.dtsi must be #included first in every keymap file.
+
+for board in go60 glove80 slicemk; do
+  case "$board" in
+    go60)    keymap="$REPO_ROOT/boards/go60/go60.keymap" ;;
+    glove80) keymap="$REPO_ROOT/boards/glove80/glove80.keymap" ;;
+    slicemk) keymap="$REPO_ROOT/boards/slicemk/slicemk.keymap" ;;
+  esac
+  [[ -f "$keymap" ]] || continue
+
+  layers_ln=$(grep -n 'layers\.dtsi' "$keymap" 2>/dev/null | head -1 | cut -d: -f1 || true)
+  meta_ln=$(grep -n 'board_meta\.dtsi' "$keymap" 2>/dev/null | head -1 | cut -d: -f1 || true)
+
+  if [[ -z "$layers_ln" || -z "$meta_ln" ]]; then
+    warn "boards/$board keymap — could not find layers.dtsi or board_meta.dtsi include"
+  elif [[ "$layers_ln" -lt "$meta_ln" ]]; then
+    pass "boards/$board keymap — layers.dtsi (line $layers_ln) before board_meta.dtsi (line $meta_ln)"
+  else
+    fail "boards/$board keymap — layers.dtsi (line $layers_ln) AFTER board_meta.dtsi (line $meta_ln); LAYER_* macros will be undefined"
+  fi
+done
+
+# ══════════════════════════════════════════════════════════════
+section "13. Behavior/macro includes inside / { behaviors { } } block"
+# ══════════════════════════════════════════════════════════════
+# DTS bare node definitions (label: node { }) cannot appear at the
+# top level of a file — they must be inside a / { ... }; block.
+# We verify by checking that:
+#   (a) a "behaviors {" block exists in the keymap, and
+#   (b) each behavior/macro include line is indented (not at column 0).
+
+BEHAVIOR_INCLUDES=(
+  "shared/macros.dtsi"
+  "shared/homeRowMods/hrm_macros.dtsi"
+  "shared/behaviors.dtsi"
+  "shared/modMorphs.dtsi"
+  "shared/autoshift.dtsi"
+  "shared/bluetooth.dtsi"
+  "shared/magic.dtsi"
+  "shared/homeRowMods/hrm_behaviors.dtsi"
+)
+
+for board in go60 glove80 slicemk; do
+  case "$board" in
+    go60)    keymap="$REPO_ROOT/boards/go60/go60.keymap" ;;
+    glove80) keymap="$REPO_ROOT/boards/glove80/glove80.keymap" ;;
+    slicemk) keymap="$REPO_ROOT/boards/slicemk/slicemk.keymap" ;;
+  esac
+  [[ -f "$keymap" ]] || continue
+
+  # (a) behaviors { block must exist
+  if ! grep -q 'behaviors\s*{' "$keymap" 2>/dev/null; then
+    fail "boards/$board keymap — no 'behaviors {' block found; behavior/macro includes must be wrapped"
+    continue
+  fi
+
+  # (b) each behavior/macro include must be indented (inside a block)
+  bare=()
+  for inc in "${BEHAVIOR_INCLUDES[@]}"; do
+    basename_inc=$(basename "$inc")
+    while IFS= read -r matchline; do
+      # Line is bare (top-level) if it starts with #include (no leading whitespace)
+      if [[ "$matchline" =~ ^'#include' ]]; then
+        bare+=("$basename_inc")
+      fi
+    done < <(grep "\"$basename_inc\"" "$keymap" 2>/dev/null || true)
+  done
+
+  if [[ ${#bare[@]} -eq 0 ]]; then
+    pass "boards/$board keymap — all behavior/macro includes are inside a / { } block"
+  else
+    fail "boards/$board keymap — bare (top-level) includes: ${bare[*]}  ← must be inside / { behaviors { } }"
+  fi
+done
+
+# ══════════════════════════════════════════════════════════════
+section "14. Duplicate DTS labels in shared dtsi files"
+# ══════════════════════════════════════════════════════════════
+# A label defined twice in the same file (e.g. bt_0: bt_0 { } appearing
+# twice) is a DTS error. Detect it with perl to handle multi-line files.
+
+while IFS= read -r -d '' dtsi; do
+  dupes=$(perl -ne 'print "$1\n" if /^\s*(\w+)\s*:\s*\w+\s*\{/' "$dtsi" \
+          | sort | uniq -d)
+  rel="${dtsi#$REPO_ROOT/}"
+  if [[ -n "$dupes" ]]; then
+    fail "$rel — duplicate DTS labels: $(echo "$dupes" | tr '\n' ' ')"
+  else
+    pass "$rel — no duplicate labels"
+  fi
+done < <(find "$REPO_ROOT/shared" -name '*.dtsi' -print0)
+
+# ══════════════════════════════════════════════════════════════
+section "15. Layer index continuity in shared/layers.dtsi"
+# ══════════════════════════════════════════════════════════════
+# Active (non-commented) LAYER_* defines must be contiguous from 0.
+
+layers_file="$REPO_ROOT/shared/layers.dtsi"
+if [[ -f "$layers_file" ]]; then
+  expected=0
+  gap_found=false
+  count=0
+  while IFS= read -r idx; do
+    count=$((count + 1))
+    if [[ "$idx" -ne "$expected" ]]; then
+      fail "shared/layers.dtsi — gap in layer indices: expected $expected, got $idx (indices must be contiguous from 0)"
+      gap_found=true
+      break
+    fi
+    expected=$((expected + 1))
+  done < <(grep -E '^#define LAYER_[A-Z]' "$layers_file" 2>/dev/null | grep -oE '[0-9]+$' | sort -n | uniq || true)
+  [[ "$gap_found" == false ]] && pass "shared/layers.dtsi — $count layer indices are contiguous (0–$((expected - 1)))"
+fi
 
 # ══════════════════════════════════════════════════════════════
 printf "\n${BOLD}══════════════════════════════════════════════${NC}\n"

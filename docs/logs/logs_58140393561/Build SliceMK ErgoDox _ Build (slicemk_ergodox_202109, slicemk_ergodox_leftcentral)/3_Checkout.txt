@@ -1,0 +1,70 @@
+﻿2026-02-22T00:08:02.2195044Z ##[group]Run actions/checkout@v4
+2026-02-22T00:08:02.2195642Z with:
+2026-02-22T00:08:02.2195991Z   repository: nothingfortune/zmk-custom-functions-lib
+2026-02-22T00:08:02.2196489Z   token: ***
+2026-02-22T00:08:02.2196674Z   ssh-strict: true
+2026-02-22T00:08:02.2196919Z   ssh-user: git
+2026-02-22T00:08:02.2197280Z   persist-credentials: true
+2026-02-22T00:08:02.2197513Z   clean: true
+2026-02-22T00:08:02.2197708Z   sparse-checkout-cone-mode: true
+2026-02-22T00:08:02.2197950Z   fetch-depth: 1
+2026-02-22T00:08:02.2198125Z   fetch-tags: false
+2026-02-22T00:08:02.2198318Z   show-progress: true
+2026-02-22T00:08:02.2198507Z   lfs: false
+2026-02-22T00:08:02.2198666Z   submodules: false
+2026-02-22T00:08:02.2198855Z   set-safe-directory: true
+2026-02-22T00:08:02.2199322Z ##[endgroup]
+2026-02-22T00:08:02.2256151Z ##[command]/usr/bin/docker exec  74510be8110ca55bd33f2a521bc410c4d62fe760abd373b2d5f8693475711ee2 sh -c "cat /etc/*release | grep ^ID"
+2026-02-22T00:08:02.4410634Z Syncing repository: nothingfortune/zmk-custom-functions-lib
+2026-02-22T00:08:02.4412857Z ##[group]Getting Git version info
+2026-02-22T00:08:02.4414040Z Working directory is '/__w/zmk-custom-functions-lib/zmk-custom-functions-lib'
+2026-02-22T00:08:02.4415134Z [command]/usr/bin/git version
+2026-02-22T00:08:02.4415606Z git version 2.43.0
+2026-02-22T00:08:02.4514437Z ##[endgroup]
+2026-02-22T00:08:02.4521556Z Temporarily overriding HOME='/__w/_temp/df9dfb06-1c36-43c2-8494-12bf1d6e7888' before making global git config changes
+2026-02-22T00:08:02.4522771Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-22T00:08:02.4524029Z [command]/usr/bin/git config --global --add safe.directory /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T00:08:02.4525801Z Deleting the contents of '/__w/zmk-custom-functions-lib/zmk-custom-functions-lib'
+2026-02-22T00:08:02.4526884Z ##[group]Initializing the repository
+2026-02-22T00:08:02.4527807Z [command]/usr/bin/git init /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T00:08:02.4546989Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-22T00:08:02.4548035Z hint: is subject to change. To configure the initial branch name to use in all
+2026-02-22T00:08:02.4548832Z hint: of your new repositories, which will suppress this warning, call:
+2026-02-22T00:08:02.4549584Z hint: 
+2026-02-22T00:08:02.4550089Z hint: 	git config --global init.defaultBranch <name>
+2026-02-22T00:08:02.4550412Z hint: 
+2026-02-22T00:08:02.4550701Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-22T00:08:02.4551179Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-22T00:08:02.4551548Z hint: 
+2026-02-22T00:08:02.4551729Z hint: 	git branch -m <name>
+2026-02-22T00:08:02.4555749Z Initialized empty Git repository in /__w/zmk-custom-functions-lib/zmk-custom-functions-lib/.git/
+2026-02-22T00:08:02.4567946Z [command]/usr/bin/git remote add origin https://github.com/nothingfortune/zmk-custom-functions-lib
+2026-02-22T00:08:02.4596584Z ##[endgroup]
+2026-02-22T00:08:02.4597334Z ##[group]Disabling automatic garbage collection
+2026-02-22T00:08:02.4600672Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-22T00:08:02.4627590Z ##[endgroup]
+2026-02-22T00:08:02.4628214Z ##[group]Setting up auth
+2026-02-22T00:08:02.4635444Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-22T00:08:02.4664483Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-22T00:08:02.4893622Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-22T00:08:02.4922779Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-22T00:08:02.5156076Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-22T00:08:02.5186138Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-22T00:08:02.5413737Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-22T00:08:02.5448986Z ##[endgroup]
+2026-02-22T00:08:02.5449750Z ##[group]Fetching the repository
+2026-02-22T00:08:02.5458043Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d92c15c5c4ea71b9ba6013456fecdebae200a0cf:refs/remotes/origin/main
+2026-02-22T00:08:02.9686056Z From https://github.com/nothingfortune/zmk-custom-functions-lib
+2026-02-22T00:08:02.9686921Z  * [new ref]         d92c15c5c4ea71b9ba6013456fecdebae200a0cf -> origin/main
+2026-02-22T00:08:02.9714698Z ##[endgroup]
+2026-02-22T00:08:02.9715890Z ##[group]Determining the checkout info
+2026-02-22T00:08:02.9717712Z ##[endgroup]
+2026-02-22T00:08:02.9722017Z [command]/usr/bin/git sparse-checkout disable
+2026-02-22T00:08:02.9763287Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-22T00:08:02.9792037Z ##[group]Checking out the ref
+2026-02-22T00:08:02.9795747Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-22T00:08:02.9909115Z Switched to a new branch 'main'
+2026-02-22T00:08:02.9909938Z branch 'main' set up to track 'origin/main'.
+2026-02-22T00:08:02.9918126Z ##[endgroup]
+2026-02-22T00:08:02.9953793Z [command]/usr/bin/git log -1 --format=%H
+2026-02-22T00:08:02.9979057Z d92c15c5c4ea71b9ba6013456fecdebae200a0cf
