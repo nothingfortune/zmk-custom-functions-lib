@@ -1,0 +1,35 @@
+﻿2026-02-22T02:35:47.7249277Z ##[group]Run if [ -e zephyr/module.yml ]; then
+2026-02-22T02:35:47.7249708Z [36;1mif [ -e zephyr/module.yml ]; then[0m
+2026-02-22T02:35:47.7250160Z [36;1m  export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE}'"[0m
+2026-02-22T02:35:47.7250607Z [36;1m  new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"[0m
+2026-02-22T02:35:47.7250940Z [36;1m  mkdir -p "${new_tmp_dir}"[0m
+2026-02-22T02:35:47.7251448Z [36;1m  echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7251771Z [36;1melse[0m
+2026-02-22T02:35:47.7252034Z [36;1m  echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7252339Z [36;1mfi[0m
+2026-02-22T02:35:47.7252518Z [36;1m[0m
+2026-02-22T02:35:47.7252697Z [36;1mif [ -n "${snippet}" ]; then[0m
+2026-02-22T02:35:47.7252998Z [36;1m  extra_west_args="-S \"${snippet}\""[0m
+2026-02-22T02:35:47.7253296Z [36;1mfi[0m
+2026-02-22T02:35:47.7253461Z [36;1m[0m
+2026-02-22T02:35:47.7253717Z [36;1mecho "zephyr_version=${ZEPHYR_VERSION}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7254165Z [36;1mecho "extra_west_args=${extra_west_args}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7254689Z [36;1mecho "extra_cmake_args=${shield:+-DSHIELD=\"$shield\"}${zmk_load_arg}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7255235Z [36;1mecho "display_name=${shield:+$shield - }${board}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7255782Z [36;1mecho "artifact_name=${artifact_name:-${shield:+$shield-}${board}-zmk}" >> $GITHUB_ENV[0m
+2026-02-22T02:35:47.7257446Z shell: sh -x {0}
+2026-02-22T02:35:47.7257674Z env:
+2026-02-22T02:35:47.7257865Z   build_dir: /tmp/tmp.v0XmbiVb3P
+2026-02-22T02:35:47.7258146Z   board: slicemk_ergodox_202207_green_left
+2026-02-22T02:35:47.7258437Z   shield: slicemk_ergodox_leftcentral
+2026-02-22T02:35:47.7258694Z   artifact_name: 
+2026-02-22T02:35:47.7258884Z   snippet: 
+2026-02-22T02:35:47.7259048Z ##[endgroup]
+2026-02-22T02:35:47.7926343Z + [ -e zephyr/module.yml ]
+2026-02-22T02:35:47.7927103Z + echo base_dir=/__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:35:47.7927779Z + [ -n  ]
+2026-02-22T02:35:47.7928580Z + echo zephyr_version=4.1.0
+2026-02-22T02:35:47.7929019Z + echo extra_west_args=
+2026-02-22T02:35:47.7930247Z + echo extra_cmake_args=-DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-22T02:35:47.7931638Z + echo display_name=slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-22T02:35:47.7932587Z + echo artifact_name=slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk

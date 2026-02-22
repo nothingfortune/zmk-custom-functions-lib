@@ -59,7 +59,7 @@ arrow_right: arrow_word_right {
 tab_hyper: tab_hyper {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
     bindings = <&kp TAB>, <&hyper_key>;
 };
 

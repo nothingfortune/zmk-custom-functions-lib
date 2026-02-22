@@ -4,7 +4,7 @@ bt_0: bt_0 {
     compatible = "zmk,behavior-tap-dance";
     label = "BT_0";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
     bindings = <&bt_select_0>, <&bt BT_DISC 0>;
 };
 
@@ -12,7 +12,7 @@ bt_1: bt_1 {
     compatible = "zmk,behavior-tap-dance";
     label = "BT_1";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
     bindings = <&bt_select_1>, <&bt BT_DISC 1>;
 };
 
@@ -20,7 +20,7 @@ bt_2: bt_2 {
     compatible = "zmk,behavior-tap-dance";
     label = "BT_2";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
     bindings = <&bt_select_2>, <&bt BT_DISC 2>;
 };
 
@@ -28,7 +28,7 @@ bt_3: bt_3 {
     compatible = "zmk,behavior-tap-dance";
     label = "BT_3";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
     bindings = <&bt_select_3>, <&bt BT_DISC 3>;
 };
 

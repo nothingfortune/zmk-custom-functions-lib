@@ -1,6 +1,6 @@
 // sticky "hyper" modifiers (Win + Alt + Ctrl + Shift) - TailorKey
 combo_sticky_hyp_rght_v1_TKZ {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TIMEOUT_MS>;
     key-positions = <POS_RH_C2R4 POS_RH_C2R5>;
     bindings = <&sk LG(LA(LC(LSHFT)))>;
     layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;
@@ -8,7 +8,7 @@ combo_sticky_hyp_rght_v1_TKZ {
 
 // sticky "meh" modifiers (Alt + Ctrl + Shift) - TailorKey
 combo_sticky_meh_rght_v1_TKZ {
-    timeout-ms = <50>;
+    timeout-ms = <COMBO_TIMEOUT_MS>;
     key-positions = <POS_RH_C3R5 POS_RH_C3R4>;
     bindings = <&sk LA(LC(LSHFT))>;
     layers = <LAYER_Base LAYER_Autoshift LAYER_Typing>;

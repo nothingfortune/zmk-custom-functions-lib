@@ -37,7 +37,7 @@ dqt_pair: double_quote_pair {
 numpad_td: numpad_td {
     compatible = "zmk,behavior-tap-dance";
     #binding-cells = <0>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
     bindings = <&mo LAYER_Keypad>, <&to LAYER_Keypad>;
 };
 

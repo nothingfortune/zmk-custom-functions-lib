@@ -30,7 +30,7 @@ zmk-custom-functions-lib/
 │   ├── bluetooth.dtsi
 │   ├── magic.dtsi
 │   ├── homeRowMods/
-│   │   ├── hrm_timings.dtsi
+│   ├── global_timings.dtsi
 │   │   ├── hrm_macros.dtsi
 │   │   └── hrm_behaviors.dtsi
 │   └── combos/
@@ -160,7 +160,7 @@ Edit the relevant shared file:
 - New behavior → `shared/behaviors.dtsi`
 - New macro → `shared/macros.dtsi`
 - New mod-morph → `shared/modMorphs.dtsi`
-- HRM timing change → `shared/homeRowMods/hrm_timings.dtsi`
+- Timing change → `shared/global_timings.dtsi`
 
 ### Board-specific hardware config (Go60: trackpad, RGB, etc.)
 

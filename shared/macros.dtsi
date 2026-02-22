@@ -58,6 +58,14 @@ pair_brace: pair_curly_braces {
         , <&kp LEFT>;
 };
 
+/* RGB status macro — used by shared/magic.dtsi for the magic hold-tap */
+rgb_ug_status_macro: rgb_ug_status_macro {
+    label = "RGB_UG_STATUS";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&rgb_ug RGB_STATUS>;
+};
+
 /* Hyper key macro - ⌘⌃⌥⇧ for Raycast/Alfred */
 hyper_key: hyper_key_macro {
 compatible = "zmk,behavior-macro";

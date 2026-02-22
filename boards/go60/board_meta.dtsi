@@ -84,18 +84,6 @@
     };
 };
 
-/* RGB status macro */
-/ {
-    macros {
-        rgb_ug_status_macro: rgb_ug_status_macro {
-            label = "RGB_UG_STATUS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_STATUS>;
-        };
-    };
-};
-
 /* Lower tap-dance */
 / {
     behaviors {

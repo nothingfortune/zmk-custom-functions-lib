@@ -1,32 +1,61 @@
+/* ══════════════════════════════════════════════════════════════
+ *   Global Timing Constants
+ *   Single source of truth for all tapping-term-ms, quick-tap-ms,
+ *   require-prior-idle-ms, and timeout-ms values across this config.
+ *   Changing a value here propagates to every behavior that uses it.
+ * ══════════════════════════════════════════════════════════════ */
+
+/* ── Home Row Mods ──────────────────────────────────────────── */
+/* Tapping term: longer for outer fingers (ring/pinky) so fast
+ * rolls don't accidentally activate modifiers.                  */
 #define HRM_INDEX_TAPPING_TERM   190
 #define HRM_MIDDY_TAPPING_TERM   210
 #define HRM_RING_TAPPING_TERM    240
 #define HRM_PINKY_TAPPING_TERM   260
 
+/* Prior-idle: the keyboard must have been idle this many ms
+ * before an HRM hold can activate. Prevents rolls from firing
+ * modifiers unintentionally.                                    */
 #define HRM_INDEX_PRIOR_IDLE     100
 #define HRM_MIDDY_PRIOR_IDLE     150
 #define HRM_RING_PRIOR_IDLE      150
 #define HRM_PINKY_PRIOR_IDLE     150
 
+/* Quick-tap: pressing the key a second time within this window
+ * sends the tap keycode and bypasses hold, enabling key repeat. */
 #define HRM_QUICK_TAP            300
 
+/* ── Thumb / Layer-Access Keys ──────────────────────────────── */
 #define THUMB_TAPPING_TERM       200
 #define THUMB_QUICK_TAP          300
 
+/* ── Space Key ──────────────────────────────────────────────── */
 #define SPACE_TAPPING_TERM       200
 #define SPACE_QUICK_TAP          300
 
+/* ── Tap-Dance ──────────────────────────────────────────────── */
+/* Used by: tab_hyper, numpad_td, bt_0–bt_3, magic hold-tap,
+ *          ZMK_TD_LAYER (lower, td_LAYER_Keypad).               */
+#define TD_TAPPING_TERM          200
+
+/* ── Number Row Hold-Tap ────────────────────────────────────── */
 #define NUM_HT_TAPPING_TERM      170
 #define NUM_HT_QUICK_TAP         175
 #define NUM_HT_PRIOR_IDLE        125
 
+/* ── Auto-Shift ─────────────────────────────────────────────── */
 #define AUTOSHIFT_TAPPING_TERM   190
 
+/* ── Backspace-Word ─────────────────────────────────────────── */
 #define BSPC_WORD_TAPPING_TERM   250
 #define BSPC_WORD_PRIOR_IDLE     200
 #define BSPC_WORD_QUICK_TAP      0
 
-
+/* ── Arrow / Word-Jump Keys ─────────────────────────────────── */
 #define ARROW_TAPPING_TERM       250
 #define ARROW_QUICK_TAP          200
 #define ARROW_PRIOR_IDLE         150
+
+/* ── Combos ─────────────────────────────────────────────────── */
+/* Maximum time (ms) between key-presses to trigger a combo.    */
+#define COMBO_TIMEOUT_MS         50

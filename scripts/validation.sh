@@ -66,7 +66,7 @@ REQUIRED_FILES=(
   shared/autoshift.dtsi
   shared/bluetooth.dtsi
   shared/magic.dtsi
-  shared/homeRowMods/hrm_timings.dtsi
+  shared/global_timings.dtsi
   shared/homeRowMods/hrm_macros.dtsi
   shared/homeRowMods/hrm_behaviors.dtsi
   shared/combos/combos_common.dtsi
@@ -198,7 +198,7 @@ section "6. Shared includes in board keymaps"
 
 REQUIRED_INCLUDES=(
   "../../shared/layers.dtsi"
-  "../../shared/homeRowMods/hrm_timings.dtsi"
+  "../../shared/global_timings.dtsi"
   "../../shared/macros.dtsi"
   "../../shared/homeRowMods/hrm_macros.dtsi"
   "../../shared/behaviors.dtsi"
@@ -341,10 +341,11 @@ for board in glove80 slicemk; do
 done
 
 # ══════════════════════════════════════════════════════════════
-section "12. Include ordering: layers.dtsi before board_meta.dtsi"
+section "12. Include ordering: layers.dtsi + global_timings.dtsi before board_meta.dtsi"
 # ══════════════════════════════════════════════════════════════
-# board_meta.dtsi uses LAYER_* macros defined in shared/layers.dtsi,
-# so layers.dtsi must be #included first in every keymap file.
+# board_meta.dtsi uses LAYER_* macros (from shared/layers.dtsi) and
+# timing constants like TD_TAPPING_TERM (from global_timings.dtsi) via
+# ZMK_TD_LAYER. Both must be #included before board_meta.dtsi.
 
 for board in go60 glove80 slicemk; do
   case "$board" in
@@ -355,6 +356,7 @@ for board in go60 glove80 slicemk; do
   [[ -f "$keymap" ]] || continue
 
   layers_ln=$(grep -n 'layers\.dtsi' "$keymap" 2>/dev/null | head -1 | cut -d: -f1 || true)
+  timings_ln=$(grep -n 'global_timings\.dtsi' "$keymap" 2>/dev/null | head -1 | cut -d: -f1 || true)
   meta_ln=$(grep -n 'board_meta\.dtsi' "$keymap" 2>/dev/null | head -1 | cut -d: -f1 || true)
 
   if [[ -z "$layers_ln" || -z "$meta_ln" ]]; then
@@ -363,6 +365,14 @@ for board in go60 glove80 slicemk; do
     pass "boards/$board keymap — layers.dtsi (line $layers_ln) before board_meta.dtsi (line $meta_ln)"
   else
     fail "boards/$board keymap — layers.dtsi (line $layers_ln) AFTER board_meta.dtsi (line $meta_ln); LAYER_* macros will be undefined"
+  fi
+
+  if [[ -z "$timings_ln" || -z "$meta_ln" ]]; then
+    warn "boards/$board keymap — could not find global_timings.dtsi or board_meta.dtsi include"
+  elif [[ "$timings_ln" -lt "$meta_ln" ]]; then
+    pass "boards/$board keymap — global_timings.dtsi (line $timings_ln) before board_meta.dtsi (line $meta_ln)"
+  else
+    fail "boards/$board keymap — global_timings.dtsi (line $timings_ln) AFTER board_meta.dtsi (line $meta_ln); TD_TAPPING_TERM will be undefined in ZMK_TD_LAYER"
   fi
 done
 
@@ -548,12 +558,23 @@ for board in go60 glove80 slicemk; do
   done < <(find "$REPO_ROOT/shared" "$board_dir" -name '*.dtsi' \
              ! -path '*/layers/*' 2>/dev/null)
 
-  # Collect &label references from board layer files + shared combo files.
+  # Collect &label references from:
+  #   - board layer files (keymap bindings)
+  #   - shared combo files (combo bindings)
+  #   - shared behavior/macro files (e.g. magic.dtsi referencing rgb_ug_status_macro)
+  # This catches undefined references in both layer bindings AND shared behavior definitions.
   refs=""
   while IFS= read -r f; do
-    refs+=$(grep -oE '&[A-Za-z][A-Za-z0-9_]*' "$f" 2>/dev/null \
-            | sed 's/^&//')$'\n'
-  done < <(find "$board_dir/layers" "$REPO_ROOT/shared/combos" \
+    # Strip block comments, line comments, and quoted strings before extracting
+    # &label phandle references — avoids false positives from comment text and
+    # ZMK's legacy label = "&FOO" metadata properties.
+    refs+=$(perl -0777 -ne '
+      s|/\*.*?\*/||gs;
+      s|//[^\n]*||g;
+      s|"[^"]*"||g;
+      print "$1\n" while /&([A-Za-z][A-Za-z0-9_]*)/g;
+    ' "$f" 2>/dev/null)$'\n'
+  done < <(find "$board_dir/layers" "$REPO_ROOT/shared/combos" "$REPO_ROOT/shared" \
              -name '*.dtsi' 2>/dev/null)
 
   # Report any reference that is neither a built-in nor user-defined

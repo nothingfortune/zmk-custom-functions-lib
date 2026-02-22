@@ -20,7 +20,7 @@ zmk-keymap-central/
 │   ├── homeRowMods/
 │   │   ├── hrm_macros.dtsi          # Hold/tap macros (per-finger _hold and _tap macros)
 │   │   ├── hrm_behaviors.dtsi       # HRM hold-tap behaviors (uses position group macros)
-│   │   └── hrm_timings.dtsi         # Central timing values as #defines
+│   │   └── global_timings.dtsi         # Central timing values as #defines
 │   ├── combos/
 │   │   ├── combos_common.dtsi       # Combos that work on all boards (use logical positions)
 │   │   └── combos_fkeys.dtsi        # F-key vertical combos (shareable if position names match)
@@ -132,7 +132,7 @@ The Glove80 version includes more positions (extra columns, extra thumb keys). T
 Centralize all timing values so tuning is a one-file change:
 
 ```c
-// shared/homeRowMods/hrm_timings.dtsi
+// shared/global_timings.dtsi
 
 #define HRM_INDEX_TAPPING_TERM   190
 #define HRM_MIDDY_TAPPING_TERM   210
@@ -169,7 +169,7 @@ These reference timings but not positions — fully portable:
 
 ```c
 // shared/behaviors.dtsi
-#include "homeRowMods/hrm_timings.dtsi"
+#include "global_timings.dtsi"
 
 / {
     behaviors {
@@ -517,7 +517,7 @@ Add a comment convention at the top of each layer file marking which shared beha
 3. (done) Extract all non-positional behaviors → `shared/behaviors.dtsi`
 4. (done) Extract mod-morphs → `shared/modMorphs.dtsi`
 5. (done) Extract HRM macros → `shared/homeRowMods/hrm_macros.dtsi`
-6. (done) Extract timing defines → `shared/homeRowMods/hrm_timings.dtsi`
+6. (done) Extract timing defines → `shared/global_timings.dtsi`
 7. (done) Replace hardcoded timings in HRM behaviors with timing defines
 8. (done) Extract HRM behaviors → `shared/homeRowMods/hrm_behaviors.dtsi`
 9. (done) Move `positions.dtsi` and `position_groups.dtsi` to `boards/go60/`
@@ -565,6 +565,6 @@ Same process. By now the shared library is proven.
 
 ## The End State
 
-After migration, changing your HRM timing is editing one line in `hrm_timings.dtsi`. Adding a new macro means editing `shared/macros.dtsi`. Changing your symbol layer means editing 3 layer files (one per board), but the behavior *references* in those files all point to the same shared definitions.
+After migration, changing your HRM timing is editing one line in `global_timings.dtsi`. Adding a new macro means editing `shared/macros.dtsi`. Changing your symbol layer means editing 3 layer files (one per board), but the behavior *references* in those files all point to the same shared definitions.
 
 Your Go60 keymap goes from 2,225 lines to maybe 200 lines of includes + layer grids. The shared library holds the intelligence. Board files hold the geometry.

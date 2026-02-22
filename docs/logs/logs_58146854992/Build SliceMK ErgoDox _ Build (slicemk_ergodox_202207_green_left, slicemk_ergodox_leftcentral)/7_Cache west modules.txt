@@ -1,0 +1,29 @@
+﻿2026-02-22T02:35:47.9502852Z ##[group]Run actions/cache@v4
+2026-02-22T02:35:47.9503186Z with:
+2026-02-22T02:35:47.9504492Z   path: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib/modules/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/tools/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/zephyr/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/bootloader/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/zmk/
+
+2026-02-22T02:35:47.9506201Z   key: Linux-build-cache-zephyr-4.1.0-modules-3043d4a7ce7cafd0f50e6de6d03f4b5546522e1f32e71344abb7b2a746461cfd
+2026-02-22T02:35:47.9506917Z   restore-keys: Linux-build-cache-zephyr-4.1.0-modules-
+Linux-build-
+Linux-
+
+2026-02-22T02:35:47.9507339Z   enableCrossOsArchive: false
+2026-02-22T02:35:47.9507586Z   fail-on-cache-miss: false
+2026-02-22T02:35:47.9507816Z   lookup-only: false
+2026-02-22T02:35:47.9508014Z   save-always: false
+2026-02-22T02:35:47.9508200Z env:
+2026-02-22T02:35:47.9508379Z   build_dir: /tmp/tmp.v0XmbiVb3P
+2026-02-22T02:35:47.9508728Z   base_dir: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:35:47.9509131Z   zephyr_version: 4.1.0
+2026-02-22T02:35:47.9509365Z   extra_west_args: 
+2026-02-22T02:35:47.9509636Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-22T02:35:47.9510105Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-22T02:35:47.9510661Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-22T02:35:47.9511098Z   cache_name: cache-zephyr-4.1.0-modules
+2026-02-22T02:35:47.9511675Z ##[endgroup]
+2026-02-22T02:35:47.9517172Z ##[command]/usr/bin/docker exec  b45b526fc891b72c37ab3a4293de5d32168af787bc3a729b9d0a76426f2e6a55 sh -c "cat /etc/*release | grep ^ID"
+2026-02-22T02:35:48.4127213Z Cache not found for input keys: Linux-build-cache-zephyr-4.1.0-modules-3043d4a7ce7cafd0f50e6de6d03f4b5546522e1f32e71344abb7b2a746461cfd, Linux-build-cache-zephyr-4.1.0-modules-, Linux-build-, Linux-

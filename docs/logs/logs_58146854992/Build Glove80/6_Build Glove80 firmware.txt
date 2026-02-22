@@ -1,0 +1,1283 @@
+﻿2026-02-22T02:35:28.2115931Z ##[group]Run nix-build build/glove80.nix --arg firmware 'import ./src {}' -o result-glove80
+2026-02-22T02:35:28.2116576Z [36;1mnix-build build/glove80.nix --arg firmware 'import ./src {}' -o result-glove80[0m
+2026-02-22T02:35:28.2150054Z shell: /usr/bin/bash -e {0}
+2026-02-22T02:35:28.2150299Z env:
+2026-02-22T02:35:28.2150479Z   NIX_PATH: nixpkgs=channel:nixos-22.05
+2026-02-22T02:35:28.2150745Z   TMPDIR: /home/runner/work/_temp
+2026-02-22T02:35:28.2150971Z ##[endgroup]
+2026-02-22T02:35:46.3052744Z these 5 derivations will be built:
+2026-02-22T02:35:46.3057881Z   /nix/store/ryf981zc9kshrrgm5c5dphnw879gn09m-builder.pl.drv
+2026-02-22T02:35:46.3058718Z   /nix/store/14s41r3aqgw7vrl845jxarjcx3ivgvc4-python3-3.12.7-env.drv
+2026-02-22T02:35:46.3059533Z   /nix/store/fiicvkwqrj76vds6l7780pbbkdbzn7z1-zmk_glove80_rh.drv
+2026-02-22T02:35:46.3060295Z   /nix/store/fpd8yh779rprnvqkim28yg3gizi8dhjs-zmk_glove80_lh.drv
+2026-02-22T02:35:46.3061209Z   /nix/store/g5n61d4vz34mkqsy8bcl8m25lxcpnjrg-combined_zmk_glove80_lh_zmk_glove80_rh.drv
+2026-02-22T02:35:46.3062257Z these 156 paths will be fetched (458.96 MiB download, 2284.78 MiB unpacked):
+2026-02-22T02:35:46.3063052Z   /nix/store/nrl5m466dwdscvavf1nqzdnqhszjyy9n-acl-2.3.2
+2026-02-22T02:35:46.3063664Z   /nix/store/nmq6s9l9zlym3qjx76zzrqbp05a63y90-attr-2.5.2
+2026-02-22T02:35:46.3064630Z   /nix/store/p6k7xp1lsfmbdd731mlglrdj2d66mr82-bash-5.2p37
+2026-02-22T02:35:46.3065508Z   /nix/store/bwkb907myixfzzykp21m9iczkhrq5pfy-binutils-2.43.1
+2026-02-22T02:35:46.3066217Z   /nix/store/2qssg7pjgadwmqns6jm3qlr5bbdl4dcr-binutils-2.43.1-lib
+2026-02-22T02:35:46.3067009Z   /nix/store/x9as7x6f7cdgcskvvn3yp02m662krr7y-binutils-wrapper-2.43.1
+2026-02-22T02:35:46.3067798Z   /nix/store/2vgwd43vqxm66grkgsy7z1d87z31nzph-brotli-1.1.0-lib
+2026-02-22T02:35:46.3068460Z   /nix/store/hl3iw85v12gh9mwgvr9yfgjgy0rk81hb-bzip2-1.0.8
+2026-02-22T02:35:46.3069025Z   /nix/store/vqjygx23hkim1kpidik5xcs9whayf3sr-bzip2-1.0.8-bin
+2026-02-22T02:35:46.3069798Z   /nix/store/9l20xx4bw18qgkicjcrsfx7vfykp9m8h-cairo-1.18.2
+2026-02-22T02:35:46.3070538Z   /nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module
+2026-02-22T02:35:46.3071287Z   /nix/store/4k2h9qsps52n1v56zq03yi67dwmxa81i-cmake-3.30.5
+2026-02-22T02:35:46.3071936Z   /nix/store/azxckjbc4f70yliac1x35z5awbzf9jzj-cmsis
+2026-02-22T02:35:46.3072615Z   /nix/store/b1wvkjx96i3s7wblz38ya0zr8i93zbc5-coreutils-9.5
+2026-02-22T02:35:46.3073271Z   /nix/store/ps0zg8jx995br0s7k353qhal1ma3nnbd-curl-8.11.0
+2026-02-22T02:35:46.3073919Z   /nix/store/zr9c15gg53zsbyc54fsrlwh3r8kmhfyy-dav1d-1.5.0
+2026-02-22T02:35:46.3074503Z   /nix/store/n19lfs7ix2g9kdh6cf2pfaylbcwjay71-dav1d-1.5.0-dev
+2026-02-22T02:35:46.3075367Z   /nix/store/hbrcibdl494a5w3dypy7095dckalzlqa-dejavu-fonts-minimal-2.37
+2026-02-22T02:35:46.3075792Z   /nix/store/85sj9hb9phy4fh3q4fmc1vm9vz27z1lg-die-hook
+2026-02-22T02:35:46.3076149Z   /nix/store/cxwsmlr3xh1ml4r0kgdjrknw7504b9f8-diffutils-3.10
+2026-02-22T02:35:46.3076547Z   /nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2
+2026-02-22T02:35:46.3076896Z   /nix/store/k5x874vwcaxlan1cw248lwqr4l4v7hyk-ed-1.20.2
+2026-02-22T02:35:46.3077419Z   /nix/store/ka4sync4bccr9mz2ys0dbqjn24hp8v57-expand-response-params
+2026-02-22T02:35:46.3078196Z   /nix/store/8sgvk9wjq9vfz5irkl4436yhpfr10njq-expat-2.6.4
+2026-02-22T02:35:46.3078819Z   /nix/store/g4lksqp6l8qiab4a0as21s6556xh4gyp-file-5.45
+2026-02-22T02:35:46.3079498Z   /nix/store/w8pnfazxqwmrqmwkb5zrz1bifsd8abxl-findutils-4.10.0
+2026-02-22T02:35:46.3080246Z   /nix/store/ziqnk17xikg73dfrwnyi2jd593xlxza9-fontconfig-2.15.0
+2026-02-22T02:35:46.3081032Z   /nix/store/jfyibphs7pv1izw879lrmr0pp1x3llb8-fontconfig-2.15.0-lib
+2026-02-22T02:35:46.3081783Z   /nix/store/waj425c88y21wccgk9zpyi3q48xq0sgk-freetype-2.13.3
+2026-02-22T02:35:46.3082739Z   /nix/store/37azjaxs8cwqbmb0fywl8fa6n2x8bgwq-fribidi-1.0.16
+2026-02-22T02:35:46.3083419Z   /nix/store/nnin69nrnrrmnv2scbwyfkgh1rf51gh1-gawk-5.3.1
+2026-02-22T02:35:46.3084043Z   /nix/store/4krab2h0hd4wvxxmscxrw21pl77j4i7j-gcc-13.3.0
+2026-02-22T02:35:46.3084713Z   /nix/store/ybjcla5bhj8g1y84998pn4a2drfxybkv-gcc-13.3.0-lib
+2026-02-22T02:35:46.3086430Z   /nix/store/j8rzqx7farv0w3isp9z943zy437zk02f-gcc-13.3.0-libgcc
+2026-02-22T02:35:46.3087440Z   /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1
+2026-02-22T02:35:46.3088293Z   /nix/store/4apajimszc47rxwcpvc3g3rj2icinl71-gcc-wrapper-13.3.0
+2026-02-22T02:35:46.3089010Z   /nix/store/ascb2b0zncwlavz03zcj358p1i79hp64-gd-2.3.3
+2026-02-22T02:35:46.3089650Z   /nix/store/hq7m89gp4kafmj8rr0f5sy2qyl7jq479-gdbm-1.24-lib
+2026-02-22T02:35:46.3090358Z   /nix/store/alnzmaf07kv3dl4017vrzqngay5rx904-gdk-pixbuf-2.42.12
+2026-02-22T02:35:46.3091078Z   /nix/store/brj8bvvn63gbdrslwsj7gpj0gqaxlprn-giflib-5.2.2
+2026-02-22T02:35:46.3091730Z   /nix/store/26hcp8h792wl0h52c5r94qakhvk6q717-glib-2.82.1
+2026-02-22T02:35:46.3092602Z   /nix/store/wn7v2vhyyyi6clcyn0s9ixvl7d4d87ic-glibc-2.40-36
+2026-02-22T02:35:46.3093348Z   /nix/store/zw5haplzbwjgbp3yykhm6iprkpfppzxb-glibc-2.40-36-bin
+2026-02-22T02:35:46.3094098Z   /nix/store/lw21wr626v5sdcaxxkv2k4zf1121hfc9-glibc-2.40-36-dev
+2026-02-22T02:35:46.3094760Z   /nix/store/y11zr71f9i1zy1vrdy3kjx8j6slsb3l3-gmp-6.3.0
+2026-02-22T02:35:46.3096415Z   /nix/store/nxg637az00fnm705pinlrpjac9b4hgsc-gmp-with-cxx-6.3.0
+2026-02-22T02:35:46.3097238Z   /nix/store/rlnih3wlxxwqn4xdahjgfjydvv78kvki-gnu-config-2024-01-01
+2026-02-22T02:35:46.3098235Z   /nix/store/85amyk92rg19l4fy0qmy7wr4jmq8p5z0-gnugrep-3.11
+2026-02-22T02:35:46.3098909Z   /nix/store/9y5kd90fdbrq3r4yc9mpqn82f93zdgyq-gnumake-4.4.1
+2026-02-22T02:35:46.3099641Z   /nix/store/vmby25zqxnx94awvj0k7zn0rsd0zyrwg-gnused-4.9
+2026-02-22T02:35:46.3100306Z   /nix/store/zhaypw0znkjnymg0rk1599zn21rr0l50-gnutar-1.35
+2026-02-22T02:35:46.3100972Z   /nix/store/23y66ax8z30m8xl4brrz792xlsrm0syr-graphite2-1.3.14
+2026-02-22T02:35:46.3101669Z   /nix/store/lvx8m4mh18aiqlqp5hdjpg3b34a07p35-graphviz-12.2.0
+2026-02-22T02:35:46.3102408Z   /nix/store/avwmwsn9v4an5v2a4k1gzbqk917avjn1-gts-0.7.6
+2026-02-22T02:35:46.3103040Z   /nix/store/a7pimibppfw2m3ryijnwwzx76i780bw2-gzip-1.13
+2026-02-22T02:35:46.3103669Z   /nix/store/a473gcmd84qs4vpapa70nwamlpkryc7b-hal_nordic
+2026-02-22T02:35:46.3104319Z   /nix/store/yxgc37sx1a0fswq3hvvld54491ryx6sf-harfbuzz-10.0.1
+2026-02-22T02:35:46.3105141Z   /nix/store/xxfkk4gqnaimiwzi6mmsmcs9bl2r8y7f-isl-0.20
+2026-02-22T02:35:46.3105813Z   /nix/store/ys6f20b4chzkmfh9ak0hjdp60l0g5abb-keyutils-1.6.3-lib
+2026-02-22T02:35:46.3106563Z   /nix/store/g9hgzjcj9g7hw3c2pzgz271b1g1jgc4w-krb5-1.21.3-lib
+2026-02-22T02:35:46.3106931Z   /nix/store/1dmri839kv55917flq6pyvr6xf17cb29-lerc-4.0.0
+2026-02-22T02:35:46.3107280Z   /nix/store/ikjw6a952jd9wn5k06mkj710xzabssr0-libX11-1.8.10
+2026-02-22T02:35:46.3107646Z   /nix/store/ighb6h0x1nv14ap2fj0j3bqdn0x3xra4-libXau-1.0.11
+2026-02-22T02:35:46.3108045Z   /nix/store/8jqc1bpk99jgib12wgpdjmnbndrmg7vz-libXdmcp-1.1.5
+2026-02-22T02:35:46.3108780Z   /nix/store/d5y0sl4vwsb9m99r18zh1mx4fw9y70g6-libXext-1.3.6
+2026-02-22T02:35:46.3109425Z   /nix/store/a98zld1as826z4s0b71xs64k02arj4zj-libXft-2.3.8
+2026-02-22T02:35:46.3110063Z   /nix/store/ln8sk1vlpzmm346lx30ifihqdw0fw4g9-libXpm-3.5.17
+2026-02-22T02:35:46.3110786Z   /nix/store/7ygszkkili3kfqh789ivdgrhyrjshm5n-libXrender-0.9.11
+2026-02-22T02:35:46.3111426Z   /nix/store/kabp82iq5p0l8zidw9ch1mrpq431g6jd-libaom-3.10.0
+2026-02-22T02:35:46.3112131Z   /nix/store/v567mv8b0bg0ph7xn61g33qqm484xxj0-libaom-3.10.0-bin
+2026-02-22T02:35:46.3112841Z   /nix/store/1asppgbns142f1sqyr6sz843h0689a1k-libaom-3.10.0-dev
+2026-02-22T02:35:46.3113610Z   /nix/store/n0gxk0ys2zgqqz6zcsq8qlv6nv5k6fpj-libarchive-3.7.7-lib
+2026-02-22T02:35:46.3114351Z   /nix/store/96wajifckqya26aazk4lrig5m5npw5l2-libavif-1.1.1
+2026-02-22T02:35:46.3115285Z   /nix/store/rk2r5yq7al5jddg6jriwv1lg5j1dw0ih-libdatrie-2019-12-20-lib
+2026-02-22T02:35:46.3116067Z   /nix/store/v6m37463j6bs788wbid8yvfhp1773cax-libdeflate-1.22
+2026-02-22T02:35:46.3116788Z   /nix/store/lw7psn749bfn2nrn943jdh68hh2im8yl-libffi-3.4.6
+2026-02-22T02:35:46.3117483Z   /nix/store/qwjjm4j652ck9izaid7bz63s4hd5bnha-libidn2-2.3.7
+2026-02-22T02:35:46.3118265Z   /nix/store/g8m63j9rzhqf0i9v4pzbdyrnzshr5mkx-libjpeg-turbo-3.0.4
+2026-02-22T02:35:46.3119449Z   /nix/store/0qqs7bkfk21h8vh7m3x84hphciqv75lm-libmpc-1.3.1
+2026-02-22T02:35:46.3120147Z   /nix/store/kvzfyxs3v0nb2lvfx28c5hj0vz7j9737-libpng-apng-1.6.43
+2026-02-22T02:35:46.3120871Z   /nix/store/rp6b82pm6b7x03ngbzffsl3vj8pvay5v-libselinux-3.7
+2026-02-22T02:35:46.3121450Z   /nix/store/1n0b29iid3y0w9i91v9zqdiwnx3inak0-libssh2-1.11.1
+2026-02-22T02:35:46.3122059Z   /nix/store/h11ip75g5azb1d9f9jr8c6pwjhpcx20n-libthai-0.1.29
+2026-02-22T02:35:46.3122666Z   /nix/store/mgw74i0szz30zbmvgasvyws1y8mvkb86-libtiff-4.7.0
+2026-02-22T02:35:46.3123291Z   /nix/store/ggpir31aij6dj2fsas74jyz8z33dxwnc-libtool-2.4.7-lib
+2026-02-22T02:35:46.3124041Z   /nix/store/6pqgj71r0850b0cd95yxx0d52zax016i-libunistring-1.2
+2026-02-22T02:35:46.3124720Z   /nix/store/scb132gc1zzd904zibk2mz0q5q42z0ym-libuv-1.48.0
+2026-02-22T02:35:46.3125465Z   /nix/store/llj89sgbf5512bnhx76khs7aq2pkhqjv-libvmaf-3.0.0
+2026-02-22T02:35:46.3125916Z   /nix/store/dbkf2m0b3a2n9drrbz6ra4ljfx45d4aa-libvmaf-3.0.0-dev
+2026-02-22T02:35:46.3126626Z   /nix/store/xk1z1b27hck084x12pn24rk526arwwlz-libwebp-1.4.0
+2026-02-22T02:35:46.3127348Z   /nix/store/zgcaxpjipkvdz3185gfb8ba63xw1sv4n-libwebp-1.4.0
+2026-02-22T02:35:46.3128044Z   /nix/store/w63ks7mg1dsgm2gg302ss70wpq7g0l4d-libxcb-1.17.0
+2026-02-22T02:35:46.3128740Z   /nix/store/5j9m3z3c6hygjx34xr1bzrkk8srvcs8a-libxcrypt-4.4.36
+2026-02-22T02:35:46.3129888Z   /nix/store/sbc37bmgpzr7wvlbm9lgf4y6q6dyz40q-libxcrypt-4.4.36
+2026-02-22T02:35:46.3130614Z   /nix/store/shg1vgcjxghqxhl0sifwgr0g2zg6bbv7-libxml2-2.13.4
+2026-02-22T02:35:46.3131307Z   /nix/store/s5y8cgwj9saik6hpxq6hvry31hggnxij-libyaml-0.2.5
+2026-02-22T02:35:46.3131979Z   /nix/store/43nf72jxw9m9mazn5qs7pdj52a7gmcr5-libyuv-1787
+2026-02-22T02:35:46.3132679Z   /nix/store/dvsai0ym9czjl5mcsarcdwccb70615n4-linux-headers-6.10
+2026-02-22T02:35:46.3133341Z   /nix/store/wwmn97j9jv083973a7md52v4wkxr6lvd-lvgl
+2026-02-22T02:35:46.3133986Z   /nix/store/77yxcw58nmqx2c67a7srpfxxp40j5rbl-mailcap-2.1.54
+2026-02-22T02:35:46.3134754Z   /nix/store/gqjd4bvd683s55r0jcgc9q67rvjnmfc6-make-binary-wrapper-hook
+2026-02-22T02:35:46.3135724Z   /nix/store/aqga8f06jxy5a6ci4na35v7n09j8i74f-mpdecimal-4.0.0
+2026-02-22T02:35:46.3136402Z   /nix/store/wfxkyxmg47bhj098im5rp60hmkagn96x-mpfr-4.2.1
+2026-02-22T02:35:46.3137050Z   /nix/store/zi4768cbcny3vx6f8k2yqy3zp90jalhz-ncompress-5.0
+2026-02-22T02:35:46.3137819Z   /nix/store/1p1j0iv3c909kcs4d5300kcsnlwmbwyj-ncurses-6.4.20221231
+2026-02-22T02:35:46.3138730Z   /nix/store/vj1wkvkfgcgxr93b5p6kwjbqgrjnv7d9-ncurses-abi5-compat-6.4.20221231
+2026-02-22T02:35:46.3139642Z   /nix/store/aygalfgrn7pvxcqc45jw53b9gc29hwzs-nghttp2-1.64.0-lib
+2026-02-22T02:35:46.3140352Z   /nix/store/s2lws03pga0vyq84kfa6h041n8csbg4p-ninja-1.12.1
+2026-02-22T02:35:46.3141007Z   /nix/store/k1dsk0zyq43pvi7f76is2rx6l4aphm5z-openssl-3.3.2
+2026-02-22T02:35:46.3141516Z   /nix/store/vy93rplabj9l70a098rvp52ni9bg476v-pango-1.54.0
+2026-02-22T02:35:46.3141879Z   /nix/store/mdmansf6zkzsnrcf4h3yav5kz93rh03y-patch-2.7.6
+2026-02-22T02:35:46.3142243Z   /nix/store/9q63d382x7k2h6cc2pfsb39ar3n6f9wg-patchelf-0.15.0
+2026-02-22T02:35:46.3142625Z   /nix/store/gkj66hn5cyi3d761nmcdpj35ngv7h8ph-pcre2-10.44
+2026-02-22T02:35:46.3142977Z   /nix/store/6fklzkr5x213h868q31isgy82wpmb1yb-perl-5.40.0
+2026-02-22T02:35:46.3143316Z   /nix/store/kxawdq25ad6x9cb63yvslaprm4ihx5hr-picolibc
+2026-02-22T02:35:46.3143664Z   /nix/store/f86x63y57hwyx9nl4l098fpl93y3xrya-pixman-0.43.4
+2026-02-22T02:35:46.3144030Z   /nix/store/zv1kaq7f1q20x62kbjv6pfjygw5jmwl6-python3-3.12.7
+2026-02-22T02:35:46.3144404Z   /nix/store/qb69wvblgz1x2hkfxf7lwl9lg9xk4zpj-python3-3.9.20
+2026-02-22T02:35:46.3144846Z   /nix/store/09wri7s7nlgp1fs4q4ysx96scbbmr74v-python3.12-anytree-2.12.1
+2026-02-22T02:35:46.3145677Z   /nix/store/qpb0z965ffwmny4p2m2jbbaqifkkb5y9-python3.12-docopt-0.6.2
+2026-02-22T02:35:46.3146140Z   /nix/store/wg6fhwksxkxn24rnynizrr6f4rvd9dkf-python3.12-intelhex-2.3.0
+2026-02-22T02:35:46.3146613Z   /nix/store/l67gyhnl63la5pxmq4kbhl0g6xrfsdff-python3.12-msgpack-1.1.0
+2026-02-22T02:35:46.3147185Z   /nix/store/qnfndbdg0k5s7zb47l5q9h7cszi56gpf-python3.12-packaging-24.1
+2026-02-22T02:35:46.3147830Z   /nix/store/rs8cgrcn6pkdxs2ksnhs1a0x0pvx5sac-python3.12-progress-1.6
+2026-02-22T02:35:46.3148294Z   /nix/store/qmm23pygh0kisvsm9wrfxw2s5km97670-python3.12-pyelftools-0.31
+2026-02-22T02:35:46.3148769Z   /nix/store/k1hzsby2pa29jwbbdgg3y4wj0rxn8dnn-python3.12-pykwalify-1.8.0
+2026-02-22T02:35:46.3149244Z   /nix/store/7p4gqrzavx0lpks2l0j9945zkzv77ds0-python3.12-python-can-4.5.0
+2026-02-22T02:35:46.3149777Z   /nix/store/iz14w235v0nmwc3vnzrlbrkfpaj1qqka-python3.12-python-dateutil-2.9.0.post0
+2026-02-22T02:35:46.3150304Z   /nix/store/j7q50pmxnawpif7kfimy51mjhjdjldns-python3.12-pyyaml-6.0.2
+2026-02-22T02:35:46.3150773Z   /nix/store/2k9j8zwlhd8vdpn0c4j5zgwkqr6digpx-python3.12-ruamel-base-1.0.0
+2026-02-22T02:35:46.3151268Z   /nix/store/7cvm89dzrkw7i4pdidyd8mvny73k07nb-python3.12-ruamel-yaml-0.18.6
+2026-02-22T02:35:46.3151785Z   /nix/store/3rghmwyhhwjaj3jmpc3drb8pzz9h14hj-python3.12-ruamel-yaml-clib-0.2.7
+2026-02-22T02:35:46.3152281Z   /nix/store/4743pgjalihwh1vb7jsy17ynw3s0xj04-python3.12-six-1.16.0
+2026-02-22T02:35:46.3152785Z   /nix/store/n2pgidpi7vpq2hbpylfpa4ck7avniipp-python3.12-typing-extensions-4.12.2
+2026-02-22T02:35:46.3153311Z   /nix/store/2j2fcjlxczkx0yyjn3rqi1h9sd42r97v-python3.12-wrapt-1.16.0
+2026-02-22T02:35:46.3153738Z   /nix/store/n0q4xhb9z19f0rfd1i8frw7a3ip3rgar-readline-8.2p13
+2026-02-22T02:35:46.3154227Z   /nix/store/gpbi7j64vk1my8gpqgylwf9iljqb09is-rhash-1.4.4
+2026-02-22T02:35:46.3154569Z   /nix/store/wkad860jvdc881ngy6r0fbjg6s5i8alh-segger
+2026-02-22T02:35:46.3155100Z   /nix/store/bbd59cqw259149r2ddk4w1q0lr2fch8c-sqlite-3.46.1
+2026-02-22T02:35:46.3155473Z   /nix/store/spb2bpcnw0gbbr4x94cq8xs9n72hipwj-stdenv-linux
+2026-02-22T02:35:46.3155816Z   /nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt
+2026-02-22T02:35:46.3156155Z   /nix/store/dfsiy184c8z6gf5x6cqfyahxv9g16828-tzdata-2024b
+2026-02-22T02:35:46.3156622Z   /nix/store/ljlah5wqcbix5wg8rvm3g8rc7k9zn1qg-update-autotools-gnu-config-scripts-hook
+2026-02-22T02:35:46.3157187Z   /nix/store/gm5g3xyn8iwxkag8gs6rf3ci64bqld80-util-linux-minimal-2.39.4-lib
+2026-02-22T02:35:46.3157654Z   /nix/store/2d5spnl8j5r4n1s4bj1zmra7mwx0f1n8-xgcc-13.3.0-libgcc
+2026-02-22T02:35:46.3158039Z   /nix/store/bdpc1864983kf51r3cznbrvnlkv4d9ff-xz-5.6.3
+2026-02-22T02:35:46.3158380Z   /nix/store/5180mi672sl6ikiwyhvgnxasz6iqxws0-xz-5.6.3-bin
+2026-02-22T02:35:46.3158721Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr
+2026-02-22T02:35:46.3159069Z   /nix/store/bzk3q2l71qwhycsip23y6rl5n881la4n-zlib-1.3.1
+2026-02-22T02:35:46.3159429Z   /nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis
+2026-02-22T02:35:46.3159844Z   /nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic
+2026-02-22T02:35:46.3160266Z   /nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl
+2026-02-22T02:35:46.3160682Z   /nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc
+2026-02-22T02:35:46.3161100Z   /nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger
+2026-02-22T02:35:46.3161511Z   /nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt
+2026-02-22T02:35:46.3161912Z   /nix/store/8pys6a47askf0g75a1k73p3rx2wim7m6-zstd-1.5.6
+2026-02-22T02:35:46.3221347Z copying path '/nix/store/rlnih3wlxxwqn4xdahjgfjydvv78kvki-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3225483Z copying path '/nix/store/2d5spnl8j5r4n1s4bj1zmra7mwx0f1n8-xgcc-13.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3262952Z copying path '/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3268035Z copying path '/nix/store/j8rzqx7farv0w3isp9z943zy437zk02f-gcc-13.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3273418Z copying path '/nix/store/6pqgj71r0850b0cd95yxx0d52zax016i-libunistring-1.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3308195Z copying path '/nix/store/azxckjbc4f70yliac1x35z5awbzf9jzj-cmsis' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3316830Z copying path '/nix/store/a473gcmd84qs4vpapa70nwamlpkryc7b-hal_nordic' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3323228Z copying path '/nix/store/wwmn97j9jv083973a7md52v4wkxr6lvd-lvgl' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3330179Z copying path '/nix/store/kxawdq25ad6x9cb63yvslaprm4ihx5hr-picolibc' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3333228Z copying path '/nix/store/wkad860jvdc881ngy6r0fbjg6s5i8alh-segger' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3336959Z copying path '/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.3349453Z copying path '/nix/store/85sj9hb9phy4fh3q4fmc1vm9vz27z1lg-die-hook' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3377106Z copying path '/nix/store/dvsai0ym9czjl5mcsarcdwccb70615n4-linux-headers-6.10' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3382593Z copying path '/nix/store/77yxcw58nmqx2c67a7srpfxxp40j5rbl-mailcap-2.1.54' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3384825Z copying path '/nix/store/dfsiy184c8z6gf5x6cqfyahxv9g16828-tzdata-2024b' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3408144Z copying path '/nix/store/hbrcibdl494a5w3dypy7095dckalzlqa-dejavu-fonts-minimal-2.37' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.3758103Z copying path '/nix/store/ljlah5wqcbix5wg8rvm3g8rc7k9zn1qg-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.6007704Z copying path '/nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.6077715Z copying path '/nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.6146983Z copying path '/nix/store/qwjjm4j652ck9izaid7bz63s4hd5bnha-libidn2-2.3.7' from 'https://cache.nixos.org'...
+2026-02-22T02:35:46.6150515Z copying path '/nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:46.6426158Z copying path '/nix/store/ziqnk17xikg73dfrwnyi2jd593xlxza9-fontconfig-2.15.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.1517084Z copying path '/nix/store/wn7v2vhyyyi6clcyn0s9ixvl7d4d87ic-glibc-2.40-36' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.2858402Z copying path '/nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:47.9981430Z copying path '/nix/store/nmq6s9l9zlym3qjx76zzrqbp05a63y90-attr-2.5.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9988840Z copying path '/nix/store/zr9c15gg53zsbyc54fsrlwh3r8kmhfyy-dav1d-1.5.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9990800Z copying path '/nix/store/2vgwd43vqxm66grkgsy7z1d87z31nzph-brotli-1.1.0-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9992214Z copying path '/nix/store/ka4sync4bccr9mz2ys0dbqjn24hp8v57-expand-response-params' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9993918Z copying path '/nix/store/k5x874vwcaxlan1cw248lwqr4l4v7hyk-ed-1.20.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9995714Z copying path '/nix/store/p6k7xp1lsfmbdd731mlglrdj2d66mr82-bash-5.2p37' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9997616Z copying path '/nix/store/8sgvk9wjq9vfz5irkl4436yhpfr10njq-expat-2.6.4' from 'https://cache.nixos.org'...
+2026-02-22T02:35:47.9999130Z copying path '/nix/store/hl3iw85v12gh9mwgvr9yfgjgy0rk81hb-bzip2-1.0.8' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0000944Z copying path '/nix/store/ybjcla5bhj8g1y84998pn4a2drfxybkv-gcc-13.3.0-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0002455Z copying path '/nix/store/nnin69nrnrrmnv2scbwyfkgh1rf51gh1-gawk-5.3.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0016309Z copying path '/nix/store/37azjaxs8cwqbmb0fywl8fa6n2x8bgwq-fribidi-1.0.16' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0019068Z copying path '/nix/store/hq7m89gp4kafmj8rr0f5sy2qyl7jq479-gdbm-1.24-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0020966Z copying path '/nix/store/zw5haplzbwjgbp3yykhm6iprkpfppzxb-glibc-2.40-36-bin' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0022708Z copying path '/nix/store/brj8bvvn63gbdrslwsj7gpj0gqaxlprn-giflib-5.2.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0697017Z copying path '/nix/store/y11zr71f9i1zy1vrdy3kjx8j6slsb3l3-gmp-6.3.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0734649Z copying path '/nix/store/9y5kd90fdbrq3r4yc9mpqn82f93zdgyq-gnumake-4.4.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0838757Z copying path '/nix/store/vmby25zqxnx94awvj0k7zn0rsd0zyrwg-gnused-4.9' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0890415Z copying path '/nix/store/ys6f20b4chzkmfh9ak0hjdp60l0g5abb-keyutils-1.6.3-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0911134Z copying path '/nix/store/vqjygx23hkim1kpidik5xcs9whayf3sr-bzip2-1.0.8-bin' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0920707Z copying path '/nix/store/nrl5m466dwdscvavf1nqzdnqhszjyy9n-acl-2.3.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.0930361Z copying path '/nix/store/ighb6h0x1nv14ap2fj0j3bqdn0x3xra4-libXau-1.0.11' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1159982Z copying path '/nix/store/8jqc1bpk99jgib12wgpdjmnbndrmg7vz-libXdmcp-1.1.5' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1167711Z copying path '/nix/store/rk2r5yq7al5jddg6jriwv1lg5j1dw0ih-libdatrie-2019-12-20-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1239311Z copying path '/nix/store/lw7psn749bfn2nrn943jdh68hh2im8yl-libffi-3.4.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1242600Z copying path '/nix/store/g8m63j9rzhqf0i9v4pzbdyrnzshr5mkx-libjpeg-turbo-3.0.4' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1245510Z copying path '/nix/store/ggpir31aij6dj2fsas74jyz8z33dxwnc-libtool-2.4.7-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1249611Z copying path '/nix/store/v6m37463j6bs788wbid8yvfhp1773cax-libdeflate-1.22' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1312674Z copying path '/nix/store/scb132gc1zzd904zibk2mz0q5q42z0ym-libuv-1.48.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1333650Z copying path '/nix/store/zhaypw0znkjnymg0rk1599zn21rr0l50-gnutar-1.35' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1458135Z copying path '/nix/store/h11ip75g5azb1d9f9jr8c6pwjhpcx20n-libthai-0.1.29' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1460949Z copying path '/nix/store/w63ks7mg1dsgm2gg302ss70wpq7g0l4d-libxcb-1.17.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1516914Z copying path '/nix/store/5j9m3z3c6hygjx34xr1bzrkk8srvcs8a-libxcrypt-4.4.36' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1667476Z copying path '/nix/store/sbc37bmgpzr7wvlbm9lgf4y6q6dyz40q-libxcrypt-4.4.36' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1761598Z copying path '/nix/store/shg1vgcjxghqxhl0sifwgr0g2zg6bbv7-libxml2-2.13.4' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1807244Z copying path '/nix/store/xxfkk4gqnaimiwzi6mmsmcs9bl2r8y7f-isl-0.20' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.1965231Z copying path '/nix/store/aqga8f06jxy5a6ci4na35v7n09j8i74f-mpdecimal-4.0.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2049680Z copying path '/nix/store/wfxkyxmg47bhj098im5rp60hmkagn96x-mpfr-4.2.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2051026Z copying path '/nix/store/zi4768cbcny3vx6f8k2yqy3zp90jalhz-ncompress-5.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2066478Z copying path '/nix/store/a7pimibppfw2m3ryijnwwzx76i780bw2-gzip-1.13' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2079035Z copying path '/nix/store/s5y8cgwj9saik6hpxq6hvry31hggnxij-libyaml-0.2.5' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2111578Z copying path '/nix/store/1p1j0iv3c909kcs4d5300kcsnlwmbwyj-ncurses-6.4.20221231' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2114190Z copying path '/nix/store/vj1wkvkfgcgxr93b5p6kwjbqgrjnv7d9-ncurses-abi5-compat-6.4.20221231' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2183858Z copying path '/nix/store/aygalfgrn7pvxcqc45jw53b9gc29hwzs-nghttp2-1.64.0-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2366798Z copying path '/nix/store/n19lfs7ix2g9kdh6cf2pfaylbcwjay71-dav1d-1.5.0-dev' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2418332Z copying path '/nix/store/k1dsk0zyq43pvi7f76is2rx6l4aphm5z-openssl-3.3.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2419896Z copying path '/nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2421314Z copying path '/nix/store/mdmansf6zkzsnrcf4h3yav5kz93rh03y-patch-2.7.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2498250Z copying path '/nix/store/gkj66hn5cyi3d761nmcdpj35ngv7h8ph-pcre2-10.44' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2503656Z copying path '/nix/store/f86x63y57hwyx9nl4l098fpl93y3xrya-pixman-0.43.4' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2556527Z copying path '/nix/store/lw21wr626v5sdcaxxkv2k4zf1121hfc9-glibc-2.40-36-dev' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2564627Z copying path '/nix/store/gpbi7j64vk1my8gpqgylwf9iljqb09is-rhash-1.4.4' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2627863Z copying path '/nix/store/gm5g3xyn8iwxkag8gs6rf3ci64bqld80-util-linux-minimal-2.39.4-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2777980Z copying path '/nix/store/bdpc1864983kf51r3cznbrvnlkv4d9ff-xz-5.6.3' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.2882258Z copying path '/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:48.3002965Z copying path '/nix/store/ikjw6a952jd9wn5k06mkj710xzabssr0-libX11-1.8.10' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.3093772Z copying path '/nix/store/bzk3q2l71qwhycsip23y6rl5n881la4n-zlib-1.3.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.3118184Z copying path '/nix/store/0qqs7bkfk21h8vh7m3x84hphciqv75lm-libmpc-1.3.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.3388262Z copying path '/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:48.3657607Z copying path '/nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:48.3728403Z copying path '/nix/store/85amyk92rg19l4fy0qmy7wr4jmq8p5z0-gnugrep-3.11' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.3731343Z copying path '/nix/store/rp6b82pm6b7x03ngbzffsl3vj8pvay5v-libselinux-3.7' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4393282Z copying path '/nix/store/2qssg7pjgadwmqns6jm3qlr5bbdl4dcr-binutils-2.43.1-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4405815Z copying path '/nix/store/23y66ax8z30m8xl4brrz792xlsrm0syr-graphite2-1.3.14' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4415510Z copying path '/nix/store/nxg637az00fnm705pinlrpjac9b4hgsc-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4446309Z copying path '/nix/store/g4lksqp6l8qiab4a0as21s6556xh4gyp-file-5.45' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4467216Z copying path '/nix/store/1dmri839kv55917flq6pyvr6xf17cb29-lerc-4.0.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4544526Z copying path '/nix/store/kvzfyxs3v0nb2lvfx28c5hj0vz7j9737-libpng-apng-1.6.43' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.4931387Z copying path '/nix/store/llj89sgbf5512bnhx76khs7aq2pkhqjv-libvmaf-3.0.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.5078765Z copying path '/nix/store/43nf72jxw9m9mazn5qs7pdj52a7gmcr5-libyuv-1787' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.5083129Z copying path '/nix/store/s2lws03pga0vyq84kfa6h041n8csbg4p-ninja-1.12.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.5462904Z copying path '/nix/store/9q63d382x7k2h6cc2pfsb39ar3n6f9wg-patchelf-0.15.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.5621391Z copying path '/nix/store/26hcp8h792wl0h52c5r94qakhvk6q717-glib-2.82.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.5762560Z copying path '/nix/store/g9hgzjcj9g7hw3c2pzgz271b1g1jgc4w-krb5-1.21.3-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.5876027Z copying path '/nix/store/bwkb907myixfzzykp21m9iczkhrq5pfy-binutils-2.43.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.6187465Z copying path '/nix/store/d5y0sl4vwsb9m99r18zh1mx4fw9y70g6-libXext-1.3.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.6517680Z copying path '/nix/store/4krab2h0hd4wvxxmscxrw21pl77j4i7j-gcc-13.3.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.6545280Z copying path '/nix/store/waj425c88y21wccgk9zpyi3q48xq0sgk-freetype-2.13.3' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.6546867Z copying path '/nix/store/ln8sk1vlpzmm346lx30ifihqdw0fw4g9-libXpm-3.5.17' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.6548299Z copying path '/nix/store/7ygszkkili3kfqh789ivdgrhyrjshm5n-libXrender-0.9.11' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.6588848Z copying path '/nix/store/b1wvkjx96i3s7wblz38ya0zr8i93zbc5-coreutils-9.5' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.7406855Z copying path '/nix/store/1n0b29iid3y0w9i91v9zqdiwnx3inak0-libssh2-1.11.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.7667965Z copying path '/nix/store/zgcaxpjipkvdz3185gfb8ba63xw1sv4n-libwebp-1.4.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.7678556Z copying path '/nix/store/n0q4xhb9z19f0rfd1i8frw7a3ip3rgar-readline-8.2p13' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.7682617Z copying path '/nix/store/bbd59cqw259149r2ddk4w1q0lr2fch8c-sqlite-3.46.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.7763995Z copying path '/nix/store/5180mi672sl6ikiwyhvgnxasz6iqxws0-xz-5.6.3-bin' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.7847767Z copying path '/nix/store/8pys6a47askf0g75a1k73p3rx2wim7m6-zstd-1.5.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.8146729Z copying path '/nix/store/kabp82iq5p0l8zidw9ch1mrpq431g6jd-libaom-3.10.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.8339432Z copying path '/nix/store/dbkf2m0b3a2n9drrbz6ra4ljfx45d4aa-libvmaf-3.0.0-dev' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.9938495Z copying path '/nix/store/cxwsmlr3xh1ml4r0kgdjrknw7504b9f8-diffutils-3.10' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.9951936Z copying path '/nix/store/w8pnfazxqwmrqmwkb5zrz1bifsd8abxl-findutils-4.10.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.9954769Z copying path '/nix/store/6fklzkr5x213h868q31isgy82wpmb1yb-perl-5.40.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:48.9990190Z copying path '/nix/store/jfyibphs7pv1izw879lrmr0pp1x3llb8-fontconfig-2.15.0-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.0663426Z copying path '/nix/store/avwmwsn9v4an5v2a4k1gzbqk917avjn1-gts-0.7.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.1937209Z copying path '/nix/store/yxgc37sx1a0fswq3hvvld54491ryx6sf-harfbuzz-10.0.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.2043978Z copying path '/nix/store/x9as7x6f7cdgcskvvn3yp02m662krr7y-binutils-wrapper-2.43.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.2170355Z copying path '/nix/store/ps0zg8jx995br0s7k353qhal1ma3nnbd-curl-8.11.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.2603714Z copying path '/nix/store/n0gxk0ys2zgqqz6zcsq8qlv6nv5k6fpj-libarchive-3.7.7-lib' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.2616689Z copying path '/nix/store/zv1kaq7f1q20x62kbjv6pfjygw5jmwl6-python3-3.12.7' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.2619234Z copying path '/nix/store/qb69wvblgz1x2hkfxf7lwl9lg9xk4zpj-python3-3.9.20' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.2642450Z copying path '/nix/store/mgw74i0szz30zbmvgasvyws1y8mvkb86-libtiff-4.7.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.3758725Z copying path '/nix/store/9l20xx4bw18qgkicjcrsfx7vfykp9m8h-cairo-1.18.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.3765636Z copying path '/nix/store/a98zld1as826z4s0b71xs64k02arj4zj-libXft-2.3.8' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.4289938Z copying path '/nix/store/v567mv8b0bg0ph7xn61g33qqm484xxj0-libaom-3.10.0-bin' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.4334149Z copying path '/nix/store/spb2bpcnw0gbbr4x94cq8xs9n72hipwj-stdenv-linux' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.7088002Z copying path '/nix/store/4k2h9qsps52n1v56zq03yi67dwmxa81i-cmake-3.30.5' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.7092081Z copying path '/nix/store/xk1z1b27hck084x12pn24rk526arwwlz-libwebp-1.4.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:49.7093479Z copying path '/nix/store/alnzmaf07kv3dl4017vrzqngay5rx904-gdk-pixbuf-2.42.12' from 'https://cache.nixos.org'...
+2026-02-22T02:35:50.2970547Z building '/nix/store/ryf981zc9kshrrgm5c5dphnw879gn09m-builder.pl.drv'...
+2026-02-22T02:35:50.3003939Z copying path '/nix/store/1asppgbns142f1sqyr6sz843h0689a1k-libaom-3.10.0-dev' from 'https://cache.nixos.org'...
+2026-02-22T02:35:50.4968114Z copying path '/nix/store/vy93rplabj9l70a098rvp52ni9bg476v-pango-1.54.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:50.9148455Z copying path '/nix/store/96wajifckqya26aazk4lrig5m5npw5l2-libavif-1.1.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:51.6887637Z copying path '/nix/store/ascb2b0zncwlavz03zcj358p1i79hp64-gd-2.3.3' from 'https://cache.nixos.org'...
+2026-02-22T02:35:52.1848266Z copying path '/nix/store/lvx8m4mh18aiqlqp5hdjpg3b34a07p35-graphviz-12.2.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:52.7167154Z copying path '/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7466740Z copying path '/nix/store/wg6fhwksxkxn24rnynizrr6f4rvd9dkf-python3.12-intelhex-2.3.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7469471Z copying path '/nix/store/l67gyhnl63la5pxmq4kbhl0g6xrfsdff-python3.12-msgpack-1.1.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7474357Z copying path '/nix/store/qpb0z965ffwmny4p2m2jbbaqifkkb5y9-python3.12-docopt-0.6.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7477184Z copying path '/nix/store/qnfndbdg0k5s7zb47l5q9h7cszi56gpf-python3.12-packaging-24.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7485036Z copying path '/nix/store/qmm23pygh0kisvsm9wrfxw2s5km97670-python3.12-pyelftools-0.31' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7491182Z copying path '/nix/store/rs8cgrcn6pkdxs2ksnhs1a0x0pvx5sac-python3.12-progress-1.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7495232Z copying path '/nix/store/2k9j8zwlhd8vdpn0c4j5zgwkqr6digpx-python3.12-ruamel-base-1.0.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7496896Z copying path '/nix/store/2j2fcjlxczkx0yyjn3rqi1h9sd42r97v-python3.12-wrapt-1.16.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7499211Z copying path '/nix/store/3rghmwyhhwjaj3jmpc3drb8pzz9h14hj-python3.12-ruamel-yaml-clib-0.2.7' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7502234Z copying path '/nix/store/4743pgjalihwh1vb7jsy17ynw3s0xj04-python3.12-six-1.16.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7505048Z copying path '/nix/store/n2pgidpi7vpq2hbpylfpa4ck7avniipp-python3.12-typing-extensions-4.12.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.7508446Z copying path '/nix/store/j7q50pmxnawpif7kfimy51mjhjdjldns-python3.12-pyyaml-6.0.2' from 'https://cache.nixos.org'...
+2026-02-22T02:35:53.9079055Z copying path '/nix/store/4apajimszc47rxwcpvc3g3rj2icinl71-gcc-wrapper-13.3.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:54.1870225Z copying path '/nix/store/09wri7s7nlgp1fs4q4ysx96scbbmr74v-python3.12-anytree-2.12.1' from 'https://cache.nixos.org'...
+2026-02-22T02:35:54.1892561Z copying path '/nix/store/iz14w235v0nmwc3vnzrlbrkfpaj1qqka-python3.12-python-dateutil-2.9.0.post0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:54.1962260Z copying path '/nix/store/7cvm89dzrkw7i4pdidyd8mvny73k07nb-python3.12-ruamel-yaml-0.18.6' from 'https://cache.nixos.org'...
+2026-02-22T02:35:54.1997247Z copying path '/nix/store/7p4gqrzavx0lpks2l0j9945zkzv77ds0-python3.12-python-can-4.5.0' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-22T02:35:54.2760749Z copying path '/nix/store/gqjd4bvd683s55r0jcgc9q67rvjnmfc6-make-binary-wrapper-hook' from 'https://cache.nixos.org'...
+2026-02-22T02:35:54.5902236Z copying path '/nix/store/k1hzsby2pa29jwbbdgg3y4wj0rxn8dnn-python3.12-pykwalify-1.8.0' from 'https://cache.nixos.org'...
+2026-02-22T02:35:55.0969930Z building '/nix/store/14s41r3aqgw7vrl845jxarjcx3ivgvc4-python3-3.12.7-env.drv'...
+2026-02-22T02:35:55.3312700Z created 296 symlinks in user environment
+2026-02-22T02:36:05.8005934Z warning: Ignoring setting 'auto-allocate-uids' because experimental feature 'auto-allocate-uids' is not enabled
+2026-02-22T02:36:05.8007555Z warning: Ignoring setting 'impure-env' because experimental feature 'configurable-impure-env' is not enabled
+2026-02-22T02:36:05.8241524Z building '/nix/store/fpd8yh779rprnvqkim28yg3gizi8dhjs-zmk_glove80_lh.drv'...
+2026-02-22T02:36:05.8443963Z building '/nix/store/fiicvkwqrj76vds6l7780pbbkdbzn7z1-zmk_glove80_rh.drv'...
+2026-02-22T02:36:05.8755823Z Running phase: unpackPhase
+2026-02-22T02:36:05.8801199Z unpacking source archive /nix/store/ypiphcbzypxpz9p904y3da2z7rpgj17j-source
+2026-02-22T02:36:05.8965650Z Running phase: unpackPhase
+2026-02-22T02:36:05.9004447Z unpacking source archive /nix/store/ypiphcbzypxpz9p904y3da2z7rpgj17j-source
+2026-02-22T02:36:06.0503025Z source root is source/app
+2026-02-22T02:36:06.0655437Z source root is source/app
+2026-02-22T02:36:06.0946234Z Running phase: patchPhase
+2026-02-22T02:36:06.1013288Z Running phase: updateAutotoolsGnuConfigScriptsPhase
+2026-02-22T02:36:06.1096521Z Running phase: patchPhase
+2026-02-22T02:36:06.1155675Z Running phase: updateAutotoolsGnuConfigScriptsPhase
+2026-02-22T02:36:06.1258286Z Running phase: configurePhase
+2026-02-22T02:36:06.1301233Z fixing cmake files...
+2026-02-22T02:36:06.1397711Z Running phase: configurePhase
+2026-02-22T02:36:06.1438248Z fixing cmake files...
+2026-02-22T02:36:06.3263344Z cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/share/doc/zmk -DCMAKE_INSTALL_INFODIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/include -DCMAKE_INSTALL_SBINDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP= -DCMAKE_RANLIB= -DCMAKE_AR= -DCMAKE_C_COMPILER= -DCMAKE_CXX_COMPILER= -DCMAKE_INSTALL_PREFIX=/nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh -DZEPHYR_BASE=/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr -DBOARD_ROOT=. -DBOARD=glove80_lh -DZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb -DGNUARMEMB_TOOLCHAIN_PATH=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1 -DCMAKE_C_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-g++ -DCMAKE_AR=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ar -DCMAKE_RANLIB=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ranlib -DZEPHYR_MODULES=/nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis/cmsis\;/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic\;/nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt/tinycrypt\;/nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl/lvgl\;/nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc/picolibc\;/nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger/segger\;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module -DKEYMAP_FILE=/nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.keymap -DEXTRA_CONF_FILE=/nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.conf -DUSER_CACHE_DIR=/build/.cache
+2026-02-22T02:36:06.3354271Z Loading Zephyr default modules (Zephyr base (cached)).
+2026-02-22T02:36:06.3356185Z -- Application: /build/source/app
+2026-02-22T02:36:06.3356624Z -- CMake version: 3.30.5
+2026-02-22T02:36:06.3397453Z cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/share/doc/zmk -DCMAKE_INSTALL_INFODIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/include -DCMAKE_INSTALL_SBINDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP= -DCMAKE_RANLIB= -DCMAKE_AR= -DCMAKE_C_COMPILER= -DCMAKE_CXX_COMPILER= -DCMAKE_INSTALL_PREFIX=/nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh -DZEPHYR_BASE=/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr -DBOARD_ROOT=. -DBOARD=glove80_rh -DZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb -DGNUARMEMB_TOOLCHAIN_PATH=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1 -DCMAKE_C_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-g++ -DCMAKE_AR=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ar -DCMAKE_RANLIB=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ranlib -DZEPHYR_MODULES=/nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis/cmsis\;/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic\;/nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt/tinycrypt\;/nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl/lvgl\;/nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc/picolibc\;/nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger/segger\;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module -DKEYMAP_FILE=/nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.keymap -DEXTRA_CONF_FILE=/nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.conf -DUSER_CACHE_DIR=/build/.cache
+2026-02-22T02:36:06.3504608Z Loading Zephyr default modules (Zephyr base (cached)).
+2026-02-22T02:36:06.3507053Z -- Application: /build/source/app
+2026-02-22T02:36:06.3507477Z -- CMake version: 3.30.5
+2026-02-22T02:36:06.5413574Z -- Found Python3: /nix/store/3ym73yjdw7yg6sv3nwr0syligji76i3z-python3-3.12.7-env/bin/python (found suitable version "3.12.7", minimum required is "3.8") found components: Interpreter
+2026-02-22T02:36:06.5429798Z -- Cache files will be written to: /build/.cache
+2026-02-22T02:36:06.5475521Z -- Zephyr version: 3.5.0 (/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr)
+2026-02-22T02:36:06.5546443Z -- Found Python3: /nix/store/3ym73yjdw7yg6sv3nwr0syligji76i3z-python3-3.12.7-env/bin/python (found suitable version "3.12.7", minimum required is "3.8") found components: Interpreter
+2026-02-22T02:36:06.5555810Z -- Cache files will be written to: /build/.cache
+2026-02-22T02:36:06.5633004Z -- Zephyr version: 3.5.0 (/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr)
+2026-02-22T02:36:06.7299011Z -- Using keymap file: /nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.keymap
+2026-02-22T02:36:06.7358911Z -- Board: glove80_lh
+2026-02-22T02:36:06.7378759Z -- Using keymap file: /nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.keymap
+2026-02-22T02:36:06.7437854Z -- Board: glove80_rh
+2026-02-22T02:36:06.9148879Z -- Found toolchain: gnuarmemb (/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1)
+2026-02-22T02:36:06.9228489Z -- Found Dtc: /nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2/bin/dtc (found suitable version "1.7.2", minimum required is "1.4.6")
+2026-02-22T02:36:06.9233157Z -- Found BOARD.dts: /build/source/app/boards/arm/glove80/glove80_rh.dts
+2026-02-22T02:36:06.9236654Z -- Found devicetree overlay: /nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.keymap
+2026-02-22T02:36:06.9336226Z -- Found toolchain: gnuarmemb (/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1)
+2026-02-22T02:36:06.9397267Z -- Found Dtc: /nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2/bin/dtc (found suitable version "1.7.2", minimum required is "1.4.6")
+2026-02-22T02:36:06.9425540Z -- Found BOARD.dts: /build/source/app/boards/arm/glove80/glove80_lh.dts
+2026-02-22T02:36:06.9427078Z -- Found devicetree overlay: /nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.keymap
+2026-02-22T02:36:07.4194428Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_EXTEND_LINE_macos_v1_TKZ.
+2026-02-22T02:36:07.4196759Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_EXTEND_WORD_macos_v1_TKZ.
+2026-02-22T02:36:07.4199900Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_SELECT_LINE_macos_v1_TKZ.
+2026-02-22T02:36:07.4202073Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_SELECT_NONE_v1_TKZ.
+2026-02-22T02:36:07.4204019Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_SELECT_WORD_macos_v1_TKZ.
+2026-02-22T02:36:07.4206274Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-two-param.yaml for node /behaviors/mod_tab_chord_v2_TKZ.
+2026-02-22T02:36:07.4208295Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/mod_tab_v1_TKZ.
+2026-02-22T02:36:07.4210236Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/symb_dotdot_v1_TKZ.
+2026-02-22T02:36:07.4212877Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_index_hold_v1B_TKZ.
+2026-02-22T02:36:07.4215205Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_index_tap_v1B_TKZ.
+2026-02-22T02:36:07.4217334Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_middy_hold_v1B_TKZ.
+2026-02-22T02:36:07.4219429Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_middy_tap_v1B_TKZ.
+2026-02-22T02:36:07.4221483Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_pinky_hold_v1B_TKZ.
+2026-02-22T02:36:07.4223536Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_pinky_tap_v1B_TKZ.
+2026-02-22T02:36:07.4225766Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_ring_hold_v1B_TKZ.
+2026-02-22T02:36:07.4228086Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_ring_tap_v1B_TKZ.
+2026-02-22T02:36:07.4230144Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_index_hold_v1B_TKZ.
+2026-02-22T02:36:07.4232203Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_index_tap_v1B_TKZ.
+2026-02-22T02:36:07.4234269Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_middy_hold_v1B_TKZ.
+2026-02-22T02:36:07.4236490Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_middy_tap_v1B_TKZ.
+2026-02-22T02:36:07.4238561Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_pinky_hold_v1B_TKZ.
+2026-02-22T02:36:07.4240612Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_pinky_tap_v1B_TKZ.
+2026-02-22T02:36:07.4242670Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_ring_hold_v1B_TKZ.
+2026-02-22T02:36:07.4244705Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_ring_tap_v1B_TKZ.
+2026-02-22T02:36:07.4246869Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/AS_Shifted_v1_TKZ.
+2026-02-22T02:36:07.4248807Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/AS_v1_TKZ.
+2026-02-22T02:36:07.4250562Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_0.
+2026-02-22T02:36:07.4252618Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_1.
+2026-02-22T02:36:07.4254368Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_2.
+2026-02-22T02:36:07.4256552Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_3.
+2026-02-22T02:36:07.4258298Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_0.
+2026-02-22T02:36:07.4260108Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_1.
+2026-02-22T02:36:07.4261861Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_2.
+2026-02-22T02:36:07.4263641Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_3.
+2026-02-22T02:36:07.4265567Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-hold-tap.yaml for node /behaviors/magic.
+2026-02-22T02:36:07.4275843Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /macros/rgb_ug_status_macro.
+2026-02-22T02:36:07.4363591Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_EXTEND_LINE_macos_v1_TKZ.
+2026-02-22T02:36:07.4366878Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_EXTEND_WORD_macos_v1_TKZ.
+2026-02-22T02:36:07.4369688Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_SELECT_LINE_macos_v1_TKZ.
+2026-02-22T02:36:07.4371717Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_SELECT_NONE_v1_TKZ.
+2026-02-22T02:36:07.4374359Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/cur_SELECT_WORD_macos_v1_TKZ.
+2026-02-22T02:36:07.4376584Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-two-param.yaml for node /behaviors/mod_tab_chord_v2_TKZ.
+2026-02-22T02:36:07.4378643Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/mod_tab_v1_TKZ.
+2026-02-22T02:36:07.4380572Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/symb_dotdot_v1_TKZ.
+2026-02-22T02:36:07.4382588Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_index_hold_v1B_TKZ.
+2026-02-22T02:36:07.4384748Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_index_tap_v1B_TKZ.
+2026-02-22T02:36:07.4387065Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_middy_hold_v1B_TKZ.
+2026-02-22T02:36:07.4389216Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_middy_tap_v1B_TKZ.
+2026-02-22T02:36:07.4391353Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_pinky_hold_v1B_TKZ.
+2026-02-22T02:36:07.4393489Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_pinky_tap_v1B_TKZ.
+2026-02-22T02:36:07.4396048Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_ring_hold_v1B_TKZ.
+2026-02-22T02:36:07.4398161Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_left_ring_tap_v1B_TKZ.
+2026-02-22T02:36:07.4400321Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_index_hold_v1B_TKZ.
+2026-02-22T02:36:07.4402463Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_index_tap_v1B_TKZ.
+2026-02-22T02:36:07.4404601Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_middy_hold_v1B_TKZ.
+2026-02-22T02:36:07.4406914Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_middy_tap_v1B_TKZ.
+2026-02-22T02:36:07.4409048Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_pinky_hold_v1B_TKZ.
+2026-02-22T02:36:07.4411429Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_pinky_tap_v1B_TKZ.
+2026-02-22T02:36:07.4413571Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_ring_hold_v1B_TKZ.
+2026-02-22T02:36:07.4415879Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/HRM_right_ring_tap_v1B_TKZ.
+2026-02-22T02:36:07.4417985Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/AS_Shifted_v1_TKZ.
+2026-02-22T02:36:07.4419949Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro-one-param.yaml for node /behaviors/AS_v1_TKZ.
+2026-02-22T02:36:07.4424321Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_0.
+2026-02-22T02:36:07.4427343Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_1.
+2026-02-22T02:36:07.4429128Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_2.
+2026-02-22T02:36:07.4430845Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-tap-dance.yaml for node /behaviors/bt_3.
+2026-02-22T02:36:07.4432600Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_0.
+2026-02-22T02:36:07.4434355Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_1.
+2026-02-22T02:36:07.4436285Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_2.
+2026-02-22T02:36:07.4438043Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /behaviors/bt_select_3.
+2026-02-22T02:36:07.4439799Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-hold-tap.yaml for node /behaviors/magic.
+2026-02-22T02:36:07.4448183Z 'label' is marked as deprecated in 'properties:' in /build/source/app/dts/bindings/behaviors/zmk,behavior-macro.yaml for node /macros/rgb_ug_status_macro.
+2026-02-22T02:36:07.5460428Z -- Generated zephyr.dts: /build/source/app/build/zephyr/zephyr.dts
+2026-02-22T02:36:07.5461479Z -- Generated devicetree_generated.h: /build/source/app/build/zephyr/include/generated/devicetree_generated.h
+2026-02-22T02:36:07.5603449Z -- Generated zephyr.dts: /build/source/app/build/zephyr/zephyr.dts
+2026-02-22T02:36:07.5607087Z -- Generated devicetree_generated.h: /build/source/app/build/zephyr/include/generated/devicetree_generated.h
+2026-02-22T02:36:08.0105728Z -- Including generated dts.cmake file: /build/source/app/build/zephyr/dts.cmake
+2026-02-22T02:36:08.0324790Z -- Including generated dts.cmake file: /build/source/app/build/zephyr/dts.cmake
+2026-02-22T02:36:08.9495990Z 
+2026-02-22T02:36:08.9496648Z warning: Deprecated symbol NRF_STORE_REBOOT_TYPE_GPREGRET is enabled.
+2026-02-22T02:36:08.9497174Z 
+2026-02-22T02:36:08.9641993Z 
+2026-02-22T02:36:08.9642617Z warning: Deprecated symbol NRF_STORE_REBOOT_TYPE_GPREGRET is enabled.
+2026-02-22T02:36:08.9643178Z 
+2026-02-22T02:36:09.1295646Z Parsing /build/source/app/Kconfig
+2026-02-22T02:36:09.1296323Z Loaded configuration '/build/source/app/boards/arm/glove80/glove80_lh_defconfig'
+2026-02-22T02:36:09.1297345Z Merged configuration '/build/source/app/prj.conf'
+2026-02-22T02:36:09.1298258Z Merged configuration '/nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.conf'
+2026-02-22T02:36:09.1299250Z Configuration saved to '/build/source/app/build/zephyr/.config'
+2026-02-22T02:36:09.1299942Z Kconfig header saved to '/build/source/app/build/zephyr/include/generated/autoconf.h'
+2026-02-22T02:36:09.1349970Z Parsing /build/source/app/Kconfig
+2026-02-22T02:36:09.1350579Z Loaded configuration '/build/source/app/boards/arm/glove80/glove80_rh_defconfig'
+2026-02-22T02:36:09.1351235Z Merged configuration '/build/source/app/prj.conf'
+2026-02-22T02:36:09.1352235Z Merged configuration '/nix/store/8ijppglk716zacbk7h96zk692qc96hxr-zmk-custom-functions-lib/boards/glove80/glove80.conf'
+2026-02-22T02:36:09.1353412Z Configuration saved to '/build/source/app/build/zephyr/.config'
+2026-02-22T02:36:09.1354206Z Kconfig header saved to '/build/source/app/build/zephyr/include/generated/autoconf.h'
+2026-02-22T02:36:09.3762420Z -- Found GnuLd: /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.bfd (found version "2.40.0")
+2026-02-22T02:36:09.4107934Z -- Found GnuLd: /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.bfd (found version "2.40.0")
+2026-02-22T02:36:09.4555580Z -- The C compiler identification is GNU 12.3.1
+2026-02-22T02:36:09.4840712Z -- The C compiler identification is GNU 12.3.1
+2026-02-22T02:36:09.5246725Z -- The CXX compiler identification is GNU 12.3.1
+2026-02-22T02:36:09.5576871Z -- The ASM compiler identification is GNU
+2026-02-22T02:36:09.5577760Z -- The CXX compiler identification is GNU 12.3.1
+2026-02-22T02:36:09.5598433Z -- Found assembler: /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-gcc
+2026-02-22T02:36:09.5986846Z -- The ASM compiler identification is GNU
+2026-02-22T02:36:09.5993792Z -- Found assembler: /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-gcc
+2026-02-22T02:36:11.5846344Z CMake Warning at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/CMakeLists.txt:543 (message):
+2026-02-22T02:36:11.5847512Z   ZEPHYR_BASE=/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr
+2026-02-22T02:36:11.5848227Z   doesn't appear to be a git repository, please specify
+2026-02-22T02:36:11.5848736Z   '-DBUILD_VERSION=<version>'
+2026-02-22T02:36:11.5848985Z 
+2026-02-22T02:36:11.5848992Z 
+2026-02-22T02:36:11.5975925Z CMake Warning at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/CMakeLists.txt:543 (message):
+2026-02-22T02:36:11.5977691Z   ZEPHYR_BASE=/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr
+2026-02-22T02:36:11.5978665Z   doesn't appear to be a git repository, please specify
+2026-02-22T02:36:11.5979440Z   '-DBUILD_VERSION=<version>'
+2026-02-22T02:36:11.5984203Z 
+2026-02-22T02:36:11.5984238Z 
+2026-02-22T02:36:11.9149203Z CMake Warning at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/CMakeLists.txt:1993 (message):
+2026-02-22T02:36:11.9150106Z   
+2026-02-22T02:36:11.9150257Z 
+2026-02-22T02:36:11.9150635Z         The CMake build type was set to 'Release', but the optimization flag was set to '-Os'.
+2026-02-22T02:36:11.9151691Z         This may be intentional and the warning can be turned off by setting the CMake variable 'NO_BUILD_TYPE_WARNING'
+2026-02-22T02:36:11.9152391Z 
+2026-02-22T02:36:11.9152401Z 
+2026-02-22T02:36:11.9377264Z CMake Warning at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/CMakeLists.txt:1993 (message):
+2026-02-22T02:36:11.9381264Z   
+2026-02-22T02:36:11.9384166Z 
+2026-02-22T02:36:11.9388262Z         The CMake build type was set to 'Release', but the optimization flag was set to '-Os'.
+2026-02-22T02:36:11.9391987Z         This may be intentional and the warning can be turned off by setting the CMake variable 'NO_BUILD_TYPE_WARNING'
+2026-02-22T02:36:11.9396005Z 
+2026-02-22T02:36:11.9398069Z 
+2026-02-22T02:36:11.9877435Z -- Configuring done (5.7s)
+2026-02-22T02:36:12.0056219Z -- Configuring done (5.7s)
+2026-02-22T02:36:12.1511102Z -- Generating done (0.2s)
+2026-02-22T02:36:12.1511729Z CMake Warning:
+2026-02-22T02:36:12.1512169Z   Manually-specified variables were not used by the project:
+2026-02-22T02:36:12.1512577Z 
+2026-02-22T02:36:12.1512689Z     BUILD_TESTING
+2026-02-22T02:36:12.1512994Z     CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+2026-02-22T02:36:12.1513385Z     CMAKE_INSTALL_BINDIR
+2026-02-22T02:36:12.1513692Z     CMAKE_INSTALL_DOCDIR
+2026-02-22T02:36:12.1514024Z     CMAKE_INSTALL_INCLUDEDIR
+2026-02-22T02:36:12.1514358Z     CMAKE_INSTALL_INFODIR
+2026-02-22T02:36:12.1514665Z     CMAKE_INSTALL_LIBDIR
+2026-02-22T02:36:12.1515181Z     CMAKE_INSTALL_LIBEXECDIR
+2026-02-22T02:36:12.1515508Z     CMAKE_INSTALL_LOCALEDIR
+2026-02-22T02:36:12.1515833Z     CMAKE_INSTALL_MANDIR
+2026-02-22T02:36:12.1516147Z     CMAKE_INSTALL_OLDINCLUDEDIR
+2026-02-22T02:36:12.1516485Z     CMAKE_INSTALL_SBINDIR
+2026-02-22T02:36:12.1516827Z     CMAKE_POLICY_DEFAULT_CMP0025
+2026-02-22T02:36:12.1517066Z 
+2026-02-22T02:36:12.1517073Z 
+2026-02-22T02:36:12.1517290Z -- Build files have been written to: /build/source/app/build
+2026-02-22T02:36:12.1589119Z -- Generating done (0.2s)
+2026-02-22T02:36:12.1589484Z CMake Warning:
+2026-02-22T02:36:12.1607392Z   Manually-specified variables were not used by the project:
+2026-02-22T02:36:12.1609066Z 
+2026-02-22T02:36:12.1610237Z     BUILD_TESTING
+2026-02-22T02:36:12.1610820Z     CMAKE_EXPORT_NO_PACKAGE_REGISTRY
+2026-02-22T02:36:12.1611439Z     CMAKE_INSTALL_BINDIR
+2026-02-22T02:36:12.1611946Z     CMAKE_INSTALL_DOCDIR
+2026-02-22T02:36:12.1612280Z     CMAKE_INSTALL_INCLUDEDIR
+2026-02-22T02:36:12.1612660Z     CMAKE_INSTALL_INFODIR
+2026-02-22T02:36:12.1612995Z     CMAKE_INSTALL_LIBDIR
+2026-02-22T02:36:12.1613322Z     CMAKE_INSTALL_LIBEXECDIR
+2026-02-22T02:36:12.1613643Z     CMAKE_INSTALL_LOCALEDIR
+2026-02-22T02:36:12.1613975Z     CMAKE_INSTALL_MANDIR
+2026-02-22T02:36:12.1614328Z     CMAKE_INSTALL_OLDINCLUDEDIR
+2026-02-22T02:36:12.1614673Z     CMAKE_INSTALL_SBINDIR
+2026-02-22T02:36:12.1615152Z     CMAKE_POLICY_DEFAULT_CMP0025
+2026-02-22T02:36:12.1615400Z 
+2026-02-22T02:36:12.1615407Z 
+2026-02-22T02:36:12.1615637Z -- Build files have been written to: /build/source/app/build
+2026-02-22T02:36:12.1877985Z cmake: enabled parallel building
+2026-02-22T02:36:12.1879858Z cmake: enabled parallel installing
+2026-02-22T02:36:12.1904601Z Running phase: buildPhase
+2026-02-22T02:36:12.1953765Z cmake: enabled parallel building
+2026-02-22T02:36:12.1954249Z cmake: enabled parallel installing
+2026-02-22T02:36:12.1959681Z build flags: -j4
+2026-02-22T02:36:12.1977580Z Running phase: buildPhase
+2026-02-22T02:36:12.2031735Z build flags: -j4
+2026-02-22T02:36:12.2337787Z [1/365] Preparing syscall dependency handling
+2026-02-22T02:36:12.2355422Z 
+2026-02-22T02:36:12.2356026Z [2/365] Generating include/generated/version.h
+2026-02-22T02:36:12.2356819Z -- Zephyr version: 3.5.0 (/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr)
+2026-02-22T02:36:12.2388270Z [1/323] Preparing syscall dependency handling
+2026-02-22T02:36:12.2389138Z 
+2026-02-22T02:36:12.2389558Z [3/365] Generating include/generated/app_version.h
+2026-02-22T02:36:12.2442539Z [2/323] Generating include/generated/version.h
+2026-02-22T02:36:12.2443293Z -- Zephyr version: 3.5.0 (/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr)
+2026-02-22T02:36:12.2453116Z [3/323] Generating include/generated/app_version.h
+2026-02-22T02:36:12.2722076Z [4/365] Generating misc/generated/syscalls_subdirs.trigger
+2026-02-22T02:36:12.2769736Z [4/323] Generating misc/generated/syscalls_subdirs.trigger
+2026-02-22T02:36:12.5542480Z [5/365] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+2026-02-22T02:36:12.5646491Z [5/323] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+2026-02-22T02:36:12.6416378Z [6/365] Generating include/generated/syscall_dispatch.c, include/generated/syscall_list.h
+2026-02-22T02:36:12.6932921Z [7/365] Generating include/generated/driver-validation.h
+2026-02-22T02:36:12.6937323Z [6/323] Generating include/generated/syscall_dispatch.c, include/generated/syscall_list.h
+2026-02-22T02:36:12.7295712Z [8/365] Generating include/generated/kobj-types-enum.h, include/generated/otype-to-str.h, include/generated/otype-to-size.h
+2026-02-22T02:36:12.7472986Z [7/323] Generating include/generated/driver-validation.h
+2026-02-22T02:36:12.7645380Z [8/323] Generating include/generated/kobj-types-enum.h, include/generated/otype-to-str.h, include/generated/otype-to-size.h
+2026-02-22T02:36:12.8390193Z [9/365] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+2026-02-22T02:36:12.8712626Z [9/323] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+2026-02-22T02:36:12.9237496Z [10/365] Generating include/generated/offsets.h
+2026-02-22T02:36:12.9566106Z [11/365] Building C object CMakeFiles/app.dir/src/stdlib.c.obj
+2026-02-22T02:36:12.9722394Z [10/323] Generating include/generated/offsets.h
+2026-02-22T02:36:13.0058306Z [12/365] Generating ../../../include/generated/libc/minimal/strerror_table.h
+2026-02-22T02:36:13.0319856Z [11/323] Building C object CMakeFiles/app.dir/src/stdlib.c.obj
+2026-02-22T02:36:13.0830717Z [12/323] Generating ../../../include/generated/libc/minimal/strerror_table.h
+2026-02-22T02:36:13.1502774Z [13/365] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+2026-02-22T02:36:13.2796260Z [13/323] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+2026-02-22T02:36:13.3556128Z [14/365] Building C object CMakeFiles/app.dir/src/activity.c.obj
+2026-02-22T02:36:13.4075453Z [15/365] Building C object CMakeFiles/app.dir/src/matrix_transform.c.obj
+2026-02-22T02:36:13.4633907Z [14/323] Building C object CMakeFiles/app.dir/src/matrix_transform.c.obj
+2026-02-22T02:36:13.4739245Z [15/323] Building C object CMakeFiles/app.dir/src/activity.c.obj
+2026-02-22T02:36:13.5534021Z [16/365] Building C object CMakeFiles/app.dir/src/behavior.c.obj
+2026-02-22T02:36:13.6491699Z [16/323] Building C object CMakeFiles/app.dir/src/behavior.c.obj
+2026-02-22T02:36:13.6749884Z [17/365] Building C object CMakeFiles/app.dir/src/sensors.c.obj
+2026-02-22T02:36:13.8412880Z [17/323] Building C object CMakeFiles/app.dir/src/sensors.c.obj
+2026-02-22T02:36:13.9158432Z [18/365] Building C object CMakeFiles/app.dir/src/physical_layouts.c.obj
+2026-02-22T02:36:13.9389637Z [19/365] Building C object CMakeFiles/app.dir/src/event_manager.c.obj
+2026-02-22T02:36:13.9580467Z [18/323] Building C object CMakeFiles/app.dir/src/event_manager.c.obj
+2026-02-22T02:36:14.0158598Z [20/365] Building C object CMakeFiles/app.dir/src/pm.c.obj
+2026-02-22T02:36:14.0221762Z [19/323] Building C object CMakeFiles/app.dir/src/physical_layouts.c.obj
+2026-02-22T02:36:14.0372414Z [20/323] Building C object CMakeFiles/app.dir/src/pm.c.obj
+2026-02-22T02:36:14.2356876Z [21/365] Building C object CMakeFiles/app.dir/src/ext_power_generic.c.obj
+2026-02-22T02:36:14.2588200Z [22/365] Building C object CMakeFiles/app.dir/src/events/position_state_changed.c.obj
+2026-02-22T02:36:14.2733363Z [23/365] Building C object CMakeFiles/app.dir/src/events/activity_state_changed.c.obj
+2026-02-22T02:36:14.3302242Z [21/323] Building C object CMakeFiles/app.dir/src/events/position_state_changed.c.obj
+2026-02-22T02:36:14.5213484Z [22/323] Building C object CMakeFiles/app.dir/src/events/activity_state_changed.c.obj
+2026-02-22T02:36:14.5727797Z [24/365] Building C object CMakeFiles/app.dir/src/events/sensor_event.c.obj
+2026-02-22T02:36:14.6668283Z [23/323] Building C object CMakeFiles/app.dir/src/ext_power_generic.c.obj
+2026-02-22T02:36:14.7392232Z [25/365] Building C object CMakeFiles/app.dir/src/events/usb_conn_state_changed.c.obj
+2026-02-22T02:36:14.7558293Z [24/323] Building C object CMakeFiles/app.dir/src/events/sensor_event.c.obj
+2026-02-22T02:36:14.9972386Z [25/323] Building C object CMakeFiles/app.dir/src/behaviors/behavior_reset.c.obj
+2026-02-22T02:36:15.0424146Z [26/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_ext_power.c.obj
+2026-02-22T02:36:15.0429652Z [26/323] Building C object CMakeFiles/app.dir/src/events/usb_conn_state_changed.c.obj
+2026-02-22T02:36:15.1498168Z [27/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_reset.c.obj
+2026-02-22T02:36:15.2039947Z [28/365] Building C object CMakeFiles/app.dir/src/pointing/input_listener.c.obj
+2026-02-22T02:36:15.2068774Z [27/323] Building C object CMakeFiles/app.dir/src/behaviors/behavior_rgb_underglow.c.obj
+2026-02-22T02:36:15.2483755Z [28/323] Building C object CMakeFiles/app.dir/src/behaviors/behavior_ext_power.c.obj
+2026-02-22T02:36:15.4522346Z [29/323] Building C object CMakeFiles/app.dir/src/behaviors/behavior_backlight.c.obj
+2026-02-22T02:36:15.5016690Z [29/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_press.c.obj
+2026-02-22T02:36:15.5488795Z [30/323] Building C object CMakeFiles/app.dir/src/events/battery_state_changed.c.obj
+2026-02-22T02:36:15.6422920Z [31/323] Building C object CMakeFiles/app.dir/src/events/split_peripheral_status_changed.c.obj
+2026-02-22T02:36:15.7366708Z [30/365] Building C object CMakeFiles/app.dir/src/hid.c.obj
+2026-02-22T02:36:15.7409041Z [32/323] Building C object CMakeFiles/app.dir/src/battery.c.obj
+2026-02-22T02:36:16.0462240Z [31/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_sticky_key.c.obj
+2026-02-22T02:36:16.1544061Z [32/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_caps_word.c.obj
+2026-02-22T02:36:16.1930284Z [33/323] Building C object CMakeFiles/app.dir/src/usb.c.obj
+2026-02-22T02:36:16.1977040Z [33/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_hold_tap.c.obj
+2026-02-22T02:36:16.1980529Z [34/323] Building C object CMakeFiles/app.dir/src/split/bluetooth/service.c.obj
+2026-02-22T02:36:16.1983858Z [35/323] Building C object CMakeFiles/app.dir/src/split/bluetooth/peripheral.c.obj
+2026-02-22T02:36:16.2523664Z [34/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_repeat.c.obj
+2026-02-22T02:36:16.5977994Z [35/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_momentary_layer.c.obj
+2026-02-22T02:36:16.5979641Z [36/323] Building C object CMakeFiles/app.dir/src/split/peripheral.c.obj
+2026-02-22T02:36:16.6008406Z [36/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_outputs.c.obj
+2026-02-22T02:36:16.6239395Z [37/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_macro.c.obj
+2026-02-22T02:36:16.6619590Z [37/323] Building C object CMakeFiles/app.dir/src/workqueue.c.obj
+2026-02-22T02:36:16.6942546Z [38/323] Building C object CMakeFiles/app.dir/src/backlight.c.obj
+2026-02-22T02:36:16.7606204Z [39/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32c_sw.c.obj
+2026-02-22T02:36:16.8107445Z [38/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_mod_morph.c.obj
+2026-02-22T02:36:16.8205619Z [40/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32_sw.c.obj
+2026-02-22T02:36:16.9718003Z [41/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
+2026-02-22T02:36:16.9822227Z [42/323] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-02-22T02:36:17.0164016Z [43/323] Building C object CMakeFiles/app.dir/src/settings/reset_settings_nvs.c.obj
+2026-02-22T02:36:17.0385721Z [39/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj
+2026-02-22T02:36:17.0448778Z [44/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc7_sw.c.obj
+2026-02-22T02:36:17.0565099Z [45/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
+2026-02-22T02:36:17.0802310Z [46/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc4_sw.c.obj
+2026-02-22T02:36:17.0894653Z [40/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_none.c.obj
+2026-02-22T02:36:17.1010921Z [41/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_transparent.c.obj
+2026-02-22T02:36:17.1350141Z [42/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_to_layer.c.obj
+2026-02-22T02:36:17.1709592Z [47/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/hex.c.obj
+2026-02-22T02:36:17.1788302Z [48/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/dec.c.obj
+2026-02-22T02:36:17.2407465Z [49/323] Building C object CMakeFiles/app.dir/src/rgb_underglow.c.obj
+2026-02-22T02:36:17.5415603Z [50/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+2026-02-22T02:36:17.5439736Z [43/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_mouse_key_press.c.obj
+2026-02-22T02:36:17.6025694Z [51/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+2026-02-22T02:36:17.7046983Z [52/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/rb.c.obj
+2026-02-22T02:36:17.7545186Z [44/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_input_two_axis.c.obj
+2026-02-22T02:36:17.7801063Z [53/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/timeutil.c.obj
+2026-02-22T02:36:17.8435181Z [54/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+2026-02-22T02:36:17.8749775Z [55/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+2026-02-22T02:36:18.0070472Z [45/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_tap_dance.c.obj
+2026-02-22T02:36:18.0309937Z [56/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/multi_heap.c.obj
+2026-02-22T02:36:18.0606701Z [46/365] Building C object CMakeFiles/app.dir/src/behavior_queue.c.obj
+2026-02-22T02:36:18.0950754Z [47/365] Building C object CMakeFiles/app.dir/src/conditional_layer.c.obj
+2026-02-22T02:36:18.3499920Z [57/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap-validate.c.obj
+2026-02-22T02:36:18.3852989Z [58/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap.c.obj
+2026-02-22T02:36:18.4059179Z [48/365] Building C object CMakeFiles/app.dir/src/combo.c.obj
+2026-02-22T02:36:18.4729869Z [49/365] Building C object CMakeFiles/app.dir/src/events/endpoint_changed.c.obj
+2026-02-22T02:36:18.4997142Z [59/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/bitarray.c.obj
+2026-02-22T02:36:18.5640772Z [60/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/onoff.c.obj
+2026-02-22T02:36:18.6674570Z [50/365] Building C object CMakeFiles/app.dir/src/hid_listener.c.obj
+2026-02-22T02:36:18.7406969Z [61/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf.c.obj
+2026-02-22T02:36:18.7505831Z [62/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/notify.c.obj
+2026-02-22T02:36:18.8066428Z [51/365] Building C object CMakeFiles/app.dir/src/events/layer_state_changed.c.obj
+2026-02-22T02:36:18.9105847Z [63/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_nano.c.obj
+2026-02-22T02:36:18.9340530Z [64/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+2026-02-22T02:36:18.9655563Z [65/323] Building ASM object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/common/soc_nrf_common.S.obj
+2026-02-22T02:36:19.0310987Z [66/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/reboot.c.obj
+2026-02-22T02:36:19.0394292Z [67/323] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+2026-02-22T02:36:19.0459568Z [52/365] Building C object CMakeFiles/app.dir/src/events/modifiers_state_changed.c.obj
+2026-02-22T02:36:19.0577301Z [53/365] Building C object CMakeFiles/app.dir/src/events/keycode_state_changed.c.obj
+2026-02-22T02:36:19.0857983Z [54/365] Building C object CMakeFiles/app.dir/src/endpoints.c.obj
+2026-02-22T02:36:19.1118640Z [68/323] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/poweroff.c.obj
+2026-02-22T02:36:19.3264827Z [55/365] Building C object CMakeFiles/app.dir/src/events/ble_active_profile_changed.c.obj
+2026-02-22T02:36:19.3305739Z [69/323] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/validate_enabled_instances.c.obj
+2026-02-22T02:36:19.3414721Z [70/323] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/common/poweroff.c.obj
+2026-02-22T02:36:19.3617938Z [71/323] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/validate_base_addresses.c.obj
+2026-02-22T02:36:19.5344201Z [56/365] Building C object CMakeFiles/app.dir/src/hid_indicators.c.obj
+2026-02-22T02:36:19.5740603Z [57/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_bt.c.obj
+2026-02-22T02:36:19.6754541Z [72/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/pm/device.c.obj
+2026-02-22T02:36:19.7169773Z [73/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/mem_mgmt/mem_attr.c.obj
+2026-02-22T02:36:19.7219920Z [74/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map.c.obj
+2026-02-22T02:36:19.7948969Z [75/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+2026-02-22T02:36:19.9362503Z [76/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_default.c.obj
+2026-02-22T02:36:20.0195800Z [58/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_rgb_underglow.c.obj
+2026-02-22T02:36:20.0420735Z [77/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_layout.c.obj
+2026-02-22T02:36:20.3533811Z [59/365] Building C object CMakeFiles/app.dir/src/hog.c.obj
+2026-02-22T02:36:20.4219797Z [60/365] Building C object CMakeFiles/app.dir/src/behaviors/behavior_backlight.c.obj
+2026-02-22T02:36:20.4715390Z [78/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/fs/nvs/nvs.c.obj
+2026-02-22T02:36:20.4927214Z [61/365] Building C object CMakeFiles/app.dir/src/keymap.c.obj
+2026-02-22T02:36:20.7340571Z [62/365] Building C object CMakeFiles/app.dir/src/events/battery_state_changed.c.obj
+2026-02-22T02:36:20.8233195Z [79/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_transfer.c.obj
+2026-02-22T02:36:20.8523742Z [63/365] Building C object CMakeFiles/app.dir/src/events/hid_indicators_changed.c.obj
+2026-02-22T02:36:20.8727978Z [80/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/bluetooth/services/dis.c.obj
+2026-02-22T02:36:20.9190178Z [81/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/net/lib/utils/addr_utils.c.obj
+2026-02-22T02:36:21.0290750Z [64/365] Building C object CMakeFiles/app.dir/src/battery.c.obj
+2026-02-22T02:36:21.0392693Z [82/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_descriptor.c.obj
+2026-02-22T02:36:21.0458362Z [65/365] Building C object CMakeFiles/app.dir/src/events/split_peripheral_status_changed.c.obj
+2026-02-22T02:36:21.2729239Z [66/365] Building C object CMakeFiles/app.dir/src/ble.c.obj
+2026-02-22T02:36:21.3102778Z [83/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/bluetooth/services/bas.c.obj
+2026-02-22T02:36:21.3690436Z [84/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings.c.obj
+2026-02-22T02:36:21.3896000Z [85/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_store.c.obj
+2026-02-22T02:36:21.6399506Z [67/365] Building C object CMakeFiles/app.dir/src/usb.c.obj
+2026-02-22T02:36:21.6650493Z [86/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_init.c.obj
+2026-02-22T02:36:21.6835457Z [87/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_line.c.obj
+2026-02-22T02:36:21.7404558Z [88/323] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/utils.c.obj
+2026-02-22T02:36:21.7931515Z [68/365] Building C object CMakeFiles/app.dir/src/split/central.c.obj
+2026-02-22T02:36:21.8060464Z [89/323] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/ecc_dh.c.obj
+2026-02-22T02:36:21.8711973Z [69/365] Building C object CMakeFiles/app.dir/src/usb_hid.c.obj
+2026-02-22T02:36:21.9035952Z [90/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_nvs.c.obj
+2026-02-22T02:36:21.9579343Z [91/323] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_device.c.obj
+2026-02-22T02:36:21.9830532Z [92/323] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/aes_decrypt.c.obj
+2026-02-22T02:36:22.0253244Z [93/323] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/aes_encrypt.c.obj
+2026-02-22T02:36:22.1128137Z [94/323] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/cmac_mode.c.obj
+2026-02-22T02:36:22.1528897Z [95/323] Linking C static library zephyr/arch/common/libisr_tables.a
+2026-02-22T02:36:22.2113259Z [70/365] Building C object CMakeFiles/app.dir/src/workqueue.c.obj
+2026-02-22T02:36:22.2258029Z [96/323] Generating linker_zephyr_pre0.cmd
+2026-02-22T02:36:22.2293901Z [97/323] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+2026-02-22T02:36:22.2596315Z [98/323] Building ASM object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi_on_reset.S.obj
+2026-02-22T02:36:22.4247066Z [71/365] Building C object CMakeFiles/app.dir/src/backlight.c.obj
+2026-02-22T02:36:22.4431950Z [99/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/exc_exit.S.obj
+2026-02-22T02:36:22.4845684Z [100/323] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/ecc.c.obj
+2026-02-22T02:36:22.5203799Z [101/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault_s.S.obj
+2026-02-22T02:36:22.5643169Z [102/323] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi.c.obj
+2026-02-22T02:36:22.5700052Z [72/365] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-02-22T02:36:22.6478333Z [73/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32c_sw.c.obj
+2026-02-22T02:36:22.6591709Z [74/365] Building C object CMakeFiles/app.dir/src/rgb_underglow.c.obj
+2026-02-22T02:36:22.7070582Z [75/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32_sw.c.obj
+2026-02-22T02:36:22.7139734Z [103/323] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/fatal.c.obj
+2026-02-22T02:36:22.7551092Z [76/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
+2026-02-22T02:36:22.7647504Z [77/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
+2026-02-22T02:36:22.8120107Z [78/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc7_sw.c.obj
+2026-02-22T02:36:22.8229901Z [104/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fpu.c.obj
+2026-02-22T02:36:22.8384701Z [105/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_init.c.obj
+2026-02-22T02:36:22.8585856Z [79/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc4_sw.c.obj
+2026-02-22T02:36:22.8945963Z [80/365] Building C object CMakeFiles/app.dir/src/settings/reset_settings_nvs.c.obj
+2026-02-22T02:36:22.9189892Z [106/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/reset.S.obj
+2026-02-22T02:36:22.9782287Z [81/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/dec.c.obj
+2026-02-22T02:36:23.0016878Z [107/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/vector_table.S.obj
+2026-02-22T02:36:23.0865571Z [82/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/hex.c.obj
+2026-02-22T02:36:23.1178057Z [108/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/scb.c.obj
+2026-02-22T02:36:23.1401599Z [109/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread_abort.c.obj
+2026-02-22T02:36:23.2122245Z [110/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap_helper.S.obj
+2026-02-22T02:36:23.3819680Z [111/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/prep_c.c.obj
+2026-02-22T02:36:23.4771249Z [112/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap.c.obj
+2026-02-22T02:36:23.4991192Z [113/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/cpu_idle.S.obj
+2026-02-22T02:36:23.5101533Z [83/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+2026-02-22T02:36:23.5200215Z [114/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_manage.c.obj
+2026-02-22T02:36:23.5363187Z [84/365] Building C object CMakeFiles/app.dir/src/split/bluetooth/central.c.obj
+2026-02-22T02:36:23.5803376Z [115/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault.c.obj
+2026-02-22T02:36:23.5963743Z [85/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+2026-02-22T02:36:23.6227417Z [116/323] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread.c.obj
+2026-02-22T02:36:23.6899082Z [117/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/atoi.c.obj
+2026-02-22T02:36:23.7028965Z [118/323] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/isr_wrapper.S.obj
+2026-02-22T02:36:23.7789144Z [86/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/timeutil.c.obj
+2026-02-22T02:36:23.7975548Z [119/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtol.c.obj
+2026-02-22T02:36:23.8042637Z [87/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/rb.c.obj
+2026-02-22T02:36:23.8128038Z [120/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtoul.c.obj
+2026-02-22T02:36:23.8557806Z [88/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+2026-02-22T02:36:23.8847839Z [121/323] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_core_mpu.c.obj
+2026-02-22T02:36:23.9079702Z [89/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+2026-02-22T02:36:23.9186677Z [122/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtoull.c.obj
+2026-02-22T02:36:23.9216770Z [123/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtoll.c.obj
+2026-02-22T02:36:23.9618145Z [124/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/bsearch.c.obj
+2026-02-22T02:36:24.0755868Z [125/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strerror.c.obj
+2026-02-22T02:36:24.0789824Z [90/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/multi_heap.c.obj
+2026-02-22T02:36:24.0968226Z [126/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/qsort.c.obj
+2026-02-22T02:36:24.1441582Z [127/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strncasecmp.c.obj
+2026-02-22T02:36:24.1530129Z [128/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strstr.c.obj
+2026-02-22T02:36:24.2152106Z [129/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strspn.c.obj
+2026-02-22T02:36:24.2762828Z [130/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/exit.c.obj
+2026-02-22T02:36:24.2799261Z [131/323] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu.c.obj
+2026-02-22T02:36:24.2982085Z [91/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap.c.obj
+2026-02-22T02:36:24.3799636Z [132/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/string.c.obj
+2026-02-22T02:36:24.4116522Z [92/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap-validate.c.obj
+2026-02-22T02:36:24.4658242Z [93/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/bitarray.c.obj
+2026-02-22T02:36:24.5063440Z [133/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/math/sqrtf.c.obj
+2026-02-22T02:36:24.6047441Z [134/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/fprintf.c.obj
+2026-02-22T02:36:24.6119216Z [135/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/stdout_console.c.obj
+2026-02-22T02:36:24.6267233Z [136/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/sprintf.c.obj
+2026-02-22T02:36:24.6359638Z [137/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/math/sqrt.c.obj
+2026-02-22T02:36:24.6555521Z [94/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/notify.c.obj
+2026-02-22T02:36:24.6702250Z [95/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/onoff.c.obj
+2026-02-22T02:36:24.6899269Z [138/323] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/string/strnlen.c.obj
+2026-02-22T02:36:24.8459732Z [96/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf.c.obj
+2026-02-22T02:36:24.8569627Z [97/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/reboot.c.obj
+2026-02-22T02:36:24.9149722Z [98/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_nano.c.obj
+2026-02-22T02:36:24.9453849Z [99/365] Building ASM object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/common/soc_nrf_common.S.obj
+2026-02-22T02:36:24.9866032Z [100/365] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+2026-02-22T02:36:24.9929312Z [139/323] Building C object zephyr/soc/soc/arm/common/cortex_m/CMakeFiles/soc__arm__common__cortex_m.dir/arm_mpu_regions.c.obj
+2026-02-22T02:36:25.0076579Z [140/323] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/time/gmtime.c.obj
+2026-02-22T02:36:25.0117749Z [101/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+2026-02-22T02:36:25.0300173Z [141/323] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+2026-02-22T02:36:25.1077270Z [142/323] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+2026-02-22T02:36:25.1246018Z [102/365] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/poweroff.c.obj
+2026-02-22T02:36:25.2456294Z [103/365] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/validate_base_addresses.c.obj
+2026-02-22T02:36:25.3374091Z [104/365] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/common/poweroff.c.obj
+2026-02-22T02:36:25.3414802Z [105/365] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/validate_enabled_instances.c.obj
+2026-02-22T02:36:25.3775786Z [143/323] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/rand32_entropy_device.c.obj
+2026-02-22T02:36:25.4072786Z [144/323] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/addr.c.obj
+2026-02-22T02:36:25.4110401Z [145/323] Building C object zephyr/boards/boards/arm/glove80_rh/CMakeFiles/..__..__..__..__build__source__app__boards__arm__glove80.dir/usb_serial_number.c.obj
+2026-02-22T02:36:25.4284559Z [146/323] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/rand32_xoshiro128.c.obj
+2026-02-22T02:36:25.5031524Z [147/323] Building C object zephyr/soc/soc/arm/nordic_nrf/nrf52/CMakeFiles/soc__arm__nordic_nrf__nrf52.dir/soc.c.obj
+2026-02-22T02:36:25.5216586Z [106/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/mem_mgmt/mem_attr.c.obj
+2026-02-22T02:36:25.7388312Z [148/323] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/dummy.c.obj
+2026-02-22T02:36:25.7558084Z [107/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map.c.obj
+2026-02-22T02:36:25.7617582Z [108/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_default.c.obj
+2026-02-22T02:36:25.8140037Z [149/323] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/bt_str.c.obj
+2026-02-22T02:36:25.8319722Z [109/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+2026-02-22T02:36:25.8571208Z [110/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/pm/device.c.obj
+2026-02-22T02:36:25.8637585Z [150/323] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/rpa.c.obj
+2026-02-22T02:36:25.9992287Z [111/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_layout.c.obj
+2026-02-22T02:36:26.0523767Z [151/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/uuid.c.obj
+2026-02-22T02:36:26.1805767Z [152/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/long_wq.c.obj
+2026-02-22T02:36:26.2111563Z [153/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_ecc.c.obj
+2026-02-22T02:36:26.2245562Z [154/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/addr.c.obj
+2026-02-22T02:36:26.5209260Z [112/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/fs/nvs/nvs.c.obj
+2026-02-22T02:36:26.5570734Z [155/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/data.c.obj
+2026-02-22T02:36:26.6136988Z [156/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/buf.c.obj
+2026-02-22T02:36:26.6753327Z [157/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/settings.c.obj
+2026-02-22T02:36:26.8365453Z [113/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_transfer.c.obj
+2026-02-22T02:36:26.8541585Z [114/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/bluetooth/services/dis.c.obj
+2026-02-22T02:36:26.8935624Z [115/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/net/lib/utils/addr_utils.c.obj
+2026-02-22T02:36:26.9169131Z [158/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_common.c.obj
+2026-02-22T02:36:27.0146605Z [116/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_descriptor.c.obj
+2026-02-22T02:36:27.3134627Z [117/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/bluetooth/services/bas.c.obj
+2026-02-22T02:36:27.3572322Z [118/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_store.c.obj
+2026-02-22T02:36:27.6121780Z [159/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/ecc.c.obj
+2026-02-22T02:36:27.6172061Z [119/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings.c.obj
+2026-02-22T02:36:27.6831864Z [160/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/adv.c.obj
+2026-02-22T02:36:27.6960643Z [120/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_init.c.obj
+2026-02-22T02:36:27.7643580Z [121/365] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/utils.c.obj
+2026-02-22T02:36:27.8481979Z [122/365] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/ecc_dh.c.obj
+2026-02-22T02:36:27.9026931Z [123/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_line.c.obj
+2026-02-22T02:36:27.9118676Z [124/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_device.c.obj
+2026-02-22T02:36:28.0906750Z [125/365] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/aes_encrypt.c.obj
+2026-02-22T02:36:28.1404576Z [126/365] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/aes_decrypt.c.obj
+2026-02-22T02:36:28.1456201Z [127/365] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_nvs.c.obj
+2026-02-22T02:36:28.2444307Z [128/365] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/cmac_mode.c.obj
+2026-02-22T02:36:28.2730384Z [129/365] Linking C static library zephyr/arch/common/libisr_tables.a
+2026-02-22T02:36:28.3468776Z [130/365] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+2026-02-22T02:36:28.3720709Z [131/365] Generating linker_zephyr_pre0.cmd
+2026-02-22T02:36:28.3784694Z [161/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/id.c.obj
+2026-02-22T02:36:28.3824288Z [132/365] Building C object zephyr/CMakeFiles/zephyr.dir/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt/lib/source/ecc.c.obj
+2026-02-22T02:36:28.4043934Z [133/365] Building ASM object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi_on_reset.S.obj
+2026-02-22T02:36:28.5799447Z [134/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/exc_exit.S.obj
+2026-02-22T02:36:28.6156728Z [135/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault_s.S.obj
+2026-02-22T02:36:28.6391105Z [136/365] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi.c.obj
+2026-02-22T02:36:28.8167506Z [137/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fpu.c.obj
+2026-02-22T02:36:28.9351242Z [138/365] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/fatal.c.obj
+2026-02-22T02:36:28.9639696Z [162/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/l2cap.c.obj
+2026-02-22T02:36:28.9958627Z [139/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_init.c.obj
+2026-02-22T02:36:29.0001726Z [140/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/reset.S.obj
+2026-02-22T02:36:29.0765976Z [141/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/vector_table.S.obj
+2026-02-22T02:36:29.3018948Z [142/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap.c.obj
+2026-02-22T02:36:29.3082929Z [143/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/scb.c.obj
+2026-02-22T02:36:29.3503537Z [144/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread_abort.c.obj
+2026-02-22T02:36:29.4073000Z [145/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault.c.obj
+2026-02-22T02:36:29.4539134Z [146/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap_helper.S.obj
+2026-02-22T02:36:29.4848503Z [147/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/cpu_idle.S.obj
+2026-02-22T02:36:29.6218174Z [148/365] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/isr_wrapper.S.obj
+2026-02-22T02:36:29.7157015Z [149/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_manage.c.obj
+2026-02-22T02:36:29.7211248Z [150/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/prep_c.c.obj
+2026-02-22T02:36:29.7889672Z [151/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/atoi.c.obj
+2026-02-22T02:36:29.7906851Z [152/365] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread.c.obj
+2026-02-22T02:36:29.9058498Z [153/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtol.c.obj
+2026-02-22T02:36:29.9116894Z [154/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtoul.c.obj
+2026-02-22T02:36:29.9939344Z [155/365] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_core_mpu.c.obj
+2026-02-22T02:36:30.0290555Z [156/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtoull.c.obj
+2026-02-22T02:36:30.0349485Z [157/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/strtoll.c.obj
+2026-02-22T02:36:30.0593733Z [158/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/bsearch.c.obj
+2026-02-22T02:36:30.1757030Z [159/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strerror.c.obj
+2026-02-22T02:36:30.2159333Z [160/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/qsort.c.obj
+2026-02-22T02:36:30.2552175Z [161/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strncasecmp.c.obj
+2026-02-22T02:36:30.2590002Z [163/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/conn.c.obj
+2026-02-22T02:36:30.2821135Z [162/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strstr.c.obj
+2026-02-22T02:36:30.3465915Z [163/365] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu.c.obj
+2026-02-22T02:36:30.3538510Z [164/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/strspn.c.obj
+2026-02-22T02:36:30.3819994Z [165/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdlib/exit.c.obj
+2026-02-22T02:36:30.4656240Z [166/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/string/string.c.obj
+2026-02-22T02:36:30.5524786Z [167/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/math/sqrtf.c.obj
+2026-02-22T02:36:30.6168344Z [168/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/math/sqrt.c.obj
+2026-02-22T02:36:30.6993866Z [164/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_core.c.obj
+2026-02-22T02:36:30.7745314Z [169/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/sprintf.c.obj
+2026-02-22T02:36:30.7787150Z [170/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/stdout_console.c.obj
+2026-02-22T02:36:30.7809933Z [171/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/stdout/fprintf.c.obj
+2026-02-22T02:36:30.8419354Z [172/365] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/string/strnlen.c.obj
+2026-02-22T02:36:30.9518534Z [173/365] Building C object zephyr/lib/libc/minimal/CMakeFiles/lib__libc__minimal.dir/source/time/gmtime.c.obj
+2026-02-22T02:36:31.0551939Z [174/365] Building C object zephyr/soc/soc/arm/common/cortex_m/CMakeFiles/soc__arm__common__cortex_m.dir/arm_mpu_regions.c.obj
+2026-02-22T02:36:31.1260414Z [175/365] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+2026-02-22T02:36:31.1911073Z [176/365] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+2026-02-22T02:36:31.2421927Z [177/365] Building C object zephyr/soc/soc/arm/nordic_nrf/nrf52/CMakeFiles/soc__arm__nordic_nrf__nrf52.dir/soc.c.obj
+2026-02-22T02:36:31.5379934Z [178/365] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/rand32_xoshiro128.c.obj
+2026-02-22T02:36:31.5549430Z [179/365] Building C object zephyr/subsys/random/CMakeFiles/subsys__random.dir/rand32_entropy_device.c.obj
+2026-02-22T02:36:31.5809691Z [180/365] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/addr.c.obj
+2026-02-22T02:36:31.5956940Z [181/365] Building C object zephyr/boards/boards/arm/glove80_lh/CMakeFiles/..__..__..__..__build__source__app__boards__arm__glove80.dir/usb_serial_number.c.obj
+2026-02-22T02:36:31.8982920Z [182/365] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/dummy.c.obj
+2026-02-22T02:36:31.9510522Z [165/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/keys.c.obj
+2026-02-22T02:36:32.0054144Z [183/365] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/bt_str.c.obj
+2026-02-22T02:36:32.0958181Z [184/365] Building C object zephyr/subsys/bluetooth/common/CMakeFiles/subsys__bluetooth__common.dir/rpa.c.obj
+2026-02-22T02:36:32.3162186Z [185/365] Building C object zephyr/subsys/usb/device/class/hid/CMakeFiles/subsys__usb__device__class__hid.dir/core.c.obj
+2026-02-22T02:36:32.3342905Z [166/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/att.c.obj
+2026-02-22T02:36:32.4074704Z [186/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/uuid.c.obj
+2026-02-22T02:36:32.4338480Z [167/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/mem.c.obj
+2026-02-22T02:36:32.4905316Z [187/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/addr.c.obj
+2026-02-22T02:36:32.5684778Z [188/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/long_wq.c.obj
+2026-02-22T02:36:32.6849992Z [168/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/memq.c.obj
+2026-02-22T02:36:32.6972757Z [189/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_ecc.c.obj
+2026-02-22T02:36:32.8107277Z [190/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/buf.c.obj
+2026-02-22T02:36:33.0211018Z [191/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/data.c.obj
+2026-02-22T02:36:33.0816908Z [169/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/gatt.c.obj
+2026-02-22T02:36:33.1129059Z [192/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/settings.c.obj
+2026-02-22T02:36:33.1675865Z [170/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/mayfly.c.obj
+2026-02-22T02:36:33.2171702Z [193/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_common.c.obj
+2026-02-22T02:36:33.3840697Z [171/323] Building C object zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir/bt_crypto.c.obj
+2026-02-22T02:36:33.4509252Z [172/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/dbuf.c.obj
+2026-02-22T02:36:33.5480748Z [173/323] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/smp.c.obj
+2026-02-22T02:36:33.6073869Z [174/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/util.c.obj
+2026-02-22T02:36:33.8255905Z [175/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ll_feat.c.obj
+2026-02-22T02:36:33.9986824Z [194/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/scan.c.obj
+2026-02-22T02:36:34.0206916Z [176/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ll_addr.c.obj
+2026-02-22T02:36:34.0566732Z [177/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ll_tx_pwr.c.obj
+2026-02-22T02:36:34.2121355Z [195/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/adv.c.obj
+2026-02-22T02:36:34.4043241Z [178/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/lll_common.c.obj
+2026-02-22T02:36:34.6613434Z [196/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/ecc.c.obj
+2026-02-22T02:36:34.7860814Z [197/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/id.c.obj
+2026-02-22T02:36:34.8428903Z [179/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ticker/ticker.c.obj
+2026-02-22T02:36:35.1188593Z [180/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/hci/hci_driver.c.obj
+2026-02-22T02:36:35.1558473Z [181/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull.c.obj
+2026-02-22T02:36:35.7503428Z [182/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_enc.c.obj
+2026-02-22T02:36:35.9370356Z [183/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_adv.c.obj
+2026-02-22T02:36:35.9528325Z [198/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/l2cap.c.obj
+2026-02-22T02:36:36.1048664Z [184/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_tx_queue.c.obj
+2026-02-22T02:36:36.2523828Z [185/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/hci/hci.c.obj
+2026-02-22T02:36:36.6062785Z [186/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_phy.c.obj
+2026-02-22T02:36:36.6457330Z [187/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_conn.c.obj
+2026-02-22T02:36:36.8953557Z [199/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/conn.c.obj
+2026-02-22T02:36:36.9195255Z [188/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp.c.obj
+2026-02-22T02:36:37.0287039Z [189/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_common.c.obj
+2026-02-22T02:36:37.3537284Z [190/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_local.c.obj
+2026-02-22T02:36:37.3687253Z [200/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/hci_core.c.obj
+2026-02-22T02:36:37.4387694Z [191/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_chmu.c.obj
+2026-02-22T02:36:37.4651513Z [192/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_pdu.c.obj
+2026-02-22T02:36:37.6636013Z [193/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_chan.c.obj
+2026-02-22T02:36:37.9406524Z [194/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_conn_upd.c.obj
+2026-02-22T02:36:38.1743945Z [195/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_remote.c.obj
+2026-02-22T02:36:38.2033116Z [196/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/lll_chan.c.obj
+2026-02-22T02:36:38.2253273Z [197/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_peripheral.c.obj
+2026-02-22T02:36:38.2358942Z [201/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/keys.c.obj
+2026-02-22T02:36:38.5500351Z [198/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/flash/soc_flash_nrf_ticker.c.obj
+2026-02-22T02:36:38.7441357Z [199/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/crypto/crypto.c.obj
+2026-02-22T02:36:38.9985715Z [200/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_clock.c.obj
+2026-02-22T02:36:39.1197858Z [201/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll.c.obj
+2026-02-22T02:36:39.2143915Z [202/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_filter.c.obj
+2026-02-22T02:36:39.3461519Z [202/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/att.c.obj
+2026-02-22T02:36:39.5227575Z [203/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_peripheral.c.obj
+2026-02-22T02:36:39.5465293Z [203/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/mem.c.obj
+2026-02-22T02:36:39.5998526Z [204/365] Building C object zephyr/subsys/bluetooth/crypto/CMakeFiles/subsys__bluetooth__crypto.dir/bt_crypto.c.obj
+2026-02-22T02:36:39.6460294Z [204/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/cntr.c.obj
+2026-02-22T02:36:39.6536756Z [205/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_adv.c.obj
+2026-02-22T02:36:39.7924515Z [206/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_conn.c.obj
+2026-02-22T02:36:39.8502668Z [205/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/memq.c.obj
+2026-02-22T02:36:39.9706953Z [207/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/ecb.c.obj
+2026-02-22T02:36:40.0491109Z [208/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/mayfly.c.obj
+2026-02-22T02:36:40.0747519Z [206/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/mayfly.c.obj
+2026-02-22T02:36:40.1812092Z [209/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/ticker.c.obj
+2026-02-22T02:36:40.2292532Z [207/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/dbuf.c.obj
+2026-02-22T02:36:40.4056805Z [210/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/hci/nordic/hci_vendor.c.obj
+2026-02-22T02:36:40.4448591Z [211/323] Building C object zephyr/subsys/input/CMakeFiles/subsys__input.dir/input.c.obj
+2026-02-22T02:36:40.5074641Z [208/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/util/util.c.obj
+2026-02-22T02:36:40.5476208Z [212/323] Building C object zephyr/subsys/input/CMakeFiles/subsys__input.dir/input_utils.c.obj
+2026-02-22T02:36:40.6489570Z [209/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/smp.c.obj
+2026-02-22T02:36:40.7608927Z [213/323] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/radio/radio.c.obj
+2026-02-22T02:36:40.8670605Z [210/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ll_feat.c.obj
+2026-02-22T02:36:41.0436057Z [214/323] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/buf.c.obj
+2026-02-22T02:36:41.1229643Z [211/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ll_tx_pwr.c.obj
+2026-02-22T02:36:41.1258721Z [215/323] Building C object zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/adc_common.c.obj
+2026-02-22T02:36:41.1753704Z [216/323] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/buf_simple.c.obj
+2026-02-22T02:36:41.2140258Z [212/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ll_addr.c.obj
+2026-02-22T02:36:41.5961824Z [213/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/lll_common.c.obj
+2026-02-22T02:36:41.6526127Z [217/323] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/entropy_nrf5.c.obj
+2026-02-22T02:36:41.7388202Z [214/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ticker/ticker.c.obj
+2026-02-22T02:36:41.7711877Z [218/323] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_nrf.c.obj
+2026-02-22T02:36:41.7957495Z [219/323] Building C object zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/adc_nrfx_saadc.c.obj
+2026-02-22T02:36:41.9828784Z [220/323] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/flash_page_layout.c.obj
+2026-02-22T02:36:42.1196378Z [221/323] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/entropy_bt_hci.c.obj
+2026-02-22T02:36:42.3853832Z [215/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull.c.obj
+2026-02-22T02:36:42.4693380Z [216/365] Building C object zephyr/subsys/bluetooth/host/CMakeFiles/subsys__bluetooth__host.dir/gatt.c.obj
+2026-02-22T02:36:42.5175108Z [222/323] Building C object zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir/hwinfo_weak_impl.c.obj
+2026-02-22T02:36:42.5546881Z [223/323] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/soc_flash_nrf.c.obj
+2026-02-22T02:36:42.6220902Z [217/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/hci/hci_driver.c.obj
+2026-02-22T02:36:42.8276064Z [224/323] Building C object zephyr/drivers/kscan/CMakeFiles/drivers__kscan.dir/build/source/app/module/drivers/kscan/kscan_gpio.c.obj
+2026-02-22T02:36:42.9528888Z [225/323] Building C object zephyr/drivers/usb/device/CMakeFiles/drivers__usb__device.dir/usb_dc_nrfx.c.obj
+2026-02-22T02:36:43.1137977Z [218/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_scan.c.obj
+2026-02-22T02:36:43.1321911Z [226/323] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_nrfx.c.obj
+2026-02-22T02:36:43.3163279Z [219/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_adv.c.obj
+2026-02-22T02:36:43.4166130Z [227/323] Building C object zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir/hwinfo_nrf.c.obj
+2026-02-22T02:36:43.5735997Z [228/323] Building C object zephyr/drivers/led/CMakeFiles/drivers__led.dir/led_pwm.c.obj
+2026-02-22T02:36:43.6531568Z [229/323] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+2026-02-22T02:36:43.7566853Z [230/323] Building C object zephyr/drivers/led_strip/CMakeFiles/drivers__led_strip.dir/ws2812_spi.c.obj
+2026-02-22T02:36:43.7911955Z [220/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_enc.c.obj
+2026-02-22T02:36:43.9202740Z [231/323] Building C object zephyr/drivers/kscan/CMakeFiles/drivers__kscan.dir/build/source/app/module/drivers/kscan/kscan_gpio_matrix.c.obj
+2026-02-22T02:36:43.9607014Z [221/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/hci/hci.c.obj
+2026-02-22T02:36:43.9678946Z [222/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_tx_queue.c.obj
+2026-02-22T02:36:44.1896875Z [223/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_phy.c.obj
+2026-02-22T02:36:44.2286519Z [224/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_conn.c.obj
+2026-02-22T02:36:44.2451846Z [232/323] Building C object zephyr/drivers/sensor/nrf5/CMakeFiles/drivers__sensor__nrf5.dir/temp_nrf5.c.obj
+2026-02-22T02:36:44.5324787Z [233/323] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_nrf.c.obj
+2026-02-22T02:36:44.7251896Z [225/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_common.c.obj
+2026-02-22T02:36:44.8420555Z [226/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp.c.obj
+2026-02-22T02:36:44.8469982Z [227/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_local.c.obj
+2026-02-22T02:36:44.8614111Z [234/323] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+2026-02-22T02:36:44.9883054Z [235/323] Building C object zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/pwm_nrfx.c.obj
+2026-02-22T02:36:45.0129313Z [228/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_pdu.c.obj
+2026-02-22T02:36:45.1298989Z [236/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/mdk/system_nrf52840.c.obj
+2026-02-22T02:36:45.3361970Z [237/323] Building C object zephyr/drivers/spi/CMakeFiles/drivers__spi.dir/spi_nrfx_common.c.obj
+2026-02-22T02:36:45.3496400Z [238/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nrfx_glue.c.obj
+2026-02-22T02:36:45.4317384Z [229/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_remote.c.obj
+2026-02-22T02:36:45.4357146Z [239/323] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/nrf_rtc_timer.c.obj
+2026-02-22T02:36:45.4763560Z [230/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_chmu.c.obj
+2026-02-22T02:36:45.6357459Z [240/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/helpers/nrfx_flag32_allocator.c.obj
+2026-02-22T02:36:45.7757848Z [231/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_peripheral.c.obj
+2026-02-22T02:36:45.8273469Z [232/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_llcp_conn_upd.c.obj
+2026-02-22T02:36:45.8953784Z [241/323] Building C object zephyr/drivers/spi/CMakeFiles/drivers__spi.dir/spi_nrfx_spim.c.obj
+2026-02-22T02:36:45.9080142Z [233/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_chan.c.obj
+2026-02-22T02:36:46.0202689Z [242/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_clock.c.obj
+2026-02-22T02:36:46.0954828Z [243/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_nvmc.c.obj
+2026-02-22T02:36:46.1128207Z [234/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_sched.c.obj
+2026-02-22T02:36:46.3139496Z [235/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_central.c.obj
+2026-02-22T02:36:46.3496409Z [244/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_power.c.obj
+2026-02-22T02:36:46.4512202Z [236/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/lll_chan.c.obj
+2026-02-22T02:36:46.4772509Z [237/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/crypto/crypto.c.obj
+2026-02-22T02:36:46.6994207Z [238/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/flash/soc_flash_nrf_ticker.c.obj
+2026-02-22T02:36:46.7879117Z [239/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_clock.c.obj
+2026-02-22T02:36:47.2698975Z [240/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll.c.obj
+2026-02-22T02:36:47.2957782Z [241/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/ull_filter.c.obj
+2026-02-22T02:36:47.6540707Z [242/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_adv.c.obj
+2026-02-22T02:36:47.8493939Z [243/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_scan.c.obj
+2026-02-22T02:36:47.8523268Z [244/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_peripheral.c.obj
+2026-02-22T02:36:47.8603753Z [245/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_pwm.c.obj
+2026-02-22T02:36:48.0770892Z [245/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/cntr.c.obj
+2026-02-22T02:36:48.0870606Z [246/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_conn.c.obj
+2026-02-22T02:36:48.1223413Z [247/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/lll/lll_central.c.obj
+2026-02-22T02:36:48.2278753Z [246/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_usbd.c.obj
+2026-02-22T02:36:48.2562080Z [248/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/ecb.c.obj
+2026-02-22T02:36:48.3220477Z [247/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_gpiote.c.obj
+2026-02-22T02:36:48.3874407Z [248/323] Building C object modules/module/drivers/sensor/battery/CMakeFiles/..__..__..__..__build__source__app__module__drivers__sensor__battery.dir/battery_common.c.obj
+2026-02-22T02:36:48.4581087Z [249/323] Building C object modules/module/lib/zmk_debounce/CMakeFiles/..__..__..__..__build__source__app__module__lib__zmk_debounce.dir/debounce.c.obj
+2026-02-22T02:36:48.5415930Z [249/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/mayfly.c.obj
+2026-02-22T02:36:48.5558261Z [250/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/ticker.c.obj
+2026-02-22T02:36:48.6593320Z [250/323] Building C object modules/module/drivers/sensor/battery/CMakeFiles/..__..__..__..__build__source__app__module__drivers__sensor__battery.dir/battery_nrf_vddh.c.obj
+2026-02-22T02:36:48.6876965Z [251/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+2026-02-22T02:36:48.7810329Z [251/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/hci/nordic/hci_vendor.c.obj
+2026-02-22T02:36:48.8047222Z [252/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+2026-02-22T02:36:48.9085771Z [253/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+2026-02-22T02:36:48.9493598Z [254/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+2026-02-22T02:36:48.9507804Z [252/365] Building C object zephyr/subsys/input/CMakeFiles/subsys__input.dir/input.c.obj
+2026-02-22T02:36:48.9629368Z [255/323] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_spim.c.obj
+2026-02-22T02:36:48.9787401Z [253/365] Building C object zephyr/subsys/input/CMakeFiles/subsys__input.dir/input_utils.c.obj
+2026-02-22T02:36:49.1086040Z [256/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+2026-02-22T02:36:49.3463612Z [254/365] Building C object zephyr/subsys/bluetooth/controller/CMakeFiles/subsys__bluetooth__controller.dir/ll_sw/nordic/hal/nrf5/radio/radio.c.obj
+2026-02-22T02:36:49.3794210Z [257/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+2026-02-22T02:36:49.4190636Z [258/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+2026-02-22T02:36:49.4528486Z [255/365] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/buf.c.obj
+2026-02-22T02:36:49.4663931Z [259/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+2026-02-22T02:36:49.4692914Z [260/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+2026-02-22T02:36:49.4906594Z [261/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+2026-02-22T02:36:49.7033660Z [256/365] Building C object zephyr/subsys/net/CMakeFiles/subsys__net.dir/buf_simple.c.obj
+2026-02-22T02:36:49.7360976Z [257/365] Building C object zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/adc_common.c.obj
+2026-02-22T02:36:49.8342258Z [262/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+2026-02-22T02:36:49.9640114Z [263/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+2026-02-22T02:36:49.9948930Z [264/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+2026-02-22T02:36:50.0108322Z [265/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+2026-02-22T02:36:50.2124263Z [258/365] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/entropy_nrf5.c.obj
+2026-02-22T02:36:50.2457061Z [259/365] Building C object zephyr/drivers/adc/CMakeFiles/drivers__adc.dir/adc_nrfx_saadc.c.obj
+2026-02-22T02:36:50.3194756Z [260/365] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_nrf.c.obj
+2026-02-22T02:36:50.3959795Z [266/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+2026-02-22T02:36:50.4205944Z [267/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+2026-02-22T02:36:50.5535783Z [261/365] Building C object zephyr/drivers/entropy/CMakeFiles/drivers__entropy.dir/entropy_bt_hci.c.obj
+2026-02-22T02:36:50.5826940Z [268/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+2026-02-22T02:36:50.6155625Z [269/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+2026-02-22T02:36:50.6269778Z [270/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+2026-02-22T02:36:50.6484442Z [262/365] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/flash_page_layout.c.obj
+2026-02-22T02:36:50.9148931Z [263/365] Building C object zephyr/drivers/usb/device/CMakeFiles/drivers__usb__device.dir/usb_dc_nrfx.c.obj
+2026-02-22T02:36:50.9737735Z [271/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/xip.c.obj
+2026-02-22T02:36:50.9796331Z [264/365] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/soc_flash_nrf.c.obj
+2026-02-22T02:36:51.0083449Z [272/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+2026-02-22T02:36:51.0196788Z [265/365] Building C object zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir/hwinfo_weak_impl.c.obj
+2026-02-22T02:36:51.1697957Z [273/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+2026-02-22T02:36:51.2392399Z [266/365] Building C object zephyr/drivers/kscan/CMakeFiles/drivers__kscan.dir/build/source/app/module/drivers/kscan/kscan_gpio.c.obj
+2026-02-22T02:36:51.4617186Z [274/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+2026-02-22T02:36:51.5100015Z [275/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+2026-02-22T02:36:51.7041030Z [276/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+2026-02-22T02:36:51.7663510Z [277/323] Linking C static library app/libapp.a
+2026-02-22T02:36:51.7939300Z [278/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/poll.c.obj
+2026-02-22T02:36:51.8055153Z [267/365] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_nrfx.c.obj
+2026-02-22T02:36:51.8150897Z [279/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+2026-02-22T02:36:51.8213969Z [268/365] Building C object zephyr/drivers/led/CMakeFiles/drivers__led.dir/led_pwm.c.obj
+2026-02-22T02:36:51.8302241Z [280/323] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+2026-02-22T02:36:51.8340656Z [281/323] Linking C static library zephyr/arch/common/libarch__common.a
+2026-02-22T02:36:51.8405618Z [269/365] Building C object zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir/hwinfo_nrf.c.obj
+2026-02-22T02:36:51.8652087Z [282/323] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+2026-02-22T02:36:51.8653385Z [283/323] Linking C static library zephyr/libzephyr.a
+2026-02-22T02:36:51.8657717Z [284/323] Linking C static library zephyr/arch/arch/arm/core/libarch__arm__core.a
+2026-02-22T02:36:51.8698164Z [285/323] Linking C static library zephyr/arch/arch/arm/core/cortex_m/libarch__arm__core__cortex_m.a
+2026-02-22T02:36:51.8908110Z [286/323] Linking C static library zephyr/arch/arch/arm/core/mpu/libarch__arm__core__mpu.a
+2026-02-22T02:36:51.8948041Z [287/323] Linking C static library zephyr/lib/libc/common/liblib__libc__common.a
+2026-02-22T02:36:51.8959028Z [288/323] Linking C static library zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a
+2026-02-22T02:36:51.9093462Z [289/323] Linking C static library zephyr/lib/libc/minimal/liblib__libc__minimal.a
+2026-02-22T02:36:51.9168457Z [290/323] Linking C static library zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a
+2026-02-22T02:36:51.9225988Z [291/323] Linking C static library zephyr/boards/boards/arm/glove80_rh/lib..__..__..__..__build__source__app__boards__arm__glove80.a
+2026-02-22T02:36:51.9227667Z [292/323] Linking C static library zephyr/subsys/random/libsubsys__random.a
+2026-02-22T02:36:51.9401555Z [293/323] Linking C static library zephyr/subsys/bluetooth/common/libsubsys__bluetooth__common.a
+2026-02-22T02:36:51.9508903Z [294/323] Linking C static library zephyr/subsys/bluetooth/crypto/libsubsys__bluetooth__crypto.a
+2026-02-22T02:36:51.9704583Z [295/323] Linking C static library zephyr/subsys/input/libsubsys__input.a
+2026-02-22T02:36:51.9831111Z [296/323] Linking C static library zephyr/subsys/net/libsubsys__net.a
+2026-02-22T02:36:51.9884032Z [297/323] Linking C static library zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a
+2026-02-22T02:36:51.9968087Z [298/323] Linking C static library zephyr/drivers/usb/device/libdrivers__usb__device.a
+2026-02-22T02:36:52.0097850Z [299/323] Linking C static library zephyr/drivers/clock_control/libdrivers__clock_control.a
+2026-02-22T02:36:52.0197399Z [300/323] Linking C static library zephyr/drivers/adc/libdrivers__adc.a
+2026-02-22T02:36:52.0247005Z [270/365] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+2026-02-22T02:36:52.0295665Z [301/323] Linking C static library zephyr/drivers/entropy/libdrivers__entropy.a
+2026-02-22T02:36:52.0309326Z [302/323] Linking C static library zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a
+2026-02-22T02:36:52.0360740Z [271/365] Building C object zephyr/drivers/kscan/CMakeFiles/drivers__kscan.dir/build/source/app/module/drivers/kscan/kscan_gpio_matrix.c.obj
+2026-02-22T02:36:52.0457399Z [303/323] Linking C static library zephyr/drivers/flash/libdrivers__flash.a
+2026-02-22T02:36:52.0537611Z [304/323] Linking C static library zephyr/drivers/gpio/libdrivers__gpio.a
+2026-02-22T02:36:52.0579277Z [305/323] Linking C static library zephyr/drivers/hwinfo/libdrivers__hwinfo.a
+2026-02-22T02:36:52.0617474Z [306/323] Linking C static library zephyr/drivers/kscan/libdrivers__kscan.a
+2026-02-22T02:36:52.0738628Z [307/323] Linking C static library zephyr/drivers/led/libdrivers__led.a
+2026-02-22T02:36:52.0818555Z [308/323] Linking C static library zephyr/drivers/led_strip/libdrivers__led_strip.a
+2026-02-22T02:36:52.0843022Z [309/323] Linking C static library zephyr/drivers/pinctrl/libdrivers__pinctrl.a
+2026-02-22T02:36:52.0949841Z [310/323] Linking C static library zephyr/drivers/pwm/libdrivers__pwm.a
+2026-02-22T02:36:52.0954211Z [311/323] Linking C static library zephyr/drivers/sensor/nrf5/libdrivers__sensor__nrf5.a
+2026-02-22T02:36:52.1102172Z [312/323] Linking C static library zephyr/drivers/spi/libdrivers__spi.a
+2026-02-22T02:36:52.1110126Z [313/323] Linking C static library zephyr/drivers/timer/libdrivers__timer.a
+2026-02-22T02:36:52.1265910Z [314/323] Linking C static library modules/module/drivers/sensor/battery/lib..__..__..__..__build__source__app__module__drivers__sensor__battery.a
+2026-02-22T02:36:52.1353373Z [315/323] Linking C static library modules/module/lib/zmk_debounce/lib..__..__..__..__build__source__app__module__lib__zmk_debounce.a
+2026-02-22T02:36:52.1412803Z [316/323] Linking C static library modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a
+2026-02-22T02:36:52.1639795Z [317/323] Linking C static library zephyr/kernel/libkernel.a
+2026-02-22T02:36:52.2122501Z [272/365] Building C object zephyr/drivers/led_strip/CMakeFiles/drivers__led_strip.dir/ws2812_spi.c.obj
+2026-02-22T02:36:52.3501454Z [273/365] Building C object zephyr/drivers/sensor/nrf5/CMakeFiles/drivers__sensor__nrf5.dir/temp_nrf5.c.obj
+2026-02-22T02:36:52.4154171Z [274/365] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_nrf.c.obj
+2026-02-22T02:36:52.4788238Z [318/323] Linking C executable zephyr/zephyr_pre0.elf
+2026-02-22T02:36:52.4791611Z /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.bfd: warning: zephyr/zephyr_pre0.elf has a LOAD segment with RWX permissions
+2026-02-22T02:36:52.5805073Z [275/365] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+2026-02-22T02:36:52.6390977Z [319/323] Generating linker.cmd
+2026-02-22T02:36:52.7424555Z [276/365] Building C object zephyr/drivers/pwm/CMakeFiles/drivers__pwm.dir/pwm_nrfx.c.obj
+2026-02-22T02:36:52.8457863Z [277/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/mdk/system_nrf52840.c.obj
+2026-02-22T02:36:52.9093157Z [278/365] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/nrf_rtc_timer.c.obj
+2026-02-22T02:36:52.9128194Z [279/365] Building C object zephyr/drivers/spi/CMakeFiles/drivers__spi.dir/spi_nrfx_common.c.obj
+2026-02-22T02:36:53.1303534Z [280/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/helpers/nrfx_flag32_allocator.c.obj
+2026-02-22T02:36:53.1407952Z [281/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nrfx_glue.c.obj
+2026-02-22T02:36:53.2523451Z [282/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_clock.c.obj
+2026-02-22T02:36:53.3892055Z [320/323] Generating isr_tables.c, isrList.bin
+2026-02-22T02:36:53.4294205Z [321/323] Building C object zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+2026-02-22T02:36:53.5097315Z [283/365] Building C object zephyr/drivers/spi/CMakeFiles/drivers__spi.dir/spi_nrfx_spim.c.obj
+2026-02-22T02:36:53.5138071Z [284/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_power.c.obj
+2026-02-22T02:36:53.6255237Z [285/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_nvmc.c.obj
+2026-02-22T02:36:53.6640879Z [322/323] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-02-22T02:36:54.7129139Z [286/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_pwm.c.obj
+2026-02-22T02:36:54.7693850Z [287/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_usbd.c.obj
+2026-02-22T02:36:54.9425354Z [288/365] Building C object modules/module/drivers/sensor/battery/CMakeFiles/..__..__..__..__build__source__app__module__drivers__sensor__battery.dir/battery_common.c.obj
+2026-02-22T02:36:55.0059163Z [289/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_gpiote.c.obj
+2026-02-22T02:36:55.0463414Z [290/365] Building C object modules/module/lib/zmk_debounce/CMakeFiles/..__..__..__..__build__source__app__module__lib__zmk_debounce.dir/debounce.c.obj
+2026-02-22T02:36:55.0566800Z [291/365] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic/nrfx/drivers/src/nrfx_spim.c.obj
+2026-02-22T02:36:55.2157072Z [292/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+2026-02-22T02:36:55.2708007Z [293/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+2026-02-22T02:36:55.3914590Z [294/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+2026-02-22T02:36:55.3969903Z [295/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+2026-02-22T02:36:55.4361834Z [296/365] Building C object modules/module/drivers/sensor/battery/CMakeFiles/..__..__..__..__build__source__app__module__drivers__sensor__battery.dir/battery_nrf_vddh.c.obj
+2026-02-22T02:36:55.4696809Z [323/323] Linking C executable zephyr/zmk.elf
+2026-02-22T02:36:55.4702554Z /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.bfd: warning: zephyr/zmk.elf has a LOAD segment with RWX permissions
+2026-02-22T02:36:55.4708345Z Memory region         Used Size  Region Size  %age Used
+2026-02-22T02:36:55.4708901Z            FLASH:      182284 B       792 KB     22.48%
+2026-02-22T02:36:55.4709366Z              RAM:       36164 B       256 KB     13.80%
+2026-02-22T02:36:55.4709821Z         IDT_LIST:          0 GB         2 KB      0.00%
+2026-02-22T02:36:55.4710367Z Converted to uf2, output size: 365056, start address: 0x26000
+2026-02-22T02:36:55.4710897Z Wrote 365056 bytes to zmk.uf2
+2026-02-22T02:36:55.4779839Z buildPhase completed in 43 seconds
+2026-02-22T02:36:55.4785625Z Running phase: installPhase
+2026-02-22T02:36:55.4866369Z [297/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+2026-02-22T02:36:55.5196078Z Running phase: fixupPhase
+2026-02-22T02:36:55.5576541Z shrinking RPATHs of ELF executables and libraries in /nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh
+2026-02-22T02:36:55.5608802Z shrinking /nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh/zmk.elf
+2026-02-22T02:36:55.5740840Z patchelf: cannot find section '.dynamic'. The input file is most likely statically linked
+2026-02-22T02:36:55.5795619Z checking for references to /build/ in /nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh...
+2026-02-22T02:36:55.5989207Z patchelf: cannot find section '.dynamic'. The input file is most likely statically linked
+2026-02-22T02:36:55.6021900Z patching script interpreter paths in /nix/store/zxccnrrxzw01j2lk4i4aad64qij78797-zmk_glove80_rh
+2026-02-22T02:36:55.9100069Z [298/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+2026-02-22T02:36:55.9127535Z [299/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+2026-02-22T02:36:55.9128437Z [300/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+2026-02-22T02:36:55.9129235Z [301/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+2026-02-22T02:36:55.9130025Z [302/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+2026-02-22T02:36:56.0000892Z [303/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+2026-02-22T02:36:56.0871808Z [304/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+2026-02-22T02:36:56.2199550Z [305/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+2026-02-22T02:36:56.2634056Z [306/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+2026-02-22T02:36:56.3686652Z [307/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+2026-02-22T02:36:56.3778033Z [308/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+2026-02-22T02:36:56.5035284Z [309/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+2026-02-22T02:36:56.5135645Z [310/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+2026-02-22T02:36:56.5324773Z [311/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+2026-02-22T02:36:56.6949306Z [312/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+2026-02-22T02:36:56.6959199Z [313/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/xip.c.obj
+2026-02-22T02:36:56.7946428Z [314/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+2026-02-22T02:36:56.9104442Z [315/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+2026-02-22T02:36:56.9785506Z [316/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+2026-02-22T02:36:57.0720348Z [317/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+2026-02-22T02:36:57.0830625Z [318/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+2026-02-22T02:36:57.1103285Z [319/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/poll.c.obj
+2026-02-22T02:36:57.1243579Z [320/365] Linking C static library app/libapp.a
+2026-02-22T02:36:57.1250809Z [321/365] Linking C static library zephyr/libzephyr.a
+2026-02-22T02:36:57.1278586Z [322/365] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+2026-02-22T02:36:57.1375785Z [323/365] Linking C static library zephyr/arch/common/libarch__common.a
+2026-02-22T02:36:57.1384152Z [324/365] Linking C static library zephyr/arch/arch/arm/core/libarch__arm__core.a
+2026-02-22T02:36:57.1430537Z [325/365] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+2026-02-22T02:36:57.1455908Z [326/365] Linking C static library zephyr/arch/arch/arm/core/cortex_m/libarch__arm__core__cortex_m.a
+2026-02-22T02:36:57.1502339Z [327/365] Linking C static library zephyr/arch/arch/arm/core/mpu/libarch__arm__core__mpu.a
+2026-02-22T02:36:57.1556790Z [328/365] Linking C static library zephyr/lib/libc/common/liblib__libc__common.a
+2026-02-22T02:36:57.1566314Z [329/365] Linking C static library zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a
+2026-02-22T02:36:57.1576355Z [330/365] Linking C static library zephyr/lib/libc/minimal/liblib__libc__minimal.a
+2026-02-22T02:36:57.1620769Z [331/365] Linking C static library zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a
+2026-02-22T02:36:57.1677551Z [332/365] Linking C static library zephyr/boards/boards/arm/glove80_lh/lib..__..__..__..__build__source__app__boards__arm__glove80.a
+2026-02-22T02:36:57.1688957Z [333/365] Linking C static library zephyr/subsys/random/libsubsys__random.a
+2026-02-22T02:36:57.1709295Z [334/365] Linking C static library zephyr/subsys/usb/device/class/hid/libsubsys__usb__device__class__hid.a
+2026-02-22T02:36:57.1750676Z [335/365] Linking C static library zephyr/subsys/bluetooth/common/libsubsys__bluetooth__common.a
+2026-02-22T02:36:57.1810170Z [336/365] Linking C static library zephyr/subsys/bluetooth/crypto/libsubsys__bluetooth__crypto.a
+2026-02-22T02:36:57.1872415Z [337/365] Linking C static library zephyr/subsys/input/libsubsys__input.a
+2026-02-22T02:36:57.1937581Z [338/365] Linking C static library zephyr/subsys/net/libsubsys__net.a
+2026-02-22T02:36:57.2008822Z [339/365] Linking C static library zephyr/drivers/usb/device/libdrivers__usb__device.a
+2026-02-22T02:36:57.2065732Z [340/365] Linking C static library zephyr/drivers/adc/libdrivers__adc.a
+2026-02-22T02:36:57.2109056Z [341/365] Linking C static library zephyr/subsys/bluetooth/host/libsubsys__bluetooth__host.a
+2026-02-22T02:36:57.2125389Z [342/365] Linking C static library zephyr/drivers/clock_control/libdrivers__clock_control.a
+2026-02-22T02:36:57.2186918Z [343/365] Linking C static library zephyr/subsys/bluetooth/controller/libsubsys__bluetooth__controller.a
+2026-02-22T02:36:57.2199225Z [344/365] Linking C static library zephyr/drivers/entropy/libdrivers__entropy.a
+2026-02-22T02:36:57.2236578Z [345/365] Linking C static library zephyr/drivers/flash/libdrivers__flash.a
+2026-02-22T02:36:57.2252044Z [346/365] Linking C static library zephyr/drivers/gpio/libdrivers__gpio.a
+2026-02-22T02:36:57.2285634Z [347/365] Linking C static library zephyr/drivers/hwinfo/libdrivers__hwinfo.a
+2026-02-22T02:36:57.2338037Z [348/365] Linking C static library zephyr/drivers/kscan/libdrivers__kscan.a
+2026-02-22T02:36:57.2366599Z [349/365] Linking C static library zephyr/drivers/led/libdrivers__led.a
+2026-02-22T02:36:57.2369663Z [350/365] Linking C static library zephyr/drivers/led_strip/libdrivers__led_strip.a
+2026-02-22T02:36:57.2411894Z [351/365] Linking C static library zephyr/drivers/pinctrl/libdrivers__pinctrl.a
+2026-02-22T02:36:57.2464450Z [352/365] Linking C static library zephyr/drivers/sensor/nrf5/libdrivers__sensor__nrf5.a
+2026-02-22T02:36:57.2496470Z [353/365] Linking C static library zephyr/drivers/pwm/libdrivers__pwm.a
+2026-02-22T02:36:57.2497447Z [354/365] Linking C static library zephyr/drivers/spi/libdrivers__spi.a
+2026-02-22T02:36:57.2538629Z [355/365] Linking C static library zephyr/drivers/timer/libdrivers__timer.a
+2026-02-22T02:36:57.2589848Z [356/365] Linking C static library modules/module/drivers/sensor/battery/lib..__..__..__..__build__source__app__module__drivers__sensor__battery.a
+2026-02-22T02:36:57.2609437Z [357/365] Linking C static library modules/module/lib/zmk_debounce/lib..__..__..__..__build__source__app__module__lib__zmk_debounce.a
+2026-02-22T02:36:57.2659872Z [358/365] Linking C static library modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a
+2026-02-22T02:36:57.2743015Z [359/365] Linking C static library zephyr/kernel/libkernel.a
+2026-02-22T02:36:57.4341198Z [360/365] Linking C executable zephyr/zephyr_pre0.elf
+2026-02-22T02:36:57.4342188Z /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.bfd: warning: zephyr/zephyr_pre0.elf has a LOAD segment with RWX permissions
+2026-02-22T02:36:57.4941055Z [361/365] Generating linker.cmd
+2026-02-22T02:36:57.8949384Z [362/365] Generating isr_tables.c, isrList.bin
+2026-02-22T02:36:57.9077777Z [363/365] Building C object zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+2026-02-22T02:36:57.9805209Z [364/365] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-02-22T02:36:58.9961650Z [365/365] Linking C executable zephyr/zmk.elf
+2026-02-22T02:36:58.9963126Z /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.bfd: warning: zephyr/zmk.elf has a LOAD segment with RWX permissions
+2026-02-22T02:36:58.9964626Z Memory region         Used Size  Region Size  %age Used
+2026-02-22T02:36:58.9965366Z            FLASH:      266376 B       792 KB     32.85%
+2026-02-22T02:36:58.9965825Z              RAM:       62752 B       256 KB     23.94%
+2026-02-22T02:36:58.9966301Z         IDT_LIST:          0 GB         2 KB      0.00%
+2026-02-22T02:36:58.9966801Z Converted to uf2, output size: 532992, start address: 0x26000
+2026-02-22T02:36:58.9967338Z Wrote 532992 bytes to zmk.uf2
+2026-02-22T02:36:58.9992658Z buildPhase completed in 46 seconds
+2026-02-22T02:36:58.9994045Z Running phase: installPhase
+2026-02-22T02:36:59.0143042Z Running phase: fixupPhase
+2026-02-22T02:36:59.0249411Z shrinking RPATHs of ELF executables and libraries in /nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh
+2026-02-22T02:36:59.0267148Z shrinking /nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh/zmk.elf
+2026-02-22T02:36:59.0320449Z patchelf: cannot find section '.dynamic'. The input file is most likely statically linked
+2026-02-22T02:36:59.0331575Z checking for references to /build/ in /nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh...
+2026-02-22T02:36:59.0400338Z patchelf: cannot find section '.dynamic'. The input file is most likely statically linked
+2026-02-22T02:36:59.0423894Z patching script interpreter paths in /nix/store/djd0bjaymms4b9wn4m713ljxhlzipaj4-zmk_glove80_lh
+2026-02-22T02:36:59.2264688Z building '/nix/store/g5n61d4vz34mkqsy8bcl8m25lxcpnjrg-combined_zmk_glove80_lh_zmk_glove80_rh.drv'...
+2026-02-22T02:36:59.2871415Z /nix/store/2xqnyg3pnd5g3s1g01gc8aws98gv18xv-combined_zmk_glove80_lh_zmk_glove80_rh
