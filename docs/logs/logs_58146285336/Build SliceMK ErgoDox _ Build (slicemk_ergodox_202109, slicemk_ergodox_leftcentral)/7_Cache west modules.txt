@@ -1,0 +1,29 @@
+﻿2026-02-22T02:18:02.7609186Z ##[group]Run actions/cache@v4
+2026-02-22T02:18:02.7609534Z with:
+2026-02-22T02:18:02.7610768Z   path: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib/modules/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/tools/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/zephyr/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/bootloader/
+/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/zmk/
+
+2026-02-22T02:18:02.7612824Z   key: Linux-build-cache-zephyr-4.1.0-modules-20e391a0bc17c99df9d49678dfe8771b89457e4c3daae6c3df0a0a6d99fc925b
+2026-02-22T02:18:02.7613548Z   restore-keys: Linux-build-cache-zephyr-4.1.0-modules-
+Linux-build-
+Linux-
+
+2026-02-22T02:18:02.7613974Z   enableCrossOsArchive: false
+2026-02-22T02:18:02.7614240Z   fail-on-cache-miss: false
+2026-02-22T02:18:02.7614486Z   lookup-only: false
+2026-02-22T02:18:02.7614704Z   save-always: false
+2026-02-22T02:18:02.7614915Z env:
+2026-02-22T02:18:02.7615119Z   build_dir: /tmp/tmp.lCeUDS1GE4
+2026-02-22T02:18:02.7615465Z   base_dir: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:18:02.7615863Z   zephyr_version: 4.1.0
+2026-02-22T02:18:02.7616094Z   extra_west_args: 
+2026-02-22T02:18:02.7616370Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-22T02:18:02.7616794Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202109
+2026-02-22T02:18:02.7617268Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202109-zmk
+2026-02-22T02:18:02.7617683Z   cache_name: cache-zephyr-4.1.0-modules
+2026-02-22T02:18:02.7617957Z ##[endgroup]
+2026-02-22T02:18:02.7623641Z ##[command]/usr/bin/docker exec  9e3a34d29d70602faf93245130a9e4b5bf7fe0a719a0f2c54998d29b987bd11e sh -c "cat /etc/*release | grep ^ID"
+2026-02-22T02:18:03.0785594Z Cache not found for input keys: Linux-build-cache-zephyr-4.1.0-modules-20e391a0bc17c99df9d49678dfe8771b89457e4c3daae6c3df0a0a6d99fc925b, Linux-build-cache-zephyr-4.1.0-modules-, Linux-build-, Linux-

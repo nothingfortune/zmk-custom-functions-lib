@@ -36,6 +36,28 @@ pair_dquote: pair_double_quotes {
         , <&kp LEFT>;
 };
 
+pair_bracket: pair_square_brackets {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_tap>
+        , <&kp LBKT>
+        , <&kp RBKT>
+        , <&kp LEFT>;
+};
+
+pair_brace: pair_curly_braces {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_tap>
+        , <&kp LBRC>
+        , <&kp RBRC>
+        , <&kp LEFT>;
+};
+
 /* Hyper key macro - ⌘⌃⌥⇧ for Raycast/Alfred */
 hyper_key: hyper_key_macro {
 compatible = "zmk,behavior-macro";

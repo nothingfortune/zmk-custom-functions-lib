@@ -1,0 +1,252 @@
+﻿2026-02-22T02:17:24.7285110Z Current runner version: '2.331.0'
+2026-02-22T02:17:24.7308619Z ##[group]Runner Image Provisioner
+2026-02-22T02:17:24.7309566Z Hosted Compute Agent
+2026-02-22T02:17:24.7310149Z Version: 20260123.484
+2026-02-22T02:17:24.7310727Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+2026-02-22T02:17:24.7311491Z Build Date: 2026-01-23T19:41:17Z
+2026-02-22T02:17:24.7312131Z Worker ID: {e2dbbb3d-5590-427f-9c60-ebe9d0300fe7}
+2026-02-22T02:17:24.7312858Z Azure Region: westus3
+2026-02-22T02:17:24.7313410Z ##[endgroup]
+2026-02-22T02:17:24.7314824Z ##[group]Operating System
+2026-02-22T02:17:24.7315434Z Ubuntu
+2026-02-22T02:17:24.7316264Z 24.04.3
+2026-02-22T02:17:24.7316827Z LTS
+2026-02-22T02:17:24.7317297Z ##[endgroup]
+2026-02-22T02:17:24.7317859Z ##[group]Runner Image
+2026-02-22T02:17:24.7318402Z Image: ubuntu-24.04
+2026-02-22T02:17:24.7318935Z Version: 20260201.15.1
+2026-02-22T02:17:24.7320129Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260201.15/images/ubuntu/Ubuntu2404-Readme.md
+2026-02-22T02:17:24.7321615Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260201.15
+2026-02-22T02:17:24.7322548Z ##[endgroup]
+2026-02-22T02:17:24.7323642Z ##[group]GITHUB_TOKEN Permissions
+2026-02-22T02:17:24.7325659Z Contents: read
+2026-02-22T02:17:24.7326462Z Metadata: read
+2026-02-22T02:17:24.7326980Z Packages: read
+2026-02-22T02:17:24.7327470Z ##[endgroup]
+2026-02-22T02:17:24.7329583Z Secret source: Actions
+2026-02-22T02:17:24.7330528Z Prepare workflow directory
+2026-02-22T02:17:24.7651521Z Prepare all required actions
+2026-02-22T02:17:24.7689802Z Getting action download info
+2026-02-22T02:17:25.1655237Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-02-22T02:17:25.3674345Z Complete job name: Validate config
+2026-02-22T02:17:25.4432571Z ##[group]Run actions/checkout@v4
+2026-02-22T02:17:25.4433404Z with:
+2026-02-22T02:17:25.4433909Z   repository: nothingfortune/zmk-custom-functions-lib
+2026-02-22T02:17:25.4434638Z   token: ***
+2026-02-22T02:17:25.4435049Z   ssh-strict: true
+2026-02-22T02:17:25.4435452Z   ssh-user: git
+2026-02-22T02:17:25.4436159Z   persist-credentials: true
+2026-02-22T02:17:25.4436719Z   clean: true
+2026-02-22T02:17:25.4437119Z   sparse-checkout-cone-mode: true
+2026-02-22T02:17:25.4437626Z   fetch-depth: 1
+2026-02-22T02:17:25.4438025Z   fetch-tags: false
+2026-02-22T02:17:25.4438446Z   show-progress: true
+2026-02-22T02:17:25.4438855Z   lfs: false
+2026-02-22T02:17:25.4439242Z   submodules: false
+2026-02-22T02:17:25.4439658Z   set-safe-directory: true
+2026-02-22T02:17:25.4440486Z ##[endgroup]
+2026-02-22T02:17:25.5488962Z Syncing repository: nothingfortune/zmk-custom-functions-lib
+2026-02-22T02:17:25.5490825Z ##[group]Getting Git version info
+2026-02-22T02:17:25.5491764Z Working directory is '/home/runner/work/zmk-custom-functions-lib/zmk-custom-functions-lib'
+2026-02-22T02:17:25.5492888Z [command]/usr/bin/git version
+2026-02-22T02:17:25.5571586Z git version 2.52.0
+2026-02-22T02:17:25.5597666Z ##[endgroup]
+2026-02-22T02:17:25.5611085Z Temporarily overriding HOME='/home/runner/work/_temp/925340a2-fdd3-4cd3-9898-4997b328beb1' before making global git config changes
+2026-02-22T02:17:25.5612429Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-22T02:17:25.5623595Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:17:25.5664933Z Deleting the contents of '/home/runner/work/zmk-custom-functions-lib/zmk-custom-functions-lib'
+2026-02-22T02:17:25.5668750Z ##[group]Initializing the repository
+2026-02-22T02:17:25.5673773Z [command]/usr/bin/git init /home/runner/work/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:17:25.5789496Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-22T02:17:25.5791193Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-22T02:17:25.5792575Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-22T02:17:25.5793913Z hint: call:
+2026-02-22T02:17:25.5794295Z hint:
+2026-02-22T02:17:25.5794780Z hint: 	git config --global init.defaultBranch <name>
+2026-02-22T02:17:25.5795378Z hint:
+2026-02-22T02:17:25.5796195Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-22T02:17:25.5797101Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-22T02:17:25.5797781Z hint:
+2026-02-22T02:17:25.5798335Z hint: 	git branch -m <name>
+2026-02-22T02:17:25.5798878Z hint:
+2026-02-22T02:17:25.5799478Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-22T02:17:25.5800640Z Initialized empty Git repository in /home/runner/work/zmk-custom-functions-lib/zmk-custom-functions-lib/.git/
+2026-02-22T02:17:25.5804672Z [command]/usr/bin/git remote add origin https://github.com/nothingfortune/zmk-custom-functions-lib
+2026-02-22T02:17:25.5841281Z ##[endgroup]
+2026-02-22T02:17:25.5842042Z ##[group]Disabling automatic garbage collection
+2026-02-22T02:17:25.5845225Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-22T02:17:25.5873105Z ##[endgroup]
+2026-02-22T02:17:25.5873799Z ##[group]Setting up auth
+2026-02-22T02:17:25.5880006Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-22T02:17:25.5909101Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-22T02:17:25.6283394Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-22T02:17:25.6313771Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-22T02:17:25.6531872Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-22T02:17:25.6562744Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-22T02:17:25.6786467Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-22T02:17:25.6819425Z ##[endgroup]
+2026-02-22T02:17:25.6827772Z ##[group]Fetching the repository
+2026-02-22T02:17:25.6829210Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f33cabcc919227226a9f2d9afd751e6d6a9c35d5:refs/remotes/origin/main
+2026-02-22T02:17:26.1932225Z From https://github.com/nothingfortune/zmk-custom-functions-lib
+2026-02-22T02:17:26.1933753Z  * [new ref]         f33cabcc919227226a9f2d9afd751e6d6a9c35d5 -> origin/main
+2026-02-22T02:17:26.1965634Z ##[endgroup]
+2026-02-22T02:17:26.1966851Z ##[group]Determining the checkout info
+2026-02-22T02:17:26.1968043Z ##[endgroup]
+2026-02-22T02:17:26.1972952Z [command]/usr/bin/git sparse-checkout disable
+2026-02-22T02:17:26.2051877Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-22T02:17:26.2076666Z ##[group]Checking out the ref
+2026-02-22T02:17:26.2080094Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-22T02:17:26.2290620Z Switched to a new branch 'main'
+2026-02-22T02:17:26.2293330Z branch 'main' set up to track 'origin/main'.
+2026-02-22T02:17:26.2301184Z ##[endgroup]
+2026-02-22T02:17:26.2333588Z [command]/usr/bin/git log -1 --format=%H
+2026-02-22T02:17:26.2355478Z f33cabcc919227226a9f2d9afd751e6d6a9c35d5
+2026-02-22T02:17:26.2540762Z ##[group]Run bash scripts/validation.sh
+2026-02-22T02:17:26.2541407Z [36;1mbash scripts/validation.sh[0m
+2026-02-22T02:17:26.2576651Z shell: /usr/bin/bash -e {0}
+2026-02-22T02:17:26.2577159Z ##[endgroup]
+2026-02-22T02:17:26.2678390Z 
+2026-02-22T02:17:26.2678986Z ── 1. Required files
+2026-02-22T02:17:26.2680449Z   PASS  shared/layers.dtsi
+2026-02-22T02:17:26.2681227Z   PASS  shared/macros.dtsi
+2026-02-22T02:17:26.2682248Z   PASS  shared/behaviors.dtsi
+2026-02-22T02:17:26.2683016Z   PASS  shared/modMorphs.dtsi
+2026-02-22T02:17:26.2683761Z   PASS  shared/autoshift.dtsi
+2026-02-22T02:17:26.2684494Z   PASS  shared/bluetooth.dtsi
+2026-02-22T02:17:26.2685218Z   PASS  shared/magic.dtsi
+2026-02-22T02:17:26.2686131Z   PASS  shared/homeRowMods/hrm_timings.dtsi
+2026-02-22T02:17:26.2687061Z   PASS  shared/homeRowMods/hrm_macros.dtsi
+2026-02-22T02:17:26.2687946Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi
+2026-02-22T02:17:26.2688840Z   PASS  shared/combos/combos_common.dtsi
+2026-02-22T02:17:26.2689767Z   PASS  shared/combos/combos_fkeys.dtsi
+2026-02-22T02:17:26.2690714Z   PASS  boards/go60/positions.dtsi
+2026-02-22T02:17:26.2691523Z   PASS  boards/go60/position_groups.dtsi
+2026-02-22T02:17:26.2692361Z   PASS  boards/go60/board_meta.dtsi
+2026-02-22T02:17:26.2693139Z   PASS  boards/go60/go60.keymap
+2026-02-22T02:17:26.2693879Z   PASS  boards/go60/go60.conf
+2026-02-22T02:17:26.2694634Z   PASS  boards/glove80/positions.dtsi
+2026-02-22T02:17:26.2695534Z   PASS  boards/glove80/position_groups.dtsi
+2026-02-22T02:17:26.2696561Z   PASS  boards/glove80/board_meta.dtsi
+2026-02-22T02:17:26.2697389Z   PASS  boards/glove80/glove80.keymap
+2026-02-22T02:17:26.2698189Z   PASS  boards/glove80/glove80.conf
+2026-02-22T02:17:26.2698988Z   PASS  boards/slicemk/positions.dtsi
+2026-02-22T02:17:26.2699834Z   PASS  boards/slicemk/position_groups.dtsi
+2026-02-22T02:17:26.2700693Z   PASS  boards/slicemk/board_meta.dtsi
+2026-02-22T02:17:26.2701524Z   PASS  boards/slicemk/slicemk.keymap
+2026-02-22T02:17:26.2702221Z   PASS  boards/slicemk/slicemk.conf
+2026-02-22T02:17:26.2702724Z   PASS  config/west.yml
+2026-02-22T02:17:26.2703172Z   PASS  config/slicemk_ergodox.keymap
+2026-02-22T02:17:26.2703724Z   PASS  config/slicemk_ergodox_leftcentral.conf
+2026-02-22T02:17:26.2704271Z   PASS  build/go60.nix
+2026-02-22T02:17:26.2704698Z   PASS  build/glove80.nix
+2026-02-22T02:17:26.2705120Z   PASS  build.yaml
+2026-02-22T02:17:26.2705529Z   PASS  .github/workflows/build.yml
+2026-02-22T02:17:26.2706031Z 
+2026-02-22T02:17:26.2706329Z ── 2. Layer files per board (expect 19)
+2026-02-22T02:17:26.2706985Z   PASS  boards/go60/layers/ — all 19 layer files present
+2026-02-22T02:17:26.2707722Z   PASS  boards/glove80/layers/ — all 19 layer files present
+2026-02-22T02:17:26.2708444Z   PASS  boards/slicemk/layers/ — all 19 layer files present
+2026-02-22T02:17:26.2708873Z 
+2026-02-22T02:17:26.2709070Z ── 3. Position counts
+2026-02-22T02:17:26.2719191Z   PASS  boards/go60/positions.dtsi — 60 positions
+2026-02-22T02:17:26.2738087Z   PASS  boards/glove80/positions.dtsi — 80 positions
+2026-02-22T02:17:26.2756523Z   PASS  boards/slicemk/positions.dtsi — 77 positions
+2026-02-22T02:17:26.2757285Z 
+2026-02-22T02:17:26.2757697Z ── 4. Binding counts per layer
+2026-02-22T02:17:26.3452831Z   PASS  boards/go60/layers/ — all layers have 60 bindings
+2026-02-22T02:17:26.4136668Z   PASS  boards/glove80/layers/ — all layers have 80 bindings
+2026-02-22T02:17:26.4846084Z   PASS  boards/slicemk/layers/ — all layers have 77 bindings
+2026-02-22T02:17:26.4847336Z 
+2026-02-22T02:17:26.4847861Z ── 5. Combo DTS wrapper
+2026-02-22T02:17:26.4860287Z   PASS  boards/go60 keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-22T02:17:26.4874772Z   PASS  boards/glove80 keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-22T02:17:26.4890501Z   PASS  boards/slicemk keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-22T02:17:26.4905144Z   PASS  shared/combos/combos_common.dtsi — correctly has no wrapper
+2026-02-22T02:17:26.4920356Z   PASS  shared/combos/combos_fkeys.dtsi — correctly has no wrapper
+2026-02-22T02:17:26.4921561Z 
+2026-02-22T02:17:26.4922040Z ── 6. Shared includes in board keymaps
+2026-02-22T02:17:26.5049558Z   PASS  boards/go60 keymap — all 10 shared includes present
+2026-02-22T02:17:26.5173251Z   PASS  boards/glove80 keymap — all 10 shared includes present
+2026-02-22T02:17:26.5295207Z   PASS  boards/slicemk keymap — all 10 shared includes present
+2026-02-22T02:17:26.5296923Z 
+2026-02-22T02:17:26.5297373Z ── 7. Position group defines
+2026-02-22T02:17:26.5359908Z   PASS  boards/go60/position_groups.dtsi — all 5 groups defined
+2026-02-22T02:17:26.5423980Z   PASS  boards/glove80/position_groups.dtsi — all 5 groups defined
+2026-02-22T02:17:26.5488061Z   PASS  boards/slicemk/position_groups.dtsi — all 5 groups defined
+2026-02-22T02:17:26.5489227Z 
+2026-02-22T02:17:26.5489764Z ── 8. Layer constants in shared/layers.dtsi
+2026-02-22T02:17:26.5727128Z   PASS  shared/layers.dtsi — all 19 LAYER_* constants defined
+2026-02-22T02:17:26.5728313Z 
+2026-02-22T02:17:26.5728630Z ── 9. SliceMK build config
+2026-02-22T02:17:26.5740501Z   PASS  build.yaml — board: slicemk_ergodox_202109
+2026-02-22T02:17:26.5753722Z   PASS  build.yaml — shield: slicemk_ergodox_leftcentral
+2026-02-22T02:17:26.5767569Z   PASS  config/west.yml — slicemk remote declared
+2026-02-22T02:17:26.5780370Z   PASS  config/west.yml — self: path present
+2026-02-22T02:17:26.5781363Z 
+2026-02-22T02:17:26.5781813Z ── 10. GitHub Actions workflow
+2026-02-22T02:17:26.5794792Z   PASS  .github/workflows/build.yml — Go60 Nix build present
+2026-02-22T02:17:26.5809394Z   PASS  .github/workflows/build.yml — Glove80 Nix build present
+2026-02-22T02:17:26.5823323Z   PASS  .github/workflows/build.yml — SliceMK reusable workflow present
+2026-02-22T02:17:26.5836543Z   PASS  .github/workflows/build.yml — MoErgo Cachix cache configured
+2026-02-22T02:17:26.5838112Z 
+2026-02-22T02:17:26.5838453Z ── 11. Stub status (informational)
+2026-02-22T02:17:26.6542402Z   WARN  boards/glove80/layers/ — all 19 layers are &trans stubs (need to be filled in)
+2026-02-22T02:17:26.7292916Z   WARN  boards/slicemk/layers/ — all 19 layers are &trans stubs (need to be filled in)
+2026-02-22T02:17:26.7295213Z 
+2026-02-22T02:17:26.7296693Z ── 12. Include ordering: layers.dtsi before board_meta.dtsi
+2026-02-22T02:17:26.7336443Z   PASS  boards/go60 keymap — layers.dtsi (line 46) before board_meta.dtsi (line 49)
+2026-02-22T02:17:26.7378506Z   PASS  boards/glove80 keymap — layers.dtsi (line 44) before board_meta.dtsi (line 47)
+2026-02-22T02:17:26.7420474Z   PASS  boards/slicemk keymap — layers.dtsi (line 44) before board_meta.dtsi (line 47)
+2026-02-22T02:17:26.7422622Z 
+2026-02-22T02:17:26.7423336Z ── 13. Behavior/macro includes inside / { behaviors { } } block
+2026-02-22T02:17:26.7667131Z   PASS  boards/go60 keymap — all behavior/macro includes are inside a / { } block
+2026-02-22T02:17:26.7910737Z   PASS  boards/glove80 keymap — all behavior/macro includes are inside a / { } block
+2026-02-22T02:17:26.8157030Z   PASS  boards/slicemk keymap — all behavior/macro includes are inside a / { } block
+2026-02-22T02:17:26.8158957Z 
+2026-02-22T02:17:26.8159467Z ── 14. Duplicate DTS labels in shared dtsi files
+2026-02-22T02:17:26.8205431Z   PASS  shared/modMorphs.dtsi — no duplicate labels
+2026-02-22T02:17:26.8238497Z   PASS  shared/autoshift.dtsi — no duplicate labels
+2026-02-22T02:17:26.8267208Z   PASS  shared/layers.dtsi — no duplicate labels
+2026-02-22T02:17:26.8300174Z   PASS  shared/bluetooth.dtsi — no duplicate labels
+2026-02-22T02:17:26.8333245Z   PASS  shared/combos/combos_fkeys.dtsi — no duplicate labels
+2026-02-22T02:17:26.8365174Z   PASS  shared/combos/combos_common.dtsi — no duplicate labels
+2026-02-22T02:17:26.8399283Z   PASS  shared/behaviors.dtsi — no duplicate labels
+2026-02-22T02:17:26.8432942Z   PASS  shared/magic.dtsi — no duplicate labels
+2026-02-22T02:17:26.8465676Z   PASS  shared/homeRowMods/hrm_timings.dtsi — no duplicate labels
+2026-02-22T02:17:26.8500591Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi — no duplicate labels
+2026-02-22T02:17:26.8536456Z   PASS  shared/homeRowMods/hrm_macros.dtsi — no duplicate labels
+2026-02-22T02:17:26.8570411Z   PASS  shared/macros.dtsi — no duplicate labels
+2026-02-22T02:17:26.8573198Z 
+2026-02-22T02:17:26.8573935Z ── 15. Layer index continuity in shared/layers.dtsi
+2026-02-22T02:17:26.8607484Z   PASS  shared/layers.dtsi — 19 layer indices are contiguous (0–18)
+2026-02-22T02:17:26.8609720Z 
+2026-02-22T02:17:26.8610510Z ── 16. Auto-pair macros defined in shared/macros.dtsi
+2026-02-22T02:17:26.8623100Z   PASS  shared/macros.dtsi — pair_paren defined
+2026-02-22T02:17:26.8638609Z   PASS  shared/macros.dtsi — pair_angle defined
+2026-02-22T02:17:26.8653065Z   PASS  shared/macros.dtsi — pair_dquote defined
+2026-02-22T02:17:26.8654023Z 
+2026-02-22T02:17:26.8654801Z ── 17. pointing.h and mkp_drag_lock in all boards
+2026-02-22T02:17:26.8668501Z   PASS  shared/macros.dtsi — mkp_drag_lock present
+2026-02-22T02:17:26.8682523Z   PASS  boards/go60 keymap — pointing.h included
+2026-02-22T02:17:26.8696263Z   PASS  boards/glove80 keymap — pointing.h included
+2026-02-22T02:17:26.8710020Z   PASS  boards/slicemk keymap — mouse.h included (slicemk/zmk old API)
+2026-02-22T02:17:26.8722367Z 
+2026-02-22T02:17:26.8723225Z ══════════════════════════════════════════════
+2026-02-22T02:17:26.8724274Z   PASS: 89    FAIL: 0     WARN: 2   
+2026-02-22T02:17:26.8725536Z ══════════════════════════════════════════════
+2026-02-22T02:17:26.8726967Z 
+2026-02-22T02:17:26.8873274Z Post job cleanup.
+2026-02-22T02:17:26.9798397Z [command]/usr/bin/git version
+2026-02-22T02:17:26.9834709Z git version 2.52.0
+2026-02-22T02:17:26.9879401Z Temporarily overriding HOME='/home/runner/work/_temp/1260a665-41d8-43bd-9351-de7d5f247e1c' before making global git config changes
+2026-02-22T02:17:26.9881902Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-22T02:17:26.9886730Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:17:26.9921692Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-22T02:17:26.9954979Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-22T02:17:27.0179076Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-22T02:17:27.0199095Z http.https://github.com/.extraheader
+2026-02-22T02:17:27.0212117Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-02-22T02:17:27.0243505Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-22T02:17:27.0460417Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-22T02:17:27.0491055Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-22T02:17:27.0838362Z Cleaning up orphan processes

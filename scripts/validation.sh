@@ -280,9 +280,9 @@ section "9. SliceMK build config"
 # ══════════════════════════════════════════════════════════════
 
 build_yaml="$REPO_ROOT/build.yaml"
-grep -q 'slicemk_ergodox_202109' "$build_yaml" 2>/dev/null \
-  && pass "build.yaml — board: slicemk_ergodox_202109" \
-  || fail "build.yaml — board slicemk_ergodox_202109 not found"
+grep -q 'slicemk_ergodox_202207_green_left' "$build_yaml" 2>/dev/null \
+  && pass "build.yaml — board: slicemk_ergodox_202207_green_left" \
+  || fail "build.yaml — board slicemk_ergodox_202207_green_left not found"
 
 grep -q 'slicemk_ergodox_leftcentral' "$build_yaml" 2>/dev/null \
   && pass "build.yaml — shield: slicemk_ergodox_leftcentral" \
@@ -466,7 +466,7 @@ section "16. Auto-pair macros defined in shared/macros.dtsi"
 # step will fail with "undefined node label".
 
 macros_file="$REPO_ROOT/shared/macros.dtsi"
-for label in pair_paren pair_angle pair_dquote; do
+for label in pair_paren pair_angle pair_dquote pair_bracket pair_brace; do
   if grep -q "^${label}:" "$macros_file" 2>/dev/null; then
     pass "shared/macros.dtsi — $label defined"
   else
@@ -511,6 +511,71 @@ fi
 if grep -q 'zmk/pointing\.h' "$slicemk_keymap" 2>/dev/null; then
   warn "boards/slicemk keymap — includes pointing.h; verify slicemk/zmk fork has this header"
 fi
+
+# ══════════════════════════════════════════════════════════════
+section "18. All &label references in layers/combos resolve"
+# ══════════════════════════════════════════════════════════════
+# For each board, every &label used in keymap layers or combo bindings
+# must be either a ZMK built-in behavior or defined somewhere in
+# shared/board dtsi files. Catches "undefined node label" DTS build
+# errors before they reach the compiler.
+
+# ZMK built-in behavior labels — no user definition required
+ZMK_BUILTINS=(
+  kp mo to lt mt none trans sk sl
+  mkp mmv msc
+  bt rgb_ug out
+  bootloader reset sys_reset
+  key_repeat caps_word
+  ext_power
+  macro_tap macro_press macro_release macro_pause_for_release
+  macro_param_1to1 macro_param_1to2 macro_param_2to1 macro_param_2to2
+)
+
+for board in go60 glove80 slicemk; do
+  board_dir="$REPO_ROOT/boards/$board"
+
+  # Collect all user-defined labels from shared + board dtsi (excluding layer files).
+  # Handles: "label: node {" and ZMK helper macros ZMK_TD_LAYER/ZMK_BEHAVIOR/ZMK_TAP_DANCE.
+  defined=""
+  while IFS= read -r f; do
+    defined+=$(perl -ne '
+      print "$1\n" if /^\s*(\w+)\s*:\s*\w+\s*\{/;
+      print "$1\n" if /ZMK_TD_LAYER\s*\(\s*(\w+)/;
+      print "$1\n" if /ZMK_BEHAVIOR\s*\(\s*(\w+)/;
+      print "$1\n" if /ZMK_TAP_DANCE\s*\(\s*(\w+)/;
+    ' "$f" 2>/dev/null)$'\n'
+  done < <(find "$REPO_ROOT/shared" "$board_dir" -name '*.dtsi' \
+             ! -path '*/layers/*' 2>/dev/null)
+
+  # Collect &label references from board layer files + shared combo files.
+  refs=""
+  while IFS= read -r f; do
+    refs+=$(grep -oE '&[A-Za-z][A-Za-z0-9_]*' "$f" 2>/dev/null \
+            | sed 's/^&//')$'\n'
+  done < <(find "$board_dir/layers" "$REPO_ROOT/shared/combos" \
+             -name '*.dtsi' 2>/dev/null)
+
+  # Report any reference that is neither a built-in nor user-defined
+  undefined=()
+  while IFS= read -r ref; do
+    [[ -z "$ref" ]] && continue
+    # Skip built-ins
+    is_bi=false
+    for b in "${ZMK_BUILTINS[@]}"; do
+      [[ "$ref" == "$b" ]] && { is_bi=true; break; }
+    done
+    [[ "$is_bi" == true ]] && continue
+    # Skip if user-defined
+    echo "$defined" | grep -qx "$ref" || undefined+=("&$ref")
+  done < <(echo "$refs" | sort -u)
+
+  if [[ ${#undefined[@]} -eq 0 ]]; then
+    pass "boards/$board — all &label references in layers/combos resolve"
+  else
+    fail "boards/$board — undefined &labels: ${undefined[*]}"
+  fi
+done
 
 # ══════════════════════════════════════════════════════════════
 printf "\n${BOLD}══════════════════════════════════════════════${NC}\n"

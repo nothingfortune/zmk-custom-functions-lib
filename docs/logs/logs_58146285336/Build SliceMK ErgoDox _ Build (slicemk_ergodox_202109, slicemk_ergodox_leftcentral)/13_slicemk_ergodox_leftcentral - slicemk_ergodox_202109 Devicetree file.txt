@@ -1,0 +1,21 @@
+﻿2026-02-22T02:19:07.4918797Z ##[group]Run if [ -f "/tmp/tmp.lCeUDS1GE4/zephyr/zephyr.dts" ]
+2026-02-22T02:19:07.4919255Z [36;1mif [ -f "/tmp/tmp.lCeUDS1GE4/zephyr/zephyr.dts" ][0m
+2026-02-22T02:19:07.4919592Z [36;1mthen[0m
+2026-02-22T02:19:07.4919828Z [36;1m  cat "/tmp/tmp.lCeUDS1GE4/zephyr/zephyr.dts"[0m
+2026-02-22T02:19:07.4920216Z [36;1melif [ -f "/tmp/tmp.lCeUDS1GE4/zephyr/zephyr.dts.pre" ][0m
+2026-02-22T02:19:07.4920534Z [36;1mthen[0m
+2026-02-22T02:19:07.4920774Z [36;1m  cat -s "/tmp/tmp.lCeUDS1GE4/zephyr/zephyr.dts.pre"[0m
+2026-02-22T02:19:07.4921947Z [36;1melse[0m
+2026-02-22T02:19:07.4922187Z [36;1m  echo "No Devicetree output"[0m
+2026-02-22T02:19:07.4922432Z [36;1mfi[0m
+2026-02-22T02:19:07.4922694Z shell: sh -e {0}
+2026-02-22T02:19:07.4922865Z env:
+2026-02-22T02:19:07.4923033Z   build_dir: /tmp/tmp.lCeUDS1GE4
+2026-02-22T02:19:07.4923351Z   base_dir: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:19:07.4923703Z   zephyr_version: 4.1.0
+2026-02-22T02:19:07.4923898Z   extra_west_args: 
+2026-02-22T02:19:07.4924168Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-22T02:19:07.4924568Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202109
+2026-02-22T02:19:07.4925002Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202109-zmk
+2026-02-22T02:19:07.4925342Z ##[endgroup]
+2026-02-22T02:19:07.5414370Z No Devicetree output

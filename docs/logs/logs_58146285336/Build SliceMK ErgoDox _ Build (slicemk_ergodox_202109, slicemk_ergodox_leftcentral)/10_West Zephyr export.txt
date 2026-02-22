@@ -1,0 +1,20 @@
+﻿2026-02-22T02:19:05.3324354Z ##[group]Run west zephyr-export
+2026-02-22T02:19:05.3324663Z [36;1mwest zephyr-export[0m
+2026-02-22T02:19:05.3324982Z shell: sh -e {0}
+2026-02-22T02:19:05.3325153Z env:
+2026-02-22T02:19:05.3325333Z   build_dir: /tmp/tmp.lCeUDS1GE4
+2026-02-22T02:19:05.3325640Z   base_dir: /__w/zmk-custom-functions-lib/zmk-custom-functions-lib
+2026-02-22T02:19:05.3325969Z   zephyr_version: 4.1.0
+2026-02-22T02:19:05.3326184Z   extra_west_args: 
+2026-02-22T02:19:05.3326429Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-22T02:19:05.3326822Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202109
+2026-02-22T02:19:05.3327241Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202109-zmk
+2026-02-22T02:19:05.3327575Z ##[endgroup]
+2026-02-22T02:19:05.8581485Z Zephyr (/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/zephyr/share/zephyr-package/cmake)
+2026-02-22T02:19:05.8582400Z has been added to the user package registry in:
+2026-02-22T02:19:05.8582866Z ~/.cmake/packages/Zephyr
+2026-02-22T02:19:05.8583163Z 
+2026-02-22T02:19:06.1297471Z ZephyrUnittest (/__w/zmk-custom-functions-lib/zmk-custom-functions-lib/zephyr/share/zephyrunittest-package/cmake)
+2026-02-22T02:19:06.1298267Z has been added to the user package registry in:
+2026-02-22T02:19:06.1298572Z ~/.cmake/packages/ZephyrUnittest
+2026-02-22T02:19:06.1298753Z 
