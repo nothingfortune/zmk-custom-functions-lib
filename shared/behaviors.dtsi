@@ -55,12 +55,13 @@ arrow_right: arrow_word_right {
     bindings = <&kp>, <&kp>;
 };
 
-/* Tab with Hyper key on double-tap */
+/* Tab with Hyper key on deliberate hold */
 tab_hyper: tab_hyper {
-    compatible = "zmk,behavior-tap-dance";
-    #binding-cells = <0>;
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <1>;
     tapping-term-ms = <TD_TAPPING_TERM>;
-    bindings = <&kp TAB>, <&hyper_key>;
+    flavor = "tap-preferred";
+    bindings = <&hyper_key>, <&kp>;
 };
 
 // thumb_layer_access - TailorKey

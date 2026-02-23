@@ -53,7 +53,7 @@
 
 /* ── Arrow / Word-Jump Keys ─────────────────────────────────── */
 #define ARROW_TAPPING_TERM       250
-#define ARROW_QUICK_TAP          200
+#define ARROW_QUICK_TAP          0
 #define ARROW_PRIOR_IDLE         150
 
 /* ── Combos ─────────────────────────────────────────────────── */
