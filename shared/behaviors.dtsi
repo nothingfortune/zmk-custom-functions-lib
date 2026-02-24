@@ -2,10 +2,10 @@
 lt_v2_TKZ: lt_v2_TKZ {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
-    tapping-term-ms = <THUMB_TAPPING_TERM>;
+    tapping-term-ms = <HRM_INDEX_TAPPING_TERM>;
     bindings = <&mo>, <&kp>;
     flavor = "balanced";
-    quick-tap-ms = <THUMB_QUICK_TAP>;
+    quick-tap-ms = <HRM_INDEX_QUICK_TAP>;
 };
 
 /* Caps Word: Capitalizes alphanumeric keys until a stop key is pressed */

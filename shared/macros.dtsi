@@ -221,15 +221,3 @@ mod_tab_v1_TKZ: mod_tab_v1_TKZ {
         , <&macro_param_1to1>
         , <&kp MACRO_PLACEHOLDER>;
 };
-
-// Symbol layer dot dot
-symb_dotdot_v1_TKZ: symb_dotdot_v1_TKZ {
-    label = "&SYMB_DOTDOT_V1_TKZ";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_tap>
-        , <&kp DOT>
-        , <&kp DOT>;
-};

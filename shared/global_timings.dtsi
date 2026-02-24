@@ -11,15 +11,15 @@
 #define HRM_INDEX_TAPPING_TERM   190
 #define HRM_MIDDY_TAPPING_TERM   210
 #define HRM_RING_TAPPING_TERM    240
-#define HRM_PINKY_TAPPING_TERM   270
+#define HRM_PINKY_TAPPING_TERM   250
 
 /* Prior-idle: the keyboard must have been idle this many ms
  * before an HRM hold can activate. Prevents rolls from firing
  * modifiers unintentionally.                                    */
-#define HRM_INDEX_PRIOR_IDLE     100
-#define HRM_MIDDY_PRIOR_IDLE     125
-#define HRM_RING_PRIOR_IDLE      125
-#define HRM_PINKY_PRIOR_IDLE     125
+#define HRM_INDEX_PRIOR_IDLE     125
+#define HRM_MIDDY_PRIOR_IDLE     150
+#define HRM_RING_PRIOR_IDLE      150
+#define HRM_PINKY_PRIOR_IDLE     150
 
 /* Quick-tap: pressing the key a second time within this window
  * sends the tap keycode and bypasses hold, enabling key repeat. */
@@ -47,8 +47,8 @@
 #define AUTOSHIFT_TAPPING_TERM   190
 
 /* ── Backspace-Word ─────────────────────────────────────────── */
-#define BSPC_WORD_TAPPING_TERM   250
-#define BSPC_WORD_PRIOR_IDLE     200
+#define BSPC_WORD_TAPPING_TERM   225
+#define BSPC_WORD_PRIOR_IDLE     150
 #define BSPC_WORD_QUICK_TAP      0
 
 /* ── Arrow / Word-Jump Keys ─────────────────────────────────── */

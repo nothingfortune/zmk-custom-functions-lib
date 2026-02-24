@@ -5,27 +5,6 @@ combo_F1_cb_v1_TKZ {
     layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
 };
 
-// F10 combo for Go60 - TailorKey
-combo_F10_cb_v1_TKZ {
-    key-positions = <POS_RH_C5R1 POS_RH_C5R2>;
-    bindings = <&kp F10>;
-    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
-};
-
-// F11 combo for Go60 - TailorKey
-combo_F11_cb_v1_TKZ {
-    key-positions = <POS_RH_C6R1 POS_RH_C6R2>;
-    bindings = <&kp F11>;
-    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
-};
-
-// F12 combo for Go60 - TailorKey
-combo_F12_cb_v1_TKZ {
-    key-positions = <POS_RH_C6R1 POS_RH_C5R1>;
-    bindings = <&kp F12>;
-    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
-};
-
 // F2 combo for Go60 - TailorKey
 combo_F2_cb_v1_TKZ {
     key-positions = <POS_LH_C4R2 POS_LH_C4R1>;
@@ -79,5 +58,26 @@ combo_F8_cb_v1_TKZ {
 combo_F9_cb_v1_TKZ {
     key-positions = <POS_RH_C4R1 POS_RH_C4R2>;
     bindings = <&kp F9>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F10 combo for Go60 - TailorKey
+combo_F10_cb_v1_TKZ {
+    key-positions = <POS_RH_C5R1 POS_RH_C5R2>;
+    bindings = <&kp F10>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F11 combo for Go60 - TailorKey
+combo_F11_cb_v1_TKZ {
+    key-positions = <POS_RH_C6R1 POS_RH_C6R2>;
+    bindings = <&kp F11>;
+    layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
+};
+
+// F12 combo for Go60 - TailorKey
+combo_F12_cb_v1_TKZ {
+    key-positions = <POS_RH_C6R1 POS_RH_C5R1>;
+    bindings = <&kp F12>;
     layers = <LAYER_Base LAYER_Typing LAYER_Autoshift>;
 };

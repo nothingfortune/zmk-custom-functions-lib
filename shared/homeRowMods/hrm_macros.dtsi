@@ -3,87 +3,9 @@
 /*                        hrm required macros                         */
 /* ------------------------------------------------------------------ */
 
-// HRM_left_index_hold -> swich layer  - TailorKey
-HRM_left_index_hold_v1B_TKZ: HRM_left_index_hold_v1B_TKZ {
-    label = "&HRM_LEFT_INDEX_HOLD_V1B_TKZ";
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_press>
-        , <&macro_param_1to1>
-        , <&kp F>
-        , <&mo LAYER_LeftIndex>
-        , <&macro_pause_for_release>
-        , <&macro_release>
-        , <&macro_param_1to1>
-        , <&kp F>
-        , <&mo LAYER_LeftIndex>;
-};
-
-// HRM_left_index_tap - incl. QWERTY alpha character - TailorKey
-HRM_left_index_tap_v1B_TKZ: HRM_left_index_tap_v1B_TKZ {
-    label = "&HRM_LEFT_INDEX_TAP_V1B_TKZ";
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_release>
-        , <&kp LSHFT>
-        , <&kp RSHFT>
-        , <&kp LALT>
-        , <&kp RALT>
-        , <&kp LCTRL>
-        , <&kp RCTRL>
-        , <&kp LGUI>
-        , <&kp RGUI>
-        , <&macro_tap>
-        , <&kp F>
-        , <&macro_tap>
-        , <&macro_param_1to1>
-        , <&kp F>;
-};
-
-// HRM_left_middy_hold -> swich layer - TailorKey
-HRM_left_middy_hold_v1B_TKZ: HRM_left_middy_hold_v1B_TKZ {
-    label = "&HRM_LEFT_MIDDY_HOLD_V1B_TKZ";
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_press>
-        , <&macro_param_1to1>
-        , <&kp D>
-        , <&mo LAYER_LeftMiddy>
-        , <&macro_pause_for_release>
-        , <&macro_release>
-        , <&macro_param_1to1>
-        , <&kp D>
-        , <&mo LAYER_LeftMiddy>;
-};
-
-// HRM_left_middy_tap - incl. QWERTY alpha character - TailorKey
-HRM_left_middy_tap_v1B_TKZ: HRM_left_middy_tap_v1B_TKZ {
-    label = "&HRM_LEFT_MIDDY_TAP_V1B_TKZ";
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_release>
-        , <&kp LSHFT>
-        , <&kp RSHFT>
-        , <&kp LALT>
-        , <&kp RALT>
-        , <&kp LCTRL>
-        , <&kp RCTRL>
-        , <&kp LGUI>
-        , <&kp RGUI>
-        , <&macro_tap>
-        , <&kp D>
-        , <&macro_tap>
-        , <&macro_param_1to1>
-        , <&kp D>;
-};
+// 
+// Left Pinky HRM macros - TailorKey (hold for layer, tap for key)
+//
 
 // HRM_left_pinky_hold -> swich layer - TailorKey
 HRM_left_pinky_hold_v1B_TKZ: HRM_left_pinky_hold_v1B_TKZ {
@@ -126,6 +48,10 @@ HRM_left_pinky_tap_v1B_TKZ: HRM_left_pinky_tap_v1B_TKZ {
         , <&kp A>;
 };
 
+// 
+// Left Ring HRM macros - TailorKey (hold for layer, tap for key)
+//
+
 // HRM_left_ring_hold -> swich layer - TailorKey
 HRM_left_ring_hold_v1B_TKZ: HRM_left_ring_hold_v1B_TKZ {
     label = "&HRM_LEFT_RING_HOLD_V1B_TKZ";
@@ -166,6 +92,146 @@ HRM_left_ring_tap_v1B_TKZ: HRM_left_ring_tap_v1B_TKZ {
         , <&macro_param_1to1>
         , <&kp S>;
 };
+
+// 
+// Left Middy HRM macros - TailorKey (hold for layer, tap for key)
+//
+
+// HRM_left_middy_hold -> swich layer - TailorKey
+HRM_left_middy_hold_v1B_TKZ: HRM_left_middy_hold_v1B_TKZ {
+    label = "&HRM_LEFT_MIDDY_HOLD_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_press>
+        , <&macro_param_1to1>
+        , <&kp D>
+        , <&mo LAYER_LeftMiddy>
+        , <&macro_pause_for_release>
+        , <&macro_release>
+        , <&macro_param_1to1>
+        , <&kp D>
+        , <&mo LAYER_LeftMiddy>;
+};
+
+// HRM_left_middy_tap - incl. QWERTY alpha character - TailorKey
+HRM_left_middy_tap_v1B_TKZ: HRM_left_middy_tap_v1B_TKZ {
+    label = "&HRM_LEFT_MIDDY_TAP_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_release>
+        , <&kp LSHFT>
+        , <&kp RSHFT>
+        , <&kp LALT>
+        , <&kp RALT>
+        , <&kp LCTRL>
+        , <&kp RCTRL>
+        , <&kp LGUI>
+        , <&kp RGUI>
+        , <&macro_tap>
+        , <&kp D>
+        , <&macro_tap>
+        , <&macro_param_1to1>
+        , <&kp D>;
+};
+
+// 
+// Left Index HRM macros - TailorKey (hold for layer, tap for key)
+//
+
+// HRM_left_index_hold -> swich layer  - TailorKey
+HRM_left_index_hold_v1B_TKZ: HRM_left_index_hold_v1B_TKZ {
+    label = "&HRM_LEFT_INDEX_HOLD_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_press>
+        , <&macro_param_1to1>
+        , <&kp F>
+        , <&mo LAYER_LeftIndex>
+        , <&macro_pause_for_release>
+        , <&macro_release>
+        , <&macro_param_1to1>
+        , <&kp F>
+        , <&mo LAYER_LeftIndex>;
+};
+
+// HRM_left_index_tap - incl. QWERTY alpha character - TailorKey
+HRM_left_index_tap_v1B_TKZ: HRM_left_index_tap_v1B_TKZ {
+    label = "&HRM_LEFT_INDEX_TAP_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_release>
+        , <&kp LSHFT>
+        , <&kp RSHFT>
+        , <&kp LALT>
+        , <&kp RALT>
+        , <&kp LCTRL>
+        , <&kp RCTRL>
+        , <&kp LGUI>
+        , <&kp RGUI>
+        , <&macro_tap>
+        , <&kp F>
+        , <&macro_tap>
+        , <&macro_param_1to1>
+        , <&kp F>;
+};
+
+// HRM_left_index_symb_tap - incl. QWERTY alpha character - TailorKey
+HRM_left_index_symb_tap_v1B_TKZ: HRM_left_index_symb_tap_v1B_TKZ {
+    label = "&HRM_LEFT_INDEX_SYMB_TAP_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_release>
+        , <&kp LSHFT>
+        , <&kp RSHFT>
+        , <&kp LALT>
+        , <&kp RALT>
+        , <&kp LCTRL>
+        , <&kp RCTRL>
+        , <&kp LGUI>
+        , <&kp RGUI>
+        , <&macro_tap>
+        , <&kp G>
+        , <&macro_tap>
+        , <&macro_param_1to1>
+        , <&kp G>;
+};
+
+// HRM_right_index_symb_tap - incl. QWERTY alpha character - TailorKey
+HRM_right_index_symb_tap_v1B_TKZ: HRM_right_index_symb_tap_v1B_TKZ {
+    label = "&HRM_RIGHT_INDEX_SYMB_TAP_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_release>
+        , <&kp LSHFT>
+        , <&kp RSHFT>
+        , <&kp LALT>
+        , <&kp RALT>
+        , <&kp LCTRL>
+        , <&kp RCTRL>
+        , <&kp LGUI>
+        , <&kp RGUI>
+        , <&macro_tap>
+        , <&kp H>
+        , <&macro_tap>
+        , <&macro_param_1to1>
+        , <&kp H>;
+};
+
+// 
+// Right Index HRM macros - TailorKey (hold for layer, tap for key)
+//
 
 // HRM_right_index_hold -> swich layer - TailorKey
 HRM_right_index_hold_v1B_TKZ: HRM_right_index_hold_v1B_TKZ {
@@ -208,6 +274,10 @@ HRM_right_index_tap_v1B_TKZ: HRM_right_index_tap_v1B_TKZ {
         , <&kp J>;
 };
 
+// 
+// Right Middy HRM macros - TailorKey (hold for layer, tap for key)
+//
+
 // HRM_right_middy_hold -> swich layer - TailorKey
 HRM_right_middy_hold_v1B_TKZ: HRM_right_middy_hold_v1B_TKZ {
     label = "&HRM_RIGHT_MIDDY_HOLD_V1B_TKZ";
@@ -249,46 +319,9 @@ HRM_right_middy_tap_v1B_TKZ: HRM_right_middy_tap_v1B_TKZ {
         , <&kp K>;
 };
 
-// HRM_right_pinky_hold -> swich layer - TailorKey
-HRM_right_pinky_hold_v1B_TKZ: HRM_right_pinky_hold_v1B_TKZ {
-    label = "&HRM_RIGHT_PINKY_HOLD_V1B_TKZ";
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_press>
-        , <&macro_param_1to1>
-        , <&kp SEMI>
-        , <&mo LAYER_RightPinky>
-        , <&macro_pause_for_release>
-        , <&macro_release>
-        , <&macro_param_1to1>
-        , <&kp SEMI>
-        , <&mo LAYER_RightPinky>;
-};
-
-// HRM_right_pinky_tap - incl. QWERTY alpha character - TailorKey
-HRM_right_pinky_tap_v1B_TKZ: HRM_right_pinky_tap_v1B_TKZ {
-    label = "&HRM_RIGHT_PINKY_TAP_V1B_TKZ";
-    compatible = "zmk,behavior-macro-one-param";
-    #binding-cells = <1>;
-    tap-ms = <0>;
-    wait-ms = <0>;
-    bindings = <&macro_release>
-        , <&kp LSHFT>
-        , <&kp RSHFT>
-        , <&kp LALT>
-        , <&kp RALT>
-        , <&kp LCTRL>
-        , <&kp RCTRL>
-        , <&kp LGUI>
-        , <&kp RGUI>
-        , <&macro_tap>
-        , <&kp SEMI>
-        , <&macro_tap>
-        , <&macro_param_1to1>
-        , <&kp SEMI>;
-};
+// 
+// Right Ring HRM macros - TailorKey (hold for layer, tap for key)
+//
 
 // HRM_right_ring_hold -> swich layer - TailorKey
 HRM_right_ring_hold_v1B_TKZ: HRM_right_ring_hold_v1B_TKZ {
@@ -329,4 +362,49 @@ HRM_right_ring_tap_v1B_TKZ: HRM_right_ring_tap_v1B_TKZ {
         , <&macro_tap>
         , <&macro_param_1to1>
         , <&kp L>;
+};
+
+// 
+// Right Pinky HRM macros - TailorKey (hold for layer, tap for key)
+//
+
+// HRM_right_pinky_hold -> swich layer - TailorKey
+HRM_right_pinky_hold_v1B_TKZ: HRM_right_pinky_hold_v1B_TKZ {
+    label = "&HRM_RIGHT_PINKY_HOLD_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_press>
+        , <&macro_param_1to1>
+        , <&kp SEMI>
+        , <&mo LAYER_RightPinky>
+        , <&macro_pause_for_release>
+        , <&macro_release>
+        , <&macro_param_1to1>
+        , <&kp SEMI>
+        , <&mo LAYER_RightPinky>;
+};
+
+// HRM_right_pinky_tap - incl. QWERTY alpha character - TailorKey
+HRM_right_pinky_tap_v1B_TKZ: HRM_right_pinky_tap_v1B_TKZ {
+    label = "&HRM_RIGHT_PINKY_TAP_V1B_TKZ";
+    compatible = "zmk,behavior-macro-one-param";
+    #binding-cells = <1>;
+    tap-ms = <0>;
+    wait-ms = <0>;
+    bindings = <&macro_release>
+        , <&kp LSHFT>
+        , <&kp RSHFT>
+        , <&kp LALT>
+        , <&kp RALT>
+        , <&kp LCTRL>
+        , <&kp RCTRL>
+        , <&kp LGUI>
+        , <&kp RGUI>
+        , <&macro_tap>
+        , <&kp SEMI>
+        , <&macro_tap>
+        , <&macro_param_1to1>
+        , <&kp SEMI>;
 };
