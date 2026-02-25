@@ -1,0 +1,2710 @@
+﻿2026-02-25T03:51:38.1839321Z ##[group]Run if [ -f "/tmp/tmp.F78Px5ltJb/zephyr/zephyr.dts" ]
+2026-02-25T03:51:38.1839809Z [36;1mif [ -f "/tmp/tmp.F78Px5ltJb/zephyr/zephyr.dts" ][0m
+2026-02-25T03:51:38.1840487Z [36;1mthen[0m
+2026-02-25T03:51:38.1840728Z [36;1m  cat "/tmp/tmp.F78Px5ltJb/zephyr/zephyr.dts"[0m
+2026-02-25T03:51:38.1841095Z [36;1melif [ -f "/tmp/tmp.F78Px5ltJb/zephyr/zephyr.dts.pre" ][0m
+2026-02-25T03:51:38.1841462Z [36;1mthen[0m
+2026-02-25T03:51:38.1841714Z [36;1m  cat -s "/tmp/tmp.F78Px5ltJb/zephyr/zephyr.dts.pre"[0m
+2026-02-25T03:51:38.1842022Z [36;1melse[0m
+2026-02-25T03:51:38.1842214Z [36;1m  echo "No Devicetree output"[0m
+2026-02-25T03:51:38.1842454Z [36;1mfi[0m
+2026-02-25T03:51:38.1842724Z shell: sh -e {0}
+2026-02-25T03:51:38.1842899Z env:
+2026-02-25T03:51:38.1843070Z   build_dir: /tmp/tmp.F78Px5ltJb
+2026-02-25T03:51:38.1843392Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:38.1843725Z   zephyr_version: 4.1.0
+2026-02-25T03:51:38.1843918Z   extra_west_args: 
+2026-02-25T03:51:38.1844212Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-25T03:51:38.1844637Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-25T03:51:38.1845164Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-25T03:51:38.1845552Z ##[endgroup]
+2026-02-25T03:51:38.2362649Z # 0 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/misc/empty_file.c"
+2026-02-25T03:51:38.2363769Z # 0 "<built-in>"
+2026-02-25T03:51:38.2364095Z # 0 "<command-line>"
+2026-02-25T03:51:38.2365506Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/arm/slicemk_ergodox_202207_green/slicemk_ergodox_202207_green_left.dts" 1
+2026-02-25T03:51:38.2367020Z /dts-v1/;
+2026-02-25T03:51:38.2368215Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/arm/slicemk_ergodox_202207_green/slicemk_ergodox_202207_green_common.dts" 1
+2026-02-25T03:51:38.2369516Z /dts-v1/;
+2026-02-25T03:51:38.2370576Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf52833_qiaa.dtsi" 1 3 4
+2026-02-25T03:51:38.2371369Z 
+2026-02-25T03:51:38.2371805Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/common/mem.h" 1 3 4
+2026-02-25T03:51:38.2373011Z # 8 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf52833_qiaa.dtsi" 2 3 4
+2026-02-25T03:51:38.2374774Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf52833.dtsi" 1 3 4
+2026-02-25T03:51:38.2375547Z 
+2026-02-25T03:51:38.2376055Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/armv7-m.dtsi" 1 3 4
+2026-02-25T03:51:38.2376762Z 
+2026-02-25T03:51:38.2377282Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/common/skeleton.dtsi" 1 3 4
+2026-02-25T03:51:38.2378516Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/common/skeleton.dtsi" 3 4
+2026-02-25T03:51:38.2379345Z / {
+2026-02-25T03:51:38.2379659Z  #address-cells = <1>;
+2026-02-25T03:51:38.2380196Z  #size-cells = <1>;
+2026-02-25T03:51:38.2380546Z  chosen { };
+2026-02-25T03:51:38.2380842Z  aliases { };
+2026-02-25T03:51:38.2381141Z };
+2026-02-25T03:51:38.2381794Z # 4 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/armv7-m.dtsi" 2 3 4
+2026-02-25T03:51:38.2382488Z 
+2026-02-25T03:51:38.2382560Z / {
+2026-02-25T03:51:38.2382731Z  soc {
+2026-02-25T03:51:38.2383040Z   #address-cells = <1>;
+2026-02-25T03:51:38.2383261Z   #size-cells = <1>;
+2026-02-25T03:51:38.2383472Z   compatible = "simple-bus";
+2026-02-25T03:51:38.2383706Z   interrupt-parent = <&nvic>;
+2026-02-25T03:51:38.2383916Z   ranges;
+2026-02-25T03:51:38.2384013Z 
+2026-02-25T03:51:38.2384108Z   nvic: interrupt-controller@e000e100 {
+2026-02-25T03:51:38.2384369Z    #address-cells = <1>;
+2026-02-25T03:51:38.2384591Z    compatible = "arm,v7m-nvic";
+2026-02-25T03:51:38.2384810Z    reg = <0xe000e100 0xc00>;
+2026-02-25T03:51:38.2385031Z    interrupt-controller;
+2026-02-25T03:51:38.2385242Z    #interrupt-cells = <2>;
+2026-02-25T03:51:38.2385687Z   };
+2026-02-25T03:51:38.2385783Z 
+2026-02-25T03:51:38.2385860Z   systick: timer@e000e010 {
+2026-02-25T03:51:38.2386085Z    compatible = "arm,armv7m-systick";
+2026-02-25T03:51:38.2386322Z    reg = <0xe000e010 0x10>;
+2026-02-25T03:51:38.2386514Z   };
+2026-02-25T03:51:38.2386659Z  };
+2026-02-25T03:51:38.2386799Z };
+2026-02-25T03:51:38.2387192Z # 8 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf52833.dtsi" 2 3 4
+2026-02-25T03:51:38.2387872Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 1 3 4
+2026-02-25T03:51:38.2388258Z 
+2026-02-25T03:51:38.2388575Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/adc/adc.h" 1 3 4
+2026-02-25T03:51:38.2389259Z # 8 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2391384Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/adc/nrf-adc.h" 1 3 4
+2026-02-25T03:51:38.2392423Z # 10 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/adc/nrf-adc.h" 3 4
+2026-02-25T03:51:38.2393158Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/dt-util.h" 1 3 4
+2026-02-25T03:51:38.2393870Z # 19 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/dt-util.h" 3 4
+2026-02-25T03:51:38.2394571Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_macro.h" 1 3 4
+2026-02-25T03:51:38.2395249Z # 34 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_macro.h" 3 4
+2026-02-25T03:51:38.2395963Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_internal.h" 1 3 4
+2026-02-25T03:51:38.2396657Z # 18 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_internal.h" 3 4
+2026-02-25T03:51:38.2397341Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_loops.h" 1 3 4
+2026-02-25T03:51:38.2398032Z # 19 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_internal.h" 2 3 4
+2026-02-25T03:51:38.2398725Z # 35 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/sys/util_macro.h" 2 3 4
+2026-02-25T03:51:38.2399605Z # 20 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/dt-util.h" 2 3 4
+2026-02-25T03:51:38.2400695Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/adc/nrf-adc.h" 2 3 4
+2026-02-25T03:51:38.2401410Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2402110Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/gpio/gpio.h" 1 3 4
+2026-02-25T03:51:38.2402804Z # 10 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2403496Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/i2c/i2c.h" 1 3 4
+2026-02-25T03:51:38.2404172Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2404923Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/pinctrl/nrf-pinctrl.h" 1 3 4
+2026-02-25T03:51:38.2405666Z # 12 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2406445Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/include/zephyr/dt-bindings/pwm/pwm.h" 1 3 4
+2026-02-25T03:51:38.2407163Z # 13 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2407544Z 
+2026-02-25T03:51:38.2407789Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/common/freq.h" 1 3 4
+2026-02-25T03:51:38.2408563Z # 15 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2409226Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/override.dtsi" 1 3 4
+2026-02-25T03:51:38.2409882Z # 16 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 2 3 4
+2026-02-25T03:51:38.2411070Z # 24 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf_common.dtsi" 3 4
+2026-02-25T03:51:38.2411520Z / {
+2026-02-25T03:51:38.2411694Z  pinctrl: pin-controller {
+2026-02-25T03:51:38.2411843Z 
+2026-02-25T03:51:38.2411941Z   compatible = "nordic,nrf-pinctrl";
+2026-02-25T03:51:38.2412173Z  };
+2026-02-25T03:51:38.2412263Z 
+2026-02-25T03:51:38.2412343Z  rng_hci: entropy_bt_hci {
+2026-02-25T03:51:38.2412572Z   compatible = "zephyr,bt-hci-entropy";
+2026-02-25T03:51:38.2412810Z   status = "okay";
+2026-02-25T03:51:38.2412992Z  };
+2026-02-25T03:51:38.2413148Z };
+2026-02-25T03:51:38.2413230Z 
+2026-02-25T03:51:38.2413297Z &systick {
+2026-02-25T03:51:38.2413398Z 
+2026-02-25T03:51:38.2413468Z  status = "disabled";
+2026-02-25T03:51:38.2413650Z };
+2026-02-25T03:51:38.2414175Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf52833.dtsi" 2 3 4
+2026-02-25T03:51:38.2414718Z 
+2026-02-25T03:51:38.2414781Z / {
+2026-02-25T03:51:38.2414933Z  chosen {
+2026-02-25T03:51:38.2415106Z   zephyr,entropy = &rng;
+2026-02-25T03:51:38.2415349Z   zephyr,flash-controller = &flash_controller;
+2026-02-25T03:51:38.2415609Z  };
+2026-02-25T03:51:38.2415697Z 
+2026-02-25T03:51:38.2415766Z  cpus {
+2026-02-25T03:51:38.2415944Z   #address-cells = <1>;
+2026-02-25T03:51:38.2416156Z   #size-cells = <0>;
+2026-02-25T03:51:38.2416286Z 
+2026-02-25T03:51:38.2416354Z   cpu@0 {
+2026-02-25T03:51:38.2416530Z    device_type = "cpu";
+2026-02-25T03:51:38.2416751Z    compatible = "arm,cortex-m4f";
+2026-02-25T03:51:38.2416979Z    reg = <0>;
+2026-02-25T03:51:38.2417164Z    #address-cells = <1>;
+2026-02-25T03:51:38.2417367Z    #size-cells = <1>;
+2026-02-25T03:51:38.2417485Z 
+2026-02-25T03:51:38.2417562Z    itm: itm@e0000000 {
+2026-02-25T03:51:38.2417756Z     compatible = "arm,armv7m-itm";
+2026-02-25T03:51:38.2417987Z     reg = <0xe0000000 0x1000>;
+2026-02-25T03:51:38.2418208Z     swo-ref-frequency = <32000000>;
+2026-02-25T03:51:38.2418587Z    };
+2026-02-25T03:51:38.2418734Z   };
+2026-02-25T03:51:38.2418880Z  };
+2026-02-25T03:51:38.2418962Z 
+2026-02-25T03:51:38.2419029Z  soc {
+2026-02-25T03:51:38.2419184Z   ficr: ficr@10000000 {
+2026-02-25T03:51:38.2419392Z    compatible = "nordic,nrf-ficr";
+2026-02-25T03:51:38.2419624Z    reg = <0x10000000 0x1000>;
+2026-02-25T03:51:38.2419825Z    status = "okay";
+2026-02-25T03:51:38.2420221Z   };
+2026-02-25T03:51:38.2420319Z 
+2026-02-25T03:51:38.2420397Z   uicr: uicr@10001000 {
+2026-02-25T03:51:38.2420595Z    compatible = "nordic,nrf-uicr";
+2026-02-25T03:51:38.2420822Z    reg = <0x10001000 0x1000>;
+2026-02-25T03:51:38.2421028Z    status = "okay";
+2026-02-25T03:51:38.2421192Z   };
+2026-02-25T03:51:38.2421281Z 
+2026-02-25T03:51:38.2421353Z   sram0: memory@20000000 {
+2026-02-25T03:51:38.2421565Z    compatible = "mmio-sram";
+2026-02-25T03:51:38.2421764Z   };
+2026-02-25T03:51:38.2421847Z 
+2026-02-25T03:51:38.2421918Z   clock: clock@40000000 {
+2026-02-25T03:51:38.2422124Z    compatible = "nordic,nrf-clock";
+2026-02-25T03:51:38.2422358Z    reg = <0x40000000 0x1000>;
+2026-02-25T03:51:38.2422557Z    interrupts = <0 1>;
+2026-02-25T03:51:38.2422740Z    status = "okay";
+2026-02-25T03:51:38.2422906Z   };
+2026-02-25T03:51:38.2422986Z 
+2026-02-25T03:51:38.2423060Z   power: power@40000000 {
+2026-02-25T03:51:38.2423276Z    compatible = "nordic,nrf-power";
+2026-02-25T03:51:38.2423501Z    reg = <0x40000000 0x1000>;
+2026-02-25T03:51:38.2423698Z    interrupts = <0 1>;
+2026-02-25T03:51:38.2423881Z    status = "okay";
+2026-02-25T03:51:38.2424048Z   };
+2026-02-25T03:51:38.2424127Z 
+2026-02-25T03:51:38.2424197Z   radio: radio@40001000 {
+2026-02-25T03:51:38.2424544Z    compatible = "nordic,nrf-radio";
+2026-02-25T03:51:38.2424770Z    reg = <0x40001000 0x1000>;
+2026-02-25T03:51:38.2424970Z    interrupts = <1 1>;
+2026-02-25T03:51:38.2425148Z    status = "okay";
+2026-02-25T03:51:38.2425322Z    dfe-supported;
+2026-02-25T03:51:38.2425507Z    ieee802154-supported;
+2026-02-25T03:51:38.2425707Z    ble-2mbps-supported;
+2026-02-25T03:51:38.2425922Z    ble-coded-phy-supported;
+2026-02-25T03:51:38.2426144Z    tx-high-power-supported;
+2026-02-25T03:51:38.2426285Z 
+2026-02-25T03:51:38.2426357Z    ieee802154: ieee802154 {
+2026-02-25T03:51:38.2426583Z     compatible = "nordic,nrf-ieee802154";
+2026-02-25T03:51:38.2426840Z     status = "disabled";
+2026-02-25T03:51:38.2427024Z    };
+2026-02-25T03:51:38.2427174Z   };
+2026-02-25T03:51:38.2427266Z 
+2026-02-25T03:51:38.2427343Z   uart0: uart@40002000 {
+2026-02-25T03:51:38.2427465Z 
+2026-02-25T03:51:38.2427547Z    compatible = "nordic,nrf-uarte";
+2026-02-25T03:51:38.2427772Z    reg = <0x40002000 0x1000>;
+2026-02-25T03:51:38.2427980Z    interrupts = <2 1>;
+2026-02-25T03:51:38.2428173Z    status = "disabled";
+2026-02-25T03:51:38.2428347Z   };
+2026-02-25T03:51:38.2428435Z 
+2026-02-25T03:51:38.2428500Z   i2c0: i2c@40003000 {
+2026-02-25T03:51:38.2428611Z 
+2026-02-25T03:51:38.2428701Z    compatible = "nordic,nrf-twim";
+2026-02-25T03:51:38.2428927Z    #address-cells = <1>;
+2026-02-25T03:51:38.2429124Z    #size-cells = <0>;
+2026-02-25T03:51:38.2429319Z    reg = <0x40003000 0x1000>;
+2026-02-25T03:51:38.2429523Z    clock-frequency = <100000>;
+2026-02-25T03:51:38.2429741Z    interrupts = <3 1>;
+2026-02-25T03:51:38.2429927Z    status = "disabled";
+2026-02-25T03:51:38.2430377Z   };
+2026-02-25T03:51:38.2430474Z 
+2026-02-25T03:51:38.2430544Z   spi0: spi@40003000 {
+2026-02-25T03:51:38.2430658Z 
+2026-02-25T03:51:38.2430747Z    compatible = "nordic,nrf-spim";
+2026-02-25T03:51:38.2430979Z    #address-cells = <1>;
+2026-02-25T03:51:38.2431167Z    #size-cells = <0>;
+2026-02-25T03:51:38.2431348Z    reg = <0x40003000 0x1000>;
+2026-02-25T03:51:38.2431552Z    interrupts = <3 1>;
+2026-02-25T03:51:38.2431747Z    max-frequency = <((8) * 1000 * 1000)>;
+2026-02-25T03:51:38.2431983Z    status = "disabled";
+2026-02-25T03:51:38.2432157Z   };
+2026-02-25T03:51:38.2432238Z 
+2026-02-25T03:51:38.2432305Z   i2c1: i2c@40004000 {
+2026-02-25T03:51:38.2432419Z 
+2026-02-25T03:51:38.2432499Z    compatible = "nordic,nrf-twim";
+2026-02-25T03:51:38.2432853Z    #address-cells = <1>;
+2026-02-25T03:51:38.2433044Z    #size-cells = <0>;
+2026-02-25T03:51:38.2433229Z    reg = <0x40004000 0x1000>;
+2026-02-25T03:51:38.2433435Z    clock-frequency = <100000>;
+2026-02-25T03:51:38.2433640Z    interrupts = <4 1>;
+2026-02-25T03:51:38.2433825Z    status = "disabled";
+2026-02-25T03:51:38.2434003Z   };
+2026-02-25T03:51:38.2434083Z 
+2026-02-25T03:51:38.2434156Z   spi1: spi@40004000 {
+2026-02-25T03:51:38.2434267Z 
+2026-02-25T03:51:38.2434348Z    compatible = "nordic,nrf-spim";
+2026-02-25T03:51:38.2434573Z    #address-cells = <1>;
+2026-02-25T03:51:38.2434766Z    #size-cells = <0>;
+2026-02-25T03:51:38.2434946Z    reg = <0x40004000 0x1000>;
+2026-02-25T03:51:38.2435147Z    interrupts = <4 1>;
+2026-02-25T03:51:38.2435347Z    max-frequency = <((8) * 1000 * 1000)>;
+2026-02-25T03:51:38.2435576Z    status = "disabled";
+2026-02-25T03:51:38.2435756Z   };
+2026-02-25T03:51:38.2435837Z 
+2026-02-25T03:51:38.2435913Z   nfct: nfct@40005000 {
+2026-02-25T03:51:38.2436102Z    compatible = "nordic,nrf-nfct";
+2026-02-25T03:51:38.2436330Z    reg = <0x40005000 0x1000>;
+2026-02-25T03:51:38.2436534Z    interrupts = <5 1>;
+2026-02-25T03:51:38.2436739Z    status = "disabled";
+2026-02-25T03:51:38.2436919Z   };
+2026-02-25T03:51:38.2436999Z 
+2026-02-25T03:51:38.2437074Z   gpiote: gpiote@40006000 {
+2026-02-25T03:51:38.2437297Z    compatible = "nordic,nrf-gpiote";
+2026-02-25T03:51:38.2437533Z    reg = <0x40006000 0x1000>;
+2026-02-25T03:51:38.2437727Z    interrupts = <6 5>;
+2026-02-25T03:51:38.2437913Z    status = "disabled";
+2026-02-25T03:51:38.2438092Z   };
+2026-02-25T03:51:38.2438173Z 
+2026-02-25T03:51:38.2438247Z   adc: adc@40007000 {
+2026-02-25T03:51:38.2438549Z    compatible = "nordic,nrf-saadc";
+2026-02-25T03:51:38.2438779Z    reg = <0x40007000 0x1000>;
+2026-02-25T03:51:38.2439259Z    interrupts = <7 1>;
+2026-02-25T03:51:38.2439440Z    status = "disabled";
+2026-02-25T03:51:38.2439634Z    #io-channel-cells = <1>;
+2026-02-25T03:51:38.2439830Z   };
+2026-02-25T03:51:38.2439911Z 
+2026-02-25T03:51:38.2440253Z   timer0: timer@40008000 {
+2026-02-25T03:51:38.2440499Z    compatible = "nordic,nrf-timer";
+2026-02-25T03:51:38.2440727Z    status = "okay";
+2026-02-25T03:51:38.2440900Z    reg = <0x40008000 0x1000>;
+2026-02-25T03:51:38.2441098Z    cc-num = <4>;
+2026-02-25T03:51:38.2441276Z    interrupts = <8 1>;
+2026-02-25T03:51:38.2441457Z    prescaler = <0>;
+2026-02-25T03:51:38.2441628Z   };
+2026-02-25T03:51:38.2441716Z 
+2026-02-25T03:51:38.2441788Z   timer1: timer@40009000 {
+2026-02-25T03:51:38.2442000Z    compatible = "nordic,nrf-timer";
+2026-02-25T03:51:38.2442218Z    status = "okay";
+2026-02-25T03:51:38.2442394Z    reg = <0x40009000 0x1000>;
+2026-02-25T03:51:38.2442600Z    cc-num = <4>;
+2026-02-25T03:51:38.2442770Z    interrupts = <9 1>;
+2026-02-25T03:51:38.2442959Z    prescaler = <0>;
+2026-02-25T03:51:38.2443128Z   };
+2026-02-25T03:51:38.2443211Z 
+2026-02-25T03:51:38.2443282Z   timer2: timer@4000a000 {
+2026-02-25T03:51:38.2443492Z    compatible = "nordic,nrf-timer";
+2026-02-25T03:51:38.2443717Z    status = "okay";
+2026-02-25T03:51:38.2443890Z    reg = <0x4000a000 0x1000>;
+2026-02-25T03:51:38.2444089Z    cc-num = <4>;
+2026-02-25T03:51:38.2444262Z    interrupts = <10 1>;
+2026-02-25T03:51:38.2444447Z    prescaler = <0>;
+2026-02-25T03:51:38.2444612Z   };
+2026-02-25T03:51:38.2444694Z 
+2026-02-25T03:51:38.2444766Z   rtc0: rtc@4000b000 {
+2026-02-25T03:51:38.2444958Z    compatible = "nordic,nrf-rtc";
+2026-02-25T03:51:38.2445185Z    reg = <0x4000b000 0x1000>;
+2026-02-25T03:51:38.2445384Z    cc-num = <3>;
+2026-02-25T03:51:38.2445557Z    interrupts = <11 1>;
+2026-02-25T03:51:38.2445741Z    status = "okay";
+2026-02-25T03:51:38.2445923Z    clock-frequency = <32768>;
+2026-02-25T03:51:38.2446134Z    prescaler = <1>;
+2026-02-25T03:51:38.2446295Z   };
+2026-02-25T03:51:38.2446383Z 
+2026-02-25T03:51:38.2446454Z   temp: temp@4000c000 {
+2026-02-25T03:51:38.2446755Z    compatible = "nordic,nrf-temp";
+2026-02-25T03:51:38.2447037Z    reg = <0x4000c000 0x1000>;
+2026-02-25T03:51:38.2447335Z    interrupts = <12 1>;
+2026-02-25T03:51:38.2447723Z    status = "okay";
+2026-02-25T03:51:38.2448144Z   };
+2026-02-25T03:51:38.2448258Z 
+2026-02-25T03:51:38.2448398Z   rng: random@4000d000 {
+2026-02-25T03:51:38.2448716Z    compatible = "nordic,nrf-rng";
+2026-02-25T03:51:38.2449057Z    reg = <0x4000d000 0x1000>;
+2026-02-25T03:51:38.2449388Z    interrupts = <13 1>;
+2026-02-25T03:51:38.2449664Z    status = "okay";
+2026-02-25T03:51:38.2449939Z   };
+2026-02-25T03:51:38.2450241Z 
+2026-02-25T03:51:38.2450380Z   ecb: ecb@4000e000 {
+2026-02-25T03:51:38.2450716Z    compatible = "nordic,nrf-ecb";
+2026-02-25T03:51:38.2463323Z    reg = <0x4000e000 0x1000>;
+2026-02-25T03:51:38.2463716Z    interrupts = <14 1>;
+2026-02-25T03:51:38.2464065Z    status = "okay";
+2026-02-25T03:51:38.2464252Z   };
+2026-02-25T03:51:38.2464348Z 
+2026-02-25T03:51:38.2464421Z   ccm: ccm@4000f000 {
+2026-02-25T03:51:38.2464638Z    compatible = "nordic,nrf-ccm";
+2026-02-25T03:51:38.2464898Z    reg = <0x4000f000 0x1000>;
+2026-02-25T03:51:38.2465125Z    interrupts = <15 1>;
+2026-02-25T03:51:38.2465345Z    length-field-length-8-bits;
+2026-02-25T03:51:38.2465571Z    status = "okay";
+2026-02-25T03:51:38.2465735Z   };
+2026-02-25T03:51:38.2465833Z 
+2026-02-25T03:51:38.2465915Z   wdt: wdt0: watchdog@40010000 {
+2026-02-25T03:51:38.2466163Z    compatible = "nordic,nrf-wdt";
+2026-02-25T03:51:38.2466398Z    reg = <0x40010000 0x1000>;
+2026-02-25T03:51:38.2466602Z    interrupts = <16 1>;
+2026-02-25T03:51:38.2466792Z    status = "okay";
+2026-02-25T03:51:38.2466974Z   };
+2026-02-25T03:51:38.2467071Z 
+2026-02-25T03:51:38.2467143Z   rtc1: rtc@40011000 {
+2026-02-25T03:51:38.2467347Z    compatible = "nordic,nrf-rtc";
+2026-02-25T03:51:38.2467587Z    reg = <0x40011000 0x1000>;
+2026-02-25T03:51:38.2467984Z    cc-num = <4>;
+2026-02-25T03:51:38.2468171Z    interrupts = <17 1>;
+2026-02-25T03:51:38.2468363Z    status = "okay";
+2026-02-25T03:51:38.2468549Z    clock-frequency = <32768>;
+2026-02-25T03:51:38.2468767Z    prescaler = <1>;
+2026-02-25T03:51:38.2468945Z   };
+2026-02-25T03:51:38.2469032Z 
+2026-02-25T03:51:38.2469110Z   qdec: qdec0: qdec@40012000 {
+2026-02-25T03:51:38.2469348Z    compatible = "nordic,nrf-qdec";
+2026-02-25T03:51:38.2469582Z    reg = <0x40012000 0x1000>;
+2026-02-25T03:51:38.2469784Z    interrupts = <18 1>;
+2026-02-25T03:51:38.2470162Z    status = "disabled";
+2026-02-25T03:51:38.2470425Z   };
+2026-02-25T03:51:38.2470512Z 
+2026-02-25T03:51:38.2470600Z   comp: comparator@40013000 {
+2026-02-25T03:51:38.2470743Z 
+2026-02-25T03:51:38.2470829Z    compatible = "nordic,nrf-comp";
+2026-02-25T03:51:38.2471059Z    reg = <0x40013000 0x1000>;
+2026-02-25T03:51:38.2471267Z    interrupts = <19 1>;
+2026-02-25T03:51:38.2471455Z    status = "disabled";
+2026-02-25T03:51:38.2471664Z    #io-channel-cells = <1>;
+2026-02-25T03:51:38.2471873Z   };
+2026-02-25T03:51:38.2471956Z 
+2026-02-25T03:51:38.2472030Z   egu0: swi0: egu@40014000 {
+2026-02-25T03:51:38.2472286Z    compatible = "nordic,nrf-egu", "nordic,nrf-swi";
+2026-02-25T03:51:38.2472575Z    reg = <0x40014000 0x1000>;
+2026-02-25T03:51:38.2472780Z    interrupts = <20 1>;
+2026-02-25T03:51:38.2472977Z    status = "okay";
+2026-02-25T03:51:38.2473149Z   };
+2026-02-25T03:51:38.2473232Z 
+2026-02-25T03:51:38.2473311Z   egu1: swi1: egu@40015000 {
+2026-02-25T03:51:38.2473552Z    compatible = "nordic,nrf-egu", "nordic,nrf-swi";
+2026-02-25T03:51:38.2473825Z    reg = <0x40015000 0x1000>;
+2026-02-25T03:51:38.2474032Z    interrupts = <21 1>;
+2026-02-25T03:51:38.2474224Z    status = "okay";
+2026-02-25T03:51:38.2474402Z   };
+2026-02-25T03:51:38.2474485Z 
+2026-02-25T03:51:38.2474563Z   egu2: swi2: egu@40016000 {
+2026-02-25T03:51:38.2474799Z    compatible = "nordic,nrf-egu", "nordic,nrf-swi";
+2026-02-25T03:51:38.2475070Z    reg = <0x40016000 0x1000>;
+2026-02-25T03:51:38.2475281Z    interrupts = <22 1>;
+2026-02-25T03:51:38.2475464Z    status = "okay";
+2026-02-25T03:51:38.2475631Z   };
+2026-02-25T03:51:38.2475714Z 
+2026-02-25T03:51:38.2475791Z   egu3: swi3: egu@40017000 {
+2026-02-25T03:51:38.2476023Z    compatible = "nordic,nrf-egu", "nordic,nrf-swi";
+2026-02-25T03:51:38.2476301Z    reg = <0x40017000 0x1000>;
+2026-02-25T03:51:38.2476643Z    interrupts = <23 1>;
+2026-02-25T03:51:38.2476831Z    status = "okay";
+2026-02-25T03:51:38.2476995Z   };
+2026-02-25T03:51:38.2477084Z 
+2026-02-25T03:51:38.2477156Z   egu4: swi4: egu@40018000 {
+2026-02-25T03:51:38.2477399Z    compatible = "nordic,nrf-egu", "nordic,nrf-swi";
+2026-02-25T03:51:38.2477657Z    reg = <0x40018000 0x1000>;
+2026-02-25T03:51:38.2477861Z    interrupts = <24 1>;
+2026-02-25T03:51:38.2478046Z    status = "okay";
+2026-02-25T03:51:38.2478205Z   };
+2026-02-25T03:51:38.2478291Z 
+2026-02-25T03:51:38.2478362Z   egu5: swi5: egu@40019000 {
+2026-02-25T03:51:38.2478601Z    compatible = "nordic,nrf-egu", "nordic,nrf-swi";
+2026-02-25T03:51:38.2478865Z    reg = <0x40019000 0x1000>;
+2026-02-25T03:51:38.2479066Z    interrupts = <25 1>;
+2026-02-25T03:51:38.2479252Z    status = "okay";
+2026-02-25T03:51:38.2479419Z   };
+2026-02-25T03:51:38.2479501Z 
+2026-02-25T03:51:38.2479575Z   timer3: timer@4001a000 {
+2026-02-25T03:51:38.2479795Z    compatible = "nordic,nrf-timer";
+2026-02-25T03:51:38.2480279Z    status = "okay";
+2026-02-25T03:51:38.2480470Z    reg = <0x4001a000 0x1000>;
+2026-02-25T03:51:38.2480676Z    cc-num = <6>;
+2026-02-25T03:51:38.2480857Z    interrupts = <26 1>;
+2026-02-25T03:51:38.2481044Z    prescaler = <0>;
+2026-02-25T03:51:38.2481219Z   };
+2026-02-25T03:51:38.2481304Z 
+2026-02-25T03:51:38.2481386Z   timer4: timer@4001b000 {
+2026-02-25T03:51:38.2481601Z    compatible = "nordic,nrf-timer";
+2026-02-25T03:51:38.2481833Z    status = "okay";
+2026-02-25T03:51:38.2482014Z    reg = <0x4001b000 0x1000>;
+2026-02-25T03:51:38.2482211Z    cc-num = <6>;
+2026-02-25T03:51:38.2482395Z    interrupts = <27 1>;
+2026-02-25T03:51:38.2482728Z    prescaler = <0>;
+2026-02-25T03:51:38.2482899Z   };
+2026-02-25T03:51:38.2482995Z 
+2026-02-25T03:51:38.2483069Z   pwm0: pwm@4001c000 {
+2026-02-25T03:51:38.2483293Z    compatible = "nordic,nrf-pwm";
+2026-02-25T03:51:38.2483534Z    reg = <0x4001c000 0x1000>;
+2026-02-25T03:51:38.2483742Z    interrupts = <28 1>;
+2026-02-25T03:51:38.2483941Z    status = "disabled";
+2026-02-25T03:51:38.2484140Z    #pwm-cells = <3>;
+2026-02-25T03:51:38.2484315Z   };
+2026-02-25T03:51:38.2484411Z 
+2026-02-25T03:51:38.2484485Z   pdm0: pdm@4001d000 {
+2026-02-25T03:51:38.2484694Z    compatible = "nordic,nrf-pdm";
+2026-02-25T03:51:38.2484918Z    reg = <0x4001d000 0x1000>;
+2026-02-25T03:51:38.2485130Z    interrupts = <29 1>;
+2026-02-25T03:51:38.2485324Z    status = "disabled";
+2026-02-25T03:51:38.2485499Z   };
+2026-02-25T03:51:38.2485589Z 
+2026-02-25T03:51:38.2485659Z   acl: acl@4001e000 {
+2026-02-25T03:51:38.2485871Z    compatible = "nordic,nrf-acl";
+2026-02-25T03:51:38.2486093Z    reg = <0x4001e000 0x1000>;
+2026-02-25T03:51:38.2486303Z    status = "okay";
+2026-02-25T03:51:38.2486472Z   };
+2026-02-25T03:51:38.2486555Z 
+2026-02-25T03:51:38.2486672Z   flash_controller: flash-controller@4001e000 {
+2026-02-25T03:51:38.2486986Z    compatible = "nordic,nrf52-flash-controller";
+2026-02-25T03:51:38.2487263Z    reg = <0x4001e000 0x1000>;
+2026-02-25T03:51:38.2487469Z    partial-erase;
+2026-02-25T03:51:38.2487586Z 
+2026-02-25T03:51:38.2487662Z    #address-cells = <1>;
+2026-02-25T03:51:38.2487866Z    #size-cells = <1>;
+2026-02-25T03:51:38.2487985Z 
+2026-02-25T03:51:38.2488059Z    flash0: flash@0 {
+2026-02-25T03:51:38.2488255Z     compatible = "soc-nv-flash";
+2026-02-25T03:51:38.2488493Z     erase-block-size = <4096>;
+2026-02-25T03:51:38.2488718Z     write-block-size = <4>;
+2026-02-25T03:51:38.2488918Z    };
+2026-02-25T03:51:38.2489070Z   };
+2026-02-25T03:51:38.2489154Z 
+2026-02-25T03:51:38.2489243Z   ppi: ppi@4001f000 {
+2026-02-25T03:51:38.2489448Z    compatible = "nordic,nrf-ppi";
+2026-02-25T03:51:38.2489681Z    reg = <0x4001f000 0x1000>;
+2026-02-25T03:51:38.2489890Z    status = "okay";
+2026-02-25T03:51:38.2490241Z   };
+2026-02-25T03:51:38.2490329Z 
+2026-02-25T03:51:38.2490398Z   mwu: mwu@40020000 {
+2026-02-25T03:51:38.2490597Z    compatible = "nordic,nrf-mwu";
+2026-02-25T03:51:38.2490842Z    reg = <0x40020000 0x1000>;
+2026-02-25T03:51:38.2491041Z    status = "okay";
+2026-02-25T03:51:38.2491215Z   };
+2026-02-25T03:51:38.2491455Z 
+2026-02-25T03:51:38.2491535Z   pwm1: pwm@40021000 {
+2026-02-25T03:51:38.2491735Z    compatible = "nordic,nrf-pwm";
+2026-02-25T03:51:38.2491965Z    reg = <0x40021000 0x1000>;
+2026-02-25T03:51:38.2492173Z    interrupts = <33 1>;
+2026-02-25T03:51:38.2492365Z    status = "disabled";
+2026-02-25T03:51:38.2492555Z    #pwm-cells = <3>;
+2026-02-25T03:51:38.2492732Z   };
+2026-02-25T03:51:38.2492815Z 
+2026-02-25T03:51:38.2492885Z   pwm2: pwm@40022000 {
+2026-02-25T03:51:38.2493087Z    compatible = "nordic,nrf-pwm";
+2026-02-25T03:51:38.2493310Z    reg = <0x40022000 0x1000>;
+2026-02-25T03:51:38.2493517Z    interrupts = <34 1>;
+2026-02-25T03:51:38.2493711Z    status = "disabled";
+2026-02-25T03:51:38.2493904Z    #pwm-cells = <3>;
+2026-02-25T03:51:38.2494080Z   };
+2026-02-25T03:51:38.2494164Z 
+2026-02-25T03:51:38.2494234Z   spi2: spi@40023000 {
+2026-02-25T03:51:38.2494355Z 
+2026-02-25T03:51:38.2494441Z    compatible = "nordic,nrf-spim";
+2026-02-25T03:51:38.2494688Z    #address-cells = <1>;
+2026-02-25T03:51:38.2494894Z    #size-cells = <0>;
+2026-02-25T03:51:38.2495079Z    reg = <0x40023000 0x1000>;
+2026-02-25T03:51:38.2495288Z    interrupts = <35 1>;
+2026-02-25T03:51:38.2495485Z    max-frequency = <((8) * 1000 * 1000)>;
+2026-02-25T03:51:38.2495730Z    status = "disabled";
+2026-02-25T03:51:38.2495909Z   };
+2026-02-25T03:51:38.2495991Z 
+2026-02-25T03:51:38.2496058Z   rtc2: rtc@40024000 {
+2026-02-25T03:51:38.2496250Z    compatible = "nordic,nrf-rtc";
+2026-02-25T03:51:38.2496469Z    reg = <0x40024000 0x1000>;
+2026-02-25T03:51:38.2496669Z    cc-num = <4>;
+2026-02-25T03:51:38.2496848Z    interrupts = <36 1>;
+2026-02-25T03:51:38.2497033Z    status = "okay";
+2026-02-25T03:51:38.2497321Z    clock-frequency = <32768>;
+2026-02-25T03:51:38.2497530Z    prescaler = <1>;
+2026-02-25T03:51:38.2497697Z   };
+2026-02-25T03:51:38.2497777Z 
+2026-02-25T03:51:38.2497843Z   i2s0: i2s@40025000 {
+2026-02-25T03:51:38.2498033Z    compatible = "nordic,nrf-i2s";
+2026-02-25T03:51:38.2498255Z    #address-cells = <1>;
+2026-02-25T03:51:38.2498453Z    #size-cells = <0>;
+2026-02-25T03:51:38.2498637Z    reg = <0x40025000 0x1000>;
+2026-02-25T03:51:38.2498838Z    interrupts = <37 1>;
+2026-02-25T03:51:38.2499018Z    status = "disabled";
+2026-02-25T03:51:38.2499196Z   };
+2026-02-25T03:51:38.2499276Z 
+2026-02-25T03:51:38.2499351Z   usbd: usbd@40027000 {
+2026-02-25T03:51:38.2499551Z    compatible = "nordic,nrf-usbd";
+2026-02-25T03:51:38.2499771Z    reg = <0x40027000 0x1000>;
+2026-02-25T03:51:38.2499970Z    interrupts = <39 1>;
+2026-02-25T03:51:38.2500394Z    num-bidir-endpoints = <1>;
+2026-02-25T03:51:38.2500616Z    num-in-endpoints = <7>;
+2026-02-25T03:51:38.2500831Z    num-out-endpoints = <7>;
+2026-02-25T03:51:38.2501057Z    num-isoin-endpoints = <1>;
+2026-02-25T03:51:38.2501278Z    num-isoout-endpoints = <1>;
+2026-02-25T03:51:38.2501494Z    status = "disabled";
+2026-02-25T03:51:38.2501676Z   };
+2026-02-25T03:51:38.2501760Z 
+2026-02-25T03:51:38.2501831Z   uart1: uart@40028000 {
+2026-02-25T03:51:38.2502043Z    compatible = "nordic,nrf-uarte";
+2026-02-25T03:51:38.2502278Z    reg = <0x40028000 0x1000>;
+2026-02-25T03:51:38.2502475Z    interrupts = <40 1>;
+2026-02-25T03:51:38.2502663Z    status = "disabled";
+2026-02-25T03:51:38.2502842Z   };
+2026-02-25T03:51:38.2502922Z 
+2026-02-25T03:51:38.2502992Z   pwm3: pwm@4002d000 {
+2026-02-25T03:51:38.2503191Z    compatible = "nordic,nrf-pwm";
+2026-02-25T03:51:38.2503415Z    reg = <0x4002d000 0x1000>;
+2026-02-25T03:51:38.2503615Z    interrupts = <45 1>;
+2026-02-25T03:51:38.2503798Z    status = "disabled";
+2026-02-25T03:51:38.2503984Z    #pwm-cells = <3>;
+2026-02-25T03:51:38.2504189Z   };
+2026-02-25T03:51:38.2504274Z 
+2026-02-25T03:51:38.2504342Z   spi3: spi@4002f000 {
+2026-02-25T03:51:38.2504546Z    compatible = "nordic,nrf-spim";
+2026-02-25T03:51:38.2504780Z    #address-cells = <1>;
+2026-02-25T03:51:38.2504981Z    #size-cells = <0>;
+2026-02-25T03:51:38.2505167Z    reg = <0x4002f000 0x1000>;
+2026-02-25T03:51:38.2505371Z    interrupts = <47 1>;
+2026-02-25T03:51:38.2505568Z    max-frequency = <((32) * 1000 * 1000)>;
+2026-02-25T03:51:38.2505941Z    rx-delay-supported;
+2026-02-25T03:51:38.2506130Z    rx-delay = <2>;
+2026-02-25T03:51:38.2506305Z    status = "disabled";
+2026-02-25T03:51:38.2506482Z   };
+2026-02-25T03:51:38.2506569Z 
+2026-02-25T03:51:38.2506663Z   gpio0: gpio@50000000 {
+2026-02-25T03:51:38.2506872Z    compatible = "nordic,nrf-gpio";
+2026-02-25T03:51:38.2507096Z    gpio-controller;
+2026-02-25T03:51:38.2507277Z    reg = <0x50000000 0x200
+2026-02-25T03:51:38.2507486Z           0x50000500 0x300>;
+2026-02-25T03:51:38.2507687Z    #gpio-cells = <2>;
+2026-02-25T03:51:38.2507882Z    status = "disabled";
+2026-02-25T03:51:38.2508066Z    port = <0>;
+2026-02-25T03:51:38.2508233Z   };
+2026-02-25T03:51:38.2508319Z 
+2026-02-25T03:51:38.2508389Z   gpio1: gpio@50000300 {
+2026-02-25T03:51:38.2508601Z    compatible = "nordic,nrf-gpio";
+2026-02-25T03:51:38.2508827Z    gpio-controller;
+2026-02-25T03:51:38.2509006Z    reg = <0x50000300 0x200
+2026-02-25T03:51:38.2509200Z           0x50000800 0x300>;
+2026-02-25T03:51:38.2509397Z    #gpio-cells = <2>;
+2026-02-25T03:51:38.2509585Z    ngpios = <10>;
+2026-02-25T03:51:38.2509760Z    status = "disabled";
+2026-02-25T03:51:38.2509941Z    port = <1>;
+2026-02-25T03:51:38.2510309Z   };
+2026-02-25T03:51:38.2510458Z  };
+2026-02-25T03:51:38.2510550Z 
+2026-02-25T03:51:38.2510640Z  sw_pwm: sw-pwm {
+2026-02-25T03:51:38.2510830Z   compatible = "nordic,nrf-sw-pwm";
+2026-02-25T03:51:38.2511069Z   status = "disabled";
+2026-02-25T03:51:38.2511261Z   generator = <&timer2>;
+2026-02-25T03:51:38.2511458Z   clock-prescaler = <0>;
+2026-02-25T03:51:38.2511653Z   #pwm-cells = <3>;
+2026-02-25T03:51:38.2511820Z  };
+2026-02-25T03:51:38.2511960Z };
+2026-02-25T03:51:38.2512181Z 
+2026-02-25T03:51:38.2512243Z &nvic {
+2026-02-25T03:51:38.2512433Z  arm,num-irq-priority-bits = <3>;
+2026-02-25T03:51:38.2512651Z };
+2026-02-25T03:51:38.2513057Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/arm/nordic/nrf52833_qiaa.dtsi" 2 3 4
+2026-02-25T03:51:38.2513482Z 
+2026-02-25T03:51:38.2513551Z &flash0 {
+2026-02-25T03:51:38.2513713Z  reg = <0x00000000 ((512) * 1024)>;
+2026-02-25T03:51:38.2513925Z };
+2026-02-25T03:51:38.2514005Z 
+2026-02-25T03:51:38.2514072Z &sram0 {
+2026-02-25T03:51:38.2514225Z  reg = <0x20000000 ((128) * 1024)>;
+2026-02-25T03:51:38.2514428Z };
+2026-02-25T03:51:38.2514512Z 
+2026-02-25T03:51:38.2514571Z / {
+2026-02-25T03:51:38.2514713Z  soc {
+2026-02-25T03:51:38.2515036Z   compatible = "nordic,nRF52833-QIAA", "nordic,nRF52833", "nordic,nRF52", "simple-bus";
+2026-02-25T03:51:38.2515434Z  };
+2026-02-25T03:51:38.2515580Z };
+2026-02-25T03:51:38.2516122Z # 3 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/arm/slicemk_ergodox_202207_green/slicemk_ergodox_202207_green_common.dts" 2
+2026-02-25T03:51:38.2516687Z 
+2026-02-25T03:51:38.2516746Z / {
+2026-02-25T03:51:38.2516921Z     model = "SliceMK ErgoDox 202207 Green";
+2026-02-25T03:51:38.2517103Z 
+2026-02-25T03:51:38.2517172Z     chosen {
+2026-02-25T03:51:38.2517345Z         zephyr,sram = &sram0;
+2026-02-25T03:51:38.2517577Z         zephyr,flash = &flash0;
+2026-02-25T03:51:38.2517833Z         zephyr,code-partition = &code_partition;
+2026-02-25T03:51:38.2518117Z         zephyr,console = &cdc_acm_uart;
+2026-02-25T03:51:38.2518286Z 
+2026-02-25T03:51:38.2518359Z         zmk,battery = &vbatt;
+2026-02-25T03:51:38.2518563Z     };
+2026-02-25T03:51:38.2518650Z 
+2026-02-25T03:51:38.2518718Z     vbatt: vbatt {
+2026-02-25T03:51:38.2518927Z         compatible = "zmk,battery-nrf-vddh";
+2026-02-25T03:51:38.2519168Z     };
+2026-02-25T03:51:38.2519306Z };
+2026-02-25T03:51:38.2519390Z 
+2026-02-25T03:51:38.2519449Z &adc {
+2026-02-25T03:51:38.2519602Z     status = "okay";
+2026-02-25T03:51:38.2519777Z };
+2026-02-25T03:51:38.2519862Z 
+2026-02-25T03:51:38.2519926Z &gpiote {
+2026-02-25T03:51:38.2520350Z     status = "okay";
+2026-02-25T03:51:38.2520530Z };
+2026-02-25T03:51:38.2520611Z 
+2026-02-25T03:51:38.2520676Z &gpio0 {
+2026-02-25T03:51:38.2520830Z     status = "okay";
+2026-02-25T03:51:38.2520999Z };
+2026-02-25T03:51:38.2521080Z 
+2026-02-25T03:51:38.2521141Z &gpio1 {
+2026-02-25T03:51:38.2521419Z     status = "okay";
+2026-02-25T03:51:38.2521586Z };
+2026-02-25T03:51:38.2521668Z 
+2026-02-25T03:51:38.2521729Z &usbd {
+2026-02-25T03:51:38.2521883Z     status = "okay";
+2026-02-25T03:51:38.2522074Z     cdc_acm_uart: cdc_acm_uart {
+2026-02-25T03:51:38.2522320Z         compatible = "zephyr,cdc-acm-uart";
+2026-02-25T03:51:38.2522565Z     };
+2026-02-25T03:51:38.2522710Z };
+2026-02-25T03:51:38.2522792Z 
+2026-02-25T03:51:38.2522855Z &flash0 {
+2026-02-25T03:51:38.2523015Z     partitions {
+2026-02-25T03:51:38.2523211Z         compatible = "fixed-partitions";
+2026-02-25T03:51:38.2523458Z         #address-cells = <1>;
+2026-02-25T03:51:38.2523676Z         #size-cells = <1>;
+2026-02-25T03:51:38.2523811Z 
+2026-02-25T03:51:38.2523897Z         code_partition: partition@1000 {
+2026-02-25T03:51:38.2524141Z             reg = <0x00001000 0x0006c000>;
+2026-02-25T03:51:38.2524360Z         };
+2026-02-25T03:51:38.2524452Z 
+2026-02-25T03:51:38.2524546Z         storage_partition: partition@6d000 {
+2026-02-25T03:51:38.2524802Z             reg = <0x0006d000 0x00007000>;
+2026-02-25T03:51:38.2525019Z         };
+2026-02-25T03:51:38.2525171Z     };
+2026-02-25T03:51:38.2525316Z };
+2026-02-25T03:51:38.2525853Z # 3 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/arm/slicemk_ergodox_202207_green/slicemk_ergodox_202207_green_left.dts" 2
+2026-02-25T03:51:38.2526401Z 
+2026-02-25T03:51:38.2526460Z / {
+2026-02-25T03:51:38.2526621Z     ergodox_a: ergodox_a {
+2026-02-25T03:51:38.2526844Z         compatible = "ergodox-a";
+2026-02-25T03:51:38.2527071Z         #gpio-cells = <2>;
+2026-02-25T03:51:38.2527301Z         gpio-map-mask = <0xffffffff 0xffffffc0>;
+2026-02-25T03:51:38.2527737Z         gpio-map-pass-thru = <0 0x3f>;
+2026-02-25T03:51:38.2527969Z         gpio-map
+2026-02-25T03:51:38.2528145Z             = <0 0 &gpio0 13 0>
+2026-02-25T03:51:38.2528357Z             , <1 0 &gpio1 3 0>
+2026-02-25T03:51:38.2528554Z             , <2 0 &gpio1 5 0>
+2026-02-25T03:51:38.2528755Z             , <3 0 &gpio0 2 0>
+2026-02-25T03:51:38.2528958Z             , <4 0 &gpio0 28 0>
+2026-02-25T03:51:38.2529151Z             , <5 0 &gpio0 31 0>
+2026-02-25T03:51:38.2529342Z             , <6 0 &gpio0 5 0>
+2026-02-25T03:51:38.2529539Z             , <7 0 &gpio0 17 0>
+2026-02-25T03:51:38.2529732Z             , <8 0 &gpio1 7 0>
+2026-02-25T03:51:38.2529926Z             , <9 0 &gpio1 9 0>
+2026-02-25T03:51:38.2530354Z             , <10 0 &gpio0 11 0>
+2026-02-25T03:51:38.2530574Z             , <11 0 &gpio0 6 0>
+2026-02-25T03:51:38.2530776Z             , <12 0 &gpio0 26 0>
+2026-02-25T03:51:38.2530974Z             ;
+2026-02-25T03:51:38.2531129Z     };
+2026-02-25T03:51:38.2531224Z 
+2026-02-25T03:51:38.2531307Z     slicemk_button: slicemk_button {
+2026-02-25T03:51:38.2531556Z         compatible = "slicemk-button";
+2026-02-25T03:51:38.2531798Z         #gpio-cells = <2>;
+2026-02-25T03:51:38.2532029Z         gpio-map-mask = <0xffffffff 0xffffffc0>;
+2026-02-25T03:51:38.2532313Z         gpio-map-pass-thru = <0 0x3f>;
+2026-02-25T03:51:38.2532558Z         gpio-map = <0 0 &gpio0 24 0>;
+2026-02-25T03:51:38.2532776Z     };
+2026-02-25T03:51:38.2532919Z };
+2026-02-25T03:51:38.2533073Z # 0 "<command-line>" 2
+2026-02-25T03:51:38.2533622Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox_leftcentral.overlay" 1
+2026-02-25T03:51:38.2534519Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox_left.dtsi" 1
+2026-02-25T03:51:38.2535352Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox.dtsi" 1
+2026-02-25T03:51:38.2536149Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/matrix_transform.h" 1 3 4
+2026-02-25T03:51:38.2536934Z # 2 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox.dtsi" 2
+2026-02-25T03:51:38.2537389Z 
+2026-02-25T03:51:38.2537447Z / {
+2026-02-25T03:51:38.2537597Z     chosen {
+2026-02-25T03:51:38.2537893Z         zmk,kscan = &kscan0;
+2026-02-25T03:51:38.2538133Z         zmk,matrix_transform = &default_transform;
+2026-02-25T03:51:38.2538389Z     };
+2026-02-25T03:51:38.2538474Z 
+2026-02-25T03:51:38.2538573Z     default_transform: keymap_transform_0 {
+2026-02-25T03:51:38.2538843Z         compatible = "zmk,matrix-transform";
+2026-02-25T03:51:38.2539092Z         columns = <14>;
+2026-02-25T03:51:38.2539282Z         rows = <7>;
+2026-02-25T03:51:38.2539448Z         map = <
+2026-02-25T03:51:38.2539611Z (((0) << 8) + (0))
+2026-02-25T03:51:38.2540368Z (((1) << 8) + (0)) (((1) << 8) + (1)) (((1) << 8) + (2)) (((1) << 8) + (3)) (((1) << 8) + (4)) (((1) << 8) + (5)) (((1) << 8) + (6)) (((1) << 8) + (7)) (((1) << 8) + (8)) (((1) << 8) + (9)) (((1) << 8) + (10)) (((1) << 8) + (11)) (((1) << 8) + (12)) (((1) << 8) + (13))
+2026-02-25T03:51:38.2541254Z (((2) << 8) + (0)) (((2) << 8) + (1)) (((2) << 8) + (2)) (((2) << 8) + (3)) (((2) << 8) + (4)) (((2) << 8) + (5)) (((2) << 8) + (6)) (((2) << 8) + (7)) (((2) << 8) + (8)) (((2) << 8) + (9)) (((2) << 8) + (10)) (((2) << 8) + (11)) (((2) << 8) + (12)) (((2) << 8) + (13))
+2026-02-25T03:51:38.2542053Z (((3) << 8) + (0)) (((3) << 8) + (1)) (((3) << 8) + (2)) (((3) << 8) + (3)) (((3) << 8) + (4)) (((3) << 8) + (5)) (((3) << 8) + (8)) (((3) << 8) + (9)) (((3) << 8) + (10)) (((3) << 8) + (11)) (((3) << 8) + (12)) (((3) << 8) + (13))
+2026-02-25T03:51:38.2542865Z (((4) << 8) + (0)) (((4) << 8) + (1)) (((4) << 8) + (2)) (((4) << 8) + (3)) (((4) << 8) + (4)) (((4) << 8) + (5)) (((4) << 8) + (6)) (((4) << 8) + (7)) (((4) << 8) + (8)) (((4) << 8) + (9)) (((4) << 8) + (10)) (((4) << 8) + (11)) (((4) << 8) + (12)) (((4) << 8) + (13))
+2026-02-25T03:51:38.2543758Z (((5) << 8) + (0)) (((5) << 8) + (1)) (((5) << 8) + (2)) (((5) << 8) + (3)) (((5) << 8) + (4)) (((5) << 8) + (9)) (((5) << 8) + (10)) (((5) << 8) + (11)) (((5) << 8) + (12)) (((5) << 8) + (13))
+2026-02-25T03:51:38.2544293Z                                         (((6) << 8) + (6)) (((6) << 8) + (5)) (((6) << 8) + (8)) (((6) << 8) + (7))
+2026-02-25T03:51:38.2544759Z                                 (((6) << 8) + (4)) (((6) << 8) + (3)) (((6) << 8) + (2)) (((6) << 8) + (11)) (((6) << 8) + (10)) (((6) << 8) + (9))
+2026-02-25T03:51:38.2545187Z                                                 (((6) << 8) + (1)) (((6) << 8) + (12))
+2026-02-25T03:51:38.2545465Z         >;
+2026-02-25T03:51:38.2545622Z     };
+2026-02-25T03:51:38.2545777Z };
+2026-02-25T03:51:38.2546256Z # 2 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox_left.dtsi" 2
+2026-02-25T03:51:38.2546746Z 
+2026-02-25T03:51:38.2546814Z / {
+2026-02-25T03:51:38.2546984Z     kscan0: kscan_composite {
+2026-02-25T03:51:38.2547226Z         compatible = "zmk,kscan-composite";
+2026-02-25T03:51:38.2547483Z         columns = <14>;
+2026-02-25T03:51:38.2547672Z         rows = <7>;
+2026-02-25T03:51:38.2547780Z 
+2026-02-25T03:51:38.2547844Z         direct {
+2026-02-25T03:51:38.2548024Z             kscan = <&kscan1>;
+2026-02-25T03:51:38.2548230Z         };
+2026-02-25T03:51:38.2548320Z 
+2026-02-25T03:51:38.2548388Z         matrix {
+2026-02-25T03:51:38.2548554Z             kscan = <&kscan2>;
+2026-02-25T03:51:38.2548762Z             row-offset = <1>;
+2026-02-25T03:51:38.2548960Z         };
+2026-02-25T03:51:38.2549106Z     };
+2026-02-25T03:51:38.2549197Z 
+2026-02-25T03:51:38.2549270Z     kscan1: kscan_direct {
+2026-02-25T03:51:38.2549502Z         compatible = "zmk,kscan-gpio-direct";
+2026-02-25T03:51:38.2549818Z         input-gpios = <&slicemk_button 0 ((1 << 0) | (1 << 4))>;
+2026-02-25T03:51:38.2550346Z     };
+2026-02-25T03:51:38.2550439Z 
+2026-02-25T03:51:38.2550527Z     kscan2: kscan_matrix {
+2026-02-25T03:51:38.2550751Z         compatible = "zmk,kscan-gpio-matrix";
+2026-02-25T03:51:38.2551019Z         diode-direction = "row2col";
+2026-02-25T03:51:38.2551189Z 
+2026-02-25T03:51:38.2551257Z         col-gpios
+2026-02-25T03:51:38.2551452Z             = <&ergodox_a 0 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2551709Z             , <&ergodox_a 1 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2552093Z             , <&ergodox_a 2 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2552345Z             , <&ergodox_a 3 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2552621Z             , <&ergodox_a 4 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2552867Z             , <&ergodox_a 5 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2553114Z             , <&ergodox_a 6 ((0 << 0) | (1 << 5))>
+2026-02-25T03:51:38.2553338Z             ;
+2026-02-25T03:51:38.2553501Z         row-gpios
+2026-02-25T03:51:38.2553679Z             = <&ergodox_a 7 (0 << 0)>
+2026-02-25T03:51:38.2553913Z             , <&ergodox_a 8 (0 << 0)>
+2026-02-25T03:51:38.2554137Z             , <&ergodox_a 9 (0 << 0)>
+2026-02-25T03:51:38.2554363Z             , <&ergodox_a 10 (0 << 0)>
+2026-02-25T03:51:38.2554592Z             , <&ergodox_a 11 (0 << 0)>
+2026-02-25T03:51:38.2554811Z             , <&ergodox_a 12 (0 << 0)>
+2026-02-25T03:51:38.2555024Z             ;
+2026-02-25T03:51:38.2555179Z     };
+2026-02-25T03:51:38.2555325Z };
+2026-02-25T03:51:38.2555875Z # 2 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox_leftcentral.overlay" 2
+2026-02-25T03:51:38.2556472Z # 0 "<command-line>" 2
+2026-02-25T03:51:38.2556841Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/slicemk_ergodox.keymap" 1
+2026-02-25T03:51:38.2557228Z 
+2026-02-25T03:51:38.2557513Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 1
+2026-02-25T03:51:38.2558182Z # 10 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap"
+2026-02-25T03:51:38.2558928Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 1 3 4
+2026-02-25T03:51:38.2559564Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/key_press.dtsi" 1 3 4
+2026-02-25T03:51:38.2559959Z 
+2026-02-25T03:51:38.2560258Z / {
+2026-02-25T03:51:38.2560438Z     behaviors {
+2026-02-25T03:51:38.2560555Z 
+2026-02-25T03:51:38.2560656Z         /omit-if-no-ref/ cp: kp: key_press {
+2026-02-25T03:51:38.2560947Z             compatible = "zmk,behavior-key-press";
+2026-02-25T03:51:38.2561220Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2561435Z         };
+2026-02-25T03:51:38.2561579Z     };
+2026-02-25T03:51:38.2561727Z };
+2026-02-25T03:51:38.2562072Z # 2 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2562712Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/key_toggle.dtsi" 1 3 4
+2026-02-25T03:51:38.2563106Z 
+2026-02-25T03:51:38.2563171Z / {
+2026-02-25T03:51:38.2563323Z     behaviors {
+2026-02-25T03:51:38.2563509Z         /omit-if-no-ref/ kt: key_toggle {
+2026-02-25T03:51:38.2563788Z             compatible = "zmk,behavior-key-toggle";
+2026-02-25T03:51:38.2564064Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2564272Z         };
+2026-02-25T03:51:38.2564441Z     };
+2026-02-25T03:51:38.2564591Z };
+2026-02-25T03:51:38.2564920Z # 3 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2565559Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/transparent.dtsi" 1 3 4
+2026-02-25T03:51:38.2565958Z 
+2026-02-25T03:51:38.2566017Z / {
+2026-02-25T03:51:38.2566161Z     behaviors {
+2026-02-25T03:51:38.2566353Z         /omit-if-no-ref/ trans: transparent {
+2026-02-25T03:51:38.2566648Z             compatible = "zmk,behavior-transparent";
+2026-02-25T03:51:38.2566929Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2567140Z         };
+2026-02-25T03:51:38.2567292Z     };
+2026-02-25T03:51:38.2567442Z };
+2026-02-25T03:51:38.2567769Z # 4 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2568385Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/none.dtsi" 1 3 4
+2026-02-25T03:51:38.2568765Z 
+2026-02-25T03:51:38.2568830Z / {
+2026-02-25T03:51:38.2569112Z     behaviors {
+2026-02-25T03:51:38.2569303Z         /omit-if-no-ref/ none: none {
+2026-02-25T03:51:38.2569575Z             compatible = "zmk,behavior-none";
+2026-02-25T03:51:38.2569843Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2570262Z         };
+2026-02-25T03:51:38.2570427Z     };
+2026-02-25T03:51:38.2570580Z };
+2026-02-25T03:51:38.2570918Z # 5 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2571560Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/mod_tap.dtsi" 1 3 4
+2026-02-25T03:51:38.2571951Z 
+2026-02-25T03:51:38.2572019Z / {
+2026-02-25T03:51:38.2572174Z     behaviors {
+2026-02-25T03:51:38.2572364Z         /omit-if-no-ref/ mt: mod_tap {
+2026-02-25T03:51:38.2572642Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2572921Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2573148Z             flavor = "hold-preferred";
+2026-02-25T03:51:38.2573406Z             tapping-term-ms = <200>;
+2026-02-25T03:51:38.2573656Z             bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2573865Z         };
+2026-02-25T03:51:38.2574017Z     };
+2026-02-25T03:51:38.2574165Z };
+2026-02-25T03:51:38.2574511Z # 6 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2575163Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/layer_tap.dtsi" 1 3 4
+2026-02-25T03:51:38.2575566Z 
+2026-02-25T03:51:38.2575625Z / {
+2026-02-25T03:51:38.2575770Z     behaviors {
+2026-02-25T03:51:38.2575957Z         /omit-if-no-ref/ lt: layer_tap {
+2026-02-25T03:51:38.2576355Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2576622Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2576850Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2577088Z             tapping-term-ms = <200>;
+2026-02-25T03:51:38.2577317Z             bindings = <&mo>, <&kp>;
+2026-02-25T03:51:38.2577519Z         };
+2026-02-25T03:51:38.2577664Z     };
+2026-02-25T03:51:38.2577804Z };
+2026-02-25T03:51:38.2578135Z # 7 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2578760Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/gresc.dtsi" 1 3 4
+2026-02-25T03:51:38.2579141Z 
+2026-02-25T03:51:38.2579431Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/keys.h" 1 3 4
+2026-02-25T03:51:38.2579821Z 
+2026-02-25T03:51:38.2579884Z        
+2026-02-25T03:51:38.2579970Z 
+2026-02-25T03:51:38.2580384Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/hid_usage.h" 1 3 4
+2026-02-25T03:51:38.2581105Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/hid_usage.h" 3 4
+2026-02-25T03:51:38.2581570Z        
+2026-02-25T03:51:38.2581942Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/keys.h" 2 3 4
+2026-02-25T03:51:38.2582663Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/hid_usage_pages.h" 1 3 4
+2026-02-25T03:51:38.2583428Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/hid_usage_pages.h" 3 4
+2026-02-25T03:51:38.2583916Z        
+2026-02-25T03:51:38.2584287Z # 10 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/keys.h" 2 3 4
+2026-02-25T03:51:38.2584975Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/modifiers.h" 1 3 4
+2026-02-25T03:51:38.2585393Z 
+2026-02-25T03:51:38.2585456Z        
+2026-02-25T03:51:38.2585827Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/keys.h" 2 3 4
+2026-02-25T03:51:38.2586484Z # 8 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/gresc.dtsi" 2 3 4
+2026-02-25T03:51:38.2586861Z 
+2026-02-25T03:51:38.2586921Z / {
+2026-02-25T03:51:38.2587188Z     behaviors {
+2026-02-25T03:51:38.2587387Z         /omit-if-no-ref/ gresc: grave_escape {
+2026-02-25T03:51:38.2587674Z             compatible = "zmk,behavior-mod-morph";
+2026-02-25T03:51:38.2587941Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2588271Z             bindings = <&kp (((((0x07) << 16) | (0x29))))>, <&kp ((((0x07) << 16) | (0x35)))>;
+2026-02-25T03:51:38.2588615Z             mods = <(0x08|0x02|0x80|0x20)>;
+2026-02-25T03:51:38.2588846Z         };
+2026-02-25T03:51:38.2588999Z     };
+2026-02-25T03:51:38.2589144Z };
+2026-02-25T03:51:38.2589482Z # 8 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2590249Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/sticky_key.dtsi" 1 3 4
+2026-02-25T03:51:38.2590643Z 
+2026-02-25T03:51:38.2590709Z / {
+2026-02-25T03:51:38.2590860Z     behaviors {
+2026-02-25T03:51:38.2591057Z         /omit-if-no-ref/ sk: sticky_key {
+2026-02-25T03:51:38.2591344Z             compatible = "zmk,behavior-sticky-key";
+2026-02-25T03:51:38.2591621Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2591856Z             release-after-ms = <1000>;
+2026-02-25T03:51:38.2592096Z             bindings = <&kp>;
+2026-02-25T03:51:38.2592314Z             ignore-modifiers;
+2026-02-25T03:51:38.2592517Z         };
+2026-02-25T03:51:38.2592698Z         /omit-if-no-ref/ sl: sticky_layer {
+2026-02-25T03:51:38.2592975Z             compatible = "zmk,behavior-sticky-key";
+2026-02-25T03:51:38.2593248Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2593476Z             release-after-ms = <1000>;
+2026-02-25T03:51:38.2593824Z             bindings = <&mo>;
+2026-02-25T03:51:38.2594028Z             quick-release;
+2026-02-25T03:51:38.2594223Z         };
+2026-02-25T03:51:38.2594375Z     };
+2026-02-25T03:51:38.2594461Z 
+2026-02-25T03:51:38.2594523Z };
+2026-02-25T03:51:38.2594861Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2595527Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/momentary_layer.dtsi" 1 3 4
+2026-02-25T03:51:38.2595936Z 
+2026-02-25T03:51:38.2595997Z / {
+2026-02-25T03:51:38.2596153Z     behaviors {
+2026-02-25T03:51:38.2596353Z         /omit-if-no-ref/ mo: momentary_layer {
+2026-02-25T03:51:38.2596661Z             compatible = "zmk,behavior-momentary-layer";
+2026-02-25T03:51:38.2596945Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2597156Z         };
+2026-02-25T03:51:38.2597306Z     };
+2026-02-25T03:51:38.2597447Z };
+2026-02-25T03:51:38.2597786Z # 10 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2598445Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/toggle_layer.dtsi" 1 3 4
+2026-02-25T03:51:38.2598840Z 
+2026-02-25T03:51:38.2598899Z / {
+2026-02-25T03:51:38.2599050Z     behaviors {
+2026-02-25T03:51:38.2599250Z         /omit-if-no-ref/ tog: toggle_layer {
+2026-02-25T03:51:38.2599537Z             compatible = "zmk,behavior-toggle-layer";
+2026-02-25T03:51:38.2599822Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2600134Z         };
+2026-02-25T03:51:38.2600288Z     };
+2026-02-25T03:51:38.2600442Z };
+2026-02-25T03:51:38.2600781Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2601430Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/to_layer.dtsi" 1 3 4
+2026-02-25T03:51:38.2601821Z 
+2026-02-25T03:51:38.2601881Z / {
+2026-02-25T03:51:38.2602031Z     behaviors {
+2026-02-25T03:51:38.2602217Z         /omit-if-no-ref/ to: to_layer {
+2026-02-25T03:51:38.2602493Z             compatible = "zmk,behavior-to-layer";
+2026-02-25T03:51:38.2602762Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2602975Z         };
+2026-02-25T03:51:38.2603121Z     };
+2026-02-25T03:51:38.2603271Z };
+2026-02-25T03:51:38.2603606Z # 12 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2604351Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/reset.dtsi" 1 3 4
+2026-02-25T03:51:38.2604727Z 
+2026-02-25T03:51:38.2605022Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/reset.h" 1 3 4
+2026-02-25T03:51:38.2605688Z # 8 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/reset.dtsi" 2 3 4
+2026-02-25T03:51:38.2606057Z 
+2026-02-25T03:51:38.2606127Z / {
+2026-02-25T03:51:38.2606296Z     behaviors {
+2026-02-25T03:51:38.2606404Z 
+2026-02-25T03:51:38.2606481Z         sys_reset: sysreset {
+2026-02-25T03:51:38.2606732Z             compatible = "zmk,behavior-reset";
+2026-02-25T03:51:38.2606991Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2607197Z         };
+2026-02-25T03:51:38.2607291Z 
+2026-02-25T03:51:38.2607367Z         bootloader: bootload {
+2026-02-25T03:51:38.2607611Z             compatible = "zmk,behavior-reset";
+2026-02-25T03:51:38.2607857Z             type = <0x57>;
+2026-02-25T03:51:38.2608068Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2608279Z         };
+2026-02-25T03:51:38.2608366Z 
+2026-02-25T03:51:38.2608452Z         sys_off: behavior_reset_sysoff {
+2026-02-25T03:51:38.2608716Z             compatible = "zmk,behavior-reset";
+2026-02-25T03:51:38.2608966Z             type = <0x56>;
+2026-02-25T03:51:38.2609168Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2609375Z         };
+2026-02-25T03:51:38.2609526Z     };
+2026-02-25T03:51:38.2609677Z };
+2026-02-25T03:51:38.2610102Z # 13 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2610917Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/sensor_rotate_key_press.dtsi" 1 3 4
+2026-02-25T03:51:38.2611361Z 
+2026-02-25T03:51:38.2611428Z / {
+2026-02-25T03:51:38.2611575Z     behaviors {
+2026-02-25T03:51:38.2611685Z 
+2026-02-25T03:51:38.2611830Z         /omit-if-no-ref/ inc_dec_cp: inc_dec_kp: enc_key_press {
+2026-02-25T03:51:38.2612199Z             compatible = "zmk,behavior-sensor-rotate-var";
+2026-02-25T03:51:38.2612508Z             #sensor-binding-cells = <2>;
+2026-02-25T03:51:38.2612757Z             bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2612984Z         };
+2026-02-25T03:51:38.2613135Z     };
+2026-02-25T03:51:38.2613276Z };
+2026-02-25T03:51:38.2613617Z # 14 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2614280Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/rgb_underglow.dtsi" 1 3 4
+2026-02-25T03:51:38.2614683Z 
+2026-02-25T03:51:38.2614749Z / {
+2026-02-25T03:51:38.2614901Z     behaviors {
+2026-02-25T03:51:38.2615004Z 
+2026-02-25T03:51:38.2615082Z         rgb_ug: rgb_ug {
+2026-02-25T03:51:38.2615322Z             compatible = "zmk,behavior-rgb-underglow";
+2026-02-25T03:51:38.2615607Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2615821Z         };
+2026-02-25T03:51:38.2615977Z     };
+2026-02-25T03:51:38.2616125Z };
+2026-02-25T03:51:38.2616461Z # 15 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2617108Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/bluetooth.dtsi" 1 3 4
+2026-02-25T03:51:38.2617501Z 
+2026-02-25T03:51:38.2617564Z / {
+2026-02-25T03:51:38.2617714Z     behaviors {
+2026-02-25T03:51:38.2617907Z         /omit-if-no-ref/ bt: bluetooth {
+2026-02-25T03:51:38.2618177Z             compatible = "zmk,behavior-bluetooth";
+2026-02-25T03:51:38.2618447Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2618663Z         };
+2026-02-25T03:51:38.2618817Z     };
+2026-02-25T03:51:38.2618966Z };
+2026-02-25T03:51:38.2619300Z # 16 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2619939Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/ext_power.dtsi" 1 3 4
+2026-02-25T03:51:38.2620423Z 
+2026-02-25T03:51:38.2620483Z / {
+2026-02-25T03:51:38.2620785Z     behaviors {
+2026-02-25T03:51:38.2620887Z 
+2026-02-25T03:51:38.2620973Z         ext_power: extpower {
+2026-02-25T03:51:38.2621216Z             compatible = "zmk,behavior-ext-power";
+2026-02-25T03:51:38.2621489Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2621698Z         };
+2026-02-25T03:51:38.2621841Z     };
+2026-02-25T03:51:38.2621989Z };
+2026-02-25T03:51:38.2622321Z # 17 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2622955Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/outputs.dtsi" 1 3 4
+2026-02-25T03:51:38.2623347Z 
+2026-02-25T03:51:38.2623406Z / {
+2026-02-25T03:51:38.2623554Z     behaviors {
+2026-02-25T03:51:38.2623744Z         /omit-if-no-ref/ out: outputs {
+2026-02-25T03:51:38.2624011Z             compatible = "zmk,behavior-outputs";
+2026-02-25T03:51:38.2624275Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2624480Z         };
+2026-02-25T03:51:38.2624623Z     };
+2026-02-25T03:51:38.2624773Z };
+2026-02-25T03:51:38.2625108Z # 18 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2625738Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/caps_word.dtsi" 1 3 4
+2026-02-25T03:51:38.2626401Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/caps_word.dtsi" 3 4
+2026-02-25T03:51:38.2626863Z / {
+2026-02-25T03:51:38.2627013Z     behaviors {
+2026-02-25T03:51:38.2627206Z         /omit-if-no-ref/ caps_word: caps_word {
+2026-02-25T03:51:38.2627498Z             compatible = "zmk,behavior-caps-word";
+2026-02-25T03:51:38.2627882Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2628274Z             continue-list = <((0x02 << 24 | (((0x07) << 16) | (0x2D)))) ((((0x07) << 16) | (0x2A))) ((((0x07) << 16) | (0x4C)))>;
+2026-02-25T03:51:38.2628688Z         };
+2026-02-25T03:51:38.2628841Z     };
+2026-02-25T03:51:38.2628984Z };
+2026-02-25T03:51:38.2629323Z # 19 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2630205Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/key_repeat.dtsi" 1 3 4
+2026-02-25T03:51:38.2630898Z # 9 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/key_repeat.dtsi" 3 4
+2026-02-25T03:51:38.2631340Z / {
+2026-02-25T03:51:38.2631492Z     behaviors {
+2026-02-25T03:51:38.2631703Z         /omit-if-no-ref/ key_repeat: key_repeat {
+2026-02-25T03:51:38.2631997Z             compatible = "zmk,behavior-key-repeat";
+2026-02-25T03:51:38.2632273Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2632510Z             usage-pages = <(0x07)>;
+2026-02-25T03:51:38.2632727Z         };
+2026-02-25T03:51:38.2632885Z     };
+2026-02-25T03:51:38.2633032Z };
+2026-02-25T03:51:38.2633363Z # 20 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2634008Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/backlight.dtsi" 1 3 4
+2026-02-25T03:51:38.2634409Z 
+2026-02-25T03:51:38.2634471Z  / {
+2026-02-25T03:51:38.2634626Z     behaviors {
+2026-02-25T03:51:38.2634729Z 
+2026-02-25T03:51:38.2634816Z         /omit-if-no-ref/ bl: bcklight {
+2026-02-25T03:51:38.2635092Z             compatible = "zmk,behavior-backlight";
+2026-02-25T03:51:38.2635363Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2635570Z         };
+2026-02-25T03:51:38.2635728Z     };
+2026-02-25T03:51:38.2635875Z };
+2026-02-25T03:51:38.2636203Z # 21 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2636837Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/macros.dtsi" 1 3 4
+2026-02-25T03:51:38.2637486Z # 29 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/macros.dtsi" 3 4
+2026-02-25T03:51:38.2637925Z / {
+2026-02-25T03:51:38.2638070Z     behaviors {
+2026-02-25T03:51:38.2638251Z         macro_tap: macro_tap {
+2026-02-25T03:51:38.2638640Z             compatible = "zmk,macro-control-mode-tap";
+2026-02-25T03:51:38.2638920Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2639131Z         };
+2026-02-25T03:51:38.2639220Z 
+2026-02-25T03:51:38.2639306Z         macro_press: macro_press {
+2026-02-25T03:51:38.2639584Z             compatible = "zmk,macro-control-mode-press";
+2026-02-25T03:51:38.2639876Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2640185Z         };
+2026-02-25T03:51:38.2640275Z 
+2026-02-25T03:51:38.2640363Z         macro_release: macro_release {
+2026-02-25T03:51:38.2640649Z             compatible = "zmk,macro-control-mode-release";
+2026-02-25T03:51:38.2640947Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2641157Z         };
+2026-02-25T03:51:38.2641244Z 
+2026-02-25T03:51:38.2641329Z         macro_tap_time: macro_tap_time {
+2026-02-25T03:51:38.2641616Z             compatible = "zmk,macro-control-tap-time";
+2026-02-25T03:51:38.2641897Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2642104Z         };
+2026-02-25T03:51:38.2642201Z 
+2026-02-25T03:51:38.2642284Z         macro_wait_time: macro_wait_time {
+2026-02-25T03:51:38.2642579Z             compatible = "zmk,macro-control-wait-time";
+2026-02-25T03:51:38.2642865Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2643068Z         };
+2026-02-25T03:51:38.2643161Z 
+2026-02-25T03:51:38.2643285Z         macro_pause_for_release: macro_pause_for_release {
+2026-02-25T03:51:38.2643614Z             compatible = "zmk,macro-pause-for-release";
+2026-02-25T03:51:38.2643887Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2644096Z         };
+2026-02-25T03:51:38.2644301Z 
+2026-02-25T03:51:38.2644402Z         macro_param_1to1: macro_param_1to1 {
+2026-02-25T03:51:38.2644680Z             compatible = "zmk,macro-param-1to1";
+2026-02-25T03:51:38.2644954Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2645174Z         };
+2026-02-25T03:51:38.2645264Z 
+2026-02-25T03:51:38.2645361Z         macro_param_1to2: macro_param_1to2 {
+2026-02-25T03:51:38.2645634Z             compatible = "zmk,macro-param-1to2";
+2026-02-25T03:51:38.2645900Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2646111Z         };
+2026-02-25T03:51:38.2646202Z 
+2026-02-25T03:51:38.2646290Z         macro_param_2to1: macro_param_2to1 {
+2026-02-25T03:51:38.2646562Z             compatible = "zmk,macro-param-2to1";
+2026-02-25T03:51:38.2646824Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2647032Z         };
+2026-02-25T03:51:38.2647135Z 
+2026-02-25T03:51:38.2647225Z         macro_param_2to2: macro_param_2to2 {
+2026-02-25T03:51:38.2647502Z             compatible = "zmk,macro-param-2to2";
+2026-02-25T03:51:38.2647771Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2647979Z         };
+2026-02-25T03:51:38.2648129Z     };
+2026-02-25T03:51:38.2648277Z };
+2026-02-25T03:51:38.2648619Z # 22 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2649295Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/mouse_key_press.dtsi" 1 3 4
+2026-02-25T03:51:38.2649778Z / {
+2026-02-25T03:51:38.2649927Z     behaviors {
+2026-02-25T03:51:38.2650230Z         /omit-if-no-ref/ mkp: mouse_key_press {
+2026-02-25T03:51:38.2650546Z             compatible = "zmk,behavior-mouse-key-press";
+2026-02-25T03:51:38.2650831Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2651046Z         };
+2026-02-25T03:51:38.2651197Z     };
+2026-02-25T03:51:38.2651345Z };
+2026-02-25T03:51:38.2651683Z # 23 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2652336Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/mouse_move.dtsi" 1 3 4
+2026-02-25T03:51:38.2652882Z / {
+2026-02-25T03:51:38.2653030Z     behaviors {
+2026-02-25T03:51:38.2653231Z         /omit-if-no-ref/ mmv: mouse_move {
+2026-02-25T03:51:38.2653516Z             compatible = "zmk,behavior-mouse-move";
+2026-02-25T03:51:38.2653793Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2654133Z             delay-ms = <0>;
+2026-02-25T03:51:38.2654358Z             time-to-max-speed-ms = <300>;
+2026-02-25T03:51:38.2654618Z             acceleration-exponent = <1>;
+2026-02-25T03:51:38.2654855Z         };
+2026-02-25T03:51:38.2655007Z     };
+2026-02-25T03:51:38.2655149Z };
+2026-02-25T03:51:38.2655492Z # 24 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2656153Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/mouse_scroll.dtsi" 1 3 4
+2026-02-25T03:51:38.2656614Z / {
+2026-02-25T03:51:38.2656761Z     behaviors {
+2026-02-25T03:51:38.2656966Z         /omit-if-no-ref/ msc: mouse_scroll {
+2026-02-25T03:51:38.2657258Z             compatible = "zmk,behavior-mouse-scroll";
+2026-02-25T03:51:38.2657535Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2657767Z             delay-ms = <0>;
+2026-02-25T03:51:38.2657985Z             time-to-max-speed-ms = <300>;
+2026-02-25T03:51:38.2658239Z             acceleration-exponent = <0>;
+2026-02-25T03:51:38.2658476Z         };
+2026-02-25T03:51:38.2658626Z     };
+2026-02-25T03:51:38.2658768Z };
+2026-02-25T03:51:38.2659109Z # 25 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2659744Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/macros.dtsi" 1 3 4
+2026-02-25T03:51:38.2660501Z # 29 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors/macros.dtsi" 3 4
+2026-02-25T03:51:38.2660938Z / {
+2026-02-25T03:51:38.2661089Z     behaviors {
+2026-02-25T03:51:38.2661273Z         macro_tap: macro_tap {
+2026-02-25T03:51:38.2661722Z             compatible = "zmk,macro-control-mode-tap";
+2026-02-25T03:51:38.2662102Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2662369Z         };
+2026-02-25T03:51:38.2662644Z 
+2026-02-25T03:51:38.2662756Z         macro_press: macro_press {
+2026-02-25T03:51:38.2663165Z             compatible = "zmk,macro-control-mode-press";
+2026-02-25T03:51:38.2663586Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2663874Z         };
+2026-02-25T03:51:38.2664028Z 
+2026-02-25T03:51:38.2664140Z         macro_release: macro_release {
+2026-02-25T03:51:38.2664553Z             compatible = "zmk,macro-control-mode-release";
+2026-02-25T03:51:38.2664947Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2665248Z         };
+2026-02-25T03:51:38.2665366Z 
+2026-02-25T03:51:38.2665545Z         macro_tap_time: macro_tap_time {
+2026-02-25T03:51:38.2665934Z             compatible = "zmk,macro-control-tap-time";
+2026-02-25T03:51:38.2666272Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2666610Z         };
+2026-02-25T03:51:38.2666746Z 
+2026-02-25T03:51:38.2666926Z         macro_wait_time: macro_wait_time {
+2026-02-25T03:51:38.2667271Z             compatible = "zmk,macro-control-wait-time";
+2026-02-25T03:51:38.2667676Z             #binding-cells = <1>;
+2026-02-25T03:51:38.2667991Z         };
+2026-02-25T03:51:38.2668107Z 
+2026-02-25T03:51:38.2668263Z         macro_pause_for_release: macro_pause_for_release {
+2026-02-25T03:51:38.2677767Z             compatible = "zmk,macro-pause-for-release";
+2026-02-25T03:51:38.2678109Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2678348Z         };
+2026-02-25T03:51:38.2678445Z 
+2026-02-25T03:51:38.2678550Z         macro_param_1to1: macro_param_1to1 {
+2026-02-25T03:51:38.2678840Z             compatible = "zmk,macro-param-1to1";
+2026-02-25T03:51:38.2679122Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2679337Z         };
+2026-02-25T03:51:38.2679428Z 
+2026-02-25T03:51:38.2679520Z         macro_param_1to2: macro_param_1to2 {
+2026-02-25T03:51:38.2679800Z             compatible = "zmk,macro-param-1to2";
+2026-02-25T03:51:38.2680224Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2680439Z         };
+2026-02-25T03:51:38.2680530Z 
+2026-02-25T03:51:38.2680621Z         macro_param_2to1: macro_param_2to1 {
+2026-02-25T03:51:38.2680896Z             compatible = "zmk,macro-param-2to1";
+2026-02-25T03:51:38.2681338Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2681402Z         };
+2026-02-25T03:51:38.2681407Z 
+2026-02-25T03:51:38.2681494Z         macro_param_2to2: macro_param_2to2 {
+2026-02-25T03:51:38.2681598Z             compatible = "zmk,macro-param-2to2";
+2026-02-25T03:51:38.2681673Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2681741Z         };
+2026-02-25T03:51:38.2681803Z     };
+2026-02-25T03:51:38.2681865Z };
+2026-02-25T03:51:38.2682151Z # 26 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/behaviors.dtsi" 2 3 4
+2026-02-25T03:51:38.2682448Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2682762Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/outputs.h" 1 3 4
+2026-02-25T03:51:38.2683048Z # 12 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2683053Z 
+2026-02-25T03:51:38.2683337Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/bt.h" 1 3 4
+2026-02-25T03:51:38.2683617Z # 14 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2683910Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/include/dt-bindings/zmk/mouse.h" 1 3 4
+2026-02-25T03:51:38.2683915Z 
+2026-02-25T03:51:38.2683977Z        
+2026-02-25T03:51:38.2684257Z # 15 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2684528Z # 39 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap"
+2026-02-25T03:51:38.2684921Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/positions.dtsi" 1
+2026-02-25T03:51:38.2685197Z # 40 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2685497Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/position_groups.dtsi" 1
+2026-02-25T03:51:38.2685781Z # 41 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2685785Z 
+2026-02-25T03:51:38.2686097Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/layers.dtsi" 1
+2026-02-25T03:51:38.2686374Z # 44 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2686715Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/global_timings.dtsi" 1
+2026-02-25T03:51:38.2686994Z # 45 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2686998Z 
+2026-02-25T03:51:38.2687273Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/board_meta.dtsi" 1
+2026-02-25T03:51:38.2687543Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/board_meta.dtsi"
+2026-02-25T03:51:38.2687612Z / {
+2026-02-25T03:51:38.2687682Z     behaviors {
+2026-02-25T03:51:38.2688071Z         lower: lower { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mo 0>, <&to 0>; };
+2026-02-25T03:51:38.2688138Z     };
+2026-02-25T03:51:38.2688198Z };
+2026-02-25T03:51:38.2688482Z # 48 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2688486Z 
+2026-02-25T03:51:38.2688551Z / {
+2026-02-25T03:51:38.2688620Z     behaviors {
+2026-02-25T03:51:38.2688938Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/macros.dtsi" 1
+2026-02-25T03:51:38.2688948Z 
+2026-02-25T03:51:38.2689036Z pair_paren: pair_parentheses {
+2026-02-25T03:51:38.2689128Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2689212Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2689280Z     tap-ms = <0>;
+2026-02-25T03:51:38.2689430Z     wait-ms = <0>;
+2026-02-25T03:51:38.2689512Z     bindings = <&macro_tap>
+2026-02-25T03:51:38.2689621Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x26)))))>
+2026-02-25T03:51:38.2689718Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x27)))))>
+2026-02-25T03:51:38.2689806Z         , <&kp (((((0x07) << 16) | (0x50))))>;
+2026-02-25T03:51:38.2689867Z };
+2026-02-25T03:51:38.2689871Z 
+2026-02-25T03:51:38.2689962Z pair_angle: pair_angle_brackets {
+2026-02-25T03:51:38.2690161Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2690238Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2690314Z     tap-ms = <0>;
+2026-02-25T03:51:38.2690380Z     wait-ms = <0>;
+2026-02-25T03:51:38.2690454Z     bindings = <&macro_tap>
+2026-02-25T03:51:38.2690554Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x36)))))>
+2026-02-25T03:51:38.2690645Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x37)))))>
+2026-02-25T03:51:38.2690724Z         , <&kp (((((0x07) << 16) | (0x50))))>;
+2026-02-25T03:51:38.2690795Z };
+2026-02-25T03:51:38.2690799Z 
+2026-02-25T03:51:38.2690884Z pair_dquote: pair_double_quotes {
+2026-02-25T03:51:38.2690976Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2691056Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2691123Z     tap-ms = <0>;
+2026-02-25T03:51:38.2691194Z     wait-ms = <0>;
+2026-02-25T03:51:38.2691270Z     bindings = <&macro_tap>
+2026-02-25T03:51:38.2691363Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x34)))))>
+2026-02-25T03:51:38.2691462Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x34)))))>
+2026-02-25T03:51:38.2691541Z         , <&kp (((((0x07) << 16) | (0x50))))>;
+2026-02-25T03:51:38.2691757Z };
+2026-02-25T03:51:38.2691761Z 
+2026-02-25T03:51:38.2691854Z pair_bracket: pair_square_brackets {
+2026-02-25T03:51:38.2691939Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2692018Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2692086Z     tap-ms = <0>;
+2026-02-25T03:51:38.2692155Z     wait-ms = <0>;
+2026-02-25T03:51:38.2692237Z     bindings = <&macro_tap>
+2026-02-25T03:51:38.2692316Z         , <&kp (((((0x07) << 16) | (0x2F))))>
+2026-02-25T03:51:38.2692391Z         , <&kp (((((0x07) << 16) | (0x30))))>
+2026-02-25T03:51:38.2692475Z         , <&kp (((((0x07) << 16) | (0x50))))>;
+2026-02-25T03:51:38.2692536Z };
+2026-02-25T03:51:38.2692540Z 
+2026-02-25T03:51:38.2692621Z pair_brace: pair_curly_braces {
+2026-02-25T03:51:38.2692713Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2692787Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2692854Z     tap-ms = <0>;
+2026-02-25T03:51:38.2692926Z     wait-ms = <0>;
+2026-02-25T03:51:38.2692998Z     bindings = <&macro_tap>
+2026-02-25T03:51:38.2693103Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x2F)))))>
+2026-02-25T03:51:38.2693194Z         , <&kp (((0x02 << 24 | (((0x07) << 16) | (0x30)))))>
+2026-02-25T03:51:38.2693270Z         , <&kp (((((0x07) << 16) | (0x50))))>;
+2026-02-25T03:51:38.2693336Z };
+2026-02-25T03:51:38.2693340Z 
+2026-02-25T03:51:38.2693420Z hyper_key: hyper_key_macro {
+2026-02-25T03:51:38.2693511Z compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2693589Z #binding-cells = <0>;
+2026-02-25T03:51:38.2693891Z bindings = <&sk (((((0x07) << 16) | (0xE3))))>, <&sk (((((0x07) << 16) | (0xE2))))>, <&sk (((((0x07) << 16) | (0xE0))))>, <&sk (((((0x07) << 16) | (0xE1))))>;
+2026-02-25T03:51:38.2693958Z };
+2026-02-25T03:51:38.2693962Z 
+2026-02-25T03:51:38.2694039Z mac_tab_next: mac_tab_next {
+2026-02-25T03:51:38.2694123Z compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2694202Z #binding-cells = <0>;
+2026-02-25T03:51:38.2694353Z bindings = <&kp (0x08 << 24 | (0x04 << 24 | (((((0x07) << 16) | (0x4F))))))>;
+2026-02-25T03:51:38.2694420Z };
+2026-02-25T03:51:38.2694423Z 
+2026-02-25T03:51:38.2694506Z mac_tab_prev: mac_tab_prev {
+2026-02-25T03:51:38.2694591Z compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2694664Z #binding-cells = <0>;
+2026-02-25T03:51:38.2694813Z bindings = <&kp (0x08 << 24 | (0x04 << 24 | (((((0x07) << 16) | (0x50))))))>;
+2026-02-25T03:51:38.2694985Z };
+2026-02-25T03:51:38.2694990Z 
+2026-02-25T03:51:38.2695079Z mkp_drag_lock: mouse_drag_lock {
+2026-02-25T03:51:38.2695164Z compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2695235Z #binding-cells = <0>;
+2026-02-25T03:51:38.2695308Z wait-ms = <0>;
+2026-02-25T03:51:38.2695377Z tap-ms = <0>;
+2026-02-25T03:51:38.2695478Z bindings = <&macro_press &mkp ((1UL << (0)))>
+2026-02-25T03:51:38.2695564Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2695654Z         , <&macro_release &mkp ((1UL << (0)))>;
+2026-02-25T03:51:38.2695714Z };
+2026-02-25T03:51:38.2695718Z 
+2026-02-25T03:51:38.2695808Z mac_mission_ctl: mac_mission_ctl {
+2026-02-25T03:51:38.2695897Z compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2695976Z #binding-cells = <0>;
+2026-02-25T03:51:38.2696043Z wait-ms = <0>;
+2026-02-25T03:51:38.2696109Z tap-ms = <0>;
+2026-02-25T03:51:38.2696243Z bindings = <&kp (0x01 << 24 | (((((0x07) << 16) | (0x52)))))>;
+2026-02-25T03:51:38.2696304Z };
+2026-02-25T03:51:38.2696308Z 
+2026-02-25T03:51:38.2696395Z mac_app_expose: mac_app_expose {
+2026-02-25T03:51:38.2696483Z compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2696555Z #binding-cells = <0>;
+2026-02-25T03:51:38.2696621Z wait-ms = <0>;
+2026-02-25T03:51:38.2696692Z tap-ms = <0>;
+2026-02-25T03:51:38.2696811Z bindings = <&kp (0x01 << 24 | (((((0x07) << 16) | (0x51)))))>;
+2026-02-25T03:51:38.2696872Z };
+2026-02-25T03:51:38.2697208Z # 131 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/macros.dtsi"
+2026-02-25T03:51:38.2697349Z cur_EXTEND_LINE_macos_v1_TKZ: cur_EXTEND_LINE_macos_v1_TKZ {
+2026-02-25T03:51:38.2697448Z     label = "&CUR_EXTEND_LINE_MACOS_V1_TKZ";
+2026-02-25T03:51:38.2697619Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2697696Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2697767Z     tap-ms = <1>;
+2026-02-25T03:51:38.2697837Z     wait-ms = <1>;
+2026-02-25T03:51:38.2697993Z     bindings = <&kp (0x08 << 24 | (0x02 << 24 | (((((0x07) << 16) | (0x4F))))))>;
+2026-02-25T03:51:38.2698063Z };
+2026-02-25T03:51:38.2698067Z 
+2026-02-25T03:51:38.2698204Z cur_EXTEND_WORD_macos_v1_TKZ: cur_EXTEND_WORD_macos_v1_TKZ {
+2026-02-25T03:51:38.2698299Z     label = "&CUR_EXTEND_WORD_MACOS_V1_TKZ";
+2026-02-25T03:51:38.2698384Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2698458Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2698529Z     tap-ms = <1>;
+2026-02-25T03:51:38.2698596Z     wait-ms = <1>;
+2026-02-25T03:51:38.2698742Z     bindings = <&kp (0x04 << 24 | (0x02 << 24 | (((((0x07) << 16) | (0x4F))))))>;
+2026-02-25T03:51:38.2698808Z };
+2026-02-25T03:51:38.2698811Z 
+2026-02-25T03:51:38.2698943Z cur_SELECT_LINE_macos_v1_TKZ: cur_SELECT_LINE_macos_v1_TKZ {
+2026-02-25T03:51:38.2699038Z     label = "&CUR_SELECT_LINE_MACOS_V1_TKZ";
+2026-02-25T03:51:38.2699129Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2699202Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2699272Z     tap-ms = <1>;
+2026-02-25T03:51:38.2699338Z     wait-ms = <1>;
+2026-02-25T03:51:38.2699465Z     bindings = <&kp (0x08 << 24 | (((((0x07) << 16) | (0x50)))))>
+2026-02-25T03:51:38.2699598Z         , <&kp (0x08 << 24 | (0x02 << 24 | (((((0x07) << 16) | (0x4F))))))>;
+2026-02-25T03:51:38.2699659Z };
+2026-02-25T03:51:38.2699663Z 
+2026-02-25T03:51:38.2699767Z cur_SELECT_NONE_v1_TKZ: cur_SELECT_NONE_v1_TKZ {
+2026-02-25T03:51:38.2699853Z     label = "&CUR_SELECT_NONE_V1_TKZ";
+2026-02-25T03:51:38.2699937Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2700110Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2700183Z     tap-ms = <1>;
+2026-02-25T03:51:38.2700249Z     wait-ms = <1>;
+2026-02-25T03:51:38.2700346Z     bindings = <&kp (((((0x07) << 16) | (0x51))))>
+2026-02-25T03:51:38.2700437Z         , <&kp (((((0x07) << 16) | (0x52))))>
+2026-02-25T03:51:38.2700512Z         , <&kp (((((0x07) << 16) | (0x4F))))>
+2026-02-25T03:51:38.2700595Z         , <&kp (((((0x07) << 16) | (0x50))))>;
+2026-02-25T03:51:38.2700657Z };
+2026-02-25T03:51:38.2700662Z 
+2026-02-25T03:51:38.2700797Z cur_SELECT_WORD_macos_v1_TKZ: cur_SELECT_WORD_macos_v1_TKZ {
+2026-02-25T03:51:38.2701004Z     label = "&CUR_SELECT_WORD_MACOS_V1_TKZ";
+2026-02-25T03:51:38.2701089Z     compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2701162Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2701236Z     tap-ms = <1>;
+2026-02-25T03:51:38.2701302Z     wait-ms = <1>;
+2026-02-25T03:51:38.2701429Z     bindings = <&kp (0x04 << 24 | (((((0x07) << 16) | (0x50)))))>
+2026-02-25T03:51:38.2701555Z         , <&kp (0x04 << 24 | (0x02 << 24 | (((((0x07) << 16) | (0x4F))))))>;
+2026-02-25T03:51:38.2701615Z };
+2026-02-25T03:51:38.2701619Z 
+2026-02-25T03:51:38.2701719Z mod_tab_chord_v2_TKZ: mod_tab_chord_v2_TKZ {
+2026-02-25T03:51:38.2701807Z     label = "&MOD_TAB_CHORD_V2_TKZ";
+2026-02-25T03:51:38.2701922Z     compatible = "zmk,behavior-macro-two-param";
+2026-02-25T03:51:38.2702001Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2702068Z     tap-ms = <0>;
+2026-02-25T03:51:38.2702134Z     wait-ms = <0>;
+2026-02-25T03:51:38.2702219Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2702295Z         , <&macro_param_2to1>
+2026-02-25T03:51:38.2702359Z         , <&mo 0>
+2026-02-25T03:51:38.2702441Z         , <&macro_press>
+2026-02-25T03:51:38.2702513Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2702589Z         , <&mod_tab_v1_TKZ 0>
+2026-02-25T03:51:38.2702666Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2702736Z         , <&macro_release>
+2026-02-25T03:51:38.2702814Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2702884Z         , <&mod_tab_v1_TKZ 0>
+2026-02-25T03:51:38.2702954Z         , <&macro_release>
+2026-02-25T03:51:38.2703032Z         , <&macro_param_2to1>
+2026-02-25T03:51:38.2703096Z         , <&mo 0>;
+2026-02-25T03:51:38.2703264Z };
+2026-02-25T03:51:38.2703268Z 
+2026-02-25T03:51:38.2703354Z mod_tab_v1_TKZ: mod_tab_v1_TKZ {
+2026-02-25T03:51:38.2703431Z     label = "&MOD_TAB_V1_TKZ";
+2026-02-25T03:51:38.2703543Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2703626Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2703692Z     tap-ms = <0>;
+2026-02-25T03:51:38.2703769Z     wait-ms = <0>;
+2026-02-25T03:51:38.2703848Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2703920Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2703990Z         , <&kp 0>
+2026-02-25T03:51:38.2704059Z         , <&macro_tap>
+2026-02-25T03:51:38.2704137Z         , <&kp ((((0x07) << 16) | (0x2B)))>
+2026-02-25T03:51:38.2704223Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2704295Z         , <&macro_release>
+2026-02-25T03:51:38.2704368Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2704438Z         , <&kp 0>;
+2026-02-25T03:51:38.2704499Z };
+2026-02-25T03:51:38.2704804Z # 53 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2705191Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/homeRowMods/hrm_macros.dtsi" 1
+2026-02-25T03:51:38.2705576Z # 11 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/homeRowMods/hrm_macros.dtsi"
+2026-02-25T03:51:38.2705730Z HRM_left_pinky_hold_v1B_TKZ: HRM_left_pinky_hold_v1B_TKZ {
+2026-02-25T03:51:38.2705819Z     label = "&HRM_LEFT_PINKY_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2705937Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2706019Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2706088Z     tap-ms = <0>;
+2026-02-25T03:51:38.2706155Z     wait-ms = <0>;
+2026-02-25T03:51:38.2706237Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2706308Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2706389Z         , <&kp ((((0x07) << 16) | (0x04)))>
+2026-02-25T03:51:38.2706452Z         , <&mo 3>
+2026-02-25T03:51:38.2706535Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2706608Z         , <&macro_release>
+2026-02-25T03:51:38.2706679Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2706751Z         , <&kp ((((0x07) << 16) | (0x04)))>
+2026-02-25T03:51:38.2706819Z         , <&mo 3>;
+2026-02-25T03:51:38.2706879Z };
+2026-02-25T03:51:38.2706883Z 
+2026-02-25T03:51:38.2707100Z HRM_left_pinky_tap_v1B_TKZ: HRM_left_pinky_tap_v1B_TKZ {
+2026-02-25T03:51:38.2707196Z     label = "&HRM_LEFT_PINKY_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2707312Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2707395Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2707462Z     tap-ms = <0>;
+2026-02-25T03:51:38.2707528Z     wait-ms = <0>;
+2026-02-25T03:51:38.2707609Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2707688Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2707764Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2707843Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2707922Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2707995Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2708072Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2708145Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2708217Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2708295Z         , <&macro_tap>
+2026-02-25T03:51:38.2708369Z         , <&kp ((((0x07) << 16) | (0x04)))>
+2026-02-25T03:51:38.2708440Z         , <&macro_tap>
+2026-02-25T03:51:38.2708512Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2708588Z         , <&kp ((((0x07) << 16) | (0x04)))>;
+2026-02-25T03:51:38.2708653Z };
+2026-02-25T03:51:38.2708657Z 
+2026-02-25T03:51:38.2708780Z HRM_left_ring_hold_v1B_TKZ: HRM_left_ring_hold_v1B_TKZ {
+2026-02-25T03:51:38.2708864Z     label = "&HRM_LEFT_RING_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2708980Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2709133Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2709203Z     tap-ms = <0>;
+2026-02-25T03:51:38.2709273Z     wait-ms = <0>;
+2026-02-25T03:51:38.2709349Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2709429Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2709502Z         , <&kp ((((0x07) << 16) | (0x16)))>
+2026-02-25T03:51:38.2709565Z         , <&mo 4>
+2026-02-25T03:51:38.2709651Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2709719Z         , <&macro_release>
+2026-02-25T03:51:38.2709789Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2709869Z         , <&kp ((((0x07) << 16) | (0x16)))>
+2026-02-25T03:51:38.2709932Z         , <&mo 4>;
+2026-02-25T03:51:38.2710202Z };
+2026-02-25T03:51:38.2710212Z 
+2026-02-25T03:51:38.2710435Z HRM_left_ring_tap_v1B_TKZ: HRM_left_ring_tap_v1B_TKZ {
+2026-02-25T03:51:38.2710525Z     label = "&HRM_LEFT_RING_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2710656Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2710738Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2710812Z     tap-ms = <0>;
+2026-02-25T03:51:38.2710884Z     wait-ms = <0>;
+2026-02-25T03:51:38.2710963Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2711046Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2711130Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2711203Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2711281Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2711359Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2711431Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2711503Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2711579Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2711659Z         , <&macro_tap>
+2026-02-25T03:51:38.2711734Z         , <&kp ((((0x07) << 16) | (0x16)))>
+2026-02-25T03:51:38.2711799Z         , <&macro_tap>
+2026-02-25T03:51:38.2711877Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2711952Z         , <&kp ((((0x07) << 16) | (0x16)))>;
+2026-02-25T03:51:38.2712016Z };
+2026-02-25T03:51:38.2712026Z 
+2026-02-25T03:51:38.2712166Z HRM_left_middy_hold_v1B_TKZ: HRM_left_middy_hold_v1B_TKZ {
+2026-02-25T03:51:38.2712252Z     label = "&HRM_LEFT_MIDDY_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2712371Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2712447Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2712647Z     tap-ms = <0>;
+2026-02-25T03:51:38.2712719Z     wait-ms = <0>;
+2026-02-25T03:51:38.2712796Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2712868Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2712944Z         , <&kp ((((0x07) << 16) | (0x07)))>
+2026-02-25T03:51:38.2713007Z         , <&mo 5>
+2026-02-25T03:51:38.2713083Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2713155Z         , <&macro_release>
+2026-02-25T03:51:38.2713225Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2713300Z         , <&kp ((((0x07) << 16) | (0x07)))>
+2026-02-25T03:51:38.2713363Z         , <&mo 5>;
+2026-02-25T03:51:38.2713429Z };
+2026-02-25T03:51:38.2713433Z 
+2026-02-25T03:51:38.2713564Z HRM_left_middy_tap_v1B_TKZ: HRM_left_middy_tap_v1B_TKZ {
+2026-02-25T03:51:38.2713650Z     label = "&HRM_LEFT_MIDDY_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2713758Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2713837Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2713904Z     tap-ms = <0>;
+2026-02-25T03:51:38.2713974Z     wait-ms = <0>;
+2026-02-25T03:51:38.2714052Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2714128Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2714201Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2714279Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2714352Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2714428Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2714502Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2714575Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2714761Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2714827Z         , <&macro_tap>
+2026-02-25T03:51:38.2714898Z         , <&kp ((((0x07) << 16) | (0x07)))>
+2026-02-25T03:51:38.2714968Z         , <&macro_tap>
+2026-02-25T03:51:38.2715040Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2715114Z         , <&kp ((((0x07) << 16) | (0x07)))>;
+2026-02-25T03:51:38.2715183Z };
+2026-02-25T03:51:38.2715187Z 
+2026-02-25T03:51:38.2715317Z HRM_left_index_hold_v1B_TKZ: HRM_left_index_hold_v1B_TKZ {
+2026-02-25T03:51:38.2715405Z     label = "&HRM_LEFT_INDEX_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2715509Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2715582Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2715652Z     tap-ms = <0>;
+2026-02-25T03:51:38.2715718Z     wait-ms = <0>;
+2026-02-25T03:51:38.2715793Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2715869Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2715940Z         , <&kp ((((0x07) << 16) | (0x09)))>
+2026-02-25T03:51:38.2716009Z         , <&mo 6>
+2026-02-25T03:51:38.2716090Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2716159Z         , <&macro_release>
+2026-02-25T03:51:38.2716233Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2716303Z         , <&kp ((((0x07) << 16) | (0x09)))>
+2026-02-25T03:51:38.2716365Z         , <&mo 6>;
+2026-02-25T03:51:38.2716430Z };
+2026-02-25T03:51:38.2716434Z 
+2026-02-25T03:51:38.2716558Z HRM_left_index_tap_v1B_TKZ: HRM_left_index_tap_v1B_TKZ {
+2026-02-25T03:51:38.2716650Z     label = "&HRM_LEFT_INDEX_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2716767Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2716845Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2716912Z     tap-ms = <0>;
+2026-02-25T03:51:38.2716983Z     wait-ms = <0>;
+2026-02-25T03:51:38.2717062Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2717143Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2717225Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2717306Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2717383Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2717456Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2717529Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2717607Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2717763Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2717831Z         , <&macro_tap>
+2026-02-25T03:51:38.2717914Z         , <&kp ((((0x07) << 16) | (0x09)))>
+2026-02-25T03:51:38.2717978Z         , <&macro_tap>
+2026-02-25T03:51:38.2718053Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2718134Z         , <&kp ((((0x07) << 16) | (0x09)))>;
+2026-02-25T03:51:38.2718195Z };
+2026-02-25T03:51:38.2718199Z 
+2026-02-25T03:51:38.2718362Z HRM_left_index_symb_tap_v1B_TKZ: HRM_left_index_symb_tap_v1B_TKZ {
+2026-02-25T03:51:38.2718462Z     label = "&HRM_LEFT_INDEX_SYMB_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2718574Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2718658Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2718724Z     tap-ms = <0>;
+2026-02-25T03:51:38.2718794Z     wait-ms = <0>;
+2026-02-25T03:51:38.2718874Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2718950Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2719023Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2719108Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2719181Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2719259Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2719333Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2719406Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2719482Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2719549Z         , <&macro_tap>
+2026-02-25T03:51:38.2719623Z         , <&kp ((((0x07) << 16) | (0x0A)))>
+2026-02-25T03:51:38.2719696Z         , <&macro_tap>
+2026-02-25T03:51:38.2719851Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2719928Z         , <&kp ((((0x07) << 16) | (0x0A)))>;
+2026-02-25T03:51:38.2720101Z };
+2026-02-25T03:51:38.2720106Z 
+2026-02-25T03:51:38.2720275Z HRM_right_index_symb_tap_v1B_TKZ: HRM_right_index_symb_tap_v1B_TKZ {
+2026-02-25T03:51:38.2720379Z     label = "&HRM_RIGHT_INDEX_SYMB_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2720494Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2720570Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2720643Z     tap-ms = <0>;
+2026-02-25T03:51:38.2720710Z     wait-ms = <0>;
+2026-02-25T03:51:38.2720784Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2720866Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2720942Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2721015Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2721090Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2721162Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2721243Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2721315Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2721389Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2721459Z         , <&macro_tap>
+2026-02-25T03:51:38.2721530Z         , <&kp ((((0x07) << 16) | (0x0B)))>
+2026-02-25T03:51:38.2721600Z         , <&macro_tap>
+2026-02-25T03:51:38.2721676Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2721755Z         , <&kp ((((0x07) << 16) | (0x0B)))>;
+2026-02-25T03:51:38.2721815Z };
+2026-02-25T03:51:38.2721819Z 
+2026-02-25T03:51:38.2721966Z HRM_right_index_hold_v1B_TKZ: HRM_right_index_hold_v1B_TKZ {
+2026-02-25T03:51:38.2722054Z     label = "&HRM_RIGHT_INDEX_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2722170Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2722243Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2722309Z     tap-ms = <0>;
+2026-02-25T03:51:38.2722379Z     wait-ms = <0>;
+2026-02-25T03:51:38.2722457Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2722527Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2722604Z         , <&kp ((((0x07) << 16) | (0x0D)))>
+2026-02-25T03:51:38.2722669Z         , <&mo 10>
+2026-02-25T03:51:38.2722746Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2722820Z         , <&macro_release>
+2026-02-25T03:51:38.2722891Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2723085Z         , <&kp ((((0x07) << 16) | (0x0D)))>
+2026-02-25T03:51:38.2723154Z         , <&mo 10>;
+2026-02-25T03:51:38.2723213Z };
+2026-02-25T03:51:38.2723217Z 
+2026-02-25T03:51:38.2723357Z HRM_right_index_tap_v1B_TKZ: HRM_right_index_tap_v1B_TKZ {
+2026-02-25T03:51:38.2723442Z     label = "&HRM_RIGHT_INDEX_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2723548Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2723627Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2723693Z     tap-ms = <0>;
+2026-02-25T03:51:38.2723760Z     wait-ms = <0>;
+2026-02-25T03:51:38.2723840Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2723920Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2723994Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2724072Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2724143Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2724219Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2724299Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2724375Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2724454Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2724521Z         , <&macro_tap>
+2026-02-25T03:51:38.2724595Z         , <&kp ((((0x07) << 16) | (0x0D)))>
+2026-02-25T03:51:38.2724666Z         , <&macro_tap>
+2026-02-25T03:51:38.2724739Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2724818Z         , <&kp ((((0x07) << 16) | (0x0D)))>;
+2026-02-25T03:51:38.2724884Z };
+2026-02-25T03:51:38.2724887Z 
+2026-02-25T03:51:38.2725026Z HRM_right_middy_hold_v1B_TKZ: HRM_right_middy_hold_v1B_TKZ {
+2026-02-25T03:51:38.2725231Z     label = "&HRM_RIGHT_MIDDY_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2725342Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2725417Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2725490Z     tap-ms = <0>;
+2026-02-25T03:51:38.2725557Z     wait-ms = <0>;
+2026-02-25T03:51:38.2725638Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2725713Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2725786Z         , <&kp ((((0x07) << 16) | (0x0E)))>
+2026-02-25T03:51:38.2725849Z         , <&mo 9>
+2026-02-25T03:51:38.2725932Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2726002Z         , <&macro_release>
+2026-02-25T03:51:38.2726072Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2726148Z         , <&kp ((((0x07) << 16) | (0x0E)))>
+2026-02-25T03:51:38.2726210Z         , <&mo 9>;
+2026-02-25T03:51:38.2726273Z };
+2026-02-25T03:51:38.2726277Z 
+2026-02-25T03:51:38.2726412Z HRM_right_middy_tap_v1B_TKZ: HRM_right_middy_tap_v1B_TKZ {
+2026-02-25T03:51:38.2726507Z     label = "&HRM_RIGHT_MIDDY_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2726622Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2726696Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2726763Z     tap-ms = <0>;
+2026-02-25T03:51:38.2726834Z     wait-ms = <0>;
+2026-02-25T03:51:38.2726914Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2727001Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2727081Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2727155Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2727232Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2727306Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2727378Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2727454Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2727526Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2727594Z         , <&macro_tap>
+2026-02-25T03:51:38.2727675Z         , <&kp ((((0x07) << 16) | (0x0E)))>
+2026-02-25T03:51:38.2727740Z         , <&macro_tap>
+2026-02-25T03:51:38.2727812Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2727891Z         , <&kp ((((0x07) << 16) | (0x0E)))>;
+2026-02-25T03:51:38.2727954Z };
+2026-02-25T03:51:38.2727958Z 
+2026-02-25T03:51:38.2728097Z HRM_right_ring_hold_v1B_TKZ: HRM_right_ring_hold_v1B_TKZ {
+2026-02-25T03:51:38.2728267Z     label = "&HRM_RIGHT_RING_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2728378Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2728458Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2728525Z     tap-ms = <0>;
+2026-02-25T03:51:38.2728592Z     wait-ms = <0>;
+2026-02-25T03:51:38.2728674Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2728746Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2728822Z         , <&kp ((((0x07) << 16) | (0x0F)))>
+2026-02-25T03:51:38.2728890Z         , <&mo 8>
+2026-02-25T03:51:38.2728972Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2729047Z         , <&macro_release>
+2026-02-25T03:51:38.2729121Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2729193Z         , <&kp ((((0x07) << 16) | (0x0F)))>
+2026-02-25T03:51:38.2729259Z         , <&mo 8>;
+2026-02-25T03:51:38.2729319Z };
+2026-02-25T03:51:38.2729323Z 
+2026-02-25T03:51:38.2729455Z HRM_right_ring_tap_v1B_TKZ: HRM_right_ring_tap_v1B_TKZ {
+2026-02-25T03:51:38.2729573Z     label = "&HRM_RIGHT_RING_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2729681Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2729755Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2729827Z     tap-ms = <0>;
+2026-02-25T03:51:38.2729891Z     wait-ms = <0>;
+2026-02-25T03:51:38.2729966Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2730149Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2730225Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2730301Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2730374Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2730557Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2730633Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2730705Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2730777Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2730849Z         , <&macro_tap>
+2026-02-25T03:51:38.2730926Z         , <&kp ((((0x07) << 16) | (0x0F)))>
+2026-02-25T03:51:38.2730991Z         , <&macro_tap>
+2026-02-25T03:51:38.2731067Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2731140Z         , <&kp ((((0x07) << 16) | (0x0F)))>;
+2026-02-25T03:51:38.2731203Z };
+2026-02-25T03:51:38.2731207Z 
+2026-02-25T03:51:38.2731347Z HRM_right_pinky_hold_v1B_TKZ: HRM_right_pinky_hold_v1B_TKZ {
+2026-02-25T03:51:38.2731436Z     label = "&HRM_RIGHT_PINKY_HOLD_V1B_TKZ";
+2026-02-25T03:51:38.2731547Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2731621Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2731686Z     tap-ms = <0>;
+2026-02-25T03:51:38.2731763Z     wait-ms = <0>;
+2026-02-25T03:51:38.2731837Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2731907Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2731985Z         , <&kp (((((0x07) << 16) | (0x33))))>
+2026-02-25T03:51:38.2732046Z         , <&mo 7>
+2026-02-25T03:51:38.2732124Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2732201Z         , <&macro_release>
+2026-02-25T03:51:38.2732271Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2732349Z         , <&kp (((((0x07) << 16) | (0x33))))>
+2026-02-25T03:51:38.2732412Z         , <&mo 7>;
+2026-02-25T03:51:38.2732472Z };
+2026-02-25T03:51:38.2732476Z 
+2026-02-25T03:51:38.2732614Z HRM_right_pinky_tap_v1B_TKZ: HRM_right_pinky_tap_v1B_TKZ {
+2026-02-25T03:51:38.2732700Z     label = "&HRM_RIGHT_PINKY_TAP_V1B_TKZ";
+2026-02-25T03:51:38.2732805Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2732883Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2732950Z     tap-ms = <0>;
+2026-02-25T03:51:38.2733023Z     wait-ms = <0>;
+2026-02-25T03:51:38.2733101Z     bindings = <&macro_release>
+2026-02-25T03:51:38.2733175Z         , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2733252Z         , <&kp (((((0x07) << 16) | (0xE5))))>
+2026-02-25T03:51:38.2733324Z         , <&kp (((((0x07) << 16) | (0xE2))))>
+2026-02-25T03:51:38.2733395Z         , <&kp (((((0x07) << 16) | (0xE6))))>
+2026-02-25T03:51:38.2733617Z         , <&kp (((((0x07) << 16) | (0xE0))))>
+2026-02-25T03:51:38.2733691Z         , <&kp (((((0x07) << 16) | (0xE4))))>
+2026-02-25T03:51:38.2733764Z         , <&kp (((((0x07) << 16) | (0xE3))))>
+2026-02-25T03:51:38.2733843Z         , <&kp (((((0x07) << 16) | (0xE7))))>
+2026-02-25T03:51:38.2733908Z         , <&macro_tap>
+2026-02-25T03:51:38.2733982Z         , <&kp (((((0x07) << 16) | (0x33))))>
+2026-02-25T03:51:38.2734053Z         , <&macro_tap>
+2026-02-25T03:51:38.2734124Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2734207Z         , <&kp (((((0x07) << 16) | (0x33))))>;
+2026-02-25T03:51:38.2734271Z };
+2026-02-25T03:51:38.2734575Z # 54 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2734910Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/behaviors.dtsi" 1
+2026-02-25T03:51:38.2734915Z 
+2026-02-25T03:51:38.2734986Z lt_v2_TKZ: lt_v2_TKZ {
+2026-02-25T03:51:38.2735086Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2735166Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2735247Z     tapping-term-ms = <190>;
+2026-02-25T03:51:38.2735318Z     bindings = <&mo>, <&kp>;
+2026-02-25T03:51:38.2735394Z     flavor = "balanced";
+2026-02-25T03:51:38.2735482Z     quick-tap-ms = <HRM_INDEX_QUICK_TAP>;
+2026-02-25T03:51:38.2735547Z };
+2026-02-25T03:51:38.2735551Z 
+2026-02-25T03:51:38.2735619Z cw: caps_word {
+2026-02-25T03:51:38.2735713Z     compatible = "zmk,behavior-caps-word";
+2026-02-25T03:51:38.2735791Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2736491Z     continue-list = <((((0x07) << 16) | (0x2A))) ((((0x07) << 16) | (0x4C))) (((((0x07) << 16) | (0x1E)))) (((((0x07) << 16) | (0x1F)))) (((((0x07) << 16) | (0x20)))) (((((0x07) << 16) | (0x21)))) (((((0x07) << 16) | (0x22)))) (((((0x07) << 16) | (0x23)))) (((((0x07) << 16) | (0x24)))) (((((0x07) << 16) | (0x25)))) (((((0x07) << 16) | (0x26)))) (((((0x07) << 16) | (0x27))))>;
+2026-02-25T03:51:38.2736642Z };
+2026-02-25T03:51:38.2736647Z 
+2026-02-25T03:51:38.2736730Z upDownArrows: up_down_arrows {
+2026-02-25T03:51:38.2736822Z     compatible = "zmk,behavior-mod-morph";
+2026-02-25T03:51:38.2736899Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2737063Z     bindings = <&kp (((((0x07) << 16) | (0x51))))>, <&kp (((((0x07) << 16) | (0x52))))>;
+2026-02-25T03:51:38.2737168Z     mods = <(0x02|0x20|0x01|0x10|0x04|0x40|0x08|0x80)>;
+2026-02-25T03:51:38.2737233Z };
+2026-02-25T03:51:38.2737237Z 
+2026-02-25T03:51:38.2737316Z bspc_word: backspace_word {
+2026-02-25T03:51:38.2737405Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2737488Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2737558Z     flavor = "balanced";
+2026-02-25T03:51:38.2737640Z     tapping-term-ms = <225>;
+2026-02-25T03:51:38.2737712Z     quick-tap-ms = <0>;
+2026-02-25T03:51:38.2737803Z     require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2737880Z     bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2737939Z };
+2026-02-25T03:51:38.2737943Z 
+2026-02-25T03:51:38.2738023Z arrow_left: arrow_word_left {
+2026-02-25T03:51:38.2738120Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2738195Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2738264Z     flavor = "balanced";
+2026-02-25T03:51:38.2738343Z     tapping-term-ms = <250>;
+2026-02-25T03:51:38.2738413Z     quick-tap-ms = <0>;
+2026-02-25T03:51:38.2738499Z     require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2738571Z     bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2738631Z };
+2026-02-25T03:51:38.2738634Z 
+2026-02-25T03:51:38.2738715Z arrow_right: arrow_word_right {
+2026-02-25T03:51:38.2738807Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2738886Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2738958Z     flavor = "balanced";
+2026-02-25T03:51:38.2739033Z     tapping-term-ms = <250>;
+2026-02-25T03:51:38.2739103Z     quick-tap-ms = <0>;
+2026-02-25T03:51:38.2739190Z     require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2739261Z     bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2739402Z };
+2026-02-25T03:51:38.2739406Z 
+2026-02-25T03:51:38.2739482Z tab_hyper: tab_hyper {
+2026-02-25T03:51:38.2739569Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2739644Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2739721Z     tapping-term-ms = <200>;
+2026-02-25T03:51:38.2739800Z     flavor = "tap-preferred";
+2026-02-25T03:51:38.2739872Z     bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2739929Z };
+2026-02-25T03:51:38.2739933Z 
+2026-02-25T03:51:38.2740098Z thumb_v2_TKZ: thumb_v2_TKZ {
+2026-02-25T03:51:38.2740190Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2740262Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2740341Z     tapping-term-ms = <200>;
+2026-02-25T03:51:38.2740417Z     bindings = <&mo>, <&kp>;
+2026-02-25T03:51:38.2740485Z     flavor = "balanced";
+2026-02-25T03:51:38.2740561Z     quick-tap-ms = <275>;
+2026-02-25T03:51:38.2740618Z };
+2026-02-25T03:51:38.2740908Z # 55 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2741240Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/modMorphs.dtsi" 1
+2026-02-25T03:51:38.2741245Z 
+2026-02-25T03:51:38.2741316Z gresc: grave_escape {
+2026-02-25T03:51:38.2741408Z     compatible = "zmk,behavior-mod-morph";
+2026-02-25T03:51:38.2741485Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2741643Z     bindings = <&kp (((((0x07) << 16) | (0x29))))>, <&kp ((((0x07) << 16) | (0x35)))>;
+2026-02-25T03:51:38.2741719Z     mods = <(0x08|0x02|0x80|0x20)>;
+2026-02-25T03:51:38.2741781Z };
+2026-02-25T03:51:38.2741785Z 
+2026-02-25T03:51:38.2741862Z n9_paren: n9_parentheses {
+2026-02-25T03:51:38.2742075Z     compatible = "zmk,behavior-mod-morph";
+2026-02-25T03:51:38.2742148Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2742284Z     bindings = <&kp (((((0x07) << 16) | (0x26))))>, <&pair_paren>;
+2026-02-25T03:51:38.2742392Z     mods = <(0x02|0x20|0x01|0x10|0x04|0x40|0x08|0x80)>;
+2026-02-25T03:51:38.2742452Z };
+2026-02-25T03:51:38.2742465Z 
+2026-02-25T03:51:38.2742547Z comma_angle: comma_angle_brackets {
+2026-02-25T03:51:38.2742642Z     compatible = "zmk,behavior-mod-morph";
+2026-02-25T03:51:38.2742715Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2742849Z     bindings = <&kp ((((0x07) << 16) | (0x36)))>, <&pair_angle>;
+2026-02-25T03:51:38.2742949Z     mods = <(0x02|0x20|0x01|0x10|0x04|0x40|0x08|0x80)>;
+2026-02-25T03:51:38.2743010Z };
+2026-02-25T03:51:38.2743014Z 
+2026-02-25T03:51:38.2743100Z dqt_pair: double_quote_pair {
+2026-02-25T03:51:38.2743192Z     compatible = "zmk,behavior-mod-morph";
+2026-02-25T03:51:38.2743267Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2743413Z     bindings = <&kp (((((0x07) << 16) | (0x34))))>, <&pair_dquote>;
+2026-02-25T03:51:38.2743509Z     mods = <(0x02|0x20|0x01|0x10|0x04|0x40|0x08|0x80)>;
+2026-02-25T03:51:38.2743569Z };
+2026-02-25T03:51:38.2743574Z 
+2026-02-25T03:51:38.2743650Z numpad_td: numpad_td {
+2026-02-25T03:51:38.2743743Z     compatible = "zmk,behavior-tap-dance";
+2026-02-25T03:51:38.2743819Z     #binding-cells = <0>;
+2026-02-25T03:51:38.2743901Z     tapping-term-ms = <200>;
+2026-02-25T03:51:38.2743979Z     bindings = <&mo 12>, <&to 12>;
+2026-02-25T03:51:38.2744042Z };
+2026-02-25T03:51:38.2744047Z 
+2026-02-25T03:51:38.2744118Z num_ht: num_hold_tap {
+2026-02-25T03:51:38.2744208Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2744287Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2744360Z     flavor = "balanced";
+2026-02-25T03:51:38.2744437Z     tapping-term-ms = <225>;
+2026-02-25T03:51:38.2744514Z     quick-tap-ms = <200>;
+2026-02-25T03:51:38.2744598Z     require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2744679Z     bindings = <&kp>, <&kp>;
+2026-02-25T03:51:38.2744739Z };
+2026-02-25T03:51:38.2744743Z 
+2026-02-25T03:51:38.2745196Z td_LAYER_Keypad: td_LAYER_Keypad { compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; tapping-term-ms = <200>; bindings = <&mo 12>, <&to 12>; };
+2026-02-25T03:51:38.2745506Z # 56 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2745945Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/autoshift.dtsi" 1
+2026-02-25T03:51:38.2745951Z 
+2026-02-25T03:51:38.2746043Z AS_Shifted_v1_TKZ: AS_Shifted_v1_TKZ {
+2026-02-25T03:51:38.2746132Z     label = "&AS_SHIFTED_V1_TKZ";
+2026-02-25T03:51:38.2746254Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2746332Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2746399Z     tap-ms = <0>;
+2026-02-25T03:51:38.2746468Z     wait-ms = <0>;
+2026-02-25T03:51:38.2746556Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2746636Z     , <&kp (((((0x07) << 16) | (0xE1))))>
+2026-02-25T03:51:38.2746703Z     , <&macro_tap>
+2026-02-25T03:51:38.2746781Z     , <&macro_param_1to1>
+2026-02-25T03:51:38.2746846Z     , <&kp 0>
+2026-02-25T03:51:38.2746915Z     , <&macro_release>
+2026-02-25T03:51:38.2746996Z     , <&kp (((((0x07) << 16) | (0xE1))))>;
+2026-02-25T03:51:38.2747058Z };
+2026-02-25T03:51:38.2747066Z 
+2026-02-25T03:51:38.2747142Z AS_v1_TKZ: AS_v1_TKZ {
+2026-02-25T03:51:38.2747212Z     label = "&AS_V1_TKZ";
+2026-02-25T03:51:38.2747324Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2747405Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2747471Z     tap-ms = <0>;
+2026-02-25T03:51:38.2747538Z     wait-ms = <0>;
+2026-02-25T03:51:38.2747618Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2747688Z     , <&macro_param_1to1>
+2026-02-25T03:51:38.2747757Z     , <&macro_param_1to2>
+2026-02-25T03:51:38.2747832Z     , <&AS_HT_v2_TKZ 0 0>
+2026-02-25T03:51:38.2747910Z     , <&macro_pause_for_release>
+2026-02-25T03:51:38.2748060Z     , <&macro_release>
+2026-02-25T03:51:38.2748135Z     , <&macro_param_1to1>
+2026-02-25T03:51:38.2748204Z     , <&macro_param_1to2>
+2026-02-25T03:51:38.2748273Z     , <&AS_HT_v2_TKZ 0 0>;
+2026-02-25T03:51:38.2748339Z };
+2026-02-25T03:51:38.2748343Z 
+2026-02-25T03:51:38.2748415Z AS_HT_v2_TKZ: AS_HT_v2_TKZ {
+2026-02-25T03:51:38.2748513Z     compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2748590Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2748668Z     tapping-term-ms = <190>;
+2026-02-25T03:51:38.2748764Z     bindings = <&AS_Shifted_v1_TKZ>, <&kp>;
+2026-02-25T03:51:38.2748846Z     flavor = "tap-preferred";
+2026-02-25T03:51:38.2748906Z };
+2026-02-25T03:51:38.2749201Z # 57 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2749525Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/bluetooth.dtsi" 1
+2026-02-25T03:51:38.2749596Z     behaviors {
+2026-02-25T03:51:38.2749664Z         bt_0: bt_0 {
+2026-02-25T03:51:38.2749775Z             compatible = "zmk,behavior-tap-dance";
+2026-02-25T03:51:38.2749854Z             label = "BT_0";
+2026-02-25T03:51:38.2749932Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2750229Z             tapping-term-ms = <200>;
+2026-02-25T03:51:38.2750390Z             bindings = <&bt_select_0>, <&bt 5 0>;
+2026-02-25T03:51:38.2750461Z         };
+2026-02-25T03:51:38.2750529Z         bt_1: bt_1 {
+2026-02-25T03:51:38.2750638Z             compatible = "zmk,behavior-tap-dance";
+2026-02-25T03:51:38.2750708Z             label = "BT_1";
+2026-02-25T03:51:38.2750782Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2750866Z             tapping-term-ms = <200>;
+2026-02-25T03:51:38.2750955Z             bindings = <&bt_select_1>, <&bt 5 1>;
+2026-02-25T03:51:38.2751022Z         };
+2026-02-25T03:51:38.2751086Z         bt_2: bt_2 {
+2026-02-25T03:51:38.2751184Z             compatible = "zmk,behavior-tap-dance";
+2026-02-25T03:51:38.2751259Z             label = "BT_2";
+2026-02-25T03:51:38.2751340Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2751419Z             tapping-term-ms = <200>;
+2026-02-25T03:51:38.2751511Z             bindings = <&bt_select_2>, <&bt 5 2>;
+2026-02-25T03:51:38.2751574Z         };
+2026-02-25T03:51:38.2751640Z         bt_3: bt_3 {
+2026-02-25T03:51:38.2751742Z             compatible = "zmk,behavior-tap-dance";
+2026-02-25T03:51:38.2751941Z             label = "BT_3";
+2026-02-25T03:51:38.2752016Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2752097Z             tapping-term-ms = <200>;
+2026-02-25T03:51:38.2752184Z             bindings = <&bt_select_3>, <&bt 5 3>;
+2026-02-25T03:51:38.2752249Z         };
+2026-02-25T03:51:38.2752310Z     };
+2026-02-25T03:51:38.2752314Z 
+2026-02-25T03:51:38.2752377Z     macros {
+2026-02-25T03:51:38.2752459Z         bt_select_0: bt_select_0 {
+2026-02-25T03:51:38.2752533Z             label = "BT_SELECT_0";
+2026-02-25T03:51:38.2752664Z             compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2752749Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2752814Z             bindings
+2026-02-25T03:51:38.2752879Z                 = <&out 2>,
+2026-02-25T03:51:38.2752954Z                     <&bt 3 0>;
+2026-02-25T03:51:38.2753016Z         };
+2026-02-25T03:51:38.2753091Z         bt_select_1: bt_select_1 {
+2026-02-25T03:51:38.2753169Z             label = "BT_SELECT_1";
+2026-02-25T03:51:38.2753267Z             compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2753346Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2753410Z             bindings
+2026-02-25T03:51:38.2753475Z                 = <&out 2>,
+2026-02-25T03:51:38.2753545Z                     <&bt 3 1>;
+2026-02-25T03:51:38.2753605Z         };
+2026-02-25T03:51:38.2753678Z         bt_select_2: bt_select_2 {
+2026-02-25T03:51:38.2753754Z             label = "BT_SELECT_2";
+2026-02-25T03:51:38.2753843Z             compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2753919Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2753989Z             bindings
+2026-02-25T03:51:38.2754164Z                 = <&out 2>,
+2026-02-25T03:51:38.2754232Z                     <&bt 3 2>;
+2026-02-25T03:51:38.2754297Z         };
+2026-02-25T03:51:38.2754372Z         bt_select_3: bt_select_3 {
+2026-02-25T03:51:38.2754452Z             label = "BT_SELECT_3";
+2026-02-25T03:51:38.2754544Z             compatible = "zmk,behavior-macro";
+2026-02-25T03:51:38.2754624Z             #binding-cells = <0>;
+2026-02-25T03:51:38.2754696Z             bindings
+2026-02-25T03:51:38.2754759Z                 = <&out 2>,
+2026-02-25T03:51:38.2754826Z                     <&bt 3 3>;
+2026-02-25T03:51:38.2754894Z         };
+2026-02-25T03:51:38.2754955Z     };
+2026-02-25T03:51:38.2755250Z # 58 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2755641Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/homeRowMods/hrm_behaviors.dtsi" 1
+2026-02-25T03:51:38.2755647Z 
+2026-02-25T03:51:38.2755804Z         HRM_left_index_middy_v1B_TKZ: HRM_left_index_middy_v1B_TKZ {
+2026-02-25T03:51:38.2755912Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2755988Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2756067Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2756194Z             bindings = <&kp>, <&HRM_left_index_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2756284Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2756361Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2756457Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2756756Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2756845Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2756906Z         };
+2026-02-25T03:51:38.2756911Z 
+2026-02-25T03:51:38.2757056Z         HRM_left_index_pinky_v1B_TKZ: HRM_left_index_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2757174Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2757254Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2757331Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2757451Z             bindings = <&kp>, <&HRM_left_index_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2757532Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2757606Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2757778Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2758065Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2758152Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2758213Z         };
+2026-02-25T03:51:38.2758218Z 
+2026-02-25T03:51:38.2758361Z         HRM_left_index_ring_v1B_TKZ: HRM_left_index_ring_v1B_TKZ {
+2026-02-25T03:51:38.2758462Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2758537Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2758622Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2758739Z             bindings = <&kp>, <&HRM_left_index_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2758821Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2758902Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2758987Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2759269Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2759362Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2759423Z         };
+2026-02-25T03:51:38.2759428Z 
+2026-02-25T03:51:38.2759542Z         HRM_left_index_v1B_TKZ: HRM_left_index_v1B_TKZ {
+2026-02-25T03:51:38.2759643Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2759718Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2759800Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2759921Z             bindings = <&HRM_left_index_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2760284Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2760365Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2760452Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2760733Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2760825Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2760888Z         };
+2026-02-25T03:51:38.2760892Z 
+2026-02-25T03:51:38.2761036Z         HRM_left_middy_index_v1B_TKZ: HRM_left_middy_index_v1B_TKZ {
+2026-02-25T03:51:38.2761136Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2761210Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2761293Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2761404Z             bindings = <&kp>, <&HRM_left_middy_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2761484Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2761566Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2761660Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2761941Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2762030Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2762091Z         };
+2026-02-25T03:51:38.2762099Z 
+2026-02-25T03:51:38.2762246Z         HRM_left_middy_pinky_v1B_TKZ: HRM_left_middy_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2762340Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2762416Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2762503Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2762613Z             bindings = <&kp>, <&HRM_left_middy_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2762691Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2762772Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2762859Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2763138Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2763229Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2763290Z         };
+2026-02-25T03:51:38.2763294Z 
+2026-02-25T03:51:38.2763437Z         HRM_left_middy_ring_v1B_TKZ: HRM_left_middy_ring_v1B_TKZ {
+2026-02-25T03:51:38.2763649Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2763725Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2763808Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2763917Z             bindings = <&kp>, <&HRM_left_middy_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2763997Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2764075Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2764160Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2764442Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2764528Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2764591Z         };
+2026-02-25T03:51:38.2764595Z 
+2026-02-25T03:51:38.2764715Z         HRM_left_middy_v1B_TKZ: HRM_left_middy_v1B_TKZ {
+2026-02-25T03:51:38.2764812Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2764888Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2764976Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2765094Z             bindings = <&HRM_left_middy_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2765180Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2765257Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2765344Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2765631Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2765713Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2765775Z         };
+2026-02-25T03:51:38.2765880Z 
+2026-02-25T03:51:38.2766030Z         HRM_left_pinky_index_v1B_TKZ: HRM_left_pinky_index_v1B_TKZ {
+2026-02-25T03:51:38.2766125Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2766206Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2766281Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2766392Z             bindings = <&kp>, <&HRM_left_pinky_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2766477Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2766551Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2766636Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2766920Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2767004Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2767064Z         };
+2026-02-25T03:51:38.2767073Z 
+2026-02-25T03:51:38.2767213Z         HRM_left_pinky_middy_v1B_TKZ: HRM_left_pinky_middy_v1B_TKZ {
+2026-02-25T03:51:38.2767312Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2767390Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2767468Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2767578Z             bindings = <&kp>, <&HRM_left_pinky_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2767660Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2767736Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2767820Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2768103Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2768182Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2768245Z         };
+2026-02-25T03:51:38.2768249Z 
+2026-02-25T03:51:38.2768386Z         HRM_left_pinky_ring_v1B_TKZ: HRM_left_pinky_ring_v1B_TKZ {
+2026-02-25T03:51:38.2768480Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2768560Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2768647Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2768757Z             bindings = <&kp>, <&HRM_left_pinky_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2768840Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2768913Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2768998Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2769363Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2769445Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2769509Z         };
+2026-02-25T03:51:38.2769513Z 
+2026-02-25T03:51:38.2769625Z         HRM_left_pinky_v1B_TKZ: HRM_left_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2769720Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2769799Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2769875Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2770096Z             bindings = <&HRM_left_pinky_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2770190Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2770264Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2770353Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2770632Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2770718Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2770781Z         };
+2026-02-25T03:51:38.2770785Z 
+2026-02-25T03:51:38.2770920Z         HRM_left_ring_index_v1B_TKZ: HRM_left_ring_index_v1B_TKZ {
+2026-02-25T03:51:38.2771014Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2771092Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2771169Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2771284Z             bindings = <&kp>, <&HRM_left_ring_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2771362Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2771549Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2771640Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2771921Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2772002Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2772072Z         };
+2026-02-25T03:51:38.2772076Z 
+2026-02-25T03:51:38.2772209Z         HRM_left_ring_middy_v1B_TKZ: HRM_left_ring_middy_v1B_TKZ {
+2026-02-25T03:51:38.2772308Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2772382Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2772458Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2772572Z             bindings = <&kp>, <&HRM_left_ring_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2772648Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2772722Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2772812Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2773097Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2773179Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2773250Z         };
+2026-02-25T03:51:38.2773255Z 
+2026-02-25T03:51:38.2773390Z         HRM_left_ring_pinky_v1B_TKZ: HRM_left_ring_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2773492Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2773565Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2773641Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2773751Z             bindings = <&kp>, <&HRM_left_ring_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2773831Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2773904Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2773995Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2774272Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2774360Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2774422Z         };
+2026-02-25T03:51:38.2774427Z 
+2026-02-25T03:51:38.2774533Z         HRM_left_ring_v1B_TKZ: HRM_left_ring_v1B_TKZ {
+2026-02-25T03:51:38.2774634Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2774820Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2774897Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2775012Z             bindings = <&HRM_left_ring_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2775091Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2775164Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2775253Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2775533Z             hold-trigger-key-positions = <72 73 74 9 10 11 12 13 23 24 25 26 27 35 36 37 38 39 49 50 51 52 53 61 62 63 14 28 40 54 70 71 69>;
+2026-02-25T03:51:38.2775618Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2775683Z         };
+2026-02-25T03:51:38.2775687Z 
+2026-02-25T03:51:38.2775844Z         HRM_right_index_middy_v1B_TKZ: HRM_right_index_middy_v1B_TKZ {
+2026-02-25T03:51:38.2775944Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2776019Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2776097Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2776222Z             bindings = <&kp>, <&HRM_right_index_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2776302Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2776383Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2776470Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2776747Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2776839Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2776901Z         };
+2026-02-25T03:51:38.2776905Z 
+2026-02-25T03:51:38.2777059Z         HRM_right_index_pinky_v1B_TKZ: HRM_right_index_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2777239Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2777315Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2777399Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2777512Z             bindings = <&kp>, <&HRM_right_index_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2777592Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2777677Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2777764Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2778035Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2778122Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2778182Z         };
+2026-02-25T03:51:38.2778186Z 
+2026-02-25T03:51:38.2778335Z         HRM_right_index_ring_v1B_TKZ: HRM_right_index_ring_v1B_TKZ {
+2026-02-25T03:51:38.2778431Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2778510Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2778592Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2778703Z             bindings = <&kp>, <&HRM_right_index_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2778781Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2778861Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2778946Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2779221Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2779306Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2779367Z         };
+2026-02-25T03:51:38.2779370Z 
+2026-02-25T03:51:38.2779493Z         HRM_right_index_v1B_TKZ: HRM_right_index_v1B_TKZ {
+2026-02-25T03:51:38.2779587Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2779661Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2779747Z             tapping-term-ms = <190>;
+2026-02-25T03:51:38.2779870Z             bindings = <&HRM_right_index_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2779950Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2780125Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2780213Z             require-prior-idle-ms = <125>;
+2026-02-25T03:51:38.2780483Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2780716Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2780776Z         };
+2026-02-25T03:51:38.2780780Z 
+2026-02-25T03:51:38.2780933Z         HRM_right_middy_index_v1B_TKZ: HRM_right_middy_index_v1B_TKZ {
+2026-02-25T03:51:38.2781027Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2781104Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2781185Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2781295Z             bindings = <&kp>, <&HRM_right_middy_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2781374Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2781460Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2781544Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2781819Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2781900Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2781965Z         };
+2026-02-25T03:51:38.2781969Z 
+2026-02-25T03:51:38.2782122Z         HRM_right_middy_pinky_v1B_TKZ: HRM_right_middy_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2782217Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2782293Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2782374Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2782485Z             bindings = <&kp>, <&HRM_right_middy_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2782569Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2782643Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2782728Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2783110Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2783192Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2783254Z         };
+2026-02-25T03:51:38.2783258Z 
+2026-02-25T03:51:38.2783404Z         HRM_right_middy_ring_v1B_TKZ: HRM_right_middy_ring_v1B_TKZ {
+2026-02-25T03:51:38.2783507Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2783586Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2783665Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2783774Z             bindings = <&kp>, <&HRM_right_middy_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2783858Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2783932Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2784019Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2784294Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2784378Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2784438Z         };
+2026-02-25T03:51:38.2784445Z 
+2026-02-25T03:51:38.2784560Z         HRM_right_middy_v1B_TKZ: HRM_right_middy_v1B_TKZ {
+2026-02-25T03:51:38.2784657Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2784739Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2784819Z             tapping-term-ms = <210>;
+2026-02-25T03:51:38.2784936Z             bindings = <&HRM_right_middy_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2785020Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2785094Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2785184Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2785465Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2785553Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2785624Z         };
+2026-02-25T03:51:38.2785629Z 
+2026-02-25T03:51:38.2785783Z         HRM_right_pinky_index_v1B_TKZ: HRM_right_pinky_index_v1B_TKZ {
+2026-02-25T03:51:38.2785888Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2785974Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2786052Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2786253Z             bindings = <&kp>, <&HRM_right_pinky_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2786342Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2786417Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2786504Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2786783Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2786864Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2786929Z         };
+2026-02-25T03:51:38.2786933Z 
+2026-02-25T03:51:38.2787086Z         HRM_right_pinky_middy_v1B_TKZ: HRM_right_pinky_middy_v1B_TKZ {
+2026-02-25T03:51:38.2787188Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2787268Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2787347Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2787462Z             bindings = <&kp>, <&HRM_right_pinky_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2787555Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2787629Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2787722Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2787994Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2788076Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2788141Z         };
+2026-02-25T03:51:38.2788146Z 
+2026-02-25T03:51:38.2788292Z         HRM_right_pinky_ring_v1B_TKZ: HRM_right_pinky_ring_v1B_TKZ {
+2026-02-25T03:51:38.2788389Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2788549Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2788625Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2788742Z             bindings = <&kp>, <&HRM_right_pinky_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2788820Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2788898Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2788994Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2789264Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2789345Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2789413Z         };
+2026-02-25T03:51:38.2789417Z 
+2026-02-25T03:51:38.2789535Z         HRM_right_pinky_v1B_TKZ: HRM_right_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2789636Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2789712Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2789789Z             tapping-term-ms = <250>;
+2026-02-25T03:51:38.2789921Z             bindings = <&HRM_right_pinky_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2790105Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2790182Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2790273Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2790543Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2790629Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2790695Z         };
+2026-02-25T03:51:38.2790698Z 
+2026-02-25T03:51:38.2790841Z         HRM_right_ring_index_v1B_TKZ: HRM_right_ring_index_v1B_TKZ {
+2026-02-25T03:51:38.2790941Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2791016Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2791093Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2791213Z             bindings = <&kp>, <&HRM_right_ring_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2791298Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2791372Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2791462Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2791732Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2791931Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2791992Z         };
+2026-02-25T03:51:38.2791996Z 
+2026-02-25T03:51:38.2792137Z         HRM_right_ring_middy_v1B_TKZ: HRM_right_ring_middy_v1B_TKZ {
+2026-02-25T03:51:38.2792238Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2792313Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2792391Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2792509Z             bindings = <&kp>, <&HRM_right_ring_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2792589Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2792664Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2792758Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2793027Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2793111Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2793172Z         };
+2026-02-25T03:51:38.2793176Z 
+2026-02-25T03:51:38.2793321Z         HRM_right_ring_pinky_v1B_TKZ: HRM_right_ring_pinky_v1B_TKZ {
+2026-02-25T03:51:38.2793422Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2793497Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2793574Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2793689Z             bindings = <&kp>, <&HRM_right_ring_tap_v1B_TKZ>;
+2026-02-25T03:51:38.2793770Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2793851Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2793934Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2794205Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2794401Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2794462Z         };
+2026-02-25T03:51:38.2794466Z 
+2026-02-25T03:51:38.2794580Z         HRM_right_ring_v1B_TKZ: HRM_right_ring_v1B_TKZ {
+2026-02-25T03:51:38.2794683Z             compatible = "zmk,behavior-hold-tap";
+2026-02-25T03:51:38.2794763Z             #binding-cells = <2>;
+2026-02-25T03:51:38.2794847Z             tapping-term-ms = <240>;
+2026-02-25T03:51:38.2794965Z             bindings = <&HRM_right_ring_hold_v1B_TKZ>, <&kp>;
+2026-02-25T03:51:38.2795046Z             flavor = "tap-preferred";
+2026-02-25T03:51:38.2795124Z             quick-tap-ms = <275>;
+2026-02-25T03:51:38.2795210Z             require-prior-idle-ms = <150>;
+2026-02-25T03:51:38.2795480Z             hold-trigger-key-positions = <1 15 29 41 42 30 16 3 2 17 31 43 56 57 44 32 18 4 5 6 20 19 33 34 46 45 58 71 70 69 74 73 72>;
+2026-02-25T03:51:38.2795569Z             hold-trigger-on-release;
+2026-02-25T03:51:38.2795630Z         };
+2026-02-25T03:51:38.2795927Z # 59 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2795997Z     };
+2026-02-25T03:51:38.2796059Z };
+2026-02-25T03:51:38.2796064Z 
+2026-02-25T03:51:38.2796127Z / {
+2026-02-25T03:51:38.2796192Z     combos {
+2026-02-25T03:51:38.2796279Z         compatible = "zmk,combos";
+2026-02-25T03:51:38.2796649Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/combos/combos_common.dtsi" 1
+2026-02-25T03:51:38.2796655Z 
+2026-02-25T03:51:38.2796738Z combo_sticky_hyp_rght_v1_TKZ {
+2026-02-25T03:51:38.2796810Z     timeout-ms = <50>;
+2026-02-25T03:51:38.2796894Z     key-positions = <50 61>;
+2026-02-25T03:51:38.2797086Z     bindings = <&sk (0x08 << 24 | (0x04 << 24 | (0x01 << 24 | (((((0x07) << 16) | (0xE1)))))))>;
+2026-02-25T03:51:38.2797162Z     layers = <0 2 1>;
+2026-02-25T03:51:38.2797223Z };
+2026-02-25T03:51:38.2797233Z 
+2026-02-25T03:51:38.2797311Z combo_sticky_meh_rght_v1_TKZ {
+2026-02-25T03:51:38.2797387Z     timeout-ms = <50>;
+2026-02-25T03:51:38.2797464Z     key-positions = <62 51>;
+2026-02-25T03:51:38.2797618Z     bindings = <&sk (0x04 << 24 | (0x01 << 24 | (((((0x07) << 16) | (0xE1))))))>;
+2026-02-25T03:51:38.2797693Z     layers = <0 2 1>;
+2026-02-25T03:51:38.2797752Z };
+2026-02-25T03:51:38.2797838Z 
+2026-02-25T03:51:38.2797911Z combo_expose_v1_TKZ {
+2026-02-25T03:51:38.2797992Z     key-positions = <69 74>;
+2026-02-25T03:51:38.2798073Z     bindings = <&mac_app_expose>;
+2026-02-25T03:51:38.2798148Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2798208Z };
+2026-02-25T03:51:38.2798213Z 
+2026-02-25T03:51:38.2798292Z combo_tabswitch_gui_v1_TKZ {
+2026-02-25T03:51:38.2798372Z     key-positions = <69 46>;
+2026-02-25T03:51:38.2798524Z     bindings = <&mod_tab_chord_v2_TKZ (((((0x07) << 16) | (0xE3)))) 11>;
+2026-02-25T03:51:38.2798591Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2798656Z };
+2026-02-25T03:51:38.2798664Z 
+2026-02-25T03:51:38.2798744Z combo_tabswitch_ctrl_v1_TKZ {
+2026-02-25T03:51:38.2798818Z     key-positions = <58 45>;
+2026-02-25T03:51:38.2798968Z     bindings = <&mod_tab_chord_v2_TKZ (((((0x07) << 16) | (0xE0)))) 11>;
+2026-02-25T03:51:38.2799034Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2799098Z };
+2026-02-25T03:51:38.2799102Z 
+2026-02-25T03:51:38.2799203Z mod_tab_chord_v2_TKZ: mod_tab_chord_v2_TKZ {
+2026-02-25T03:51:38.2799287Z     label = "&MOD_TAB_CHORD_V2_TKZ";
+2026-02-25T03:51:38.2799407Z     compatible = "zmk,behavior-macro-two-param";
+2026-02-25T03:51:38.2799484Z     #binding-cells = <2>;
+2026-02-25T03:51:38.2799551Z     tap-ms = <0>;
+2026-02-25T03:51:38.2799623Z     wait-ms = <0>;
+2026-02-25T03:51:38.2799699Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2799771Z         , <&macro_param_2to1>
+2026-02-25T03:51:38.2799839Z         , <&mo 0>
+2026-02-25T03:51:38.2799910Z         , <&macro_press>
+2026-02-25T03:51:38.2800073Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2800151Z         , <&mod_tab_v1_TKZ 0>
+2026-02-25T03:51:38.2800339Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2800416Z         , <&macro_release>
+2026-02-25T03:51:38.2800487Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2800556Z         , <&mod_tab_v1_TKZ 0>
+2026-02-25T03:51:38.2800628Z         , <&macro_release>
+2026-02-25T03:51:38.2800698Z         , <&macro_param_2to1>
+2026-02-25T03:51:38.2800767Z         , <&mo 0>;
+2026-02-25T03:51:38.2800832Z };
+2026-02-25T03:51:38.2800837Z 
+2026-02-25T03:51:38.2800917Z mod_tab_v1_TKZ: mod_tab_v1_TKZ {
+2026-02-25T03:51:38.2800992Z     label = "&MOD_TAB_V1_TKZ";
+2026-02-25T03:51:38.2801112Z     compatible = "zmk,behavior-macro-one-param";
+2026-02-25T03:51:38.2801186Z     #binding-cells = <1>;
+2026-02-25T03:51:38.2801257Z     tap-ms = <0>;
+2026-02-25T03:51:38.2801323Z     wait-ms = <0>;
+2026-02-25T03:51:38.2801398Z     bindings = <&macro_press>
+2026-02-25T03:51:38.2801476Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2801542Z         , <&kp 0>
+2026-02-25T03:51:38.2801613Z         , <&macro_tap>
+2026-02-25T03:51:38.2801695Z         , <&kp ((((0x07) << 16) | (0x2B)))>
+2026-02-25T03:51:38.2801773Z         , <&macro_pause_for_release>
+2026-02-25T03:51:38.2801842Z         , <&macro_release>
+2026-02-25T03:51:38.2801919Z         , <&macro_param_1to1>
+2026-02-25T03:51:38.2801982Z         , <&kp 0>;
+2026-02-25T03:51:38.2802043Z };
+2026-02-25T03:51:38.2802356Z # 67 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2802717Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/../../shared/combos/combos_fkeys.dtsi" 1
+2026-02-25T03:51:38.2802722Z 
+2026-02-25T03:51:38.2802797Z combo_F1_cb_v1_TKZ {
+2026-02-25T03:51:38.2802876Z     key-positions = <2 16>;
+2026-02-25T03:51:38.2802973Z     bindings = <&kp ((((0x07) << 16) | (0x3A)))>;
+2026-02-25T03:51:38.2803046Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2803108Z };
+2026-02-25T03:51:38.2803111Z 
+2026-02-25T03:51:38.2803179Z combo_F2_cb_v1_TKZ {
+2026-02-25T03:51:38.2803266Z     key-positions = <17 3>;
+2026-02-25T03:51:38.2803359Z     bindings = <&kp ((((0x07) << 16) | (0x3B)))>;
+2026-02-25T03:51:38.2803428Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2803493Z };
+2026-02-25T03:51:38.2803497Z 
+2026-02-25T03:51:38.2803565Z combo_F3_cb_v1_TKZ {
+2026-02-25T03:51:38.2803644Z     key-positions = <18 4>;
+2026-02-25T03:51:38.2803846Z     bindings = <&kp ((((0x07) << 16) | (0x3C)))>;
+2026-02-25T03:51:38.2803913Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2803978Z };
+2026-02-25T03:51:38.2803982Z 
+2026-02-25T03:51:38.2804049Z combo_F4_cb_v1_TKZ {
+2026-02-25T03:51:38.2804124Z     key-positions = <19 5>;
+2026-02-25T03:51:38.2804220Z     bindings = <&kp ((((0x07) << 16) | (0x3D)))>;
+2026-02-25T03:51:38.2804287Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2804346Z };
+2026-02-25T03:51:38.2804351Z 
+2026-02-25T03:51:38.2804428Z combo_F5_cb_v1_TKZ {
+2026-02-25T03:51:38.2804501Z     key-positions = <20 6>;
+2026-02-25T03:51:38.2804597Z     bindings = <&kp ((((0x07) << 16) | (0x3E)))>;
+2026-02-25T03:51:38.2804670Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2804729Z };
+2026-02-25T03:51:38.2804733Z 
+2026-02-25T03:51:38.2804804Z combo_F6_cb_v1_TKZ {
+2026-02-25T03:51:38.2804879Z     key-positions = <23 9>;
+2026-02-25T03:51:38.2804970Z     bindings = <&kp ((((0x07) << 16) | (0x3F)))>;
+2026-02-25T03:51:38.2805041Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2805107Z };
+2026-02-25T03:51:38.2805111Z 
+2026-02-25T03:51:38.2805179Z combo_F7_cb_v1_TKZ {
+2026-02-25T03:51:38.2805261Z     key-positions = <10 24>;
+2026-02-25T03:51:38.2805350Z     bindings = <&kp ((((0x07) << 16) | (0x40)))>;
+2026-02-25T03:51:38.2805423Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2805483Z };
+2026-02-25T03:51:38.2805487Z 
+2026-02-25T03:51:38.2805553Z combo_F8_cb_v1_TKZ {
+2026-02-25T03:51:38.2805631Z     key-positions = <11 25>;
+2026-02-25T03:51:38.2805722Z     bindings = <&kp ((((0x07) << 16) | (0x41)))>;
+2026-02-25T03:51:38.2805787Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2805852Z };
+2026-02-25T03:51:38.2805934Z 
+2026-02-25T03:51:38.2806003Z combo_F9_cb_v1_TKZ {
+2026-02-25T03:51:38.2806077Z     key-positions = <12 26>;
+2026-02-25T03:51:38.2806171Z     bindings = <&kp ((((0x07) << 16) | (0x42)))>;
+2026-02-25T03:51:38.2806237Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2806302Z };
+2026-02-25T03:51:38.2806306Z 
+2026-02-25T03:51:38.2806374Z combo_F10_cb_v1_TKZ {
+2026-02-25T03:51:38.2806449Z     key-positions = <13 27>;
+2026-02-25T03:51:38.2806545Z     bindings = <&kp ((((0x07) << 16) | (0x43)))>;
+2026-02-25T03:51:38.2806611Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2806670Z };
+2026-02-25T03:51:38.2806674Z 
+2026-02-25T03:51:38.2806744Z combo_F11_cb_v1_TKZ {
+2026-02-25T03:51:38.2806817Z     key-positions = <14 28>;
+2026-02-25T03:51:38.2806905Z     bindings = <&kp ((((0x07) << 16) | (0x44)))>;
+2026-02-25T03:51:38.2806976Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2807038Z };
+2026-02-25T03:51:38.2807042Z 
+2026-02-25T03:51:38.2807113Z combo_F12_cb_v1_TKZ {
+2026-02-25T03:51:38.2807188Z     key-positions = <14 13>;
+2026-02-25T03:51:38.2807282Z     bindings = <&kp ((((0x07) << 16) | (0x45)))>;
+2026-02-25T03:51:38.2807351Z     layers = <0 1 2>;
+2026-02-25T03:51:38.2807411Z };
+2026-02-25T03:51:38.2807696Z # 68 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2807765Z     };
+2026-02-25T03:51:38.2807826Z };
+2026-02-25T03:51:38.2807830Z 
+2026-02-25T03:51:38.2807892Z / {
+2026-02-25T03:51:38.2807965Z     keymap {
+2026-02-25T03:51:38.2808048Z         compatible = "zmk,keymap";
+2026-02-25T03:51:38.2808053Z 
+2026-02-25T03:51:38.2808346Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/base.dtsi" 1
+2026-02-25T03:51:38.2808350Z 
+2026-02-25T03:51:38.2808412Z         0 {
+2026-02-25T03:51:38.2808483Z             bindings = <
+2026-02-25T03:51:38.2809964Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2810265Z             >;
+2026-02-25T03:51:38.2810330Z         };
+2026-02-25T03:51:38.2810613Z # 77 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2810908Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/typing.dtsi" 1
+2026-02-25T03:51:38.2810913Z 
+2026-02-25T03:51:38.2810978Z         1 {
+2026-02-25T03:51:38.2811047Z             bindings = <
+2026-02-25T03:51:38.2812525Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2812601Z             >;
+2026-02-25T03:51:38.2812661Z         };
+2026-02-25T03:51:38.2812942Z # 78 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2813250Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/autoshift.dtsi" 1
+2026-02-25T03:51:38.2813255Z 
+2026-02-25T03:51:38.2813321Z         2 {
+2026-02-25T03:51:38.2813389Z             bindings = <
+2026-02-25T03:51:38.2814868Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2815052Z             >;
+2026-02-25T03:51:38.2815112Z         };
+2026-02-25T03:51:38.2815410Z # 79 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2815738Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_left_pinky.dtsi" 1
+2026-02-25T03:51:38.2815743Z 
+2026-02-25T03:51:38.2815803Z         3 {
+2026-02-25T03:51:38.2815876Z             bindings = <
+2026-02-25T03:51:38.2817352Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2817428Z             >;
+2026-02-25T03:51:38.2817490Z         };
+2026-02-25T03:51:38.2817775Z # 80 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2818100Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_left_ring.dtsi" 1
+2026-02-25T03:51:38.2818105Z 
+2026-02-25T03:51:38.2818165Z         4 {
+2026-02-25T03:51:38.2818237Z             bindings = <
+2026-02-25T03:51:38.2819709Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2819862Z             >;
+2026-02-25T03:51:38.2819922Z         };
+2026-02-25T03:51:38.2820297Z # 81 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2820626Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_left_middy.dtsi" 1
+2026-02-25T03:51:38.2820631Z 
+2026-02-25T03:51:38.2820692Z         5 {
+2026-02-25T03:51:38.2820761Z             bindings = <
+2026-02-25T03:51:38.2822249Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2822344Z             >;
+2026-02-25T03:51:38.2822414Z         };
+2026-02-25T03:51:38.2822695Z # 82 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2823020Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_left_index.dtsi" 1
+2026-02-25T03:51:38.2823025Z 
+2026-02-25T03:51:38.2823086Z         6 {
+2026-02-25T03:51:38.2823265Z             bindings = <
+2026-02-25T03:51:38.2824743Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2824814Z             >;
+2026-02-25T03:51:38.2824882Z         };
+2026-02-25T03:51:38.2825160Z # 83 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2825488Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_right_pinky.dtsi" 1
+2026-02-25T03:51:38.2825493Z 
+2026-02-25T03:51:38.2825564Z         7 {
+2026-02-25T03:51:38.2825632Z             bindings = <
+2026-02-25T03:51:38.2827110Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2827178Z             >;
+2026-02-25T03:51:38.2827240Z         };
+2026-02-25T03:51:38.2827523Z # 84 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2827840Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_right_ring.dtsi" 1
+2026-02-25T03:51:38.2827848Z 
+2026-02-25T03:51:38.2827914Z         8 {
+2026-02-25T03:51:38.2827984Z             bindings = <
+2026-02-25T03:51:38.2829457Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2829626Z             >;
+2026-02-25T03:51:38.2829691Z         };
+2026-02-25T03:51:38.2830061Z # 85 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2830387Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_right_middy.dtsi" 1
+2026-02-25T03:51:38.2830396Z 
+2026-02-25T03:51:38.2830463Z         9 {
+2026-02-25T03:51:38.2830534Z             bindings = <
+2026-02-25T03:51:38.2832012Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2832087Z             >;
+2026-02-25T03:51:38.2832149Z         };
+2026-02-25T03:51:38.2832430Z # 86 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2832747Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/hrm_right_index.dtsi" 1
+2026-02-25T03:51:38.2832890Z 
+2026-02-25T03:51:38.2832953Z         10 {
+2026-02-25T03:51:38.2833028Z             bindings = <
+2026-02-25T03:51:38.2834500Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2834572Z             >;
+2026-02-25T03:51:38.2834633Z         };
+2026-02-25T03:51:38.2834909Z # 87 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2835207Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/cursor.dtsi" 1
+2026-02-25T03:51:38.2835212Z 
+2026-02-25T03:51:38.2835271Z         11 {
+2026-02-25T03:51:38.2835344Z             bindings = <
+2026-02-25T03:51:38.2836817Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2836890Z             >;
+2026-02-25T03:51:38.2836951Z         };
+2026-02-25T03:51:38.2837227Z # 88 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2837524Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/keypad.dtsi" 1
+2026-02-25T03:51:38.2837529Z 
+2026-02-25T03:51:38.2837592Z         12 {
+2026-02-25T03:51:38.2837660Z             bindings = <
+2026-02-25T03:51:38.2839135Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2839299Z             >;
+2026-02-25T03:51:38.2839364Z         };
+2026-02-25T03:51:38.2839642Z # 89 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2839930Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/symbol.dtsi" 1
+2026-02-25T03:51:38.2839940Z 
+2026-02-25T03:51:38.2840088Z         13 {
+2026-02-25T03:51:38.2840158Z             bindings = <
+2026-02-25T03:51:38.2841637Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2841704Z             >;
+2026-02-25T03:51:38.2841769Z         };
+2026-02-25T03:51:38.2842154Z # 90 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2842441Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/mouse.dtsi" 1
+2026-02-25T03:51:38.2842447Z 
+2026-02-25T03:51:38.2842513Z         14 {
+2026-02-25T03:51:38.2842580Z             bindings = <
+2026-02-25T03:51:38.2844059Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2844127Z             >;
+2026-02-25T03:51:38.2844191Z         };
+2026-02-25T03:51:38.2844470Z # 91 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2844776Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/mouse_slow.dtsi" 1
+2026-02-25T03:51:38.2844781Z 
+2026-02-25T03:51:38.2844846Z         15 {
+2026-02-25T03:51:38.2844918Z             bindings = <
+2026-02-25T03:51:38.2846391Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2846463Z             >;
+2026-02-25T03:51:38.2846523Z         };
+2026-02-25T03:51:38.2846806Z # 92 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2847111Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/mouse_fast.dtsi" 1
+2026-02-25T03:51:38.2847116Z 
+2026-02-25T03:51:38.2847277Z         16 {
+2026-02-25T03:51:38.2847351Z             bindings = <
+2026-02-25T03:51:38.2848823Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2848896Z             >;
+2026-02-25T03:51:38.2848955Z         };
+2026-02-25T03:51:38.2849231Z # 93 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2849536Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/layers/mouse_warp.dtsi" 1
+2026-02-25T03:51:38.2849544Z 
+2026-02-25T03:51:38.2849604Z         17 {
+2026-02-25T03:51:38.2849675Z             bindings = <
+2026-02-25T03:51:38.2851232Z                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+2026-02-25T03:51:38.2851407Z             >;
+2026-02-25T03:51:38.2851468Z         };
+2026-02-25T03:51:38.2851746Z # 94 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/../boards/slicemk/slicemk.keymap" 2
+2026-02-25T03:51:38.2851813Z     };
+2026-02-25T03:51:38.2851873Z };
+2026-02-25T03:51:38.2852125Z # 3 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/slicemk_ergodox.keymap" 2
+2026-02-25T03:51:38.2852206Z # 0 "<command-line>" 2
+2026-02-25T03:51:38.2852433Z # 1 "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/misc/empty_file.c"

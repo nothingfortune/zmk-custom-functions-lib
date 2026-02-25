@@ -1,0 +1,156 @@
+﻿2026-02-25T03:50:31.9497254Z ##[group]Run bash scripts/validation.sh
+2026-02-25T03:50:31.9498072Z [36;1mbash scripts/validation.sh[0m
+2026-02-25T03:50:31.9535899Z shell: /usr/bin/bash -e {0}
+2026-02-25T03:50:31.9536512Z ##[endgroup]
+2026-02-25T03:50:31.9649092Z 
+2026-02-25T03:50:31.9649758Z ── 1. Required files
+2026-02-25T03:50:31.9651421Z   PASS  shared/layers.dtsi
+2026-02-25T03:50:31.9652338Z   PASS  shared/macros.dtsi
+2026-02-25T03:50:31.9653968Z   PASS  shared/behaviors.dtsi
+2026-02-25T03:50:31.9654930Z   PASS  shared/modMorphs.dtsi
+2026-02-25T03:50:31.9655914Z   PASS  shared/autoshift.dtsi
+2026-02-25T03:50:31.9656838Z   PASS  shared/bluetooth.dtsi
+2026-02-25T03:50:31.9657765Z   PASS  shared/magic.dtsi
+2026-02-25T03:50:31.9658693Z   PASS  shared/global_timings.dtsi
+2026-02-25T03:50:31.9659742Z   PASS  shared/homeRowMods/hrm_macros.dtsi
+2026-02-25T03:50:31.9660975Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi
+2026-02-25T03:50:31.9662009Z   PASS  shared/combos/combos_common.dtsi
+2026-02-25T03:50:31.9662659Z   PASS  shared/combos/combos_fkeys.dtsi
+2026-02-25T03:50:31.9663642Z   PASS  boards/go60/positions.dtsi
+2026-02-25T03:50:31.9664245Z   PASS  boards/go60/position_groups.dtsi
+2026-02-25T03:50:31.9664882Z   PASS  boards/go60/board_meta.dtsi
+2026-02-25T03:50:31.9665804Z   PASS  boards/go60/go60.keymap
+2026-02-25T03:50:31.9666371Z   PASS  boards/go60/go60.conf
+2026-02-25T03:50:31.9666911Z   PASS  boards/glove80/positions.dtsi
+2026-02-25T03:50:31.9667815Z   PASS  boards/glove80/position_groups.dtsi
+2026-02-25T03:50:31.9668644Z   PASS  boards/glove80/board_meta.dtsi
+2026-02-25T03:50:31.9669247Z   PASS  boards/glove80/glove80.keymap
+2026-02-25T03:50:31.9670078Z   PASS  boards/glove80/glove80.conf
+2026-02-25T03:50:31.9670713Z   PASS  boards/slicemk/positions.dtsi
+2026-02-25T03:50:31.9671315Z   PASS  boards/slicemk/position_groups.dtsi
+2026-02-25T03:50:31.9671961Z   PASS  boards/slicemk/board_meta.dtsi
+2026-02-25T03:50:31.9672536Z   PASS  boards/slicemk/slicemk.keymap
+2026-02-25T03:50:31.9673334Z   PASS  boards/slicemk/slicemk.conf
+2026-02-25T03:50:31.9673911Z   PASS  config/west.yml
+2026-02-25T03:50:31.9674379Z   PASS  config/slicemk_ergodox.keymap
+2026-02-25T03:50:31.9675002Z   PASS  config/slicemk_ergodox_leftcentral.conf
+2026-02-25T03:50:31.9675647Z   PASS  build/go60.nix
+2026-02-25T03:50:31.9676146Z   PASS  build/glove80.nix
+2026-02-25T03:50:31.9676624Z   PASS  build.yaml
+2026-02-25T03:50:31.9677089Z   PASS  .github/workflows/build.yml
+2026-02-25T03:50:31.9677499Z 
+2026-02-25T03:50:31.9677825Z ── 2. Layer files per board (expect 19)
+2026-02-25T03:50:31.9678599Z   PASS  boards/go60/layers/ — all 19 layer files present
+2026-02-25T03:50:31.9679498Z   PASS  boards/glove80/layers/ — all 19 layer files present
+2026-02-25T03:50:31.9680397Z   PASS  boards/slicemk/layers/ — all 19 layer files present
+2026-02-25T03:50:31.9691012Z   PASS  boards/go60 keymap — 19 layer includes in keymap (expected 19)
+2026-02-25T03:50:31.9709727Z   PASS  boards/glove80 keymap — 19 layer includes in keymap (expected 19)
+2026-02-25T03:50:31.9727656Z   PASS  boards/slicemk keymap — 18 layer includes in keymap (expected 18)
+2026-02-25T03:50:31.9728934Z 
+2026-02-25T03:50:31.9729292Z ── 3. Position counts
+2026-02-25T03:50:31.9746770Z   PASS  boards/go60/positions.dtsi — 60 positions
+2026-02-25T03:50:31.9765022Z   PASS  boards/glove80/positions.dtsi — 80 positions
+2026-02-25T03:50:31.9784321Z   PASS  boards/slicemk/positions.dtsi — 77 positions
+2026-02-25T03:50:31.9785344Z 
+2026-02-25T03:50:31.9785810Z ── 4. Binding counts per layer
+2026-02-25T03:50:32.0620723Z   PASS  boards/go60/layers/ — all layers have 60 bindings
+2026-02-25T03:50:32.1340544Z   PASS  boards/glove80/layers/ — all layers have 80 bindings
+2026-02-25T03:50:32.2042560Z   PASS  boards/slicemk/layers/ — all layers have 77 bindings
+2026-02-25T03:50:32.2043785Z 
+2026-02-25T03:50:32.2044138Z ── 5. Combo DTS wrapper
+2026-02-25T03:50:32.2056863Z   PASS  boards/go60 keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-25T03:50:32.2071468Z   PASS  boards/glove80 keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-25T03:50:32.2085514Z   PASS  boards/slicemk keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-25T03:50:32.2099487Z   PASS  shared/combos/combos_common.dtsi — correctly has no wrapper
+2026-02-25T03:50:32.2113985Z   PASS  shared/combos/combos_fkeys.dtsi — correctly has no wrapper
+2026-02-25T03:50:32.2114735Z 
+2026-02-25T03:50:32.2115052Z ── 6. Shared includes in board keymaps
+2026-02-25T03:50:32.2245546Z   PASS  boards/go60 keymap — all 10 shared includes present
+2026-02-25T03:50:32.2377303Z   PASS  boards/glove80 keymap — all 10 shared includes present
+2026-02-25T03:50:32.2502255Z   PASS  boards/slicemk keymap — all 9 shared includes present
+2026-02-25T03:50:32.2515971Z   PASS  boards/slicemk keymap — rgb.h correctly excluded
+2026-02-25T03:50:32.2530249Z   PASS  boards/slicemk keymap — shared/magic.dtsi correctly excluded
+2026-02-25T03:50:32.2544572Z   PASS  boards/slicemk keymap — layers/magic.dtsi correctly excluded from keymap
+2026-02-25T03:50:32.2545676Z 
+2026-02-25T03:50:32.2546159Z ── 7. Position group defines
+2026-02-25T03:50:32.2610548Z   PASS  boards/go60/position_groups.dtsi — all 5 groups defined
+2026-02-25T03:50:32.2675708Z   PASS  boards/glove80/position_groups.dtsi — all 5 groups defined
+2026-02-25T03:50:32.2740281Z   PASS  boards/slicemk/position_groups.dtsi — all 5 groups defined
+2026-02-25T03:50:32.2741780Z 
+2026-02-25T03:50:32.2742281Z ── 8. Layer constants in shared/layers.dtsi
+2026-02-25T03:50:32.2981118Z   PASS  shared/layers.dtsi — all 19 LAYER_* constants defined
+2026-02-25T03:50:32.2982213Z 
+2026-02-25T03:50:32.2982613Z ── 9. SliceMK build config
+2026-02-25T03:50:32.2994088Z   PASS  build.yaml — board: slicemk_ergodox_202207_green_left
+2026-02-25T03:50:32.3007481Z   PASS  build.yaml — shield: slicemk_ergodox_leftcentral
+2026-02-25T03:50:32.3021145Z   PASS  config/west.yml — slicemk remote declared
+2026-02-25T03:50:32.3034708Z   PASS  config/west.yml — self: path present
+2026-02-25T03:50:32.3035858Z 
+2026-02-25T03:50:32.3036359Z ── 10. GitHub Actions workflow
+2026-02-25T03:50:32.3049553Z   PASS  .github/workflows/build.yml — Go60 Nix build present
+2026-02-25T03:50:32.3063626Z   PASS  .github/workflows/build.yml — Glove80 Nix build present
+2026-02-25T03:50:32.3078083Z   PASS  .github/workflows/build.yml — SliceMK reusable workflow present
+2026-02-25T03:50:32.3091423Z   PASS  .github/workflows/build.yml — MoErgo Cachix cache configured
+2026-02-25T03:50:32.3093342Z 
+2026-02-25T03:50:32.3093879Z ── 11. Stub status (informational)
+2026-02-25T03:50:32.3837290Z   PASS  boards/glove80/layers/ — all layers have real bindings
+2026-02-25T03:50:32.4586951Z   WARN  boards/slicemk/layers/ — all 19 layers are &trans stubs (need to be filled in)
+2026-02-25T03:50:32.4589313Z 
+2026-02-25T03:50:32.4590718Z ── 12. Include ordering: layers.dtsi + global_timings.dtsi before board_meta.dtsi
+2026-02-25T03:50:32.4660398Z   PASS  boards/go60 keymap — layers.dtsi (line 46) before board_meta.dtsi (line 50)
+2026-02-25T03:50:32.4664670Z   PASS  boards/go60 keymap — global_timings.dtsi (line 47) before board_meta.dtsi (line 50)
+2026-02-25T03:50:32.4735991Z   PASS  boards/glove80 keymap — layers.dtsi (line 44) before board_meta.dtsi (line 48)
+2026-02-25T03:50:32.4740179Z   PASS  boards/glove80 keymap — global_timings.dtsi (line 45) before board_meta.dtsi (line 48)
+2026-02-25T03:50:32.4799100Z   PASS  boards/slicemk keymap — layers.dtsi (line 43) before board_meta.dtsi (line 47)
+2026-02-25T03:50:32.4802113Z   PASS  boards/slicemk keymap — global_timings.dtsi (line 44) before board_meta.dtsi (line 47)
+2026-02-25T03:50:32.4804090Z 
+2026-02-25T03:50:32.4804837Z ── 13. Behavior/macro includes inside / { behaviors { } } block
+2026-02-25T03:50:32.5054015Z   PASS  boards/go60 keymap — all behavior/macro includes are inside a / { } block
+2026-02-25T03:50:32.5303304Z   PASS  boards/glove80 keymap — all behavior/macro includes are inside a / { } block
+2026-02-25T03:50:32.5556170Z   PASS  boards/slicemk keymap — all behavior/macro includes are inside a / { } block
+2026-02-25T03:50:32.5558639Z 
+2026-02-25T03:50:32.5559809Z ── 14. Duplicate DTS labels in shared dtsi files
+2026-02-25T03:50:32.5607214Z   PASS  shared/modMorphs.dtsi — no duplicate labels
+2026-02-25T03:50:32.5642957Z   PASS  shared/autoshift.dtsi — no duplicate labels
+2026-02-25T03:50:32.5676144Z   PASS  shared/layers.dtsi — no duplicate labels
+2026-02-25T03:50:32.5710217Z   PASS  shared/bluetooth.dtsi — no duplicate labels
+2026-02-25T03:50:32.5742429Z   PASS  shared/combos/combos_fkeys.dtsi — no duplicate labels
+2026-02-25T03:50:32.5775790Z   PASS  shared/combos/combos_common.dtsi — no duplicate labels
+2026-02-25T03:50:32.5809198Z   PASS  shared/behaviors.dtsi — no duplicate labels
+2026-02-25T03:50:32.5842004Z   PASS  shared/magic.dtsi — no duplicate labels
+2026-02-25T03:50:32.5877190Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi — no duplicate labels
+2026-02-25T03:50:32.5910576Z   PASS  shared/homeRowMods/hrm_macros.dtsi — no duplicate labels
+2026-02-25T03:50:32.5943211Z   PASS  shared/macros.dtsi — no duplicate labels
+2026-02-25T03:50:32.5974769Z   PASS  shared/global_timings.dtsi — no duplicate labels
+2026-02-25T03:50:32.5976008Z 
+2026-02-25T03:50:32.5976616Z ── 15. Layer index continuity in shared/layers.dtsi
+2026-02-25T03:50:32.6005398Z   PASS  shared/layers.dtsi — 19 layer indices are contiguous (0–18)
+2026-02-25T03:50:32.6006705Z 
+2026-02-25T03:50:32.6007333Z ── 16. Auto-pair macros defined in shared/macros.dtsi
+2026-02-25T03:50:32.6019733Z   PASS  shared/macros.dtsi — pair_paren defined
+2026-02-25T03:50:32.6033978Z   PASS  shared/macros.dtsi — pair_angle defined
+2026-02-25T03:50:32.6047332Z   PASS  shared/macros.dtsi — pair_dquote defined
+2026-02-25T03:50:32.6060942Z   PASS  shared/macros.dtsi — pair_bracket defined
+2026-02-25T03:50:32.6074820Z   PASS  shared/macros.dtsi — pair_brace defined
+2026-02-25T03:50:32.6088996Z   PASS  shared/macros.dtsi — rgb_ug_status_macro correctly absent
+2026-02-25T03:50:32.6103299Z   PASS  shared/magic.dtsi — rgb_ug_status_macro defined here (correct location)
+2026-02-25T03:50:32.6104768Z 
+2026-02-25T03:50:32.6105418Z ── 17. pointing.h and mkp_drag_lock in all boards
+2026-02-25T03:50:32.6118340Z   PASS  shared/macros.dtsi — mkp_drag_lock present
+2026-02-25T03:50:32.6132282Z   PASS  boards/go60 keymap — pointing.h included
+2026-02-25T03:50:32.6146106Z   PASS  boards/glove80 keymap — pointing.h included
+2026-02-25T03:50:32.6160860Z   PASS  boards/slicemk keymap — mouse.h included (slicemk/zmk old API)
+2026-02-25T03:50:32.6173656Z 
+2026-02-25T03:50:32.6174652Z ── 18. All &label references in layers/combos resolve
+2026-02-25T03:50:32.9011922Z   PASS  boards/go60 — all &label references in layers/combos resolve
+2026-02-25T03:50:33.1698021Z   PASS  boards/glove80 — all &label references in layers/combos resolve
+2026-02-25T03:50:33.3674035Z   PASS  boards/slicemk — all &label references in layers/combos resolve
+2026-02-25T03:50:33.3675142Z 
+2026-02-25T03:50:33.3675499Z ── 19. hold-tap behaviors must have #binding-cells = <2>
+2026-02-25T03:50:33.3737371Z   PASS  shared/behaviors.dtsi — all hold-tap behaviors have #binding-cells = <2>
+2026-02-25T03:50:33.3794076Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi — all hold-tap behaviors have #binding-cells = <2>
+2026-02-25T03:50:33.3794969Z 
+2026-02-25T03:50:33.3795355Z ══════════════════════════════════════════════
+2026-02-25T03:50:33.3795904Z   PASS: 108   FAIL: 0     WARN: 1   
+2026-02-25T03:50:33.3796538Z ══════════════════════════════════════════════
+2026-02-25T03:50:33.3797030Z 

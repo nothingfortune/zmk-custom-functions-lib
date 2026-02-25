@@ -675,6 +675,53 @@ for rel in "${HOLD_TAP_FILES[@]}"; do
 done
 
 # ══════════════════════════════════════════════════════════════
+section "20. Timing constants in behavior files are defined in global_timings.dtsi"
+# ══════════════════════════════════════════════════════════════
+# DTS numeric properties (tapping-term-ms, quick-tap-ms, etc.) that use
+# a bare UPPER_CASE identifier must resolve via the C preprocessor.
+# An undefined constant causes: "parse error: expected number or parenthesized
+# expression" at build time. This test catches typos like HRM_INDEX_QUICK_TAP
+# (which should be HRM_QUICK_TAP) before they reach the compiler.
+
+timings_file="$REPO_ROOT/shared/global_timings.dtsi"
+BEHAVIOR_TIMING_FILES=(
+  shared/behaviors.dtsi
+  shared/homeRowMods/hrm_behaviors.dtsi
+  shared/modMorphs.dtsi
+  shared/autoshift.dtsi
+)
+
+if [[ ! -f "$timings_file" ]]; then
+  fail "shared/global_timings.dtsi — not found (cannot validate timing constants)"
+else
+  defined_timings=$(grep -oE '^#define [A-Z][A-Z0-9_]+' "$timings_file" | awk '{print $2}' | tr '\n' ' ')
+
+  for rel in "${BEHAVIOR_TIMING_FILES[@]}"; do
+    f="$REPO_ROOT/$rel"
+    [[ -f "$f" ]] || continue
+
+    undef=()
+    while IFS= read -r const; do
+      [[ -z "$const" ]] && continue
+      if ! echo " $defined_timings " | grep -q " $const "; then
+        undef+=("$const")
+      fi
+    done < <(perl -ne '
+      if (/(?:tapping-term-ms|quick-tap-ms|require-prior-idle-ms|timeout-ms)\s*=\s*<([^>]+)>/) {
+        my $val = $1;
+        print "$1\n" while $val =~ /([A-Z][A-Z0-9_]{3,})/g;
+      }
+    ' "$f" | sort -u)
+
+    if [[ ${#undef[@]} -eq 0 ]]; then
+      pass "$rel — all timing constants defined in global_timings.dtsi"
+    else
+      fail "$rel — timing constants NOT in global_timings.dtsi: ${undef[*]}"
+    fi
+  done
+fi
+
+# ══════════════════════════════════════════════════════════════
 printf "\n${BOLD}══════════════════════════════════════════════${NC}\n"
 printf "  ${GREEN}PASS: %-4d${NC}  ${RED}FAIL: %-4d${NC}  ${YELLOW}WARN: %-4d${NC}\n" \
        "$PASS" "$FAIL" "$WARN"

@@ -1,0 +1,4 @@
+﻿2026-02-25T03:51:10.9853400Z ##[group]Run echo "build_dir=$(mktemp -d)" >> $GITHUB_ENV
+2026-02-25T03:51:10.9853965Z [36;1mecho "build_dir=$(mktemp -d)" >> $GITHUB_ENV[0m
+2026-02-25T03:51:10.9857003Z shell: sh -e {0}
+2026-02-25T03:51:10.9857239Z ##[endgroup]

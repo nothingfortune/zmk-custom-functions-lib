@@ -1,0 +1,18 @@
+﻿2026-02-25T03:51:38.1222994Z ##[group]Run if [ -f "/tmp/tmp.F78Px5ltJb/zephyr/.config" ]
+2026-02-25T03:51:38.1223450Z [36;1mif [ -f "/tmp/tmp.F78Px5ltJb/zephyr/.config" ][0m
+2026-02-25T03:51:38.1223754Z [36;1mthen[0m
+2026-02-25T03:51:38.1224035Z [36;1m  grep -v -e "^#" -e "^$" "/tmp/tmp.F78Px5ltJb/zephyr/.config" | sort[0m
+2026-02-25T03:51:38.1224387Z [36;1melse[0m
+2026-02-25T03:51:38.1224585Z [36;1m  echo "No Kconfig output"[0m
+2026-02-25T03:51:38.1224820Z [36;1mfi[0m
+2026-02-25T03:51:38.1225076Z shell: sh -e {0}
+2026-02-25T03:51:38.1225256Z env:
+2026-02-25T03:51:38.1225433Z   build_dir: /tmp/tmp.F78Px5ltJb
+2026-02-25T03:51:38.1225776Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:38.1226118Z   zephyr_version: 4.1.0
+2026-02-25T03:51:38.1226321Z   extra_west_args: 
+2026-02-25T03:51:38.1226571Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-25T03:51:38.1227002Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-25T03:51:38.1227515Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-25T03:51:38.1227924Z ##[endgroup]
+2026-02-25T03:51:38.1788733Z No Kconfig output

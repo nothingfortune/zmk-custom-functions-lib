@@ -5,7 +5,7 @@ lt_v2_TKZ: lt_v2_TKZ {
     tapping-term-ms = <HRM_INDEX_TAPPING_TERM>;
     bindings = <&mo>, <&kp>;
     flavor = "balanced";
-    quick-tap-ms = <HRM_INDEX_QUICK_TAP>;
+    quick-tap-ms = <HRM_QUICK_TAP>;
 };
 
 /* Caps Word: Capitalizes alphanumeric keys until a stop key is pressed */

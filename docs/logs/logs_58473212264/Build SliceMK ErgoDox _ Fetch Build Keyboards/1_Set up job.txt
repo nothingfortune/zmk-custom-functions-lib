@@ -1,0 +1,38 @@
+﻿2026-02-25T03:50:38.3216875Z Current runner version: '2.331.0'
+2026-02-25T03:50:38.3243383Z ##[group]Runner Image Provisioner
+2026-02-25T03:50:38.3244332Z Hosted Compute Agent
+2026-02-25T03:50:38.3244892Z Version: 20260123.484
+2026-02-25T03:50:38.3245461Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+2026-02-25T03:50:38.3246648Z Build Date: 2026-01-23T19:41:17Z
+2026-02-25T03:50:38.3247326Z Worker ID: {dacd1cc1-9618-43bc-995b-23d499546f32}
+2026-02-25T03:50:38.3248049Z Azure Region: centralus
+2026-02-25T03:50:38.3248612Z ##[endgroup]
+2026-02-25T03:50:38.3250064Z ##[group]Operating System
+2026-02-25T03:50:38.3250691Z Ubuntu
+2026-02-25T03:50:38.3251194Z 22.04.5
+2026-02-25T03:50:38.3251670Z LTS
+2026-02-25T03:50:38.3252112Z ##[endgroup]
+2026-02-25T03:50:38.3252636Z ##[group]Runner Image
+2026-02-25T03:50:38.3253155Z Image: ubuntu-22.04
+2026-02-25T03:50:38.3253672Z Version: 20260201.24.1
+2026-02-25T03:50:38.3254629Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260201.24/images/ubuntu/Ubuntu2204-Readme.md
+2026-02-25T03:50:38.3256759Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260201.24
+2026-02-25T03:50:38.3257694Z ##[endgroup]
+2026-02-25T03:50:38.3258811Z ##[group]GITHUB_TOKEN Permissions
+2026-02-25T03:50:38.3260827Z Contents: read
+2026-02-25T03:50:38.3261538Z Metadata: read
+2026-02-25T03:50:38.3262052Z Packages: read
+2026-02-25T03:50:38.3262559Z ##[endgroup]
+2026-02-25T03:50:38.3264522Z Secret source: Actions
+2026-02-25T03:50:38.3265472Z Prepare workflow directory
+2026-02-25T03:50:38.3586456Z Prepare all required actions
+2026-02-25T03:50:38.3623963Z Getting action download info
+2026-02-25T03:50:38.6593295Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-02-25T03:50:38.8667077Z Uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/tags/v0.3 (3cf9006a9377f21c99e944e29e2a507d8c3e9069)
+2026-02-25T03:50:38.8671689Z ##[group] Inputs
+2026-02-25T03:50:38.8672433Z   build_matrix_path: build.yaml
+2026-02-25T03:50:38.8673027Z   config_path: config
+2026-02-25T03:50:38.8673534Z   fallback_binary: bin
+2026-02-25T03:50:38.8674106Z   archive_name: firmware
+2026-02-25T03:50:38.8674647Z ##[endgroup]
+2026-02-25T03:50:38.8675247Z Complete job name: Build SliceMK ErgoDox / Fetch Build Keyboards

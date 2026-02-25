@@ -1,0 +1,15 @@
+﻿2026-02-25T03:51:29.1314810Z ##[group]Run west init -l "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config"
+2026-02-25T03:51:29.1315468Z [36;1mwest init -l "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config"[0m
+2026-02-25T03:51:29.1315970Z shell: sh -e {0}
+2026-02-25T03:51:29.1316163Z env:
+2026-02-25T03:51:29.1316345Z   build_dir: /tmp/tmp.F78Px5ltJb
+2026-02-25T03:51:29.1316672Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:29.1317013Z   zephyr_version: 4.1.0
+2026-02-25T03:51:29.1317419Z   extra_west_args: 
+2026-02-25T03:51:29.1317672Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-25T03:51:29.1318094Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-25T03:51:29.1318603Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-25T03:51:29.1318982Z ##[endgroup]
+2026-02-25T03:51:29.3237518Z === Initializing from existing manifest repository config
+2026-02-25T03:51:29.3238449Z --- Creating /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/.west and local configuration file
+2026-02-25T03:51:29.3248787Z === Initialized. Now run "west update" inside /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build.

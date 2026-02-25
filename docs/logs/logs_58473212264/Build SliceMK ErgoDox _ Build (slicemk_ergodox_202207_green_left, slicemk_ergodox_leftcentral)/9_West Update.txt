@@ -1,0 +1,97 @@
+﻿2026-02-25T03:51:29.3512278Z ##[group]Run west update --fetch-opt=--filter=tree:0
+2026-02-25T03:51:29.3512710Z [36;1mwest update --fetch-opt=--filter=tree:0[0m
+2026-02-25T03:51:29.3513110Z shell: sh -e {0}
+2026-02-25T03:51:29.3513292Z env:
+2026-02-25T03:51:29.3513476Z   build_dir: /tmp/tmp.F78Px5ltJb
+2026-02-25T03:51:29.3513829Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:29.3514165Z   zephyr_version: 4.1.0
+2026-02-25T03:51:29.3514374Z   extra_west_args: 
+2026-02-25T03:51:29.3514634Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-25T03:51:29.3515062Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-25T03:51:29.3515572Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-25T03:51:29.3515958Z ##[endgroup]
+2026-02-25T03:51:29.5985329Z === updating zmk (zmk):
+2026-02-25T03:51:29.6012492Z --- zmk: fetching, need revision main
+2026-02-25T03:51:29.9507200Z From https://github.com/slicemk/zmk
+2026-02-25T03:51:29.9507870Z  * branch            main       -> FETCH_HEAD
+2026-02-25T03:51:30.0707901Z HEAD is now at d9a4a5e slicemk: enable mouse keys globally
+2026-02-25T03:51:30.0888040Z === updating zephyr (zephyr):
+2026-02-25T03:51:30.0929077Z --- zephyr: fetching, need revision v3.2.0+zmk-fixes
+2026-02-25T03:51:30.7642114Z From https://github.com/zmkfirmware/zephyr
+2026-02-25T03:51:30.7642617Z  * branch              v3.2.0+zmk-fixes -> FETCH_HEAD
+2026-02-25T03:51:31.5340799Z HEAD is now at 1ae0eb5c bluetooth: Add CPF attribute to BAS battery level.
+2026-02-25T03:51:31.5608652Z === updating canopennode (modules/lib/canopennode):
+2026-02-25T03:51:31.5789258Z HEAD is now at 53d3415 Merge pull request #5 from teslabs/module-name
+2026-02-25T03:51:31.5792659Z === updating chre (modules/lib/chre):
+2026-02-25T03:51:31.6302443Z HEAD is now at ef76d34 Merge pull request #4 from fabiobaltieri/chre-uprev
+2026-02-25T03:51:31.6306873Z === updating cmsis (modules/hal/cmsis):
+2026-02-25T03:51:31.6915224Z HEAD is now at 093de61 DSP: Fix uninitialised variable references reported by GCC 12
+2026-02-25T03:51:31.6918521Z === updating fatfs (modules/fs/fatfs):
+2026-02-25T03:51:31.7103632Z HEAD is now at a30531a zephyr: update include paths to use <zephyr/...>
+2026-02-25T03:51:31.7107813Z === updating hal_atmel (modules/hal/atmel):
+2026-02-25T03:51:31.9496334Z HEAD is now at 1d237f2 samv71b: Fix CIDR for V71 Revision B Silicon
+2026-02-25T03:51:31.9501540Z === updating hal_espressif (modules/hal/espressif):
+2026-02-25T03:51:32.6814672Z HEAD is now at 2cb20ac6 bugfix: remove esp_compiler from zephyr build
+2026-02-25T03:51:32.6821699Z === updating hal_gigadevice (modules/hal/gigadevice):
+2026-02-25T03:51:32.7277332Z HEAD is now at dd0e032 gd32e10x: apply patches for hal
+2026-02-25T03:51:32.7282054Z === updating hal_nordic (modules/hal/nordic):
+2026-02-25T03:51:32.8399555Z HEAD is now at 249199e drivers: nrf_802154: Update the IEEE 802.15.4 component
+2026-02-25T03:51:32.8404553Z === updating hal_nuvoton (modules/hal/nuvoton):
+2026-02-25T03:51:32.8687025Z HEAD is now at b4d31f3 hal: nuvoton: add license to numicro m480 series hal
+2026-02-25T03:51:32.8690956Z === updating hal_quicklogic (modules/hal/quicklogic):
+2026-02-25T03:51:32.8830757Z HEAD is now at b3a66fe Remove references to FPGA IP core drivers
+2026-02-25T03:51:32.8835205Z === updating hal_renesas (modules/hal/renesas):
+2026-02-25T03:51:32.8994343Z HEAD is now at 468d3f2 Initial release
+2026-02-25T03:51:32.8998798Z === updating hal_rpi_pico (modules/hal/rpi_pico):
+2026-02-25T03:51:32.9419947Z HEAD is now at a094c06 pico-sdk: Add a changelog file about changes in Zephyr
+2026-02-25T03:51:32.9424470Z === updating hal_stm32 (modules/hal/stm32):
+2026-02-25T03:51:34.4066673Z HEAD is now at 642e199 dts: regenerate pinctrl files
+2026-02-25T03:51:34.4072211Z === updating hal_telink (modules/hal/telink):
+2026-02-25T03:51:34.6903687Z HEAD is now at 38573af B91 ADC driver support
+2026-02-25T03:51:34.7124699Z Synchronizing submodule url for 'tlsr9/ble/proj_lib/lib'
+2026-02-25T03:51:34.7378739Z === updating hal_wurthelektronik (modules/hal/wurthelektronik):
+2026-02-25T03:51:34.7518600Z HEAD is now at 24ca987 Initialized WE HAL module repository.
+2026-02-25T03:51:34.7522751Z === updating libmetal (modules/hal/libmetal):
+2026-02-25T03:51:34.7691222Z HEAD is now at 2f586b4 lib: update libmetal to SHA 23ba77941cf3
+2026-02-25T03:51:34.7695190Z === updating liblc3 (modules/lib/liblc3):
+2026-02-25T03:51:34.7863446Z HEAD is now at 448f3de Merge pull request #8 from carlescufi/rename
+2026-02-25T03:51:34.7867350Z === updating littlefs (modules/fs/littlefs):
+2026-02-25T03:51:34.8022025Z HEAD is now at ca583fd Merge tag 'v2.5.0' of https://github.com/littlefs-project/littlefs into zephyr
+2026-02-25T03:51:34.8026043Z === updating lvgl (modules/lib/gui/lvgl):
+2026-02-25T03:51:35.0826425Z HEAD is now at 70a7849 fix(Kconfig): Restore monochrome theme option.
+2026-02-25T03:51:35.0829885Z === updating lz4 (modules/lib/lz4):
+2026-02-25T03:51:35.1046180Z HEAD is now at 8e303c2 zephyr: make this repo a zephyr module
+2026-02-25T03:51:35.1051997Z === updating mbedtls (modules/crypto/mbedtls):
+2026-02-25T03:51:35.1954422Z HEAD is now at 7fed49c9 CC3XX: Hardcode entry points for the CC3XX driver
+2026-02-25T03:51:35.1959168Z === updating mipi-sys-t (modules/debug/mipi-sys-t):
+2026-02-25T03:51:35.2144245Z HEAD is now at 0d521d8 mipi_syst_api.c: Change MIPI_SYST_PCFG_PRINTF_ARGBUF_SIZE macro.
+2026-02-25T03:51:35.2147548Z === updating nanopb (modules/lib/nanopb):
+2026-02-25T03:51:35.2439845Z HEAD is now at dc4deed Merge pull request #1 from pdgendt/zephyr
+2026-02-25T03:51:35.2444416Z === updating nrf_hw_models (modules/bsim_hw_models/nrf_hw_models):
+2026-02-25T03:51:35.2607545Z HEAD is now at 65bc530 irq_ctrl: Add support for level interrupts
+2026-02-25T03:51:35.2611515Z === updating open-amp (modules/lib/open-amp):
+2026-02-25T03:51:35.2772979Z HEAD is now at 8d53544 lib: update open-amp lib to release v2022.04.0
+2026-02-25T03:51:35.2777436Z === updating picolibc (modules/lib/picolibc):
+2026-02-25T03:51:35.4079874Z HEAD is now at 04ada595 Version 1.7.8
+2026-02-25T03:51:35.4085045Z === updating segger (modules/debug/segger):
+2026-02-25T03:51:35.4223926Z HEAD is now at d4e568a Resolve circular include dependencies
+2026-02-25T03:51:35.4228050Z === updating tflite-micro (modules/lib/tflite-micro):
+2026-02-25T03:51:35.4869402Z HEAD is now at 9156d05 tflite-micro: fix module name
+2026-02-25T03:51:35.4874482Z === updating tinycbor (modules/lib/tinycbor):
+2026-02-25T03:51:35.5028718Z HEAD is now at 9e1f34b module: Deprecate TinyCBOR
+2026-02-25T03:51:35.5033496Z === updating tinycrypt (modules/crypto/tinycrypt):
+2026-02-25T03:51:35.5168575Z HEAD is now at 3e9a49d cmake: Fix conditional in root CMakeLists.txt
+2026-02-25T03:51:35.5172801Z === updating TraceRecorderSource (modules/debug/TraceRecorder):
+2026-02-25T03:51:35.5419350Z HEAD is now at 9893bf1 Merge pull request #8 from tleksell-pe/trace_recorder_4.6.3_update
+2026-02-25T03:51:35.5424158Z === updating trusted-firmware-a (modules/tee/tf-a/trusted-firmware-a):
+2026-02-25T03:51:35.6938656Z HEAD is now at d29cddec zephyr: module: Add zephyr module file
+2026-02-25T03:51:35.6944271Z === updating tf-m-tests (modules/tee/tf-m/tf-m-tests):
+2026-02-25T03:51:35.7459465Z HEAD is now at c99a86b Merge pull request #2 from theotherjimmy/update-tfm-pre-1.6.0
+2026-02-25T03:51:35.7464143Z === updating psa-arch-tests (modules/tee/tf-m/psa-arch-tests):
+2026-02-25T03:51:35.8267930Z HEAD is now at f4fc244 Merge pull request #5 from Vge0rge/increase_crypto_timeout
+2026-02-25T03:51:35.8272924Z === updating uoscore-uedhoc (modules/lib/uoscore-uedhoc):
+2026-02-25T03:51:35.8470297Z HEAD is now at e892019 Merge pull request #11 from rlubos/zephyr-integration
+2026-02-25T03:51:35.8473760Z === updating zcbor (modules/lib/zcbor):
+2026-02-25T03:51:35.8645713Z HEAD is now at a0d6981 Update version from 0.5.99 to 0.5.1
+2026-02-25T03:51:35.8649851Z === updating zscilib (modules/lib/zscilib):
+2026-02-25T03:51:35.8847548Z HEAD is now at ca070dd Merge pull request #39 from microbuilder/fix_tests_cmake

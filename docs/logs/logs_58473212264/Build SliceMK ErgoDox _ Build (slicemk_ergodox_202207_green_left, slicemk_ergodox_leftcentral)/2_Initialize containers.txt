@@ -1,0 +1,50 @@
+﻿2026-02-25T03:50:46.5852000Z ##[group]Checking docker version
+2026-02-25T03:50:46.5871150Z ##[command]/usr/bin/docker version --format '{{.Server.APIVersion}}'
+2026-02-25T03:50:46.6803277Z '1.48'
+2026-02-25T03:50:46.6824886Z Docker daemon API version: '1.48'
+2026-02-25T03:50:46.6825792Z ##[command]/usr/bin/docker version --format '{{.Client.APIVersion}}'
+2026-02-25T03:50:46.7022021Z '1.48'
+2026-02-25T03:50:46.7035939Z Docker client API version: '1.48'
+2026-02-25T03:50:46.7041602Z ##[endgroup]
+2026-02-25T03:50:46.7044426Z ##[group]Clean up resources from previous jobs
+2026-02-25T03:50:46.7049293Z ##[command]/usr/bin/docker ps --all --quiet --no-trunc --filter "label=60f45a"
+2026-02-25T03:50:46.7226229Z ##[command]/usr/bin/docker network prune --force --filter "label=60f45a"
+2026-02-25T03:50:46.7367537Z ##[endgroup]
+2026-02-25T03:50:46.7368048Z ##[group]Create local container network
+2026-02-25T03:50:46.7377703Z ##[command]/usr/bin/docker network create --label 60f45a github_network_897e36ab476c48848b801adbcd9ad952
+2026-02-25T03:50:46.7932739Z a9b3cdab1c862acc7b714767a119e7c2f0f6e56f26bfe8273b0d28d60a756979
+2026-02-25T03:50:46.7950914Z ##[endgroup]
+2026-02-25T03:50:46.7975708Z ##[group]Starting job container
+2026-02-25T03:50:46.7995961Z ##[command]/usr/bin/docker pull zmkfirmware/zmk-build-arm:stable
+2026-02-25T03:50:47.6762657Z stable: Pulling from zmkfirmware/zmk-build-arm
+2026-02-25T03:50:48.0419244Z a1a21c96bc16: Pulling fs layer
+2026-02-25T03:50:48.0420786Z 80b3f0d914b4: Pulling fs layer
+2026-02-25T03:50:48.0421297Z 39f6267735b8: Pulling fs layer
+2026-02-25T03:50:48.4031258Z a1a21c96bc16: Verifying Checksum
+2026-02-25T03:50:48.4033061Z a1a21c96bc16: Download complete
+2026-02-25T03:50:49.4520359Z 80b3f0d914b4: Verifying Checksum
+2026-02-25T03:50:49.4521833Z 80b3f0d914b4: Download complete
+2026-02-25T03:50:49.8102319Z a1a21c96bc16: Pull complete
+2026-02-25T03:50:49.8394467Z 39f6267735b8: Verifying Checksum
+2026-02-25T03:50:49.8395255Z 39f6267735b8: Download complete
+2026-02-25T03:50:59.0689430Z 80b3f0d914b4: Pull complete
+2026-02-25T03:51:09.7118683Z 39f6267735b8: Pull complete
+2026-02-25T03:51:09.7159863Z Digest: sha256:edb1c953438c6f720ddb79c3762f3972013b7fbbaf4fff3592fc869983e7afc5
+2026-02-25T03:51:09.7178561Z Status: Downloaded newer image for zmkfirmware/zmk-build-arm:stable
+2026-02-25T03:51:09.7191019Z docker.io/zmkfirmware/zmk-build-arm:stable
+2026-02-25T03:51:09.7277196Z ##[command]/usr/bin/docker create --name 8a3ef9cf9c854f15b0285b67cd134d04_zmkfirmwarezmkbuildarmstable_28cd82 --label 60f45a --workdir /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build --network github_network_897e36ab476c48848b801adbcd9ad952  -e "HOME=/github/home" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work":"/__w" -v "/home/runner/actions-runner/cached/externals":"/__e":ro -v "/home/runner/work/_temp":"/__w/_temp" -v "/home/runner/work/_actions":"/__w/_actions" -v "/opt/hostedtoolcache":"/__t" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" --entrypoint "tail" zmkfirmware/zmk-build-arm:stable "-f" "/dev/null"
+2026-02-25T03:51:09.7538791Z b0de912f8bb50f5d469ec56994cd2324b47dc3e8d3b0ecc91274fa7cff00ec1a
+2026-02-25T03:51:09.7561129Z ##[command]/usr/bin/docker start b0de912f8bb50f5d469ec56994cd2324b47dc3e8d3b0ecc91274fa7cff00ec1a
+2026-02-25T03:51:09.9360576Z b0de912f8bb50f5d469ec56994cd2324b47dc3e8d3b0ecc91274fa7cff00ec1a
+2026-02-25T03:51:09.9385142Z ##[command]/usr/bin/docker ps --all --filter id=b0de912f8bb50f5d469ec56994cd2324b47dc3e8d3b0ecc91274fa7cff00ec1a --filter status=running --no-trunc --format "{{.ID}} {{.Status}}"
+2026-02-25T03:51:09.9503499Z b0de912f8bb50f5d469ec56994cd2324b47dc3e8d3b0ecc91274fa7cff00ec1a Up Less than a second
+2026-02-25T03:51:09.9523062Z ##[command]/usr/bin/docker inspect --format "{{range .Config.Env}}{{println .}}{{end}}" b0de912f8bb50f5d469ec56994cd2324b47dc3e8d3b0ecc91274fa7cff00ec1a
+2026-02-25T03:51:09.9633866Z CI=true
+2026-02-25T03:51:09.9634120Z HOME=/github/home
+2026-02-25T03:51:09.9634523Z GITHUB_ACTIONS=true
+2026-02-25T03:51:09.9635646Z PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2026-02-25T03:51:09.9636242Z DEBIAN_FRONTEND=noninteractive
+2026-02-25T03:51:09.9646909Z ZEPHYR_VERSION=4.1.0
+2026-02-25T03:51:09.9654119Z ##[endgroup]
+2026-02-25T03:51:09.9663240Z ##[group]Waiting for all services to be ready
+2026-02-25T03:51:09.9664805Z ##[endgroup]

@@ -1,0 +1,1009 @@
+﻿2026-02-25T03:50:38.4867516Z Current runner version: '2.331.0'
+2026-02-25T03:50:38.4890771Z ##[group]Runner Image Provisioner
+2026-02-25T03:50:38.4891554Z Hosted Compute Agent
+2026-02-25T03:50:38.4892201Z Version: 20260123.484
+2026-02-25T03:50:38.4893085Z Commit: 6bd6555ca37d84114959e1c76d2c01448ff61c5d
+2026-02-25T03:50:38.4893777Z Build Date: 2026-01-23T19:41:17Z
+2026-02-25T03:50:38.4894453Z Worker ID: {fecba98a-2ebc-4e51-a0ac-9533caa4d190}
+2026-02-25T03:50:38.4895213Z Azure Region: northcentralus
+2026-02-25T03:50:38.4895760Z ##[endgroup]
+2026-02-25T03:50:38.4897237Z ##[group]Operating System
+2026-02-25T03:50:38.4897864Z Ubuntu
+2026-02-25T03:50:38.4898304Z 24.04.3
+2026-02-25T03:50:38.4898840Z LTS
+2026-02-25T03:50:38.4899319Z ##[endgroup]
+2026-02-25T03:50:38.4899824Z ##[group]Runner Image
+2026-02-25T03:50:38.4900330Z Image: ubuntu-24.04
+2026-02-25T03:50:38.4900896Z Version: 20260201.15.1
+2026-02-25T03:50:38.4902025Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260201.15/images/ubuntu/Ubuntu2404-Readme.md
+2026-02-25T03:50:38.4903807Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260201.15
+2026-02-25T03:50:38.4904700Z ##[endgroup]
+2026-02-25T03:50:38.4905829Z ##[group]GITHUB_TOKEN Permissions
+2026-02-25T03:50:38.4907609Z Contents: read
+2026-02-25T03:50:38.4908127Z Metadata: read
+2026-02-25T03:50:38.4908750Z Packages: read
+2026-02-25T03:50:38.4909271Z ##[endgroup]
+2026-02-25T03:50:38.4911201Z Secret source: Actions
+2026-02-25T03:50:38.4911973Z Prepare workflow directory
+2026-02-25T03:50:38.5345455Z Prepare all required actions
+2026-02-25T03:50:38.5400223Z Getting action download info
+2026-02-25T03:50:38.8789079Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-02-25T03:50:38.9772265Z Download action repository 'cachix/install-nix-action@v25' (SHA:6004951b182f8860210c8d6f0d808ec5b1a33d28)
+2026-02-25T03:50:39.2618695Z Download action repository 'cachix/cachix-action@v14' (SHA:18cf96c7c98e048e10a83abd92116114cd8504be)
+2026-02-25T03:50:39.5411840Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-02-25T03:50:39.7789516Z Complete job name: Build Glove80
+2026-02-25T03:50:39.8509499Z ##[group]Run actions/checkout@v4
+2026-02-25T03:50:39.8510429Z with:
+2026-02-25T03:50:39.8510974Z   repository: nothingfortune/zmk-multi-keyboard-build
+2026-02-25T03:50:39.8511793Z   token: ***
+2026-02-25T03:50:39.8512234Z   ssh-strict: true
+2026-02-25T03:50:39.8512848Z   ssh-user: git
+2026-02-25T03:50:39.8513313Z   persist-credentials: true
+2026-02-25T03:50:39.8513811Z   clean: true
+2026-02-25T03:50:39.8514269Z   sparse-checkout-cone-mode: true
+2026-02-25T03:50:39.8514795Z   fetch-depth: 1
+2026-02-25T03:50:39.8515233Z   fetch-tags: false
+2026-02-25T03:50:39.8515682Z   show-progress: true
+2026-02-25T03:50:39.8516151Z   lfs: false
+2026-02-25T03:50:39.8516580Z   submodules: false
+2026-02-25T03:50:39.8517045Z   set-safe-directory: true
+2026-02-25T03:50:39.8517807Z ##[endgroup]
+2026-02-25T03:50:39.9616979Z Syncing repository: nothingfortune/zmk-multi-keyboard-build
+2026-02-25T03:50:39.9619229Z ##[group]Getting Git version info
+2026-02-25T03:50:39.9620232Z Working directory is '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build'
+2026-02-25T03:50:39.9621585Z [command]/usr/bin/git version
+2026-02-25T03:50:39.9676170Z git version 2.52.0
+2026-02-25T03:50:39.9702486Z ##[endgroup]
+2026-02-25T03:50:39.9716802Z Temporarily overriding HOME='/home/runner/work/_temp/c0498077-0447-4578-88e8-961972a8aa6e' before making global git config changes
+2026-02-25T03:50:39.9719096Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-25T03:50:39.9729508Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:50:39.9766500Z Deleting the contents of '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build'
+2026-02-25T03:50:39.9769851Z ##[group]Initializing the repository
+2026-02-25T03:50:39.9774279Z [command]/usr/bin/git init /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:50:39.9873515Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-25T03:50:39.9875060Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-25T03:50:39.9876865Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-25T03:50:39.9877999Z hint: call:
+2026-02-25T03:50:39.9878882Z hint:
+2026-02-25T03:50:39.9880003Z hint: 	git config --global init.defaultBranch <name>
+2026-02-25T03:50:39.9881371Z hint:
+2026-02-25T03:50:39.9882908Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-25T03:50:39.9885069Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-25T03:50:39.9886900Z hint:
+2026-02-25T03:50:39.9887775Z hint: 	git branch -m <name>
+2026-02-25T03:50:39.9888824Z hint:
+2026-02-25T03:50:39.9890076Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-25T03:50:39.9892927Z Initialized empty Git repository in /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/.git/
+2026-02-25T03:50:39.9896577Z [command]/usr/bin/git remote add origin https://github.com/nothingfortune/zmk-multi-keyboard-build
+2026-02-25T03:50:39.9925152Z ##[endgroup]
+2026-02-25T03:50:39.9926685Z ##[group]Disabling automatic garbage collection
+2026-02-25T03:50:39.9930143Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-25T03:50:39.9959104Z ##[endgroup]
+2026-02-25T03:50:39.9960688Z ##[group]Setting up auth
+2026-02-25T03:50:39.9966992Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-25T03:50:39.9997885Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-25T03:50:40.0326241Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-25T03:50:40.0357261Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-25T03:50:40.0575872Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-25T03:50:40.0607633Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-25T03:50:40.0845837Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-25T03:50:40.0880927Z ##[endgroup]
+2026-02-25T03:50:40.0881743Z ##[group]Fetching the repository
+2026-02-25T03:50:40.0889998Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +24e93c436d8520e48ac1bee700a3ffcdbab13674:refs/remotes/origin/main
+2026-02-25T03:50:40.3555852Z From https://github.com/nothingfortune/zmk-multi-keyboard-build
+2026-02-25T03:50:40.3557535Z  * [new ref]         24e93c436d8520e48ac1bee700a3ffcdbab13674 -> origin/main
+2026-02-25T03:50:40.3591250Z ##[endgroup]
+2026-02-25T03:50:40.3592812Z ##[group]Determining the checkout info
+2026-02-25T03:50:40.3594238Z ##[endgroup]
+2026-02-25T03:50:40.3598571Z [command]/usr/bin/git sparse-checkout disable
+2026-02-25T03:50:40.3641427Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-25T03:50:40.3668186Z ##[group]Checking out the ref
+2026-02-25T03:50:40.3673344Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-25T03:50:40.3824811Z Switched to a new branch 'main'
+2026-02-25T03:50:40.3825957Z branch 'main' set up to track 'origin/main'.
+2026-02-25T03:50:40.3833829Z ##[endgroup]
+2026-02-25T03:50:40.3870749Z [command]/usr/bin/git log -1 --format=%H
+2026-02-25T03:50:40.3893523Z 24e93c436d8520e48ac1bee700a3ffcdbab13674
+2026-02-25T03:50:40.4163830Z ##[group]Run actions/checkout@v4
+2026-02-25T03:50:40.4164610Z with:
+2026-02-25T03:50:40.4165015Z   repository: moergo-sc/zmk
+2026-02-25T03:50:40.4165498Z   ref: main
+2026-02-25T03:50:40.4165864Z   path: src
+2026-02-25T03:50:40.4166410Z   token: ***
+2026-02-25T03:50:40.4166825Z   ssh-strict: true
+2026-02-25T03:50:40.4167233Z   ssh-user: git
+2026-02-25T03:50:40.4167659Z   persist-credentials: true
+2026-02-25T03:50:40.4168148Z   clean: true
+2026-02-25T03:50:40.4168561Z   sparse-checkout-cone-mode: true
+2026-02-25T03:50:40.4169100Z   fetch-depth: 1
+2026-02-25T03:50:40.4169501Z   fetch-tags: false
+2026-02-25T03:50:40.4169922Z   show-progress: true
+2026-02-25T03:50:40.4170344Z   lfs: false
+2026-02-25T03:50:40.4170731Z   submodules: false
+2026-02-25T03:50:40.4171158Z   set-safe-directory: true
+2026-02-25T03:50:40.4171636Z ##[endgroup]
+2026-02-25T03:50:40.5235825Z Syncing repository: moergo-sc/zmk
+2026-02-25T03:50:40.5243393Z ##[group]Getting Git version info
+2026-02-25T03:50:40.5245354Z Working directory is '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src'
+2026-02-25T03:50:40.5293422Z [command]/usr/bin/git version
+2026-02-25T03:50:40.5335595Z git version 2.52.0
+2026-02-25T03:50:40.5362935Z ##[endgroup]
+2026-02-25T03:50:40.5378945Z Temporarily overriding HOME='/home/runner/work/_temp/d1317416-4ff3-46f7-9174-8d3e7d0517ed' before making global git config changes
+2026-02-25T03:50:40.5381970Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-25T03:50:40.5396667Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src
+2026-02-25T03:50:40.5516168Z ##[group]Initializing the repository
+2026-02-25T03:50:40.5518574Z [command]/usr/bin/git init /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src
+2026-02-25T03:50:40.5521071Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-25T03:50:40.5523364Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-25T03:50:40.5525097Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-25T03:50:40.5526602Z hint: call:
+2026-02-25T03:50:40.5527241Z hint:
+2026-02-25T03:50:40.5528087Z hint: 	git config --global init.defaultBranch <name>
+2026-02-25T03:50:40.5529235Z hint:
+2026-02-25T03:50:40.5530285Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-25T03:50:40.5532250Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-25T03:50:40.5534549Z hint:
+2026-02-25T03:50:40.5535311Z hint: 	git branch -m <name>
+2026-02-25T03:50:40.5536197Z hint:
+2026-02-25T03:50:40.5537490Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-25T03:50:40.5540239Z Initialized empty Git repository in /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src/.git/
+2026-02-25T03:50:40.5544280Z [command]/usr/bin/git remote add origin https://github.com/moergo-sc/zmk
+2026-02-25T03:50:40.5547348Z ##[endgroup]
+2026-02-25T03:50:40.5548670Z ##[group]Disabling automatic garbage collection
+2026-02-25T03:50:40.5549955Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-25T03:50:40.5568737Z ##[endgroup]
+2026-02-25T03:50:40.5569961Z ##[group]Setting up auth
+2026-02-25T03:50:40.5577142Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-25T03:50:40.5610445Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-25T03:50:40.5836614Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-25T03:50:40.5870501Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-25T03:50:40.6092973Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-25T03:50:40.6124218Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-25T03:50:40.6360459Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-25T03:50:40.6399041Z ##[endgroup]
+2026-02-25T03:50:40.6399970Z ##[group]Fetching the repository
+2026-02-25T03:50:40.6410743Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2026-02-25T03:50:41.1114610Z From https://github.com/moergo-sc/zmk
+2026-02-25T03:50:41.1140297Z  * [new branch]      main       -> origin/main
+2026-02-25T03:50:41.1144296Z ##[endgroup]
+2026-02-25T03:50:41.1146008Z ##[group]Determining the checkout info
+2026-02-25T03:50:41.1150664Z [command]/usr/bin/git branch --list --remote origin/main
+2026-02-25T03:50:41.1173812Z   origin/main
+2026-02-25T03:50:41.1179431Z ##[endgroup]
+2026-02-25T03:50:41.1183220Z [command]/usr/bin/git sparse-checkout disable
+2026-02-25T03:50:41.1218211Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-25T03:50:41.1244931Z ##[group]Checking out the ref
+2026-02-25T03:50:41.1248025Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-25T03:50:41.2599025Z Switched to a new branch 'main'
+2026-02-25T03:50:41.2600726Z branch 'main' set up to track 'origin/main'.
+2026-02-25T03:50:41.2613412Z ##[endgroup]
+2026-02-25T03:50:41.2651629Z [command]/usr/bin/git log -1 --format=%H
+2026-02-25T03:50:41.2673200Z 11454d23596afbdb06380a1125371b19ab65675c
+2026-02-25T03:50:41.2933623Z ##[group]Run cachix/install-nix-action@v25
+2026-02-25T03:50:41.2934851Z with:
+2026-02-25T03:50:41.2935707Z   nix_path: nixpkgs=channel:nixos-22.05
+2026-02-25T03:50:41.2936849Z   enable_kvm: true
+2026-02-25T03:50:41.2937713Z ##[endgroup]
+2026-02-25T03:50:41.3046838Z ##[group]Run ${GITHUB_ACTION_PATH}/install-nix.sh
+2026-02-25T03:50:41.3048304Z [36;1m${GITHUB_ACTION_PATH}/install-nix.sh[0m
+2026-02-25T03:50:41.3087144Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+2026-02-25T03:50:41.3088490Z env:
+2026-02-25T03:50:41.3089258Z   INPUT_EXTRA_NIX_CONFIG: 
+2026-02-25T03:50:41.3090237Z   INPUT_GITHUB_ACCESS_TOKEN: 
+2026-02-25T03:50:41.3091239Z   INPUT_INSTALL_OPTIONS: 
+2026-02-25T03:50:41.3092189Z   INPUT_INSTALL_URL: 
+2026-02-25T03:50:41.3093402Z   INPUT_NIX_PATH: nixpkgs=channel:nixos-22.05
+2026-02-25T03:50:41.3094594Z   INPUT_ENABLE_KVM: true
+2026-02-25T03:50:41.3096019Z   GITHUB_TOKEN: ***
+2026-02-25T03:50:41.3096868Z ##[endgroup]
+2026-02-25T03:50:41.3206131Z ##[group]Enabling KVM support
+2026-02-25T03:50:41.3274996Z KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"
+2026-02-25T03:50:41.3581365Z Enabled KVM
+2026-02-25T03:50:41.3584042Z ##[endgroup]
+2026-02-25T03:50:41.3586263Z ##[group]Installing Nix
+2026-02-25T03:50:41.3869722Z installer options: --no-channel-add --darwin-use-unencrypted-nix-store-volume --nix-extra-conf-file /tmp/tmp.nJXWKp6E9m/nix.conf --daemon --daemon-user-count 8
+2026-02-25T03:50:41.7324150Z * Host releases.nixos.org:443 was resolved.
+2026-02-25T03:50:41.7329635Z * IPv6: 2a04:4e42:83::347
+2026-02-25T03:50:41.7330561Z * IPv4: 146.75.77.91
+2026-02-25T03:50:41.7331439Z *   Trying 146.75.77.91:443...
+2026-02-25T03:50:41.7337434Z * Connected to releases.nixos.org (146.75.77.91) port 443
+2026-02-25T03:50:41.7353786Z * ALPN: curl offers h2,http/1.1
+2026-02-25T03:50:41.7355209Z } [5 bytes data]
+2026-02-25T03:50:41.7356431Z * TLSv1.3 (OUT), TLS handshake, Client hello (1):
+2026-02-25T03:50:41.7357751Z } [512 bytes data]
+2026-02-25T03:50:41.7571925Z *  CAfile: /etc/ssl/certs/ca-certificates.crt
+2026-02-25T03:50:41.7573932Z *  CApath: /etc/ssl/certs
+2026-02-25T03:50:41.7575057Z { [5 bytes data]
+2026-02-25T03:50:41.7576197Z * TLSv1.3 (IN), TLS handshake, Server hello (2):
+2026-02-25T03:50:41.7577599Z { [122 bytes data]
+2026-02-25T03:50:41.7579157Z * TLSv1.3 (IN), TLS handshake, Encrypted Extensions (8):
+2026-02-25T03:50:41.7581368Z { [19 bytes data]
+2026-02-25T03:50:41.7582955Z * TLSv1.3 (IN), TLS handshake, Certificate (11):
+2026-02-25T03:50:41.7584530Z { [2602 bytes data]
+2026-02-25T03:50:41.7586019Z * TLSv1.3 (IN), TLS handshake, CERT verify (15):
+2026-02-25T03:50:41.7587193Z { [264 bytes data]
+2026-02-25T03:50:41.7588072Z * TLSv1.3 (IN), TLS handshake, Finished (20):
+2026-02-25T03:50:41.7589168Z { [36 bytes data]
+2026-02-25T03:50:41.7590177Z * TLSv1.3 (OUT), TLS change cipher, Change cipher spec (1):
+2026-02-25T03:50:41.7591424Z } [1 bytes data]
+2026-02-25T03:50:41.7592528Z * TLSv1.3 (OUT), TLS handshake, Finished (20):
+2026-02-25T03:50:41.7593669Z } [36 bytes data]
+2026-02-25T03:50:41.7594888Z * SSL connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / X25519 / RSASSA-PSS
+2026-02-25T03:50:41.7596411Z * ALPN: server accepted h2
+2026-02-25T03:50:41.7597302Z * Server certificate:
+2026-02-25T03:50:41.7598159Z *  subject: CN=releases.nixos.org
+2026-02-25T03:50:41.7599155Z *  start date: Jan 13 01:58:01 2026 GMT
+2026-02-25T03:50:41.7600488Z *  expire date: Apr 13 01:58:00 2026 GMT
+2026-02-25T03:50:41.7602121Z *  subjectAltName: host "releases.nixos.org" matched cert's "releases.nixos.org"
+2026-02-25T03:50:41.7603864Z *  issuer: C=US; O=Let's Encrypt; CN=R12
+2026-02-25T03:50:41.7604922Z *  SSL certificate verify ok.
+2026-02-25T03:50:41.7606631Z *   Certificate level 0: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+2026-02-25T03:50:41.7609793Z *   Certificate level 1: Public key type RSA (2048/112 Bits/secBits), signed using sha256WithRSAEncryption
+2026-02-25T03:50:41.7612836Z *   Certificate level 2: Public key type RSA (4096/152 Bits/secBits), signed using sha256WithRSAEncryption
+2026-02-25T03:50:41.7614757Z { [5 bytes data]
+2026-02-25T03:50:41.7615672Z * TLSv1.3 (IN), TLS handshake, Newsession Ticket (4):
+2026-02-25T03:50:41.7616831Z { [201 bytes data]
+2026-02-25T03:50:41.7617575Z * using HTTP/2
+2026-02-25T03:50:41.7618839Z * [HTTP/2] [1] OPENED stream for https://releases.nixos.org/nix/nix-2.19.2/install
+2026-02-25T03:50:41.7620376Z * [HTTP/2] [1] [:method: GET]
+2026-02-25T03:50:41.7621288Z * [HTTP/2] [1] [:scheme: https]
+2026-02-25T03:50:41.7622568Z * [HTTP/2] [1] [:authority: releases.nixos.org]
+2026-02-25T03:50:41.7623788Z * [HTTP/2] [1] [:path: /nix/nix-2.19.2/install]
+2026-02-25T03:50:41.7624915Z * [HTTP/2] [1] [user-agent: curl/8.5.0]
+2026-02-25T03:50:41.7625987Z * [HTTP/2] [1] [accept: */*]
+2026-02-25T03:50:41.7627299Z } [5 bytes data]
+2026-02-25T03:50:41.7628490Z > GET /nix/nix-2.19.2/install HTTP/2
+2026-02-25T03:50:41.7630077Z > Host: releases.nixos.org
+2026-02-25T03:50:41.7631029Z > User-Agent: curl/8.5.0
+2026-02-25T03:50:41.7631887Z > Accept: */*
+2026-02-25T03:50:41.7632842Z > 
+2026-02-25T03:50:41.7633538Z { [5 bytes data]
+2026-02-25T03:50:41.7634274Z < HTTP/2 200 
+2026-02-25T03:50:41.7635097Z < last-modified: Wed, 29 Nov 2023 16:16:25 GMT
+2026-02-25T03:50:41.7636233Z < etag: "65029e6468c72d36dcb083ab91c4a430"
+2026-02-25T03:50:41.7637344Z < x-amz-server-side-encryption: AES256
+2026-02-25T03:50:41.7638393Z < content-type: text/plain
+2026-02-25T03:50:41.7639264Z < server: AmazonS3
+2026-02-25T03:50:41.7640034Z < via: 1.1 varnish, 1.1 varnish
+2026-02-25T03:50:41.7641018Z < access-control-allow-origin: *
+2026-02-25T03:50:41.7641976Z < accept-ranges: bytes
+2026-02-25T03:50:41.7642990Z < date: Wed, 25 Feb 2026 03:50:41 GMT
+2026-02-25T03:50:41.7643936Z < age: 73913
+2026-02-25T03:50:41.7644893Z < x-served-by: cache-dub4395-DUB, cache-chi-kigq8000111-CHI
+2026-02-25T03:50:41.7646128Z < x-cache: HIT, HIT
+2026-02-25T03:50:41.7646877Z < x-cache-hits: 985, 2
+2026-02-25T03:50:41.7647755Z < content-length: 4052
+2026-02-25T03:50:41.7648579Z < 
+2026-02-25T03:50:41.7649191Z { [4052 bytes data]
+2026-02-25T03:50:41.7650464Z * Connection #0 to host releases.nixos.org left intact
+2026-02-25T03:50:41.7682438Z downloading Nix 2.19.2 binary tarball for x86_64-linux from 'https://releases.nixos.org/nix/nix-2.19.2/nix-2.19.2-x86_64-linux.tar.xz' to '/tmp/nix-binary-tarball-unpack.8Uos1VIn5v'...
+2026-02-25T03:50:41.7728114Z   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+2026-02-25T03:50:41.7730808Z                                  Dload  Upload   Total   Spent    Left  Speed
+2026-02-25T03:50:41.7732530Z 
+2026-02-25T03:50:41.8669577Z   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+2026-02-25T03:50:41.8671414Z 100 20.6M  100 20.6M    0     0   219M      0 --:--:-- --:--:-- --:--:--  219M
+2026-02-25T03:50:43.3429854Z Note: a multi-user installation is possible. See https://nixos.org/manual/nix/stable/installation/installing-binary.html#multi-user-installation
+2026-02-25T03:50:43.3438908Z Warning: the flag --darwin-use-unencrypted-nix-store-volume
+2026-02-25T03:50:43.3439834Z          is no longer needed and will be removed in the future.
+2026-02-25T03:50:43.3440298Z 
+2026-02-25T03:50:43.3449386Z [1;31mSwitching to the Multi-user Installer[0m
+2026-02-25T03:50:43.3546483Z [32mWelcome to the Multi-User Nix Installation
+2026-02-25T03:50:43.3556511Z [0m
+2026-02-25T03:50:43.3557131Z This installation tool will set up your computer with the Nix package
+2026-02-25T03:50:43.3557870Z manager. This will happen in a few stages:
+2026-02-25T03:50:43.3558243Z 
+2026-02-25T03:50:43.3558582Z 1. Make sure your computer doesn't already have Nix. If it does, I
+2026-02-25T03:50:43.3559376Z    will show you instructions on how to clean up your old install.
+2026-02-25T03:50:43.3559858Z 
+2026-02-25T03:50:43.3560171Z 2. Show you what I am going to install and where. Then I will ask
+2026-02-25T03:50:43.3560830Z    if you are ready to continue.
+2026-02-25T03:50:43.3561201Z 
+2026-02-25T03:50:43.3562133Z 3. Create the system users [34m(uids [30001..30008])[0m and groups [34m(gid 30000)[0m
+2026-02-25T03:50:43.3563105Z    that the Nix daemon uses to run builds.
+2026-02-25T03:50:43.3563347Z 
+2026-02-25T03:50:43.3563597Z 4. Perform the basic installation of the Nix files daemon.
+2026-02-25T03:50:43.3563956Z 
+2026-02-25T03:50:43.3564173Z 5. Configure your shell to import special Nix Profile files, so you
+2026-02-25T03:50:43.3564582Z    can use Nix.
+2026-02-25T03:50:43.3564722Z 
+2026-02-25T03:50:43.3564830Z 6. Start the Nix daemon.
+2026-02-25T03:50:43.3565001Z 
+2026-02-25T03:50:43.3565321Z [32m[4;32mWould you like to see a more detailed list of what I will do?
+2026-02-25T03:50:43.3565811Z [0mNo TTY, assuming you would say yes :)
+2026-02-25T03:50:43.3568797Z 
+2026-02-25T03:50:43.3569774Z I will:
+2026-02-25T03:50:43.3570122Z 
+2026-02-25T03:50:43.3570453Z  - make sure your computer doesn't already have Nix files
+2026-02-25T03:50:43.3571170Z    (if it does, I will tell you how to clean them up.)
+2026-02-25T03:50:43.3571747Z  - create local users (see the list above for the users I'll make)
+2026-02-25T03:50:43.3572157Z  - create a local group (nixbld)
+2026-02-25T03:50:43.3573612Z  - install Nix in to /nix
+2026-02-25T03:50:43.3574175Z  - create a configuration file in /etc/nix
+2026-02-25T03:50:43.3574953Z  - set up the "default profile" by creating some Nix-related files in
+2026-02-25T03:50:43.3575608Z    /root
+2026-02-25T03:50:43.3584540Z  - back up /etc/bash.bashrc to /etc/bash.bashrc.backup-before-nix
+2026-02-25T03:50:43.3585372Z  - update /etc/bash.bashrc to include some Nix configuration
+2026-02-25T03:50:43.3595962Z  - load and start a service (at /etc/systemd/system/nix-daemon.service
+2026-02-25T03:50:43.3596777Z    and /etc/systemd/system/nix-daemon.socket) for nix-daemon
+2026-02-25T03:50:43.3597062Z 
+2026-02-25T03:50:43.3598028Z [32m[4;32mReady to continue?
+2026-02-25T03:50:43.3598472Z [0mNo TTY, assuming you would say yes :)
+2026-02-25T03:50:43.3616373Z 
+2026-02-25T03:50:43.3617080Z [34m---- let's talk about sudo -----------------------------------------------------
+2026-02-25T03:50:43.3626978Z [0mThis script is going to call sudo a lot. Normally, it would show you
+2026-02-25T03:50:43.3627794Z exactly what commands it is running and why. However, the script is
+2026-02-25T03:50:43.3628440Z run in a headless fashion, like this:
+2026-02-25T03:50:43.3628826Z 
+2026-02-25T03:50:43.3629122Z   $ curl -L https://nixos.org/nix/install | sh
+2026-02-25T03:50:43.3629496Z 
+2026-02-25T03:50:43.3629700Z or maybe in a CI pipeline. Because of that, I'm going to skip the
+2026-02-25T03:50:43.3630106Z verbose output in the interest of brevity.
+2026-02-25T03:50:43.3630335Z 
+2026-02-25T03:50:43.3630432Z If you would like to
+2026-02-25T03:50:43.3630691Z see the output, try like this:
+2026-02-25T03:50:43.3630883Z 
+2026-02-25T03:50:43.3631074Z   $ curl -L -o install-nix https://nixos.org/nix/install
+2026-02-25T03:50:43.3631497Z   $ sh ./install-nix
+2026-02-25T03:50:43.3631645Z 
+2026-02-25T03:50:43.3631653Z 
+2026-02-25T03:50:43.3631895Z [32m~~> Checking for artifacts of previous installs
+2026-02-25T03:50:43.3639619Z [0mBefore I try to install, I'll check for signs Nix already is or has
+2026-02-25T03:50:43.3640307Z been installed on this system.
+2026-02-25T03:50:43.3672966Z 
+2026-02-25T03:50:43.3673791Z [34m---- Nix config report ---------------------------------------------------------
+2026-02-25T03:50:43.3674726Z [0m[1m        Temp Dir[0m:	/tmp/tmp.PEnZvTtS6L
+2026-02-25T03:50:43.3675339Z [1m        Nix Root[0m:	/nix
+2026-02-25T03:50:43.3675831Z [1m     Build Users[0m:	8
+2026-02-25T03:50:43.3676321Z [1m  Build Group ID[0m:	30000
+2026-02-25T03:50:43.3676716Z [1mBuild Group Name[0m:	nixbld
+2026-02-25T03:50:43.3676902Z 
+2026-02-25T03:50:43.3677027Z [4;34mbuild users:
+2026-02-25T03:50:43.3677292Z [0m[1m    Username[0m:	UID
+2026-02-25T03:50:43.3704306Z [1m     nixbld1[0m:	30001
+2026-02-25T03:50:43.3714807Z [1m     nixbld2[0m:	30002
+2026-02-25T03:50:43.3725157Z [1m     nixbld3[0m:	30003
+2026-02-25T03:50:43.3735910Z [1m     nixbld4[0m:	30004
+2026-02-25T03:50:43.3745900Z [1m     nixbld5[0m:	30005
+2026-02-25T03:50:43.3756498Z [1m     nixbld6[0m:	30006
+2026-02-25T03:50:43.3766719Z [1m     nixbld7[0m:	30007
+2026-02-25T03:50:43.3776920Z [1m     nixbld8[0m:	30008
+2026-02-25T03:50:43.3777236Z 
+2026-02-25T03:50:43.3777491Z [32m[4;32mReady to continue?
+2026-02-25T03:50:43.3778050Z [0mNo TTY, assuming you would say yes :)
+2026-02-25T03:50:43.3778417Z 
+2026-02-25T03:50:43.3778841Z [32m~~> Setting up the build group nixbld
+2026-02-25T03:50:43.4008673Z [0m[1m            Created[0m:	Yes
+2026-02-25T03:50:43.4031770Z 
+2026-02-25T03:50:43.4032567Z [32m~~> Setting up the build user nixbld1
+2026-02-25T03:50:43.4205579Z useradd warning: nixbld1's uid 30001 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.4310785Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.4316677Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.4336370Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.4356894Z [1m              Note[0m:	Nix build user 1
+2026-02-25T03:50:43.4375127Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.4400293Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.4418428Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.4429695Z 
+2026-02-25T03:50:43.4430344Z [32m~~> Setting up the build user nixbld2
+2026-02-25T03:50:43.4569776Z useradd warning: nixbld2's uid 30002 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.4672845Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.4678623Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.4698462Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.4718877Z [1m              Note[0m:	Nix build user 2
+2026-02-25T03:50:43.4736971Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.4756255Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.4774710Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.4786248Z 
+2026-02-25T03:50:43.4786776Z [32m~~> Setting up the build user nixbld3
+2026-02-25T03:50:43.4922673Z useradd warning: nixbld3's uid 30003 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.5023147Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.5028754Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.5047806Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.5068325Z [1m              Note[0m:	Nix build user 3
+2026-02-25T03:50:43.5086933Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.5105969Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.5124619Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.5136164Z 
+2026-02-25T03:50:43.5136716Z [32m~~> Setting up the build user nixbld4
+2026-02-25T03:50:43.5274763Z useradd warning: nixbld4's uid 30004 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.5372109Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.5377910Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.5398331Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.5419856Z [1m              Note[0m:	Nix build user 4
+2026-02-25T03:50:43.5438606Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.5458428Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.5477012Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.5488453Z 
+2026-02-25T03:50:43.5489032Z [32m~~> Setting up the build user nixbld5
+2026-02-25T03:50:43.5633642Z useradd warning: nixbld5's uid 30005 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.5731742Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.5737811Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.5757446Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.5778501Z [1m              Note[0m:	Nix build user 5
+2026-02-25T03:50:43.5796908Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.5816141Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.5835011Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.5846537Z 
+2026-02-25T03:50:43.5847247Z [32m~~> Setting up the build user nixbld6
+2026-02-25T03:50:43.5985342Z useradd warning: nixbld6's uid 30006 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.6086695Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.6092811Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.6111747Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.6132761Z [1m              Note[0m:	Nix build user 6
+2026-02-25T03:50:43.6151143Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.6170694Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.6189672Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.6201135Z 
+2026-02-25T03:50:43.6201876Z [32m~~> Setting up the build user nixbld7
+2026-02-25T03:50:43.6335198Z useradd warning: nixbld7's uid 30007 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.6434983Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.6440996Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.6460912Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.6482085Z [1m              Note[0m:	Nix build user 7
+2026-02-25T03:50:43.6500628Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.6521287Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.6540434Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.6551983Z 
+2026-02-25T03:50:43.6552840Z [32m~~> Setting up the build user nixbld8
+2026-02-25T03:50:43.6691180Z useradd warning: nixbld8's uid 30008 is greater than SYS_UID_MAX 999
+2026-02-25T03:50:43.6793122Z [0m[1m           Created[0m:	Yes
+2026-02-25T03:50:43.6799055Z [1m            Hidden[0m:	Yes
+2026-02-25T03:50:43.6818973Z [1m    Home Directory[0m:	/var/empty
+2026-02-25T03:50:43.6840402Z [1m              Note[0m:	Nix build user 8
+2026-02-25T03:50:43.6859123Z [1m   Logins Disabled[0m:	Yes
+2026-02-25T03:50:43.6879073Z [1m  Member of nixbld[0m:	Yes
+2026-02-25T03:50:43.6897912Z [1m    PrimaryGroupID[0m:	30000
+2026-02-25T03:50:43.6898323Z 
+2026-02-25T03:50:43.6898934Z [32m~~> Setting up the basic directory structure
+2026-02-25T03:50:43.6998410Z [0minstall: creating directory '/nix'
+2026-02-25T03:50:43.6998860Z install: creating directory '/nix/var'
+2026-02-25T03:50:43.6999228Z install: creating directory '/nix/var/log'
+2026-02-25T03:50:43.6999997Z install: creating directory '/nix/var/log/nix'
+2026-02-25T03:50:43.7000797Z install: creating directory '/nix/var/log/nix/drvs'
+2026-02-25T03:50:43.7001483Z install: creating directory '/nix/var/nix'
+2026-02-25T03:50:43.7002196Z install: creating directory '/nix/var/nix/db'
+2026-02-25T03:50:43.7003816Z install: creating directory '/nix/var/nix/gcroots'
+2026-02-25T03:50:43.7004483Z install: creating directory '/nix/var/nix/profiles'
+2026-02-25T03:50:43.7005150Z install: creating directory '/nix/var/nix/temproots'
+2026-02-25T03:50:43.7005802Z install: creating directory '/nix/var/nix/userpool'
+2026-02-25T03:50:43.7006497Z install: creating directory '/nix/var/nix/daemon-socket'
+2026-02-25T03:50:43.7007218Z install: creating directory '/nix/var/nix/gcroots/per-user'
+2026-02-25T03:50:43.7007958Z install: creating directory '/nix/var/nix/profiles/per-user'
+2026-02-25T03:50:43.7079752Z install: creating directory '/nix/store'
+2026-02-25T03:50:43.7158255Z install: creating directory '/etc/nix'
+2026-02-25T03:50:43.7169288Z 
+2026-02-25T03:50:43.7169977Z [32m~~> Installing Nix
+2026-02-25T03:50:43.9112561Z [0m      Alright! We have our first nix at /nix/store/smfmnz0ylx80wkbqbjibj7zcw4q668xp-nix-2.19.2
+2026-02-25T03:50:43.9513610Z       Just finished getting the nix database ready.
+2026-02-25T03:50:43.9516457Z 
+2026-02-25T03:50:43.9517553Z [32m~~> Setting up shell profiles: /etc/bashrc /etc/profile.d/nix.sh /etc/zshrc /etc/bash.bashrc /etc/zsh/zshrc
+2026-02-25T03:50:43.9676004Z [0m
+2026-02-25T03:50:43.9676283Z # Nix
+2026-02-25T03:50:43.9676798Z if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+2026-02-25T03:50:43.9677575Z   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+2026-02-25T03:50:43.9678148Z fi
+2026-02-25T03:50:43.9678424Z # End Nix
+2026-02-25T03:50:43.9678593Z 
+2026-02-25T03:50:43.9836839Z 
+2026-02-25T03:50:43.9837006Z # Nix
+2026-02-25T03:50:43.9837479Z if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+2026-02-25T03:50:43.9838297Z   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+2026-02-25T03:50:43.9838887Z fi
+2026-02-25T03:50:43.9839168Z # End Nix
+2026-02-25T03:50:43.9839338Z 
+2026-02-25T03:50:43.9993395Z 
+2026-02-25T03:50:43.9993584Z # Nix
+2026-02-25T03:50:43.9993979Z if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+2026-02-25T03:50:43.9994467Z   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+2026-02-25T03:50:43.9994987Z fi
+2026-02-25T03:50:43.9995246Z # End Nix
+2026-02-25T03:50:43.9995418Z 
+2026-02-25T03:50:44.0141525Z 
+2026-02-25T03:50:44.0141705Z # Nix
+2026-02-25T03:50:44.0142125Z if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+2026-02-25T03:50:44.0142928Z   . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
+2026-02-25T03:50:44.0143482Z fi
+2026-02-25T03:50:44.0143751Z # End Nix
+2026-02-25T03:50:44.0143925Z 
+2026-02-25T03:50:44.0166935Z 
+2026-02-25T03:50:44.0168156Z [32m~~> Setting up shell profiles for Fish with conf.d/nix.fish inside /etc/fish /usr/local/etc/fish /opt/homebrew/etc/fish /opt/local/etc/fish
+2026-02-25T03:50:44.0241502Z [0m
+2026-02-25T03:50:44.0241988Z [32m~~> Setting up the default profile
+2026-02-25T03:50:44.0519106Z installing 'nix-2.19.2'
+2026-02-25T03:50:44.0639826Z building '/nix/store/g8k2ay0cs99bzfzdrgl98j8rybjjki98-user-environment.drv'...
+2026-02-25T03:50:44.1020577Z installing 'nss-cacert-3.92'
+2026-02-25T03:50:44.1136529Z building '/nix/store/yyad8x4mww9vi0njnc0mw4ii4fcslyhc-user-environment.drv'...
+2026-02-25T03:50:44.1327376Z [0m
+2026-02-25T03:50:44.1327859Z [32m~~> Setting up the nix-daemon systemd service
+2026-02-25T03:50:44.1590775Z Created symlink /etc/systemd/system/nix-daemon.service → /nix/var/nix/profiles/default/lib/systemd/system/nix-daemon.service.
+2026-02-25T03:50:44.4165738Z Created symlink /etc/systemd/system/nix-daemon.socket → /nix/var/nix/profiles/default/lib/systemd/system/nix-daemon.socket.
+2026-02-25T03:50:44.4167661Z Created symlink /etc/systemd/system/sockets.target.wants/nix-daemon.socket → /nix/var/nix/profiles/default/lib/systemd/system/nix-daemon.socket.
+2026-02-25T03:50:44.9873592Z [0m[32mAlright! We're done!
+2026-02-25T03:50:44.9896552Z [0mTry it! Open a new terminal, and type:
+2026-02-25T03:50:44.9896938Z 
+2026-02-25T03:50:44.9897167Z   $ nix-shell -p nix-info --run "nix-info -m"
+2026-02-25T03:50:44.9897864Z 
+2026-02-25T03:50:44.9898155Z Thank you for using this installer. If you have any feedback or need
+2026-02-25T03:50:44.9898744Z help, don't hesitate:
+2026-02-25T03:50:44.9898957Z 
+2026-02-25T03:50:44.9899085Z You can open an issue at
+2026-02-25T03:50:44.9899734Z https://github.com/NixOS/nix/issues/new?labels=installer&template=installer.md
+2026-02-25T03:50:44.9900272Z 
+2026-02-25T03:50:44.9900543Z Or get in touch with the community: https://nixos.org/community
+2026-02-25T03:50:44.9919037Z 
+2026-02-25T03:50:44.9920877Z [34m---- Reminders -----------------------------------------------------------------
+2026-02-25T03:50:44.9921584Z [0m[34m[ 1 ][0m
+2026-02-25T03:50:44.9922055Z Nix won't work in active shell sessions until you restart them.
+2026-02-25T03:50:44.9923513Z 
+2026-02-25T03:50:45.0600197Z ##[endgroup]
+2026-02-25T03:50:45.0708863Z ##[group]Run cachix/cachix-action@v14
+2026-02-25T03:50:45.0709147Z with:
+2026-02-25T03:50:45.0709334Z   name: moergo-glove80-zmk-dev
+2026-02-25T03:50:45.0709576Z   skipPush: true
+2026-02-25T03:50:45.0709768Z   useDaemon: true
+2026-02-25T03:50:45.0709933Z env:
+2026-02-25T03:50:45.0710110Z   NIX_PATH: nixpkgs=channel:nixos-22.05
+2026-02-25T03:50:45.0710368Z   TMPDIR: /home/runner/work/_temp
+2026-02-25T03:50:45.0710594Z ##[endgroup]
+2026-02-25T03:50:45.1162247Z ##[group]Cachix: installing
+2026-02-25T03:50:45.1202717Z [command]/usr/bin/bash -c nix-env --quiet -j8 -iA cachix -f https://cachix.org/api/v1/install
+2026-02-25T03:50:47.5584088Z ##[endgroup]
+2026-02-25T03:50:47.5585915Z ##[group]Cachix: checking version
+2026-02-25T03:50:47.5596321Z [command]/home/runner/.nix-profile/bin/cachix --version
+2026-02-25T03:50:47.5979739Z cachix 1.10.1
+2026-02-25T03:50:47.6024316Z ##[endgroup]
+2026-02-25T03:50:47.6025473Z ##[group]Cachix: using cache moergo-glove80-zmk-dev
+2026-02-25T03:50:47.6026934Z [command]/home/runner/.nix-profile/bin/cachix use moergo-glove80-zmk-dev
+2026-02-25T03:50:47.7839614Z No config at /home/runner/.config/nix/nix.conf:
+2026-02-25T03:50:47.7840477Z 
+2026-02-25T03:50:47.7841086Z /home/runner/.config/nix/nix.conf: openFile: does not exist (No such file or directory)
+2026-02-25T03:50:47.7843144Z 
+2026-02-25T03:50:47.7843779Z Configured https://moergo-glove80-zmk-dev.cachix.org binary cache in /home/runner/.config/nix/nix.conf
+2026-02-25T03:50:47.7931050Z ##[endgroup]
+2026-02-25T03:50:47.8269677Z ##[warning]No push credentials found. Ignoring the 'useDaemon' option.
+2026-02-25T03:50:47.8279293Z [command]/usr/bin/sh -c /home/runner/work/_actions/cachix/cachix-action/v14/dist/main/list-nix-store.sh > /tmp/store-path-pre-build
+2026-02-25T03:50:47.8392077Z ##[group]Run nix-build build/glove80.nix --arg firmware 'import ./src {}' -o result-glove80
+2026-02-25T03:50:47.8393139Z [36;1mnix-build build/glove80.nix --arg firmware 'import ./src {}' -o result-glove80[0m
+2026-02-25T03:50:47.8427886Z shell: /usr/bin/bash -e {0}
+2026-02-25T03:50:47.8428119Z env:
+2026-02-25T03:50:47.8428314Z   NIX_PATH: nixpkgs=channel:nixos-22.05
+2026-02-25T03:50:47.8428601Z   TMPDIR: /home/runner/work/_temp
+2026-02-25T03:50:47.8428838Z ##[endgroup]
+2026-02-25T03:51:06.2928648Z these 5 derivations will be built:
+2026-02-25T03:51:06.2934155Z   /nix/store/ryf981zc9kshrrgm5c5dphnw879gn09m-builder.pl.drv
+2026-02-25T03:51:06.2934982Z   /nix/store/14s41r3aqgw7vrl845jxarjcx3ivgvc4-python3-3.12.7-env.drv
+2026-02-25T03:51:06.2935782Z   /nix/store/8x5r6y1y9rc4k4l5s6w8kl80w795ic3j-zmk_glove80_lh.drv
+2026-02-25T03:51:06.2936516Z   /nix/store/ysla8ysfy6ppsd36ndr6jg5szvsx9ilj-zmk_glove80_rh.drv
+2026-02-25T03:51:06.2937433Z   /nix/store/l7s02yxkk19q95sy60g1hcgxli3fa4kv-combined_zmk_glove80_lh_zmk_glove80_rh.drv
+2026-02-25T03:51:06.2938336Z these 156 paths will be fetched (458.96 MiB download, 2284.78 MiB unpacked):
+2026-02-25T03:51:06.2939081Z   /nix/store/nrl5m466dwdscvavf1nqzdnqhszjyy9n-acl-2.3.2
+2026-02-25T03:51:06.2939671Z   /nix/store/nmq6s9l9zlym3qjx76zzrqbp05a63y90-attr-2.5.2
+2026-02-25T03:51:06.2940282Z   /nix/store/p6k7xp1lsfmbdd731mlglrdj2d66mr82-bash-5.2p37
+2026-02-25T03:51:06.2941256Z   /nix/store/bwkb907myixfzzykp21m9iczkhrq5pfy-binutils-2.43.1
+2026-02-25T03:51:06.2941971Z   /nix/store/2qssg7pjgadwmqns6jm3qlr5bbdl4dcr-binutils-2.43.1-lib
+2026-02-25T03:51:06.2942933Z   /nix/store/x9as7x6f7cdgcskvvn3yp02m662krr7y-binutils-wrapper-2.43.1
+2026-02-25T03:51:06.2943684Z   /nix/store/2vgwd43vqxm66grkgsy7z1d87z31nzph-brotli-1.1.0-lib
+2026-02-25T03:51:06.2944237Z   /nix/store/hl3iw85v12gh9mwgvr9yfgjgy0rk81hb-bzip2-1.0.8
+2026-02-25T03:51:06.2944742Z   /nix/store/vqjygx23hkim1kpidik5xcs9whayf3sr-bzip2-1.0.8-bin
+2026-02-25T03:51:06.2945511Z   /nix/store/9l20xx4bw18qgkicjcrsfx7vfykp9m8h-cairo-1.18.2
+2026-02-25T03:51:06.2946254Z   /nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module
+2026-02-25T03:51:06.2946998Z   /nix/store/4k2h9qsps52n1v56zq03yi67dwmxa81i-cmake-3.30.5
+2026-02-25T03:51:06.2947590Z   /nix/store/azxckjbc4f70yliac1x35z5awbzf9jzj-cmsis
+2026-02-25T03:51:06.2948202Z   /nix/store/b1wvkjx96i3s7wblz38ya0zr8i93zbc5-coreutils-9.5
+2026-02-25T03:51:06.2948849Z   /nix/store/ps0zg8jx995br0s7k353qhal1ma3nnbd-curl-8.11.0
+2026-02-25T03:51:06.2949467Z   /nix/store/zr9c15gg53zsbyc54fsrlwh3r8kmhfyy-dav1d-1.5.0
+2026-02-25T03:51:06.2950120Z   /nix/store/n19lfs7ix2g9kdh6cf2pfaylbcwjay71-dav1d-1.5.0-dev
+2026-02-25T03:51:06.2950904Z   /nix/store/hbrcibdl494a5w3dypy7095dckalzlqa-dejavu-fonts-minimal-2.37
+2026-02-25T03:51:06.2951660Z   /nix/store/85sj9hb9phy4fh3q4fmc1vm9vz27z1lg-die-hook
+2026-02-25T03:51:06.2952503Z   /nix/store/cxwsmlr3xh1ml4r0kgdjrknw7504b9f8-diffutils-3.10
+2026-02-25T03:51:06.2953159Z   /nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2
+2026-02-25T03:51:06.2954203Z   /nix/store/k5x874vwcaxlan1cw248lwqr4l4v7hyk-ed-1.20.2
+2026-02-25T03:51:06.2955038Z   /nix/store/ka4sync4bccr9mz2ys0dbqjn24hp8v57-expand-response-params
+2026-02-25T03:51:06.2955799Z   /nix/store/8sgvk9wjq9vfz5irkl4436yhpfr10njq-expat-2.6.4
+2026-02-25T03:51:06.2956424Z   /nix/store/g4lksqp6l8qiab4a0as21s6556xh4gyp-file-5.45
+2026-02-25T03:51:06.2957108Z   /nix/store/w8pnfazxqwmrqmwkb5zrz1bifsd8abxl-findutils-4.10.0
+2026-02-25T03:51:06.2957801Z   /nix/store/ziqnk17xikg73dfrwnyi2jd593xlxza9-fontconfig-2.15.0
+2026-02-25T03:51:06.2958799Z   /nix/store/jfyibphs7pv1izw879lrmr0pp1x3llb8-fontconfig-2.15.0-lib
+2026-02-25T03:51:06.2959552Z   /nix/store/waj425c88y21wccgk9zpyi3q48xq0sgk-freetype-2.13.3
+2026-02-25T03:51:06.2960263Z   /nix/store/37azjaxs8cwqbmb0fywl8fa6n2x8bgwq-fribidi-1.0.16
+2026-02-25T03:51:06.2960947Z   /nix/store/nnin69nrnrrmnv2scbwyfkgh1rf51gh1-gawk-5.3.1
+2026-02-25T03:51:06.2961576Z   /nix/store/4krab2h0hd4wvxxmscxrw21pl77j4i7j-gcc-13.3.0
+2026-02-25T03:51:06.2963234Z   /nix/store/ybjcla5bhj8g1y84998pn4a2drfxybkv-gcc-13.3.0-lib
+2026-02-25T03:51:06.2963991Z   /nix/store/j8rzqx7farv0w3isp9z943zy437zk02f-gcc-13.3.0-libgcc
+2026-02-25T03:51:06.2964801Z   /nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1
+2026-02-25T03:51:06.2965656Z   /nix/store/4apajimszc47rxwcpvc3g3rj2icinl71-gcc-wrapper-13.3.0
+2026-02-25T03:51:06.2966343Z   /nix/store/ascb2b0zncwlavz03zcj358p1i79hp64-gd-2.3.3
+2026-02-25T03:51:06.2966991Z   /nix/store/hq7m89gp4kafmj8rr0f5sy2qyl7jq479-gdbm-1.24-lib
+2026-02-25T03:51:06.2967689Z   /nix/store/alnzmaf07kv3dl4017vrzqngay5rx904-gdk-pixbuf-2.42.12
+2026-02-25T03:51:06.2968424Z   /nix/store/brj8bvvn63gbdrslwsj7gpj0gqaxlprn-giflib-5.2.2
+2026-02-25T03:51:06.2968845Z   /nix/store/26hcp8h792wl0h52c5r94qakhvk6q717-glib-2.82.1
+2026-02-25T03:51:06.2969470Z   /nix/store/wn7v2vhyyyi6clcyn0s9ixvl7d4d87ic-glibc-2.40-36
+2026-02-25T03:51:06.2970203Z   /nix/store/zw5haplzbwjgbp3yykhm6iprkpfppzxb-glibc-2.40-36-bin
+2026-02-25T03:51:06.2970953Z   /nix/store/lw21wr626v5sdcaxxkv2k4zf1121hfc9-glibc-2.40-36-dev
+2026-02-25T03:51:06.2971626Z   /nix/store/y11zr71f9i1zy1vrdy3kjx8j6slsb3l3-gmp-6.3.0
+2026-02-25T03:51:06.2972487Z   /nix/store/nxg637az00fnm705pinlrpjac9b4hgsc-gmp-with-cxx-6.3.0
+2026-02-25T03:51:06.2973145Z   /nix/store/rlnih3wlxxwqn4xdahjgfjydvv78kvki-gnu-config-2024-01-01
+2026-02-25T03:51:06.2973557Z   /nix/store/85amyk92rg19l4fy0qmy7wr4jmq8p5z0-gnugrep-3.11
+2026-02-25T03:51:06.2973935Z   /nix/store/9y5kd90fdbrq3r4yc9mpqn82f93zdgyq-gnumake-4.4.1
+2026-02-25T03:51:06.2974719Z   /nix/store/vmby25zqxnx94awvj0k7zn0rsd0zyrwg-gnused-4.9
+2026-02-25T03:51:06.2975380Z   /nix/store/zhaypw0znkjnymg0rk1599zn21rr0l50-gnutar-1.35
+2026-02-25T03:51:06.2976083Z   /nix/store/23y66ax8z30m8xl4brrz792xlsrm0syr-graphite2-1.3.14
+2026-02-25T03:51:06.2976776Z   /nix/store/lvx8m4mh18aiqlqp5hdjpg3b34a07p35-graphviz-12.2.0
+2026-02-25T03:51:06.2977464Z   /nix/store/avwmwsn9v4an5v2a4k1gzbqk917avjn1-gts-0.7.6
+2026-02-25T03:51:06.2978066Z   /nix/store/a7pimibppfw2m3ryijnwwzx76i780bw2-gzip-1.13
+2026-02-25T03:51:06.2978700Z   /nix/store/a473gcmd84qs4vpapa70nwamlpkryc7b-hal_nordic
+2026-02-25T03:51:06.2979387Z   /nix/store/yxgc37sx1a0fswq3hvvld54491ryx6sf-harfbuzz-10.0.1
+2026-02-25T03:51:06.2980064Z   /nix/store/xxfkk4gqnaimiwzi6mmsmcs9bl2r8y7f-isl-0.20
+2026-02-25T03:51:06.2980658Z   /nix/store/ys6f20b4chzkmfh9ak0hjdp60l0g5abb-keyutils-1.6.3-lib
+2026-02-25T03:51:06.2981340Z   /nix/store/g9hgzjcj9g7hw3c2pzgz271b1g1jgc4w-krb5-1.21.3-lib
+2026-02-25T03:51:06.2981735Z   /nix/store/1dmri839kv55917flq6pyvr6xf17cb29-lerc-4.0.0
+2026-02-25T03:51:06.2982101Z   /nix/store/ikjw6a952jd9wn5k06mkj710xzabssr0-libX11-1.8.10
+2026-02-25T03:51:06.2982840Z   /nix/store/ighb6h0x1nv14ap2fj0j3bqdn0x3xra4-libXau-1.0.11
+2026-02-25T03:51:06.2983533Z   /nix/store/8jqc1bpk99jgib12wgpdjmnbndrmg7vz-libXdmcp-1.1.5
+2026-02-25T03:51:06.2984209Z   /nix/store/d5y0sl4vwsb9m99r18zh1mx4fw9y70g6-libXext-1.3.6
+2026-02-25T03:51:06.2984847Z   /nix/store/a98zld1as826z4s0b71xs64k02arj4zj-libXft-2.3.8
+2026-02-25T03:51:06.2985557Z   /nix/store/ln8sk1vlpzmm346lx30ifihqdw0fw4g9-libXpm-3.5.17
+2026-02-25T03:51:06.2986303Z   /nix/store/7ygszkkili3kfqh789ivdgrhyrjshm5n-libXrender-0.9.11
+2026-02-25T03:51:06.2987002Z   /nix/store/kabp82iq5p0l8zidw9ch1mrpq431g6jd-libaom-3.10.0
+2026-02-25T03:51:06.2987687Z   /nix/store/v567mv8b0bg0ph7xn61g33qqm484xxj0-libaom-3.10.0-bin
+2026-02-25T03:51:06.2988404Z   /nix/store/1asppgbns142f1sqyr6sz843h0689a1k-libaom-3.10.0-dev
+2026-02-25T03:51:06.2989168Z   /nix/store/n0gxk0ys2zgqqz6zcsq8qlv6nv5k6fpj-libarchive-3.7.7-lib
+2026-02-25T03:51:06.2989924Z   /nix/store/96wajifckqya26aazk4lrig5m5npw5l2-libavif-1.1.1
+2026-02-25T03:51:06.2990674Z   /nix/store/rk2r5yq7al5jddg6jriwv1lg5j1dw0ih-libdatrie-2019-12-20-lib
+2026-02-25T03:51:06.2991458Z   /nix/store/v6m37463j6bs788wbid8yvfhp1773cax-libdeflate-1.22
+2026-02-25T03:51:06.2992142Z   /nix/store/lw7psn749bfn2nrn943jdh68hh2im8yl-libffi-3.4.6
+2026-02-25T03:51:06.2993491Z   /nix/store/qwjjm4j652ck9izaid7bz63s4hd5bnha-libidn2-2.3.7
+2026-02-25T03:51:06.2994921Z   /nix/store/g8m63j9rzhqf0i9v4pzbdyrnzshr5mkx-libjpeg-turbo-3.0.4
+2026-02-25T03:51:06.2995705Z   /nix/store/0qqs7bkfk21h8vh7m3x84hphciqv75lm-libmpc-1.3.1
+2026-02-25T03:51:06.2996411Z   /nix/store/kvzfyxs3v0nb2lvfx28c5hj0vz7j9737-libpng-apng-1.6.43
+2026-02-25T03:51:06.2997027Z   /nix/store/rp6b82pm6b7x03ngbzffsl3vj8pvay5v-libselinux-3.7
+2026-02-25T03:51:06.2997432Z   /nix/store/1n0b29iid3y0w9i91v9zqdiwnx3inak0-libssh2-1.11.1
+2026-02-25T03:51:06.2997812Z   /nix/store/h11ip75g5azb1d9f9jr8c6pwjhpcx20n-libthai-0.1.29
+2026-02-25T03:51:06.2998198Z   /nix/store/mgw74i0szz30zbmvgasvyws1y8mvkb86-libtiff-4.7.0
+2026-02-25T03:51:06.2998582Z   /nix/store/ggpir31aij6dj2fsas74jyz8z33dxwnc-libtool-2.4.7-lib
+2026-02-25T03:51:06.2998976Z   /nix/store/6pqgj71r0850b0cd95yxx0d52zax016i-libunistring-1.2
+2026-02-25T03:51:06.2999343Z   /nix/store/scb132gc1zzd904zibk2mz0q5q42z0ym-libuv-1.48.0
+2026-02-25T03:51:06.2999707Z   /nix/store/llj89sgbf5512bnhx76khs7aq2pkhqjv-libvmaf-3.0.0
+2026-02-25T03:51:06.3000081Z   /nix/store/dbkf2m0b3a2n9drrbz6ra4ljfx45d4aa-libvmaf-3.0.0-dev
+2026-02-25T03:51:06.3000640Z   /nix/store/xk1z1b27hck084x12pn24rk526arwwlz-libwebp-1.4.0
+2026-02-25T03:51:06.3001040Z   /nix/store/zgcaxpjipkvdz3185gfb8ba63xw1sv4n-libwebp-1.4.0
+2026-02-25T03:51:06.3001589Z   /nix/store/w63ks7mg1dsgm2gg302ss70wpq7g0l4d-libxcb-1.17.0
+2026-02-25T03:51:06.3002461Z   /nix/store/5j9m3z3c6hygjx34xr1bzrkk8srvcs8a-libxcrypt-4.4.36
+2026-02-25T03:51:06.3003276Z   /nix/store/sbc37bmgpzr7wvlbm9lgf4y6q6dyz40q-libxcrypt-4.4.36
+2026-02-25T03:51:06.3004371Z   /nix/store/shg1vgcjxghqxhl0sifwgr0g2zg6bbv7-libxml2-2.13.4
+2026-02-25T03:51:06.3004969Z   /nix/store/s5y8cgwj9saik6hpxq6hvry31hggnxij-libyaml-0.2.5
+2026-02-25T03:51:06.3005555Z   /nix/store/43nf72jxw9m9mazn5qs7pdj52a7gmcr5-libyuv-1787
+2026-02-25T03:51:06.3006163Z   /nix/store/dvsai0ym9czjl5mcsarcdwccb70615n4-linux-headers-6.10
+2026-02-25T03:51:06.3006752Z   /nix/store/wwmn97j9jv083973a7md52v4wkxr6lvd-lvgl
+2026-02-25T03:51:06.3007307Z   /nix/store/77yxcw58nmqx2c67a7srpfxxp40j5rbl-mailcap-2.1.54
+2026-02-25T03:51:06.3007996Z   /nix/store/gqjd4bvd683s55r0jcgc9q67rvjnmfc6-make-binary-wrapper-hook
+2026-02-25T03:51:06.3008613Z   /nix/store/aqga8f06jxy5a6ci4na35v7n09j8i74f-mpdecimal-4.0.0
+2026-02-25T03:51:06.3008984Z   /nix/store/wfxkyxmg47bhj098im5rp60hmkagn96x-mpfr-4.2.1
+2026-02-25T03:51:06.3009611Z   /nix/store/zi4768cbcny3vx6f8k2yqy3zp90jalhz-ncompress-5.0
+2026-02-25T03:51:06.3010061Z   /nix/store/1p1j0iv3c909kcs4d5300kcsnlwmbwyj-ncurses-6.4.20221231
+2026-02-25T03:51:06.3010834Z   /nix/store/vj1wkvkfgcgxr93b5p6kwjbqgrjnv7d9-ncurses-abi5-compat-6.4.20221231
+2026-02-25T03:51:06.3011727Z   /nix/store/aygalfgrn7pvxcqc45jw53b9gc29hwzs-nghttp2-1.64.0-lib
+2026-02-25T03:51:06.3012256Z   /nix/store/s2lws03pga0vyq84kfa6h041n8csbg4p-ninja-1.12.1
+2026-02-25T03:51:06.3013092Z   /nix/store/k1dsk0zyq43pvi7f76is2rx6l4aphm5z-openssl-3.3.2
+2026-02-25T03:51:06.3013752Z   /nix/store/vy93rplabj9l70a098rvp52ni9bg476v-pango-1.54.0
+2026-02-25T03:51:06.3014396Z   /nix/store/mdmansf6zkzsnrcf4h3yav5kz93rh03y-patch-2.7.6
+2026-02-25T03:51:06.3015066Z   /nix/store/9q63d382x7k2h6cc2pfsb39ar3n6f9wg-patchelf-0.15.0
+2026-02-25T03:51:06.3015694Z   /nix/store/gkj66hn5cyi3d761nmcdpj35ngv7h8ph-pcre2-10.44
+2026-02-25T03:51:06.3016061Z   /nix/store/6fklzkr5x213h868q31isgy82wpmb1yb-perl-5.40.0
+2026-02-25T03:51:06.3016406Z   /nix/store/kxawdq25ad6x9cb63yvslaprm4ihx5hr-picolibc
+2026-02-25T03:51:06.3016761Z   /nix/store/f86x63y57hwyx9nl4l098fpl93y3xrya-pixman-0.43.4
+2026-02-25T03:51:06.3017132Z   /nix/store/zv1kaq7f1q20x62kbjv6pfjygw5jmwl6-python3-3.12.7
+2026-02-25T03:51:06.3017520Z   /nix/store/qb69wvblgz1x2hkfxf7lwl9lg9xk4zpj-python3-3.9.20
+2026-02-25T03:51:06.3017938Z   /nix/store/09wri7s7nlgp1fs4q4ysx96scbbmr74v-python3.12-anytree-2.12.1
+2026-02-25T03:51:06.3018417Z   /nix/store/qpb0z965ffwmny4p2m2jbbaqifkkb5y9-python3.12-docopt-0.6.2
+2026-02-25T03:51:06.3018893Z   /nix/store/wg6fhwksxkxn24rnynizrr6f4rvd9dkf-python3.12-intelhex-2.3.0
+2026-02-25T03:51:06.3019362Z   /nix/store/l67gyhnl63la5pxmq4kbhl0g6xrfsdff-python3.12-msgpack-1.1.0
+2026-02-25T03:51:06.3020135Z   /nix/store/qnfndbdg0k5s7zb47l5q9h7cszi56gpf-python3.12-packaging-24.1
+2026-02-25T03:51:06.3020674Z   /nix/store/rs8cgrcn6pkdxs2ksnhs1a0x0pvx5sac-python3.12-progress-1.6
+2026-02-25T03:51:06.3021151Z   /nix/store/qmm23pygh0kisvsm9wrfxw2s5km97670-python3.12-pyelftools-0.31
+2026-02-25T03:51:06.3021649Z   /nix/store/k1hzsby2pa29jwbbdgg3y4wj0rxn8dnn-python3.12-pykwalify-1.8.0
+2026-02-25T03:51:06.3022192Z   /nix/store/7p4gqrzavx0lpks2l0j9945zkzv77ds0-python3.12-python-can-4.5.0
+2026-02-25T03:51:06.3023063Z   /nix/store/iz14w235v0nmwc3vnzrlbrkfpaj1qqka-python3.12-python-dateutil-2.9.0.post0
+2026-02-25T03:51:06.3023635Z   /nix/store/j7q50pmxnawpif7kfimy51mjhjdjldns-python3.12-pyyaml-6.0.2
+2026-02-25T03:51:06.3024136Z   /nix/store/2k9j8zwlhd8vdpn0c4j5zgwkqr6digpx-python3.12-ruamel-base-1.0.0
+2026-02-25T03:51:06.3024648Z   /nix/store/7cvm89dzrkw7i4pdidyd8mvny73k07nb-python3.12-ruamel-yaml-0.18.6
+2026-02-25T03:51:06.3025182Z   /nix/store/3rghmwyhhwjaj3jmpc3drb8pzz9h14hj-python3.12-ruamel-yaml-clib-0.2.7
+2026-02-25T03:51:06.3025689Z   /nix/store/4743pgjalihwh1vb7jsy17ynw3s0xj04-python3.12-six-1.16.0
+2026-02-25T03:51:06.3026196Z   /nix/store/n2pgidpi7vpq2hbpylfpa4ck7avniipp-python3.12-typing-extensions-4.12.2
+2026-02-25T03:51:06.3026716Z   /nix/store/2j2fcjlxczkx0yyjn3rqi1h9sd42r97v-python3.12-wrapt-1.16.0
+2026-02-25T03:51:06.3027148Z   /nix/store/n0q4xhb9z19f0rfd1i8frw7a3ip3rgar-readline-8.2p13
+2026-02-25T03:51:06.3027526Z   /nix/store/gpbi7j64vk1my8gpqgylwf9iljqb09is-rhash-1.4.4
+2026-02-25T03:51:06.3028420Z   /nix/store/wkad860jvdc881ngy6r0fbjg6s5i8alh-segger
+2026-02-25T03:51:06.3029041Z   /nix/store/bbd59cqw259149r2ddk4w1q0lr2fch8c-sqlite-3.46.1
+2026-02-25T03:51:06.3029695Z   /nix/store/spb2bpcnw0gbbr4x94cq8xs9n72hipwj-stdenv-linux
+2026-02-25T03:51:06.3030378Z   /nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt
+2026-02-25T03:51:06.3030745Z   /nix/store/dfsiy184c8z6gf5x6cqfyahxv9g16828-tzdata-2024b
+2026-02-25T03:51:06.3031232Z   /nix/store/ljlah5wqcbix5wg8rvm3g8rc7k9zn1qg-update-autotools-gnu-config-scripts-hook
+2026-02-25T03:51:06.3031830Z   /nix/store/gm5g3xyn8iwxkag8gs6rf3ci64bqld80-util-linux-minimal-2.39.4-lib
+2026-02-25T03:51:06.3032529Z   /nix/store/2d5spnl8j5r4n1s4bj1zmra7mwx0f1n8-xgcc-13.3.0-libgcc
+2026-02-25T03:51:06.3032922Z   /nix/store/bdpc1864983kf51r3cznbrvnlkv4d9ff-xz-5.6.3
+2026-02-25T03:51:06.3033271Z   /nix/store/5180mi672sl6ikiwyhvgnxasz6iqxws0-xz-5.6.3-bin
+2026-02-25T03:51:06.3033613Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr
+2026-02-25T03:51:06.3033958Z   /nix/store/bzk3q2l71qwhycsip23y6rl5n881la4n-zlib-1.3.1
+2026-02-25T03:51:06.3034328Z   /nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis
+2026-02-25T03:51:06.3034742Z   /nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic
+2026-02-25T03:51:06.3035170Z   /nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl
+2026-02-25T03:51:06.3035578Z   /nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc
+2026-02-25T03:51:06.3036001Z   /nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger
+2026-02-25T03:51:06.3036426Z   /nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt
+2026-02-25T03:51:06.3036821Z   /nix/store/8pys6a47askf0g75a1k73p3rx2wim7m6-zstd-1.5.6
+2026-02-25T03:51:06.3095800Z copying path '/nix/store/rlnih3wlxxwqn4xdahjgfjydvv78kvki-gnu-config-2024-01-01' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3099111Z copying path '/nix/store/2d5spnl8j5r4n1s4bj1zmra7mwx0f1n8-xgcc-13.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3148790Z copying path '/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3151952Z copying path '/nix/store/j8rzqx7farv0w3isp9z943zy437zk02f-gcc-13.3.0-libgcc' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3155519Z copying path '/nix/store/6pqgj71r0850b0cd95yxx0d52zax016i-libunistring-1.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3201249Z copying path '/nix/store/azxckjbc4f70yliac1x35z5awbzf9jzj-cmsis' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3210696Z copying path '/nix/store/a473gcmd84qs4vpapa70nwamlpkryc7b-hal_nordic' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3219279Z copying path '/nix/store/wwmn97j9jv083973a7md52v4wkxr6lvd-lvgl' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3227918Z copying path '/nix/store/kxawdq25ad6x9cb63yvslaprm4ihx5hr-picolibc' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3231755Z copying path '/nix/store/wkad860jvdc881ngy6r0fbjg6s5i8alh-segger' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3234757Z copying path '/nix/store/n4xjlyn5hk979p2ywqpajw7dq5y94q1g-tinycrypt' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.3244183Z copying path '/nix/store/85sj9hb9phy4fh3q4fmc1vm9vz27z1lg-die-hook' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3259383Z copying path '/nix/store/dvsai0ym9czjl5mcsarcdwccb70615n4-linux-headers-6.10' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3264167Z copying path '/nix/store/77yxcw58nmqx2c67a7srpfxxp40j5rbl-mailcap-2.1.54' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3265187Z copying path '/nix/store/dfsiy184c8z6gf5x6cqfyahxv9g16828-tzdata-2024b' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3302140Z copying path '/nix/store/hbrcibdl494a5w3dypy7095dckalzlqa-dejavu-fonts-minimal-2.37' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.3337066Z copying path '/nix/store/ljlah5wqcbix5wg8rvm3g8rc7k9zn1qg-update-autotools-gnu-config-scripts-hook' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.4193892Z copying path '/nix/store/ziqnk17xikg73dfrwnyi2jd593xlxza9-fontconfig-2.15.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.4264875Z copying path '/nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.4351224Z copying path '/nix/store/qwjjm4j652ck9izaid7bz63s4hd5bnha-libidn2-2.3.7' from 'https://cache.nixos.org'...
+2026-02-25T03:51:06.5003969Z copying path '/nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.5006057Z copying path '/nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:06.8159689Z copying path '/nix/store/wn7v2vhyyyi6clcyn0s9ixvl7d4d87ic-glibc-2.40-36' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.0128486Z copying path '/nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:07.6999120Z copying path '/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:07.7532871Z copying path '/nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:07.8106707Z copying path '/nix/store/nmq6s9l9zlym3qjx76zzrqbp05a63y90-attr-2.5.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8111190Z copying path '/nix/store/p6k7xp1lsfmbdd731mlglrdj2d66mr82-bash-5.2p37' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8112706Z copying path '/nix/store/2vgwd43vqxm66grkgsy7z1d87z31nzph-brotli-1.1.0-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8114078Z copying path '/nix/store/zr9c15gg53zsbyc54fsrlwh3r8kmhfyy-dav1d-1.5.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8115657Z copying path '/nix/store/hl3iw85v12gh9mwgvr9yfgjgy0rk81hb-bzip2-1.0.8' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8120559Z copying path '/nix/store/ka4sync4bccr9mz2ys0dbqjn24hp8v57-expand-response-params' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8121920Z copying path '/nix/store/k5x874vwcaxlan1cw248lwqr4l4v7hyk-ed-1.20.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8123437Z copying path '/nix/store/37azjaxs8cwqbmb0fywl8fa6n2x8bgwq-fribidi-1.0.16' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8125038Z copying path '/nix/store/8sgvk9wjq9vfz5irkl4436yhpfr10njq-expat-2.6.4' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8126438Z copying path '/nix/store/ybjcla5bhj8g1y84998pn4a2drfxybkv-gcc-13.3.0-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8127766Z copying path '/nix/store/nnin69nrnrrmnv2scbwyfkgh1rf51gh1-gawk-5.3.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8129116Z copying path '/nix/store/brj8bvvn63gbdrslwsj7gpj0gqaxlprn-giflib-5.2.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8130494Z copying path '/nix/store/hq7m89gp4kafmj8rr0f5sy2qyl7jq479-gdbm-1.24-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8134749Z copying path '/nix/store/zw5haplzbwjgbp3yykhm6iprkpfppzxb-glibc-2.40-36-bin' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8136607Z copying path '/nix/store/y11zr71f9i1zy1vrdy3kjx8j6slsb3l3-gmp-6.3.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8206881Z copying path '/nix/store/9y5kd90fdbrq3r4yc9mpqn82f93zdgyq-gnumake-4.4.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8340399Z copying path '/nix/store/ys6f20b4chzkmfh9ak0hjdp60l0g5abb-keyutils-1.6.3-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8367069Z copying path '/nix/store/ighb6h0x1nv14ap2fj0j3bqdn0x3xra4-libXau-1.0.11' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8383980Z copying path '/nix/store/nrl5m466dwdscvavf1nqzdnqhszjyy9n-acl-2.3.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8414134Z copying path '/nix/store/vmby25zqxnx94awvj0k7zn0rsd0zyrwg-gnused-4.9' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8533278Z copying path '/nix/store/vqjygx23hkim1kpidik5xcs9whayf3sr-bzip2-1.0.8-bin' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8576581Z copying path '/nix/store/8jqc1bpk99jgib12wgpdjmnbndrmg7vz-libXdmcp-1.1.5' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8769681Z copying path '/nix/store/zhaypw0znkjnymg0rk1599zn21rr0l50-gnutar-1.35' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8776284Z copying path '/nix/store/rk2r5yq7al5jddg6jriwv1lg5j1dw0ih-libdatrie-2019-12-20-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8784026Z copying path '/nix/store/lw7psn749bfn2nrn943jdh68hh2im8yl-libffi-3.4.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8849174Z copying path '/nix/store/g8m63j9rzhqf0i9v4pzbdyrnzshr5mkx-libjpeg-turbo-3.0.4' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8925999Z copying path '/nix/store/v6m37463j6bs788wbid8yvfhp1773cax-libdeflate-1.22' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8936668Z copying path '/nix/store/ggpir31aij6dj2fsas74jyz8z33dxwnc-libtool-2.4.7-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8941167Z copying path '/nix/store/scb132gc1zzd904zibk2mz0q5q42z0ym-libuv-1.48.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8976031Z copying path '/nix/store/h11ip75g5azb1d9f9jr8c6pwjhpcx20n-libthai-0.1.29' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.8979415Z copying path '/nix/store/w63ks7mg1dsgm2gg302ss70wpq7g0l4d-libxcb-1.17.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9085884Z copying path '/nix/store/5j9m3z3c6hygjx34xr1bzrkk8srvcs8a-libxcrypt-4.4.36' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9211518Z copying path '/nix/store/sbc37bmgpzr7wvlbm9lgf4y6q6dyz40q-libxcrypt-4.4.36' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9224713Z copying path '/nix/store/xxfkk4gqnaimiwzi6mmsmcs9bl2r8y7f-isl-0.20' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9322102Z copying path '/nix/store/a7pimibppfw2m3ryijnwwzx76i780bw2-gzip-1.13' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9328118Z copying path '/nix/store/shg1vgcjxghqxhl0sifwgr0g2zg6bbv7-libxml2-2.13.4' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9347738Z copying path '/nix/store/s5y8cgwj9saik6hpxq6hvry31hggnxij-libyaml-0.2.5' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9365012Z copying path '/nix/store/aqga8f06jxy5a6ci4na35v7n09j8i74f-mpdecimal-4.0.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9485905Z copying path '/nix/store/wfxkyxmg47bhj098im5rp60hmkagn96x-mpfr-4.2.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9704294Z copying path '/nix/store/zi4768cbcny3vx6f8k2yqy3zp90jalhz-ncompress-5.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9785968Z copying path '/nix/store/n19lfs7ix2g9kdh6cf2pfaylbcwjay71-dav1d-1.5.0-dev' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9800304Z copying path '/nix/store/1p1j0iv3c909kcs4d5300kcsnlwmbwyj-ncurses-6.4.20221231' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9835764Z copying path '/nix/store/vj1wkvkfgcgxr93b5p6kwjbqgrjnv7d9-ncurses-abi5-compat-6.4.20221231' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9845912Z copying path '/nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9888104Z copying path '/nix/store/aygalfgrn7pvxcqc45jw53b9gc29hwzs-nghttp2-1.64.0-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9891443Z copying path '/nix/store/k1dsk0zyq43pvi7f76is2rx6l4aphm5z-openssl-3.3.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:07.9935189Z copying path '/nix/store/mdmansf6zkzsnrcf4h3yav5kz93rh03y-patch-2.7.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0134531Z copying path '/nix/store/gkj66hn5cyi3d761nmcdpj35ngv7h8ph-pcre2-10.44' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0312521Z copying path '/nix/store/f86x63y57hwyx9nl4l098fpl93y3xrya-pixman-0.43.4' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0453716Z copying path '/nix/store/gpbi7j64vk1my8gpqgylwf9iljqb09is-rhash-1.4.4' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0465280Z copying path '/nix/store/gm5g3xyn8iwxkag8gs6rf3ci64bqld80-util-linux-minimal-2.39.4-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0505644Z copying path '/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:08.0507062Z copying path '/nix/store/ikjw6a952jd9wn5k06mkj710xzabssr0-libX11-1.8.10' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0534803Z copying path '/nix/store/bdpc1864983kf51r3cznbrvnlkv4d9ff-xz-5.6.3' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0759980Z copying path '/nix/store/0qqs7bkfk21h8vh7m3x84hphciqv75lm-libmpc-1.3.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0798362Z copying path '/nix/store/bzk3q2l71qwhycsip23y6rl5n881la4n-zlib-1.3.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.0961662Z copying path '/nix/store/lw21wr626v5sdcaxxkv2k4zf1121hfc9-glibc-2.40-36-dev' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2029200Z copying path '/nix/store/nxg637az00fnm705pinlrpjac9b4hgsc-gmp-with-cxx-6.3.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2034117Z copying path '/nix/store/1dmri839kv55917flq6pyvr6xf17cb29-lerc-4.0.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2039822Z copying path '/nix/store/23y66ax8z30m8xl4brrz792xlsrm0syr-graphite2-1.3.14' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2277101Z copying path '/nix/store/llj89sgbf5512bnhx76khs7aq2pkhqjv-libvmaf-3.0.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2311808Z copying path '/nix/store/43nf72jxw9m9mazn5qs7pdj52a7gmcr5-libyuv-1787' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2406279Z copying path '/nix/store/2qssg7pjgadwmqns6jm3qlr5bbdl4dcr-binutils-2.43.1-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2421875Z copying path '/nix/store/g4lksqp6l8qiab4a0as21s6556xh4gyp-file-5.45' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.2584239Z copying path '/nix/store/kvzfyxs3v0nb2lvfx28c5hj0vz7j9737-libpng-apng-1.6.43' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.3066186Z copying path '/nix/store/s2lws03pga0vyq84kfa6h041n8csbg4p-ninja-1.12.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.3214641Z copying path '/nix/store/g9hgzjcj9g7hw3c2pzgz271b1g1jgc4w-krb5-1.21.3-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.3487283Z copying path '/nix/store/d5y0sl4vwsb9m99r18zh1mx4fw9y70g6-libXext-1.3.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.3758267Z copying path '/nix/store/4krab2h0hd4wvxxmscxrw21pl77j4i7j-gcc-13.3.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.3768827Z copying path '/nix/store/85amyk92rg19l4fy0qmy7wr4jmq8p5z0-gnugrep-3.11' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4186302Z copying path '/nix/store/ln8sk1vlpzmm346lx30ifihqdw0fw4g9-libXpm-3.5.17' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4224778Z copying path '/nix/store/7ygszkkili3kfqh789ivdgrhyrjshm5n-libXrender-0.9.11' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4335960Z copying path '/nix/store/rp6b82pm6b7x03ngbzffsl3vj8pvay5v-libselinux-3.7' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4389410Z copying path '/nix/store/b1wvkjx96i3s7wblz38ya0zr8i93zbc5-coreutils-9.5' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4664113Z copying path '/nix/store/kabp82iq5p0l8zidw9ch1mrpq431g6jd-libaom-3.10.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4735062Z copying path '/nix/store/1n0b29iid3y0w9i91v9zqdiwnx3inak0-libssh2-1.11.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4744819Z copying path '/nix/store/dbkf2m0b3a2n9drrbz6ra4ljfx45d4aa-libvmaf-3.0.0-dev' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4801405Z copying path '/nix/store/9q63d382x7k2h6cc2pfsb39ar3n6f9wg-patchelf-0.15.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.4850148Z copying path '/nix/store/waj425c88y21wccgk9zpyi3q48xq0sgk-freetype-2.13.3' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.5402754Z copying path '/nix/store/zgcaxpjipkvdz3185gfb8ba63xw1sv4n-libwebp-1.4.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.5513341Z copying path '/nix/store/n0q4xhb9z19f0rfd1i8frw7a3ip3rgar-readline-8.2p13' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.5566615Z copying path '/nix/store/5180mi672sl6ikiwyhvgnxasz6iqxws0-xz-5.6.3-bin' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.5568193Z copying path '/nix/store/bbd59cqw259149r2ddk4w1q0lr2fch8c-sqlite-3.46.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.5661383Z copying path '/nix/store/bwkb907myixfzzykp21m9iczkhrq5pfy-binutils-2.43.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.6765063Z copying path '/nix/store/8pys6a47askf0g75a1k73p3rx2wim7m6-zstd-1.5.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.7036531Z copying path '/nix/store/26hcp8h792wl0h52c5r94qakhvk6q717-glib-2.82.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.7193998Z copying path '/nix/store/cxwsmlr3xh1ml4r0kgdjrknw7504b9f8-diffutils-3.10' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.7195814Z copying path '/nix/store/w8pnfazxqwmrqmwkb5zrz1bifsd8abxl-findutils-4.10.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.7578775Z copying path '/nix/store/6fklzkr5x213h868q31isgy82wpmb1yb-perl-5.40.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.7674781Z copying path '/nix/store/ps0zg8jx995br0s7k353qhal1ma3nnbd-curl-8.11.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.7924261Z copying path '/nix/store/jfyibphs7pv1izw879lrmr0pp1x3llb8-fontconfig-2.15.0-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.9603563Z copying path '/nix/store/v567mv8b0bg0ph7xn61g33qqm484xxj0-libaom-3.10.0-bin' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.9703983Z copying path '/nix/store/zv1kaq7f1q20x62kbjv6pfjygw5jmwl6-python3-3.12.7' from 'https://cache.nixos.org'...
+2026-02-25T03:51:08.9705957Z copying path '/nix/store/qb69wvblgz1x2hkfxf7lwl9lg9xk4zpj-python3-3.9.20' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.1453768Z copying path '/nix/store/mgw74i0szz30zbmvgasvyws1y8mvkb86-libtiff-4.7.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.1455777Z copying path '/nix/store/n0gxk0ys2zgqqz6zcsq8qlv6nv5k6fpj-libarchive-3.7.7-lib' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.1553502Z copying path '/nix/store/spb2bpcnw0gbbr4x94cq8xs9n72hipwj-stdenv-linux' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.2550046Z copying path '/nix/store/a98zld1as826z4s0b71xs64k02arj4zj-libXft-2.3.8' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.4130513Z copying path '/nix/store/x9as7x6f7cdgcskvvn3yp02m662krr7y-binutils-wrapper-2.43.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.4209083Z copying path '/nix/store/9l20xx4bw18qgkicjcrsfx7vfykp9m8h-cairo-1.18.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.4210529Z copying path '/nix/store/avwmwsn9v4an5v2a4k1gzbqk917avjn1-gts-0.7.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.4211931Z copying path '/nix/store/yxgc37sx1a0fswq3hvvld54491ryx6sf-harfbuzz-10.0.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.5456773Z copying path '/nix/store/1asppgbns142f1sqyr6sz843h0689a1k-libaom-3.10.0-dev' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.7640656Z building '/nix/store/ryf981zc9kshrrgm5c5dphnw879gn09m-builder.pl.drv'...
+2026-02-25T03:51:09.7692225Z copying path '/nix/store/xk1z1b27hck084x12pn24rk526arwwlz-libwebp-1.4.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.7694372Z copying path '/nix/store/alnzmaf07kv3dl4017vrzqngay5rx904-gdk-pixbuf-2.42.12' from 'https://cache.nixos.org'...
+2026-02-25T03:51:09.7730697Z copying path '/nix/store/4k2h9qsps52n1v56zq03yi67dwmxa81i-cmake-3.30.5' from 'https://cache.nixos.org'...
+2026-02-25T03:51:10.1337118Z copying path '/nix/store/vy93rplabj9l70a098rvp52ni9bg476v-pango-1.54.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:10.4444946Z copying path '/nix/store/96wajifckqya26aazk4lrig5m5npw5l2-libavif-1.1.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:10.8124862Z copying path '/nix/store/ascb2b0zncwlavz03zcj358p1i79hp64-gd-2.3.3' from 'https://cache.nixos.org'...
+2026-02-25T03:51:11.2247011Z copying path '/nix/store/lvx8m4mh18aiqlqp5hdjpg3b34a07p35-graphviz-12.2.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:12.3483952Z copying path '/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8126524Z copying path '/nix/store/4apajimszc47rxwcpvc3g3rj2icinl71-gcc-wrapper-13.3.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8775578Z copying path '/nix/store/qpb0z965ffwmny4p2m2jbbaqifkkb5y9-python3.12-docopt-0.6.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8778077Z copying path '/nix/store/wg6fhwksxkxn24rnynizrr6f4rvd9dkf-python3.12-intelhex-2.3.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8780804Z copying path '/nix/store/qnfndbdg0k5s7zb47l5q9h7cszi56gpf-python3.12-packaging-24.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8787016Z copying path '/nix/store/l67gyhnl63la5pxmq4kbhl0g6xrfsdff-python3.12-msgpack-1.1.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8788520Z copying path '/nix/store/rs8cgrcn6pkdxs2ksnhs1a0x0pvx5sac-python3.12-progress-1.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8790033Z copying path '/nix/store/qmm23pygh0kisvsm9wrfxw2s5km97670-python3.12-pyelftools-0.31' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8792800Z copying path '/nix/store/4743pgjalihwh1vb7jsy17ynw3s0xj04-python3.12-six-1.16.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8795134Z copying path '/nix/store/n2pgidpi7vpq2hbpylfpa4ck7avniipp-python3.12-typing-extensions-4.12.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8797351Z copying path '/nix/store/2j2fcjlxczkx0yyjn3rqi1h9sd42r97v-python3.12-wrapt-1.16.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8798271Z copying path '/nix/store/2k9j8zwlhd8vdpn0c4j5zgwkqr6digpx-python3.12-ruamel-base-1.0.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8799205Z copying path '/nix/store/j7q50pmxnawpif7kfimy51mjhjdjldns-python3.12-pyyaml-6.0.2' from 'https://cache.nixos.org'...
+2026-02-25T03:51:13.8800141Z copying path '/nix/store/3rghmwyhhwjaj3jmpc3drb8pzz9h14hj-python3.12-ruamel-yaml-clib-0.2.7' from 'https://cache.nixos.org'...
+2026-02-25T03:51:14.2415212Z copying path '/nix/store/09wri7s7nlgp1fs4q4ysx96scbbmr74v-python3.12-anytree-2.12.1' from 'https://cache.nixos.org'...
+2026-02-25T03:51:14.2418537Z copying path '/nix/store/gqjd4bvd683s55r0jcgc9q67rvjnmfc6-make-binary-wrapper-hook' from 'https://cache.nixos.org'...
+2026-02-25T03:51:14.2428357Z copying path '/nix/store/iz14w235v0nmwc3vnzrlbrkfpaj1qqka-python3.12-python-dateutil-2.9.0.post0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:14.2460560Z copying path '/nix/store/7p4gqrzavx0lpks2l0j9945zkzv77ds0-python3.12-python-can-4.5.0' from 'https://moergo-glove80-zmk-dev.cachix.org'...
+2026-02-25T03:51:14.2475101Z copying path '/nix/store/7cvm89dzrkw7i4pdidyd8mvny73k07nb-python3.12-ruamel-yaml-0.18.6' from 'https://cache.nixos.org'...
+2026-02-25T03:51:14.8139252Z copying path '/nix/store/k1hzsby2pa29jwbbdgg3y4wj0rxn8dnn-python3.12-pykwalify-1.8.0' from 'https://cache.nixos.org'...
+2026-02-25T03:51:15.1661364Z building '/nix/store/14s41r3aqgw7vrl845jxarjcx3ivgvc4-python3-3.12.7-env.drv'...
+2026-02-25T03:51:15.2574065Z created 296 symlinks in user environment
+2026-02-25T03:51:25.8120136Z warning: Ignoring setting 'auto-allocate-uids' because experimental feature 'auto-allocate-uids' is not enabled
+2026-02-25T03:51:25.8121586Z warning: Ignoring setting 'impure-env' because experimental feature 'configurable-impure-env' is not enabled
+2026-02-25T03:51:25.8370494Z building '/nix/store/8x5r6y1y9rc4k4l5s6w8kl80w795ic3j-zmk_glove80_lh.drv'...
+2026-02-25T03:51:25.8590073Z building '/nix/store/ysla8ysfy6ppsd36ndr6jg5szvsx9ilj-zmk_glove80_rh.drv'...
+2026-02-25T03:51:25.8894186Z Running phase: unpackPhase
+2026-02-25T03:51:25.8936785Z unpacking source archive /nix/store/ypiphcbzypxpz9p904y3da2z7rpgj17j-source
+2026-02-25T03:51:25.9111943Z Running phase: unpackPhase
+2026-02-25T03:51:25.9153844Z unpacking source archive /nix/store/ypiphcbzypxpz9p904y3da2z7rpgj17j-source
+2026-02-25T03:51:26.0511464Z source root is source/app
+2026-02-25T03:51:26.0659191Z source root is source/app
+2026-02-25T03:51:26.0969306Z Running phase: patchPhase
+2026-02-25T03:51:26.1038018Z Running phase: updateAutotoolsGnuConfigScriptsPhase
+2026-02-25T03:51:26.1126423Z Running phase: patchPhase
+2026-02-25T03:51:26.1192009Z Running phase: updateAutotoolsGnuConfigScriptsPhase
+2026-02-25T03:51:26.1310152Z Running phase: configurePhase
+2026-02-25T03:51:26.1357940Z fixing cmake files...
+2026-02-25T03:51:26.1485148Z Running phase: configurePhase
+2026-02-25T03:51:26.1529683Z fixing cmake files...
+2026-02-25T03:51:26.3386314Z cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/share/doc/zmk -DCMAKE_INSTALL_INFODIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/include -DCMAKE_INSTALL_SBINDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP= -DCMAKE_RANLIB= -DCMAKE_AR= -DCMAKE_C_COMPILER= -DCMAKE_CXX_COMPILER= -DCMAKE_INSTALL_PREFIX=/nix/store/0knh6479x9pw447dsf27i4klir3z36l9-zmk_glove80_lh -DZEPHYR_BASE=/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr -DBOARD_ROOT=. -DBOARD=glove80_lh -DZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb -DGNUARMEMB_TOOLCHAIN_PATH=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1 -DCMAKE_C_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-g++ -DCMAKE_AR=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ar -DCMAKE_RANLIB=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ranlib -DZEPHYR_MODULES=/nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis/cmsis\;/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic\;/nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt/tinycrypt\;/nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl/lvgl\;/nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc/picolibc\;/nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger/segger\;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module -DKEYMAP_FILE=/nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.keymap -DEXTRA_CONF_FILE=/nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.conf -DUSER_CACHE_DIR=/build/.cache
+2026-02-25T03:51:26.3489114Z Loading Zephyr default modules (Zephyr base (cached)).
+2026-02-25T03:51:26.3490882Z -- Application: /build/source/app
+2026-02-25T03:51:26.3491338Z -- CMake version: 3.30.5
+2026-02-25T03:51:26.3539474Z cmake flags: -GNinja -DCMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY=OFF -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF -DCMAKE_INSTALL_LOCALEDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/share/locale -DCMAKE_INSTALL_LIBEXECDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/libexec -DCMAKE_INSTALL_LIBDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/lib -DCMAKE_INSTALL_DOCDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/share/doc/zmk -DCMAKE_INSTALL_INFODIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/share/info -DCMAKE_INSTALL_MANDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/share/man -DCMAKE_INSTALL_OLDINCLUDEDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/include -DCMAKE_INSTALL_INCLUDEDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/include -DCMAKE_INSTALL_SBINDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/sbin -DCMAKE_INSTALL_BINDIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/bin -DCMAKE_INSTALL_NAME_DIR=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh/lib -DCMAKE_POLICY_DEFAULT_CMP0025=NEW -DCMAKE_FIND_FRAMEWORK=LAST -DCMAKE_STRIP= -DCMAKE_RANLIB= -DCMAKE_AR= -DCMAKE_C_COMPILER= -DCMAKE_CXX_COMPILER= -DCMAKE_INSTALL_PREFIX=/nix/store/68fz5080gkwri3sx23pjrk147dvv3wr7-zmk_glove80_rh -DZEPHYR_BASE=/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr -DBOARD_ROOT=. -DBOARD=glove80_rh -DZEPHYR_TOOLCHAIN_VARIANT=gnuarmemb -DGNUARMEMB_TOOLCHAIN_PATH=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1 -DCMAKE_C_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-g++ -DCMAKE_AR=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ar -DCMAKE_RANLIB=/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1/bin/arm-none-eabi-ranlib -DZEPHYR_MODULES=/nix/store/pq757h971kd946xqi9ckk2ylsj25i610-zmk-module-cmsis/cmsis\;/nix/store/wggfl9p3y2ahy21hb1gpfgr3fxsbv8ss-zmk-module-hal_nordic/hal_nordic\;/nix/store/grk5a1pd1mbzl3lgzf2amf7c0nbb0rvs-zmk-module-tinycrypt/tinycrypt\;/nix/store/44v1jwji8rksbmvsjwkd4igbb1vhxbl5-zmk-module-lvgl/lvgl\;/nix/store/4bn1207zpfrcdmf1ldh86ziaav3kwwbb-zmk-module-picolibc/picolibc\;/nix/store/w90l0zpl7slydmc947qscinn0d6rgq5c-zmk-module-segger/segger\;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module -DKEYMAP_FILE=/nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.keymap -DEXTRA_CONF_FILE=/nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.conf -DUSER_CACHE_DIR=/build/.cache
+2026-02-25T03:51:26.3649866Z Loading Zephyr default modules (Zephyr base (cached)).
+2026-02-25T03:51:26.3651494Z -- Application: /build/source/app
+2026-02-25T03:51:26.3651924Z -- CMake version: 3.30.5
+2026-02-25T03:51:26.5709136Z -- Found Python3: /nix/store/3ym73yjdw7yg6sv3nwr0syligji76i3z-python3-3.12.7-env/bin/python (found suitable version "3.12.7", minimum required is "3.8") found components: Interpreter
+2026-02-25T03:51:26.5718502Z -- Cache files will be written to: /build/.cache
+2026-02-25T03:51:26.5771303Z -- Zephyr version: 3.5.0 (/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr)
+2026-02-25T03:51:26.5894362Z -- Found Python3: /nix/store/3ym73yjdw7yg6sv3nwr0syligji76i3z-python3-3.12.7-env/bin/python (found suitable version "3.12.7", minimum required is "3.8") found components: Interpreter
+2026-02-25T03:51:26.5899138Z -- Cache files will be written to: /build/.cache
+2026-02-25T03:51:26.5978445Z -- Zephyr version: 3.5.0 (/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr)
+2026-02-25T03:51:26.7689852Z -- Using keymap file: /nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.keymap
+2026-02-25T03:51:26.7736751Z -- Board: glove80_lh
+2026-02-25T03:51:26.7827433Z -- Using keymap file: /nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.keymap
+2026-02-25T03:51:26.7872655Z -- Board: glove80_rh
+2026-02-25T03:51:26.9561530Z -- Found toolchain: gnuarmemb (/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1)
+2026-02-25T03:51:26.9673928Z -- Found Dtc: /nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2/bin/dtc (found suitable version "1.7.2", minimum required is "1.4.6")
+2026-02-25T03:51:26.9675179Z -- Found BOARD.dts: /build/source/app/boards/arm/glove80/glove80_lh.dts
+2026-02-25T03:51:26.9676342Z -- Found devicetree overlay: /nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.keymap
+2026-02-25T03:51:26.9677760Z -- Found toolchain: gnuarmemb (/nix/store/mczmw3rln2jm6nm080dapyjpj3833rg9-gcc-arm-embedded-12.3.rel1)
+2026-02-25T03:51:26.9735338Z -- Found Dtc: /nix/store/2nvmq98zj69i1af1ksh6m08hvfdkjv1z-dtc-1.7.2/bin/dtc (found suitable version "1.7.2", minimum required is "1.4.6")
+2026-02-25T03:51:26.9739467Z -- Found BOARD.dts: /build/source/app/boards/arm/glove80/glove80_rh.dts
+2026-02-25T03:51:26.9743291Z -- Found devicetree overlay: /nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/glove80.keymap
+2026-02-25T03:51:27.1790837Z devicetree error: /nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/../../shared/behaviors.dtsi:8 (column 21): parse error: expected number or parenthesized expression
+2026-02-25T03:51:27.1816130Z devicetree error: /nix/store/56r31ywkn18m6im7v64v9rmm805c180d-zmk-multi-keyboard-build/boards/glove80/../../shared/behaviors.dtsi:8 (column 21): parse error: expected number or parenthesized expression
+2026-02-25T03:51:27.1932928Z -- In: /build/source/app/build/zephyr, command: /nix/store/3ym73yjdw7yg6sv3nwr0syligji76i3z-python3-3.12.7-env/bin/python;/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/scripts/dts/gen_defines.py;--dts;/build/source/app/build/zephyr/zephyr.dts.pre;--dtc-flags;'-Wno-unique_unit_address_if_enabled';--bindings-dirs;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module/dts/bindings;/build/source/app/module/dts/bindings;/build/source/app/dts/bindings;/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/dts/bindings;--header-out;/build/source/app/build/zephyr/include/generated/devicetree_generated.h.new;--dts-out;/build/source/app/build/zephyr/zephyr.dts.new;--edt-pickle-out;/build/source/app/build/zephyr/edt.pickle;--vendor-prefixes;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/build/source/app/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/dts/bindings/vendor-prefixes.txt
+2026-02-25T03:51:27.1940932Z CMake Error at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/cmake/modules/dts.cmake:279 (message):
+2026-02-25T03:51:27.1941862Z   gen_defines.py failed with return code: 1
+2026-02-25T03:51:27.1942492Z Call Stack (most recent call first):
+2026-02-25T03:51:27.1943342Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-02-25T03:51:27.1944716Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-02-25T03:51:27.1946217Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)
+2026-02-25T03:51:27.1947239Z   CMakeLists.txt:9 (find_package)
+2026-02-25T03:51:27.1947499Z 
+2026-02-25T03:51:27.1947505Z 
+2026-02-25T03:51:27.1947666Z -- Configuring incomplete, errors occurred!
+2026-02-25T03:51:27.1979789Z -- In: /build/source/app/build/zephyr, command: /nix/store/3ym73yjdw7yg6sv3nwr0syligji76i3z-python3-3.12.7-env/bin/python;/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/scripts/dts/gen_defines.py;--dts;/build/source/app/build/zephyr/zephyr.dts.pre;--dtc-flags;'-Wno-unique_unit_address_if_enabled';--bindings-dirs;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module/dts/bindings;/build/source/app/module/dts/bindings;/build/source/app/dts/bindings;/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/dts/bindings;--header-out;/build/source/app/build/zephyr/include/generated/devicetree_generated.h.new;--dts-out;/build/source/app/build/zephyr/zephyr.dts.new;--edt-pickle-out;/build/source/app/build/zephyr/edt.pickle;--vendor-prefixes;/nix/store/3581iwklzqcg4iyhlyqqrj7yvvm0pykl-cirque-input-module/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/build/source/app/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/dts/bindings/vendor-prefixes.txt
+2026-02-25T03:51:27.1987864Z CMake Error at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/cmake/modules/dts.cmake:279 (message):
+2026-02-25T03:51:27.1988760Z   gen_defines.py failed with return code: 1
+2026-02-25T03:51:27.1989190Z Call Stack (most recent call first):
+2026-02-25T03:51:27.1989972Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-02-25T03:51:27.1991239Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-02-25T03:51:27.1992888Z   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)
+2026-02-25T03:51:27.1993943Z   CMakeLists.txt:9 (find_package)
+2026-02-25T03:51:27.1994231Z 
+2026-02-25T03:51:27.1994236Z 
+2026-02-25T03:51:27.1994401Z -- Configuring incomplete, errors occurred!
+2026-02-25T03:51:27.2810244Z error: builder for '/nix/store/8x5r6y1y9rc4k4l5s6w8kl80w795ic3j-zmk_glove80_lh.drv' failed with exit code 1;
+2026-02-25T03:51:27.2811187Z        last 10 log lines:
+2026-02-25T03:51:27.2812052Z        > CMake Error at /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/cmake/modules/dts.cmake:279 (message):
+2026-02-25T03:51:27.2813369Z        >   gen_defines.py failed with return code: 1
+2026-02-25T03:51:27.2813893Z        > Call Stack (most recent call first):
+2026-02-25T03:51:27.2814786Z        >   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-02-25T03:51:27.2816218Z        >   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-02-25T03:51:27.2817784Z        >   /nix/store/pz26iwsn417j90xs7y7cwbsjnk7b1riv-zephyr/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:97 (include_boilerplate)
+2026-02-25T03:51:27.2818824Z        >   CMakeLists.txt:9 (find_package)
+2026-02-25T03:51:27.2819234Z        >
+2026-02-25T03:51:27.2819489Z        > 
+2026-02-25T03:51:27.2820162Z        > -- Configuring incomplete, errors occurred!
+2026-02-25T03:51:27.2820948Z        For full logs, run 'nix log /nix/store/8x5r6y1y9rc4k4l5s6w8kl80w795ic3j-zmk_glove80_lh.drv'.
+2026-02-25T03:51:27.3871356Z error: 1 dependencies of derivation '/nix/store/l7s02yxkk19q95sy60g1hcgxli3fa4kv-combined_zmk_glove80_lh_zmk_glove80_rh.drv' failed to build
+2026-02-25T03:51:27.3977850Z ##[error]Process completed with exit code 1.
+2026-02-25T03:51:27.4030999Z Post job cleanup.
+2026-02-25T03:51:27.4496205Z ##[group]Cachix: push
+2026-02-25T03:51:27.4497250Z Pushing is disabled as skipPush is set to true
+2026-02-25T03:51:27.4497881Z ##[endgroup]
+2026-02-25T03:51:27.4595998Z Post job cleanup.
+2026-02-25T03:51:27.5535054Z [command]/usr/bin/git version
+2026-02-25T03:51:27.5570905Z git version 2.52.0
+2026-02-25T03:51:27.5615991Z Temporarily overriding HOME='/home/runner/work/_temp/dd7c9187-c5df-4819-bc67-7828c787b630' before making global git config changes
+2026-02-25T03:51:27.5617357Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-25T03:51:27.5623009Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src
+2026-02-25T03:51:27.5665100Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-25T03:51:27.5697648Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-25T03:51:27.5933392Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-25T03:51:27.5954996Z http.https://github.com/.extraheader
+2026-02-25T03:51:27.5968485Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-02-25T03:51:27.5999173Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-25T03:51:27.6227445Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-25T03:51:27.6258243Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-25T03:51:27.6620241Z Post job cleanup.
+2026-02-25T03:51:27.7580185Z [command]/usr/bin/git version
+2026-02-25T03:51:27.7617939Z git version 2.52.0
+2026-02-25T03:51:27.7661498Z Temporarily overriding HOME='/home/runner/work/_temp/8cfde0bf-1c68-4462-a809-233508a23fab' before making global git config changes
+2026-02-25T03:51:27.7663148Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-25T03:51:27.7676736Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:27.7710020Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-25T03:51:27.7742060Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-25T03:51:27.7967872Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-25T03:51:27.7988632Z http.https://github.com/.extraheader
+2026-02-25T03:51:27.8001320Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-02-25T03:51:27.8031705Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-25T03:51:27.8251927Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-25T03:51:27.8282994Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-25T03:51:27.8620459Z Cleaning up orphan processes

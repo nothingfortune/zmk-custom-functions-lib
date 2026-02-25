@@ -1,0 +1,15 @@
+﻿2026-02-25T03:51:11.1337321Z ##[group]Run if [ "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build" != "${GITHUB_WORKSPACE}" ]; then
+2026-02-25T03:51:11.1338095Z [36;1mif [ "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build" != "${GITHUB_WORKSPACE}" ]; then[0m
+2026-02-25T03:51:11.1338724Z [36;1m  mkdir "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config"[0m
+2026-02-25T03:51:11.1339281Z [36;1m  cp -R config/* "/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/"[0m
+2026-02-25T03:51:11.1339693Z [36;1mfi[0m
+2026-02-25T03:51:11.1339952Z shell: sh -e {0}
+2026-02-25T03:51:11.1340636Z env:
+2026-02-25T03:51:11.1341022Z   build_dir: /tmp/tmp.F78Px5ltJb
+2026-02-25T03:51:11.1341353Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:11.1341690Z   zephyr_version: 4.1.0
+2026-02-25T03:51:11.1341884Z   extra_west_args: 
+2026-02-25T03:51:11.1342141Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-25T03:51:11.1342558Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-25T03:51:11.1343094Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-25T03:51:11.1343469Z ##[endgroup]

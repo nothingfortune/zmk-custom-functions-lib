@@ -1,0 +1,20 @@
+﻿2026-02-25T03:51:35.9105252Z ##[group]Run west zephyr-export
+2026-02-25T03:51:35.9105606Z [36;1mwest zephyr-export[0m
+2026-02-25T03:51:35.9106010Z shell: sh -e {0}
+2026-02-25T03:51:35.9106205Z env:
+2026-02-25T03:51:35.9106388Z   build_dir: /tmp/tmp.F78Px5ltJb
+2026-02-25T03:51:35.9106745Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-25T03:51:35.9107093Z   zephyr_version: 4.1.0
+2026-02-25T03:51:35.9107301Z   extra_west_args: 
+2026-02-25T03:51:35.9107551Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-25T03:51:35.9108008Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-25T03:51:35.9108528Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-25T03:51:35.9108933Z ##[endgroup]
+2026-02-25T03:51:36.4327783Z Zephyr (/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/share/zephyr-package/cmake)
+2026-02-25T03:51:36.4328917Z has been added to the user package registry in:
+2026-02-25T03:51:36.4329440Z ~/.cmake/packages/Zephyr
+2026-02-25T03:51:36.4329776Z 
+2026-02-25T03:51:36.7046351Z ZephyrUnittest (/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/share/zephyrunittest-package/cmake)
+2026-02-25T03:51:36.7047403Z has been added to the user package registry in:
+2026-02-25T03:51:36.7047921Z ~/.cmake/packages/ZephyrUnittest
+2026-02-25T03:51:36.7048179Z 

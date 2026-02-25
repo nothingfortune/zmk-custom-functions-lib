@@ -1,0 +1,13 @@
+﻿2026-02-25T03:50:39.6081537Z ##[group]Run echo "build_matrix=$(yq -oj -I0 'build.yaml')" >> $GITHUB_ENV
+2026-02-25T03:50:39.6082502Z [36;1mecho "build_matrix=$(yq -oj -I0 'build.yaml')" >> $GITHUB_ENV[0m
+2026-02-25T03:50:39.6083174Z [36;1myq -oj "build.yaml"[0m
+2026-02-25T03:50:39.6144207Z shell: /usr/bin/bash -e {0}
+2026-02-25T03:50:39.6144719Z ##[endgroup]
+2026-02-25T03:50:40.0503646Z {
+2026-02-25T03:50:40.0504229Z   "include": [
+2026-02-25T03:50:40.0504673Z     {
+2026-02-25T03:50:40.0505141Z       "board": "slicemk_ergodox_202207_green_left",
+2026-02-25T03:50:40.0506250Z       "shield": "slicemk_ergodox_leftcentral"
+2026-02-25T03:50:40.0506894Z     }
+2026-02-25T03:50:40.0507275Z   ]
+2026-02-25T03:50:40.0507646Z }
