@@ -19,6 +19,8 @@
 #define LAYER_MouseWarp 17
 /* #define LAYER_Gaming 18 Removed Feb 11*/
 #define LAYER_Magic 18
+#define LAYER_Symbol_lh 19
+#define LAYER_Symbol_rh 20
 
 /* To deal with the situation where there is no Lower layer, to keep &lower happy */
 #ifndef LAYER_Lower

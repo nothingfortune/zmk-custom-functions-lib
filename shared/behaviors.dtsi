@@ -74,3 +74,9 @@ thumb_v2_TKZ: thumb_v2_TKZ {
     quick-tap-ms = <THUMB_QUICK_TAP>;
 };
 
+lshft_cw_td: lshft_caps_word_tap_dance {
+    compatible = "zmk,behavior-tap-dance";
+    #binding-cells = <0>;
+    tapping-term-ms = <TD_TAPPING_TERM>;
+    bindings = <&cw> , <&kp LSHFT>;
+};
