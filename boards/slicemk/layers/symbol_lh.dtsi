@@ -1,0 +1,15 @@
+/* slicemk — LAYER 13: Symbol
+ * TODO: see boards/go60/layers/symbol.dtsi */
+
+        LAYER_Symbol {
+            bindings = <
+              &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+              &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+              &kp UNDER &kp AT &kp PRCNT &kp GRAVE &kp COLON &caps_word &trans &trans &trans &trans 
+              &kp G &trans &pair_paren &kp RPAR &kp PLUS &kp EQUAL &kp SQT &magic LAYER_Magic 0 
+              &trans &trans &trans &trans &trans &trans &trans &trans &pair_bracket &kp RBKT 
+              &kp EXCL &kp QMARK &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+              &trans &trans &trans &trans &trans &trans &to LAYER_Base &trans &trans &trans &trans 
+              &trans &trans &trans 
+            >;
+        };

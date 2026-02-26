@@ -3,6 +3,6 @@
 
         LAYER_Magic {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &kp C_BRI_DN &kp C_BRI_UP &kp C_PREV &kp C_NEXT &kp C_PP &trans &trans &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &trans &bt BT_CLR &bt BT_CLR &bootloader &rgb_ug RGB_SPI &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_TOG &trans &trans &none &none &none &none &none &bootloader &sys_reset &rgb_ug RGB_SPD &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFF &none &none &none &none &none &sys_reset &none &none &bt_0 &bt_1 &bt_2 &bt_3 &trans &trans &none &none &none &none &none &trans &trans &out OUT_USB &none &to LAYER_Typing &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &mac_tab_prev &trans &mac_tab_next &trans &trans
             >;
         };

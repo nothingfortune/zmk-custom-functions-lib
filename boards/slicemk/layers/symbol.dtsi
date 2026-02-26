@@ -3,6 +3,6 @@
 
         LAYER_Symbol {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &none &none &none &none &none &none &trans &trans &none &none &none &none &none &none &none &kp TILDE &kp DOLLAR &kp HASH &kp CARET &none &trans &trans &none &kp UNDER &kp AT &kp PRCNT &kp GRAVE &kp COLON &caps_word &kp MINUS &kp STAR &kp PIPE &kp AMPS &none &none &pair_paren &kp RPAR &kp PLUS &kp EQUAL &kp SQT &magic LAYER_Magic 0 &pair_brace &kp RBRC &pair_angle &kp GT &none &trans &trans &none &pair_bracket &kp RBKT &kp EXCL &kp QMARK &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &to LAYER_Base &trans &trans &trans &trans &trans &trans &trans
             >;
         };

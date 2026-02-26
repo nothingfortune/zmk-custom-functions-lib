@@ -3,6 +3,6 @@
 
         LAYER_RightRingy {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &HRM_right_ring_tap_v1B_TKZ Y &HRM_right_ring_tap_v1B_TKZ U &HRM_right_ring_tap_v1B_TKZ I &HRM_right_ring_tap_v1B_TKZ O &HRM_right_ring_tap_v1B_TKZ P &trans &trans &kp A &kp S &kp D &kp F &trans &HRM_right_ring_tap_v1B_TKZ H &HRM_right_ring_index_v1B_TKZ RSHFT J &HRM_right_ring_middy_v1B_TKZ RCTRL K &none &HRM_right_ring_pinky_v1B_TKZ LGUI SEMI &trans &trans &trans &trans &trans &trans &trans &trans &trans &HRM_right_ring_tap_v1B_TKZ N &HRM_right_ring_tap_v1B_TKZ M &HRM_right_ring_tap_v1B_TKZ COMMA &HRM_right_ring_tap_v1B_TKZ DOT &HRM_right_ring_tap_v1B_TKZ QMARK &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };

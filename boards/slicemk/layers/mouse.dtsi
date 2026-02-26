@@ -3,6 +3,6 @@
 
         LAYER_Mouse {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &kp ESC &mac_mission_ctl &msc SCRL_UP &trans &mkp RCLK &kp LG(MINUS) &trans &trans &trans &trans &trans &trans &mac_mission_ctl &mac_app_expose &mac_app_expose &trans &msc SCRL_DOWN &mmv MOVE_UP &mkp LCLK &kp LG(PLUS) &trans &trans &trans &trans &mmv MOVE_UP &trans &trans &trans &trans &msc SCRL_LEFT &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &msc SCRL_RIGHT &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans &none &msc SCRL_DOWN &mo LAYER_MouseSlow &mo LAYER_MouseFast &mo LAYER_MouseWarp &kp DEL &trans &trans &trans &mo LAYER_MouseWarp &mo LAYER_MouseFast &mo LAYER_MouseSlow &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL &trans &trans &mkp LCLK &trans &trans &trans &trans
             >;
         };

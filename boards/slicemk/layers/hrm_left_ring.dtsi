@@ -3,6 +3,6 @@
 
         LAYER_LeftRingy {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &HRM_left_ring_tap_v1B_TKZ EQUAL &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &HRM_left_ring_tap_v1B_TKZ Q &HRM_left_ring_tap_v1B_TKZ W &HRM_left_ring_tap_v1B_TKZ E &HRM_left_ring_tap_v1B_TKZ R &HRM_left_ring_tap_v1B_TKZ T &trans &trans &trans &trans &trans &trans &trans &trans &trans &HRM_left_ring_pinky_v1B_TKZ LGUI A &none &HRM_left_ring_middy_v1B_TKZ LCTRL D &HRM_left_ring_index_v1B_TKZ LSHFT F &HRM_left_ring_tap_v1B_TKZ G &trans &kp J &kp K &kp K &kp SEMI &trans &trans &HRM_left_ring_tap_v1B_TKZ Z &HRM_left_ring_tap_v1B_TKZ X &HRM_left_ring_tap_v1B_TKZ C &HRM_left_ring_tap_v1B_TKZ V &HRM_left_ring_tap_v1B_TKZ B &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };

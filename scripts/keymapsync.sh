@@ -58,43 +58,95 @@ parse_bindings() {
   [[ -n "$current" ]] && _b+=("$current")
 }
 
-# Rewrite the bindings block of a dtsi file with a new set of binding groups
+# Update only the bindings that changed, preserving all comments and whitespace.
 write_bindings() {
   local file="$1"
   local -n _new="$2"
 
-  local indent
-  indent=$(grep -m1 'bindings' "$file" | sed -E 's/(^[[:space:]]*).*/\1/')
+  local plscript
+  plscript=$(mktemp /tmp/keymapsync_XXXXXX.pl)
+  cat > "$plscript" << 'PLEOF'
+use strict;
+use warnings;
+my ($file, @new_bindings) = @ARGV;
+open(my $fh, '<', $file) or die "Cannot open $file: $!";
+my $content = do { local $/; <$fh> };
+close($fh);
 
-  local blk
-  blk=$(mktemp)
-  {
-    printf '%sbindings = <\n' "$indent"
-    local line="${indent}  "
-    for b in "${_new[@]}"; do
-      if (( ${#line} + ${#b} + 1 > 100 )); then
-        printf '%s\n' "$line"
-        line="${indent}  "
-      fi
-      line+="$b "
-    done
-    printf '%s\n' "$line"
-    printf '%s>;\n' "$indent"
-  } > "$blk"
+# Locate the bindings block
+$content =~ /bindings\s*=\s*<(.*?)>;/s or exit 0;
+my ($bs, $be) = ($-[1], $+[1]);
+my $block = $1;
 
-  awk -v blk="$blk" '
-    BEGIN { skip = 0 }
-    /bindings[[:space:]]*=/ {
-      while ((getline ln < blk) > 0) print ln
-      close(blk)
-      skip = 1; next
+# Parse the character span of each binding token in the original block.
+# Skips /* */ and // comments; treats horizontal-whitespace-only gaps as
+# parameter separators (stops at newlines so params stay on their line).
+my @spans;
+my $i = 0;
+my $len = length($block);
+while ($i < $len) {
+    if (substr($block, $i, 2) eq '/*') {
+        my $e = index($block, '*/', $i + 2);
+        $i = ($e >= 0) ? $e + 2 : $len; next;
     }
-    skip && />[[:space:]]*;/ { skip = 0; next }
-    !skip { print }
-  ' "$file" > "${file}.tmp"
+    if (substr($block, $i, 2) eq '//') {
+        my $e = index($block, "\n", $i + 2);
+        $i = ($e >= 0) ? $e + 1 : $len; next;
+    }
+    if (substr($block, $i, 1) =~ /\s/) { $i++; next; }
+    if (substr($block, $i, 1) eq '&') {
+        my $start = $i;
+        while ($i < $len
+               && substr($block, $i, 1) !~ /\s/
+               && substr($block, $i, 2) ne '/*'
+               && substr($block, $i, 2) ne '//') { $i++; }
+        my $end = $i;
+      PARAM: while (1) {
+            my $j = $i;
+            while ($j < $len && substr($block, $j, 1) =~ /[ \t]/) { $j++; }
+            last PARAM if $j >= $len;
+            last PARAM if substr($block, $j, 1) eq '&';
+            last PARAM if substr($block, $j, 2) eq '/*';
+            last PARAM if substr($block, $j, 2) eq '//';
+            last PARAM if substr($block, $j, 1) =~ /[\r\n]/;
+            $i = $j;
+            while ($i < $len
+                   && substr($block, $i, 1) !~ /\s/
+                   && substr($block, $i, 2) ne '/*'
+                   && substr($block, $i, 2) ne '//') { $i++; }
+            $end = $i;
+        }
+        push @spans, [$start, $end];
+    } else {
+        while ($i < $len && substr($block, $i, 1) !~ /\s/) { $i++; }
+    }
+}
 
-  rm -f "$blk"
-  mv "${file}.tmp" "$file"
+# Build list of replacements (only where binding text actually changed)
+my @reps;
+for my $idx (0 .. $#spans) {
+    next if $idx >= scalar(@new_bindings);
+    my ($s, $e) = @{$spans[$idx]};
+    my $old = substr($block, $s, $e - $s); $old =~ s/\s+/ /g; $old =~ s/^\s+|\s+$//g;
+    my $new = $new_bindings[$idx];         $new =~ s/^\s+|\s+$//g;
+    push @reps, [$bs + $s, $bs + $e, $new] if $old ne $new;
+}
+
+exit 0 unless @reps;
+
+# Apply in reverse order so earlier offsets stay valid
+for my $r (sort { $b->[0] <=> $a->[0] } @reps) {
+    my ($s, $e, $n) = @$r;
+    substr($content, $s, $e - $s) = $n;
+}
+
+open($fh, '>', $file) or die "Cannot write $file: $!";
+print $fh $content;
+close($fh);
+PLEOF
+
+  perl "$plscript" "$file" "${_new[@]}"
+  rm -f "$plscript"
 }
 
 # Apply a positional translation from go60 to one target board layer file.
@@ -132,8 +184,8 @@ sync_layer() {
 # ── main ─────────────────────────────────────────────────────────────────────
 
 declare -A fwd_glove80 fwd_slicemk
-load_map "$TRANS_DIR/go60_to_glove80.txt" fwd_glove80
-load_map "$TRANS_DIR/go60_to_slicemk.txt" fwd_slicemk
+load_map "$TRANS_DIR/go60_to_glove80.map" fwd_glove80
+load_map "$TRANS_DIR/go60_to_slicemk.map" fwd_slicemk
 
 echo "==> go60 → glove80"
 for f in "$GO60_DIR"/*.dtsi; do

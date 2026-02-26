@@ -3,6 +3,6 @@
 
         LAYER_Cursor {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &none &trans &mkp RCLK &kp LG(PLUS) &trans &trans &msc SCRL_UP &trans &trans &trans &trans &trans &trans &trans &none &mmv MOVE_UP &mkp LCLK &kp LG(MINUS) &trans &trans &msc SCRL_DOWN &trans &mmv MOVE_UP &trans &trans &trans &trans &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none &trans &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &trans &trans &none &none &none &mo LAYER_MouseFast &mo LAYER_MouseWarp &mo LAYER_MouseSlow &trans &trans &mo LAYER_MouseSlow &mo LAYER_MouseFast &mo LAYER_MouseWarp &none &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp DEL &mkp RCLK &mkp LCLK &mkp LCLK &mkp RCLK &trans &trans &trans
             >;
         };
