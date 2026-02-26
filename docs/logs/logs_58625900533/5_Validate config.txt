@@ -1,0 +1,284 @@
+﻿2026-02-26T05:34:06.3372211Z Current runner version: '2.331.0'
+2026-02-26T05:34:06.3399116Z ##[group]Runner Image Provisioner
+2026-02-26T05:34:06.3400200Z Hosted Compute Agent
+2026-02-26T05:34:06.3400775Z Version: 20260213.493
+2026-02-26T05:34:06.3401345Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-02-26T05:34:06.3402138Z Build Date: 2026-02-13T00:28:41Z
+2026-02-26T05:34:06.3402757Z Worker ID: {458d9fe1-e8ed-4568-b664-a56c256ac0f4}
+2026-02-26T05:34:06.3403471Z Azure Region: eastus2
+2026-02-26T05:34:06.3404029Z ##[endgroup]
+2026-02-26T05:34:06.3405512Z ##[group]Operating System
+2026-02-26T05:34:06.3406123Z Ubuntu
+2026-02-26T05:34:06.3406618Z 24.04.3
+2026-02-26T05:34:06.3407138Z LTS
+2026-02-26T05:34:06.3407600Z ##[endgroup]
+2026-02-26T05:34:06.3408141Z ##[group]Runner Image
+2026-02-26T05:34:06.3408823Z Image: ubuntu-24.04
+2026-02-26T05:34:06.3409654Z Version: 20260224.36.1
+2026-02-26T05:34:06.3411846Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260224.36/images/ubuntu/Ubuntu2404-Readme.md
+2026-02-26T05:34:06.3414471Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260224.36
+2026-02-26T05:34:06.3416222Z ##[endgroup]
+2026-02-26T05:34:06.3418484Z ##[group]GITHUB_TOKEN Permissions
+2026-02-26T05:34:06.3421628Z Contents: read
+2026-02-26T05:34:06.3422772Z Metadata: read
+2026-02-26T05:34:06.3423559Z Packages: read
+2026-02-26T05:34:06.3424334Z ##[endgroup]
+2026-02-26T05:34:06.3427239Z Secret source: Actions
+2026-02-26T05:34:06.3428748Z Prepare workflow directory
+2026-02-26T05:34:06.3886930Z Prepare all required actions
+2026-02-26T05:34:06.3943415Z Getting action download info
+2026-02-26T05:34:06.6480201Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-02-26T05:34:06.8717169Z Complete job name: Validate config
+2026-02-26T05:34:06.9512783Z ##[group]Run actions/checkout@v4
+2026-02-26T05:34:06.9513612Z with:
+2026-02-26T05:34:06.9514091Z   repository: nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:06.9514825Z   token: ***
+2026-02-26T05:34:06.9515230Z   ssh-strict: true
+2026-02-26T05:34:06.9515610Z   ssh-user: git
+2026-02-26T05:34:06.9516044Z   persist-credentials: true
+2026-02-26T05:34:06.9516539Z   clean: true
+2026-02-26T05:34:06.9517016Z   sparse-checkout-cone-mode: true
+2026-02-26T05:34:06.9517481Z   fetch-depth: 1
+2026-02-26T05:34:06.9517847Z   fetch-tags: false
+2026-02-26T05:34:06.9518234Z   show-progress: true
+2026-02-26T05:34:06.9518775Z   lfs: false
+2026-02-26T05:34:06.9519129Z   submodules: false
+2026-02-26T05:34:06.9519513Z   set-safe-directory: true
+2026-02-26T05:34:06.9520198Z ##[endgroup]
+2026-02-26T05:34:07.0636180Z Syncing repository: nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:07.0637911Z ##[group]Getting Git version info
+2026-02-26T05:34:07.0639332Z Working directory is '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build'
+2026-02-26T05:34:07.0641373Z [command]/usr/bin/git version
+2026-02-26T05:34:07.0739246Z git version 2.53.0
+2026-02-26T05:34:07.0766580Z ##[endgroup]
+2026-02-26T05:34:07.0791010Z Temporarily overriding HOME='/home/runner/work/_temp/ea994b5c-ba87-4af2-bd9e-77dad0c30162' before making global git config changes
+2026-02-26T05:34:07.0796039Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T05:34:07.0797650Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:07.0838912Z Deleting the contents of '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build'
+2026-02-26T05:34:07.0842294Z ##[group]Initializing the repository
+2026-02-26T05:34:07.0846462Z [command]/usr/bin/git init /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:07.0993741Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-26T05:34:07.0995203Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-26T05:34:07.0996236Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-26T05:34:07.0997698Z hint: call:
+2026-02-26T05:34:07.0998581Z hint:
+2026-02-26T05:34:07.0999200Z hint: 	git config --global init.defaultBranch <name>
+2026-02-26T05:34:07.1000312Z hint:
+2026-02-26T05:34:07.1001415Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-26T05:34:07.1003089Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-26T05:34:07.1004387Z hint:
+2026-02-26T05:34:07.1005107Z hint: 	git branch -m <name>
+2026-02-26T05:34:07.1005925Z hint:
+2026-02-26T05:34:07.1006920Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-26T05:34:07.1009295Z Initialized empty Git repository in /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/.git/
+2026-02-26T05:34:07.1012766Z [command]/usr/bin/git remote add origin https://github.com/nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:07.1049957Z ##[endgroup]
+2026-02-26T05:34:07.1051168Z ##[group]Disabling automatic garbage collection
+2026-02-26T05:34:07.1054952Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-26T05:34:07.1085355Z ##[endgroup]
+2026-02-26T05:34:07.1086551Z ##[group]Setting up auth
+2026-02-26T05:34:07.1093354Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T05:34:07.1126134Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-26T05:34:07.1494232Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-26T05:34:07.1527488Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-26T05:34:07.1759202Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-26T05:34:07.1793042Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-26T05:34:07.2029714Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-26T05:34:07.2066095Z ##[endgroup]
+2026-02-26T05:34:07.2067324Z ##[group]Fetching the repository
+2026-02-26T05:34:07.2076096Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +35c0eaf65b3cac31d64e09375a8e9dbd2b8063f9:refs/remotes/origin/main
+2026-02-26T05:34:07.4506755Z From https://github.com/nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:07.4508682Z  * [new ref]         35c0eaf65b3cac31d64e09375a8e9dbd2b8063f9 -> origin/main
+2026-02-26T05:34:07.4543994Z ##[endgroup]
+2026-02-26T05:34:07.4545429Z ##[group]Determining the checkout info
+2026-02-26T05:34:07.4547134Z ##[endgroup]
+2026-02-26T05:34:07.4552630Z [command]/usr/bin/git sparse-checkout disable
+2026-02-26T05:34:07.4597079Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-26T05:34:07.4624715Z ##[group]Checking out the ref
+2026-02-26T05:34:07.4629459Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-26T05:34:07.4841279Z Switched to a new branch 'main'
+2026-02-26T05:34:07.4844207Z branch 'main' set up to track 'origin/main'.
+2026-02-26T05:34:07.4852091Z ##[endgroup]
+2026-02-26T05:34:07.4888634Z [command]/usr/bin/git log -1 --format=%H
+2026-02-26T05:34:07.4912116Z 35c0eaf65b3cac31d64e09375a8e9dbd2b8063f9
+2026-02-26T05:34:07.5109361Z ##[group]Run bash scripts/validation.sh
+2026-02-26T05:34:07.5110120Z [36;1mbash scripts/validation.sh[0m
+2026-02-26T05:34:07.5163756Z shell: /usr/bin/bash -e {0}
+2026-02-26T05:34:07.5164301Z ##[endgroup]
+2026-02-26T05:34:07.5288829Z 
+2026-02-26T05:34:07.5289798Z ── 1. Required files
+2026-02-26T05:34:07.5291172Z   PASS  shared/layers.dtsi
+2026-02-26T05:34:07.5292105Z   PASS  shared/macros.dtsi
+2026-02-26T05:34:07.5293141Z   PASS  shared/behaviors.dtsi
+2026-02-26T05:34:07.5295387Z   PASS  shared/modMorphs.dtsi
+2026-02-26T05:34:07.5296481Z   PASS  shared/autoshift.dtsi
+2026-02-26T05:34:07.5297574Z   PASS  shared/bluetooth.dtsi
+2026-02-26T05:34:07.5298735Z   PASS  shared/magic.dtsi
+2026-02-26T05:34:07.5299759Z   PASS  shared/global_timings.dtsi
+2026-02-26T05:34:07.5300449Z   PASS  shared/homeRowMods/hrm_macros.dtsi
+2026-02-26T05:34:07.5301076Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi
+2026-02-26T05:34:07.5301686Z   PASS  shared/combos/combos_common.dtsi
+2026-02-26T05:34:07.5302323Z   PASS  shared/combos/combos_fkeys.dtsi
+2026-02-26T05:34:07.5302865Z   PASS  boards/go60/positions.dtsi
+2026-02-26T05:34:07.5303671Z   PASS  boards/go60/position_groups.dtsi
+2026-02-26T05:34:07.5304239Z   PASS  boards/go60/board_meta.dtsi
+2026-02-26T05:34:07.5304766Z   PASS  boards/go60/go60.keymap
+2026-02-26T05:34:07.5305290Z   PASS  boards/go60/go60.conf
+2026-02-26T05:34:07.5305812Z   PASS  boards/glove80/positions.dtsi
+2026-02-26T05:34:07.5306747Z   PASS  boards/glove80/position_groups.dtsi
+2026-02-26T05:34:07.5307336Z   PASS  boards/glove80/board_meta.dtsi
+2026-02-26T05:34:07.5307902Z   PASS  boards/glove80/glove80.keymap
+2026-02-26T05:34:07.5308846Z   PASS  boards/glove80/glove80.conf
+2026-02-26T05:34:07.5309661Z   PASS  boards/slicemk/positions.dtsi
+2026-02-26T05:34:07.5310263Z   PASS  boards/slicemk/position_groups.dtsi
+2026-02-26T05:34:07.5310847Z   PASS  boards/slicemk/board_meta.dtsi
+2026-02-26T05:34:07.5311683Z   PASS  boards/slicemk/slicemk.keymap
+2026-02-26T05:34:07.5312704Z   PASS  boards/slicemk/slicemk.conf
+2026-02-26T05:34:07.5313655Z   PASS  config/west.yml
+2026-02-26T05:34:07.5314521Z   PASS  config/slicemk_ergodox.keymap
+2026-02-26T05:34:07.5315576Z   PASS  config/slicemk_ergodox_leftcentral.conf
+2026-02-26T05:34:07.5316495Z   PASS  build/go60.nix
+2026-02-26T05:34:07.5317000Z   PASS  build/glove80.nix
+2026-02-26T05:34:07.5317446Z   PASS  build.yaml
+2026-02-26T05:34:07.5317879Z   PASS  .github/workflows/build.yml
+2026-02-26T05:34:07.5318236Z 
+2026-02-26T05:34:07.5318697Z ── 2. Layer files per board (expect 21)
+2026-02-26T05:34:07.5319380Z   PASS  boards/go60/layers/ — all 21 layer files present
+2026-02-26T05:34:07.5320149Z   PASS  boards/glove80/layers/ — all 21 layer files present
+2026-02-26T05:34:07.5320989Z   PASS  boards/slicemk/layers/ — all 21 layer files present
+2026-02-26T05:34:07.5332616Z   PASS  boards/go60 keymap — 21 layer includes in keymap (expected 21)
+2026-02-26T05:34:07.5352229Z   PASS  boards/glove80 keymap — 19 layer includes in keymap (expected 19)
+2026-02-26T05:34:07.5371602Z   PASS  boards/slicemk keymap — 18 layer includes in keymap (expected 18)
+2026-02-26T05:34:07.5372355Z 
+2026-02-26T05:34:07.5372623Z ── 3. Position counts
+2026-02-26T05:34:07.5391786Z   PASS  boards/go60/positions.dtsi — 60 positions
+2026-02-26T05:34:07.5411735Z   PASS  boards/glove80/positions.dtsi — 80 positions
+2026-02-26T05:34:07.5431601Z   PASS  boards/slicemk/positions.dtsi — 77 positions
+2026-02-26T05:34:07.5432410Z 
+2026-02-26T05:34:07.5432692Z ── 4. Binding counts per layer
+2026-02-26T05:34:07.6317770Z   PASS  boards/go60/layers/ — all layers have 60 bindings
+2026-02-26T05:34:07.7186838Z   PASS  boards/glove80/layers/ — all layers have 80 bindings
+2026-02-26T05:34:07.8261313Z   PASS  boards/slicemk/layers/ — all layers have 77 bindings
+2026-02-26T05:34:07.8262103Z 
+2026-02-26T05:34:07.8262519Z ── 5. Combo DTS wrapper
+2026-02-26T05:34:07.8277713Z   PASS  boards/go60 keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-26T05:34:07.8295098Z   PASS  boards/glove80 keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-26T05:34:07.8310218Z   PASS  boards/slicemk keymap — / { combos { compatible = "zmk,combos"; }; } present
+2026-02-26T05:34:07.8325609Z   PASS  shared/combos/combos_common.dtsi — correctly has no wrapper
+2026-02-26T05:34:07.8340714Z   PASS  shared/combos/combos_fkeys.dtsi — correctly has no wrapper
+2026-02-26T05:34:07.8341771Z 
+2026-02-26T05:34:07.8342193Z ── 6. Shared includes in board keymaps
+2026-02-26T05:34:07.8482950Z   PASS  boards/go60 keymap — all 10 shared includes present
+2026-02-26T05:34:07.8624417Z   PASS  boards/glove80 keymap — all 10 shared includes present
+2026-02-26T05:34:07.8754696Z   PASS  boards/slicemk keymap — all 9 shared includes present
+2026-02-26T05:34:07.8770327Z   PASS  boards/slicemk keymap — rgb.h correctly excluded
+2026-02-26T05:34:07.8785835Z   PASS  boards/slicemk keymap — shared/magic.dtsi correctly excluded
+2026-02-26T05:34:07.8801489Z   PASS  boards/slicemk keymap — layers/magic.dtsi correctly excluded from keymap
+2026-02-26T05:34:07.8802943Z 
+2026-02-26T05:34:07.8803496Z ── 7. Position group defines
+2026-02-26T05:34:07.8877171Z   PASS  boards/go60/position_groups.dtsi — all 5 groups defined
+2026-02-26T05:34:07.8950237Z   PASS  boards/glove80/position_groups.dtsi — all 5 groups defined
+2026-02-26T05:34:07.9020791Z   PASS  boards/slicemk/position_groups.dtsi — all 5 groups defined
+2026-02-26T05:34:07.9022481Z 
+2026-02-26T05:34:07.9023048Z ── 8. Layer constants in shared/layers.dtsi
+2026-02-26T05:34:07.9314164Z   PASS  shared/layers.dtsi — all 21 LAYER_* constants defined
+2026-02-26T05:34:07.9316253Z 
+2026-02-26T05:34:07.9316872Z ── 9. SliceMK build config
+2026-02-26T05:34:07.9330505Z   PASS  build.yaml — board: slicemk_ergodox_202207_green_left
+2026-02-26T05:34:07.9346019Z   PASS  build.yaml — shield: slicemk_ergodox_leftcentral
+2026-02-26T05:34:07.9362660Z   PASS  config/west.yml — slicemk remote declared
+2026-02-26T05:34:07.9378100Z   PASS  config/west.yml — self: path present
+2026-02-26T05:34:07.9380046Z 
+2026-02-26T05:34:07.9380906Z ── 10. GitHub Actions workflow
+2026-02-26T05:34:07.9394513Z   PASS  .github/workflows/build.yml — Go60 Nix build present
+2026-02-26T05:34:07.9410500Z   PASS  .github/workflows/build.yml — Glove80 Nix build present
+2026-02-26T05:34:07.9426133Z   PASS  .github/workflows/build.yml — SliceMK reusable workflow present
+2026-02-26T05:34:07.9441590Z   PASS  .github/workflows/build.yml — MoErgo Cachix cache configured
+2026-02-26T05:34:07.9443180Z 
+2026-02-26T05:34:07.9443716Z ── 11. Stub status (informational)
+2026-02-26T05:34:08.0308143Z   PASS  boards/glove80/layers/ — all layers have real bindings
+2026-02-26T05:34:08.1180690Z   PASS  boards/slicemk/layers/ — all layers have real bindings
+2026-02-26T05:34:08.1182659Z 
+2026-02-26T05:34:08.1184332Z ── 12. Include ordering: layers.dtsi + global_timings.dtsi before board_meta.dtsi
+2026-02-26T05:34:08.1260540Z   PASS  boards/go60 keymap — layers.dtsi (line 46) before board_meta.dtsi (line 50)
+2026-02-26T05:34:08.1264431Z   PASS  boards/go60 keymap — global_timings.dtsi (line 47) before board_meta.dtsi (line 50)
+2026-02-26T05:34:08.1340404Z   PASS  boards/glove80 keymap — layers.dtsi (line 44) before board_meta.dtsi (line 48)
+2026-02-26T05:34:08.1343944Z   PASS  boards/glove80 keymap — global_timings.dtsi (line 45) before board_meta.dtsi (line 48)
+2026-02-26T05:34:08.1411553Z   PASS  boards/slicemk keymap — layers.dtsi (line 43) before board_meta.dtsi (line 47)
+2026-02-26T05:34:08.1415847Z   PASS  boards/slicemk keymap — global_timings.dtsi (line 44) before board_meta.dtsi (line 47)
+2026-02-26T05:34:08.1417511Z 
+2026-02-26T05:34:08.1418524Z ── 13. Behavior/macro includes inside / { behaviors { } } block
+2026-02-26T05:34:08.1687521Z   PASS  boards/go60 keymap — all behavior/macro includes are inside a / { } block
+2026-02-26T05:34:08.1956583Z   PASS  boards/glove80 keymap — all behavior/macro includes are inside a / { } block
+2026-02-26T05:34:08.2227549Z   PASS  boards/slicemk keymap — all behavior/macro includes are inside a / { } block
+2026-02-26T05:34:08.2230605Z 
+2026-02-26T05:34:08.2231347Z ── 14. Duplicate DTS labels in shared dtsi files
+2026-02-26T05:34:08.2356241Z   PASS  shared/bluetooth.dtsi — no duplicate labels
+2026-02-26T05:34:08.2393681Z   PASS  shared/combos/combos_fkeys.dtsi — no duplicate labels
+2026-02-26T05:34:08.2430462Z   PASS  shared/combos/combos_common.dtsi — no duplicate labels
+2026-02-26T05:34:08.2467707Z   PASS  shared/global_timings.dtsi — no duplicate labels
+2026-02-26T05:34:08.2507834Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi — no duplicate labels
+2026-02-26T05:34:08.2547335Z   PASS  shared/homeRowMods/hrm_macros.dtsi — no duplicate labels
+2026-02-26T05:34:08.2585882Z   PASS  shared/macros.dtsi — no duplicate labels
+2026-02-26T05:34:08.2624882Z   PASS  shared/autoshift.dtsi — no duplicate labels
+2026-02-26T05:34:08.2663381Z   PASS  shared/modMorphs.dtsi — no duplicate labels
+2026-02-26T05:34:08.2702857Z   PASS  shared/behaviors.dtsi — no duplicate labels
+2026-02-26T05:34:08.2740383Z   PASS  shared/layers.dtsi — no duplicate labels
+2026-02-26T05:34:08.2778143Z   PASS  shared/magic.dtsi — no duplicate labels
+2026-02-26T05:34:08.2780085Z 
+2026-02-26T05:34:08.2781419Z ── 15. Layer index continuity in shared/layers.dtsi
+2026-02-26T05:34:08.2836238Z   PASS  shared/layers.dtsi — 21 layer indices are contiguous (0–20)
+2026-02-26T05:34:08.2839215Z 
+2026-02-26T05:34:08.2840330Z ── 16. Auto-pair macros defined in shared/macros.dtsi
+2026-02-26T05:34:08.2854751Z   PASS  shared/macros.dtsi — pair_paren defined
+2026-02-26T05:34:08.2871348Z   PASS  shared/macros.dtsi — pair_angle defined
+2026-02-26T05:34:08.2887751Z   PASS  shared/macros.dtsi — pair_dquote defined
+2026-02-26T05:34:08.2904053Z   PASS  shared/macros.dtsi — pair_bracket defined
+2026-02-26T05:34:08.2919515Z   PASS  shared/macros.dtsi — pair_brace defined
+2026-02-26T05:34:08.2935667Z   PASS  shared/macros.dtsi — rgb_ug_status_macro correctly absent
+2026-02-26T05:34:08.2951846Z   PASS  shared/magic.dtsi — rgb_ug_status_macro defined here (correct location)
+2026-02-26T05:34:08.2953612Z 
+2026-02-26T05:34:08.2954256Z ── 17. pointing.h and mkp_drag_lock in all boards
+2026-02-26T05:34:08.2967603Z   PASS  shared/macros.dtsi — mkp_drag_lock present
+2026-02-26T05:34:08.2983185Z   PASS  boards/go60 keymap — pointing.h included
+2026-02-26T05:34:08.2998801Z   PASS  boards/glove80 keymap — pointing.h included
+2026-02-26T05:34:08.3014937Z   PASS  boards/slicemk keymap — mouse.h included (slicemk/zmk old API)
+2026-02-26T05:34:08.3029329Z 
+2026-02-26T05:34:08.3030340Z ── 18. All &label references in layers/combos resolve
+2026-02-26T05:34:08.6283876Z   PASS  boards/go60 — all &label references in layers/combos resolve
+2026-02-26T05:34:08.9611736Z   PASS  boards/glove80 — all &label references in layers/combos resolve
+2026-02-26T05:34:09.2844155Z   PASS  boards/slicemk — all &label references in layers/combos resolve
+2026-02-26T05:34:09.2844728Z 
+2026-02-26T05:34:09.2845208Z ── 19. hold-tap behaviors must have #binding-cells = <2>
+2026-02-26T05:34:09.2912633Z   PASS  shared/behaviors.dtsi — all hold-tap behaviors have #binding-cells = <2>
+2026-02-26T05:34:09.2971855Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi — all hold-tap behaviors have #binding-cells = <2>
+2026-02-26T05:34:09.2972644Z 
+2026-02-26T05:34:09.2973318Z ── 20. Timing constants in behavior files are defined in global_timings.dtsi
+2026-02-26T05:34:09.3237245Z   PASS  shared/behaviors.dtsi — all timing constants defined in global_timings.dtsi
+2026-02-26T05:34:09.3430122Z   PASS  shared/homeRowMods/hrm_behaviors.dtsi — all timing constants defined in global_timings.dtsi
+2026-02-26T05:34:09.3531681Z   PASS  shared/modMorphs.dtsi — all timing constants defined in global_timings.dtsi
+2026-02-26T05:34:09.3579881Z   PASS  shared/autoshift.dtsi — all timing constants defined in global_timings.dtsi
+2026-02-26T05:34:09.3580572Z 
+2026-02-26T05:34:09.3581036Z ── 21. No behavior/macro definitions inside combo files
+2026-02-26T05:34:09.3843636Z   PASS  shared/combos/combos_fkeys.dtsi — no behavior/macro definitions (combo entries only)
+2026-02-26T05:34:09.3876500Z   PASS  shared/combos/combos_common.dtsi — no behavior/macro definitions (combo entries only)
+2026-02-26T05:34:09.3877312Z 
+2026-02-26T05:34:09.3880485Z ══════════════════════════════════════════════
+2026-02-26T05:34:09.3881136Z   PASS: 115   FAIL: 0     WARN: 0   
+2026-02-26T05:34:09.3881792Z ══════════════════════════════════════════════
+2026-02-26T05:34:09.3882143Z 
+2026-02-26T05:34:09.3982641Z Post job cleanup.
+2026-02-26T05:34:09.4942257Z [command]/usr/bin/git version
+2026-02-26T05:34:09.4979942Z git version 2.53.0
+2026-02-26T05:34:09.5023458Z Temporarily overriding HOME='/home/runner/work/_temp/40067cc8-ad13-4bd1-90f0-78456ace8132' before making global git config changes
+2026-02-26T05:34:09.5024863Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T05:34:09.5029248Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:09.5066257Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T05:34:09.5101579Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-26T05:34:09.5347578Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-26T05:34:09.5372722Z http.https://github.com/.extraheader
+2026-02-26T05:34:09.5385784Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-02-26T05:34:09.5418104Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-26T05:34:09.5655379Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-26T05:34:09.5687419Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-26T05:34:09.6028893Z Cleaning up orphan processes

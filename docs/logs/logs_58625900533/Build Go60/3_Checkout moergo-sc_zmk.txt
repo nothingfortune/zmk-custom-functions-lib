@@ -1,0 +1,75 @@
+﻿2026-02-26T05:34:15.8029828Z ##[group]Run actions/checkout@v4
+2026-02-26T05:34:15.8030856Z with:
+2026-02-26T05:34:15.8031508Z   repository: moergo-sc/zmk
+2026-02-26T05:34:15.8032248Z   ref: main
+2026-02-26T05:34:15.8032861Z   path: src
+2026-02-26T05:34:15.8033935Z   token: ***
+2026-02-26T05:34:15.8034605Z   ssh-strict: true
+2026-02-26T05:34:15.8035270Z   ssh-user: git
+2026-02-26T05:34:15.8035973Z   persist-credentials: true
+2026-02-26T05:34:15.8036745Z   clean: true
+2026-02-26T05:34:15.8037445Z   sparse-checkout-cone-mode: true
+2026-02-26T05:34:15.8038266Z   fetch-depth: 1
+2026-02-26T05:34:15.8038933Z   fetch-tags: false
+2026-02-26T05:34:15.8039624Z   show-progress: true
+2026-02-26T05:34:15.8040319Z   lfs: false
+2026-02-26T05:34:15.8040961Z   submodules: false
+2026-02-26T05:34:15.8041663Z   set-safe-directory: true
+2026-02-26T05:34:15.8042417Z ##[endgroup]
+2026-02-26T05:34:15.9060416Z Syncing repository: moergo-sc/zmk
+2026-02-26T05:34:15.9062972Z ##[group]Getting Git version info
+2026-02-26T05:34:15.9065791Z Working directory is '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src'
+2026-02-26T05:34:15.9069504Z [command]/usr/bin/git version
+2026-02-26T05:34:15.9095721Z git version 2.53.0
+2026-02-26T05:34:15.9123787Z ##[endgroup]
+2026-02-26T05:34:15.9139161Z Temporarily overriding HOME='/home/runner/work/_temp/7ebda700-ea62-4598-ab92-ca579d18d431' before making global git config changes
+2026-02-26T05:34:15.9143365Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T05:34:15.9154175Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src
+2026-02-26T05:34:15.9186227Z ##[group]Initializing the repository
+2026-02-26T05:34:15.9192850Z [command]/usr/bin/git init /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src
+2026-02-26T05:34:15.9230625Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-26T05:34:15.9233543Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-26T05:34:15.9236315Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-26T05:34:15.9238502Z hint: call:
+2026-02-26T05:34:15.9239624Z hint:
+2026-02-26T05:34:15.9240943Z hint: 	git config --global init.defaultBranch <name>
+2026-02-26T05:34:15.9242653Z hint:
+2026-02-26T05:34:15.9244588Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-26T05:34:15.9247279Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-26T05:34:15.9249305Z hint:
+2026-02-26T05:34:15.9250677Z hint: 	git branch -m <name>
+2026-02-26T05:34:15.9251518Z hint:
+2026-02-26T05:34:15.9252561Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-26T05:34:15.9254844Z Initialized empty Git repository in /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/src/.git/
+2026-02-26T05:34:15.9259627Z [command]/usr/bin/git remote add origin https://github.com/moergo-sc/zmk
+2026-02-26T05:34:15.9277951Z ##[endgroup]
+2026-02-26T05:34:15.9280060Z ##[group]Disabling automatic garbage collection
+2026-02-26T05:34:15.9282119Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-26T05:34:15.9312960Z ##[endgroup]
+2026-02-26T05:34:15.9315282Z ##[group]Setting up auth
+2026-02-26T05:34:15.9320308Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T05:34:15.9353988Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-26T05:34:15.9587392Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-26T05:34:15.9620047Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-26T05:34:15.9850968Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-26T05:34:15.9886192Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-26T05:34:16.0130637Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-26T05:34:16.0166491Z ##[endgroup]
+2026-02-26T05:34:16.0168656Z ##[group]Fetching the repository
+2026-02-26T05:34:16.0177633Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +refs/heads/main*:refs/remotes/origin/main* +refs/tags/main*:refs/tags/main*
+2026-02-26T05:34:16.5187595Z From https://github.com/moergo-sc/zmk
+2026-02-26T05:34:16.5189101Z  * [new branch]      main       -> origin/main
+2026-02-26T05:34:16.5219383Z ##[endgroup]
+2026-02-26T05:34:16.5219926Z ##[group]Determining the checkout info
+2026-02-26T05:34:16.5226859Z [command]/usr/bin/git branch --list --remote origin/main
+2026-02-26T05:34:16.5251569Z   origin/main
+2026-02-26T05:34:16.5257295Z ##[endgroup]
+2026-02-26T05:34:16.5262426Z [command]/usr/bin/git sparse-checkout disable
+2026-02-26T05:34:16.5300573Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-26T05:34:16.5327408Z ##[group]Checking out the ref
+2026-02-26T05:34:16.5332736Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-26T05:34:16.6693843Z Switched to a new branch 'main'
+2026-02-26T05:34:16.6695532Z branch 'main' set up to track 'origin/main'.
+2026-02-26T05:34:16.6705626Z ##[endgroup]
+2026-02-26T05:34:16.6745328Z [command]/usr/bin/git log -1 --format=%H
+2026-02-26T05:34:16.6769638Z 11454d23596afbdb06380a1125371b19ab65675c

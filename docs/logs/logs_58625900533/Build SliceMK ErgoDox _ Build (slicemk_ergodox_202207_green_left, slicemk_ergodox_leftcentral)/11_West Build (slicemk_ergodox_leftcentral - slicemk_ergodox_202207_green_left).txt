@@ -1,0 +1,48 @@
+﻿2026-02-26T05:35:08.3947920Z ##[group]Run west build -s zmk/app -d "/tmp/tmp.o07WgoBpuC" -b "slicemk_ergodox_202207_green_left"  -- -DZMK_CONFIG=/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config -DSHIELD="slicemk_ergodox_leftcentral" 
+2026-02-26T05:35:08.3949927Z [36;1mwest build -s zmk/app -d "/tmp/tmp.o07WgoBpuC" -b "slicemk_ergodox_202207_green_left"  -- -DZMK_CONFIG=/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config -DSHIELD="slicemk_ergodox_leftcentral" [0m
+2026-02-26T05:35:08.3950868Z shell: sh -x {0}
+2026-02-26T05:35:08.3951057Z env:
+2026-02-26T05:35:08.3951234Z   build_dir: /tmp/tmp.o07WgoBpuC
+2026-02-26T05:35:08.3951568Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:35:08.3951903Z   zephyr_version: 4.1.0
+2026-02-26T05:35:08.3952100Z   extra_west_args: 
+2026-02-26T05:35:08.3952350Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-26T05:35:08.3952772Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-26T05:35:08.3953298Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-26T05:35:08.3953688Z ##[endgroup]
+2026-02-26T05:35:08.4505796Z + west build -s zmk/app -d /tmp/tmp.o07WgoBpuC -b slicemk_ergodox_202207_green_left -- -DZMK_CONFIG=/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config -DSHIELD=slicemk_ergodox_leftcentral
+2026-02-26T05:35:08.6443629Z -- west build: generating a build system
+2026-02-26T05:35:08.9327424Z Loading Zephyr default modules (Zephyr base).
+2026-02-26T05:35:08.9329234Z -- Application: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app
+2026-02-26T05:35:09.0800529Z -- Found Python3: /usr/bin/python3.12 (found suitable exact version "3.12.3") found components: Interpreter
+2026-02-26T05:35:09.0940399Z -- Cache files will be written to: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/.cache
+2026-02-26T05:35:09.0993606Z -- Zephyr version: 3.2.0 (/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr)
+2026-02-26T05:35:09.1789268Z -- Found west (found suitable version "1.5.0", minimum required is "0.7.1")
+2026-02-26T05:35:09.6687778Z -- Adding /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox
+2026-02-26T05:35:09.6689808Z -- ZMK Config directory: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config
+2026-02-26T05:35:09.6690967Z -- ZMK Config Kconfig: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/slicemk_ergodox_leftcentral.conf
+2026-02-26T05:35:09.6692297Z -- Using keymap file: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/slicemk_ergodox.keymap
+2026-02-26T05:35:09.6693543Z -- Using keymap file: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/slicemk_ergodox.keymap
+2026-02-26T05:35:09.6749652Z -- Board: slicemk_ergodox_202207_green_left
+2026-02-26T05:35:09.6777319Z -- Shield(s): slicemk_ergodox_leftcentral
+2026-02-26T05:35:09.7050932Z -- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+2026-02-26T05:35:09.7069238Z -- Found host-tools: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+2026-02-26T05:35:09.7077715Z -- Found toolchain: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+2026-02-26T05:35:09.7118632Z -- Found Dtc: /opt/zephyr-sdk-0.16.9/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6")
+2026-02-26T05:35:09.7129013Z -- Found BOARD.dts: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/arm/slicemk_ergodox_202207_green/slicemk_ergodox_202207_green_left.dts
+2026-02-26T05:35:09.7130231Z -- Found devicetree overlay: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/boards/shields/slicemk_ergodox/slicemk_ergodox_leftcentral.overlay
+2026-02-26T05:35:09.7131242Z -- Found devicetree overlay: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config/slicemk_ergodox.keymap
+2026-02-26T05:35:09.8974347Z devicetree error: /keymap/0: undefined node label 'magic'
+2026-02-26T05:35:09.9078718Z CMake Error at /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/cmake/modules/dts.cmake:230 (message):
+2026-02-26T05:35:09.9079961Z   gen_defines.py failed with return code: 1
+2026-02-26T05:35:09.9080275Z Call Stack (most recent call first):
+2026-02-26T05:35:09.9080786Z   /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/cmake/modules/zephyr_default.cmake:108 (include)
+2026-02-26T05:35:09.9085344Z -- In: /tmp/tmp.o07WgoBpuC/zephyr, command: /usr/bin/python3.12;/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/scripts/dts/gen_defines.py;--dts;/tmp/tmp.o07WgoBpuC/zephyr/zephyr.dts.pre;--dtc-flags;'';--bindings-dirs;/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/module/dts/bindings;/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/bindings;/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/bindings;--header-out;/tmp/tmp.o07WgoBpuC/zephyr/include/generated/devicetree_generated.h.new;--dts-out;/tmp/tmp.o07WgoBpuC/zephyr/zephyr.dts.new;--edt-pickle-out;/tmp/tmp.o07WgoBpuC/zephyr/edt.pickle;--vendor-prefixes;/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/dts/bindings/vendor-prefixes.txt
+2026-02-26T05:35:09.9089338Z   /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-02-26T05:35:09.9090226Z   /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+2026-02-26T05:35:09.9090822Z   CMakeLists.txt:8 (find_package)
+2026-02-26T05:35:09.9090991Z 
+2026-02-26T05:35:09.9090996Z 
+2026-02-26T05:35:09.9091107Z -- Configuring incomplete, errors occurred!
+2026-02-26T05:35:09.9112865Z FATAL ERROR: command exited with status 1: /usr/local/bin/cmake -DWEST_PYTHON=/usr/bin/python3 -B/tmp/tmp.o07WgoBpuC -GNinja -DBOARD=slicemk_ergodox_202207_green_left -DZMK_CONFIG=/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/config -DSHIELD=slicemk_ergodox_leftcentral -S/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/app
+2026-02-26T05:35:09.9382205Z ##[error]Process completed with exit code 1.

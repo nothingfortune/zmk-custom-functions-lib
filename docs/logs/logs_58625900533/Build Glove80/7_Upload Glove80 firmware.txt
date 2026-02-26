@@ -1,0 +1,24 @@
+﻿2026-02-26T05:35:59.2622115Z ##[group]Run actions/upload-artifact@v4
+2026-02-26T05:35:59.2622423Z with:
+2026-02-26T05:35:59.2622606Z   name: glove80-firmware
+2026-02-26T05:35:59.2622829Z   path: result-glove80/glove80.uf2
+2026-02-26T05:35:59.2623068Z   retention-days: 90
+2026-02-26T05:35:59.2623470Z   if-no-files-found: warn
+2026-02-26T05:35:59.2623762Z   compression-level: 6
+2026-02-26T05:35:59.2623991Z   overwrite: false
+2026-02-26T05:35:59.2624421Z   include-hidden-files: false
+2026-02-26T05:35:59.2624681Z env:
+2026-02-26T05:35:59.2624858Z   NIX_PATH: nixpkgs=channel:nixos-22.05
+2026-02-26T05:35:59.2625120Z   TMPDIR: /home/runner/work/_temp
+2026-02-26T05:35:59.2625639Z ##[endgroup]
+2026-02-26T05:35:59.4866546Z With the provided path, there will be 1 file uploaded
+2026-02-26T05:35:59.4873018Z Artifact name is valid!
+2026-02-26T05:35:59.4874435Z Root directory input is valid!
+2026-02-26T05:35:59.6930500Z Beginning upload of artifact content to blob storage
+2026-02-26T05:36:00.0819799Z Uploaded bytes 322283
+2026-02-26T05:36:00.1342544Z Finished uploading artifact content to blob storage!
+2026-02-26T05:36:00.1345734Z SHA256 digest of uploaded artifact zip is 927f011b70a65d24646884b2ac728d0c8d7c37327e43679b4663f40a067357ef
+2026-02-26T05:36:00.1348022Z Finalizing artifact upload
+2026-02-26T05:36:00.2428334Z Artifact glove80-firmware.zip successfully finalized. Artifact ID 5666874411
+2026-02-26T05:36:00.2429266Z Artifact glove80-firmware has been successfully uploaded! Final size is 322283 bytes. Artifact ID is 5666874411
+2026-02-26T05:36:00.2436307Z Artifact download URL: https://github.com/nothingfortune/zmk-multi-keyboard-build/actions/runs/22429341008/artifacts/5666874411

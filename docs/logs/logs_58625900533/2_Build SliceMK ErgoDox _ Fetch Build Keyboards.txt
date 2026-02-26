@@ -1,0 +1,140 @@
+﻿2026-02-26T05:34:13.5438274Z Current runner version: '2.331.0'
+2026-02-26T05:34:13.5466223Z ##[group]Runner Image Provisioner
+2026-02-26T05:34:13.5466906Z Hosted Compute Agent
+2026-02-26T05:34:13.5467393Z Version: 20260213.493
+2026-02-26T05:34:13.5468040Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-02-26T05:34:13.5468646Z Build Date: 2026-02-13T00:28:41Z
+2026-02-26T05:34:13.5469238Z Worker ID: {25ccf594-304f-4958-ac35-a4f4c8bb9816}
+2026-02-26T05:34:13.5469872Z Azure Region: northcentralus
+2026-02-26T05:34:13.5470384Z ##[endgroup]
+2026-02-26T05:34:13.5471635Z ##[group]Operating System
+2026-02-26T05:34:13.5472212Z Ubuntu
+2026-02-26T05:34:13.5472597Z 22.04.5
+2026-02-26T05:34:13.5473006Z LTS
+2026-02-26T05:34:13.5473446Z ##[endgroup]
+2026-02-26T05:34:13.5473855Z ##[group]Runner Image
+2026-02-26T05:34:13.5474333Z Image: ubuntu-22.04
+2026-02-26T05:34:13.5475137Z Version: 20260224.45.1
+2026-02-26T05:34:13.5476632Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260224.45/images/ubuntu/Ubuntu2204-Readme.md
+2026-02-26T05:34:13.5477914Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260224.45
+2026-02-26T05:34:13.5478677Z ##[endgroup]
+2026-02-26T05:34:13.5479582Z ##[group]GITHUB_TOKEN Permissions
+2026-02-26T05:34:13.5481507Z Contents: read
+2026-02-26T05:34:13.5482099Z Metadata: read
+2026-02-26T05:34:13.5482497Z Packages: read
+2026-02-26T05:34:13.5483010Z ##[endgroup]
+2026-02-26T05:34:13.5485178Z Secret source: Actions
+2026-02-26T05:34:13.5485781Z Prepare workflow directory
+2026-02-26T05:34:13.5795945Z Prepare all required actions
+2026-02-26T05:34:13.5834589Z Getting action download info
+2026-02-26T05:34:13.8976739Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-02-26T05:34:14.1140517Z Uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/tags/v0.3 (3cf9006a9377f21c99e944e29e2a507d8c3e9069)
+2026-02-26T05:34:14.1144877Z ##[group] Inputs
+2026-02-26T05:34:14.1145474Z   build_matrix_path: build.yaml
+2026-02-26T05:34:14.1145964Z   config_path: config
+2026-02-26T05:34:14.1146451Z   fallback_binary: bin
+2026-02-26T05:34:14.1146899Z   archive_name: firmware
+2026-02-26T05:34:14.1147353Z ##[endgroup]
+2026-02-26T05:34:14.1147905Z Complete job name: Build SliceMK ErgoDox / Fetch Build Keyboards
+2026-02-26T05:34:14.1735773Z ##[group]Run actions/checkout@v4
+2026-02-26T05:34:14.1736602Z with:
+2026-02-26T05:34:14.1737163Z   repository: nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:14.1737961Z   token: ***
+2026-02-26T05:34:14.1738372Z   ssh-strict: true
+2026-02-26T05:34:14.1738742Z   ssh-user: git
+2026-02-26T05:34:14.1739228Z   persist-credentials: true
+2026-02-26T05:34:14.1739652Z   clean: true
+2026-02-26T05:34:14.1740059Z   sparse-checkout-cone-mode: true
+2026-02-26T05:34:14.1740597Z   fetch-depth: 1
+2026-02-26T05:34:14.1740970Z   fetch-tags: false
+2026-02-26T05:34:14.1741387Z   show-progress: true
+2026-02-26T05:34:14.1741809Z   lfs: false
+2026-02-26T05:34:14.1742211Z   submodules: false
+2026-02-26T05:34:14.1742613Z   set-safe-directory: true
+2026-02-26T05:34:14.1743332Z ##[endgroup]
+2026-02-26T05:34:14.2738944Z Syncing repository: nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:14.2740721Z ##[group]Getting Git version info
+2026-02-26T05:34:14.2741754Z Working directory is '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build'
+2026-02-26T05:34:14.2742919Z [command]/usr/bin/git version
+2026-02-26T05:34:14.2786829Z git version 2.53.0
+2026-02-26T05:34:14.2809748Z ##[endgroup]
+2026-02-26T05:34:14.2822963Z Temporarily overriding HOME='/home/runner/work/_temp/990c79c6-4dba-470d-8a51-3fb275fdb46a' before making global git config changes
+2026-02-26T05:34:14.2824177Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T05:34:14.2836492Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:14.2868552Z Deleting the contents of '/home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build'
+2026-02-26T05:34:14.2871736Z ##[group]Initializing the repository
+2026-02-26T05:34:14.2876809Z [command]/usr/bin/git init /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:14.2953109Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-02-26T05:34:14.2955006Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-02-26T05:34:14.2956449Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-02-26T05:34:14.2957283Z hint: call:
+2026-02-26T05:34:14.2957752Z hint:
+2026-02-26T05:34:14.2958226Z hint: 	git config --global init.defaultBranch <name>
+2026-02-26T05:34:14.2958800Z hint:
+2026-02-26T05:34:14.2959339Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-02-26T05:34:14.2960593Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-02-26T05:34:14.2961266Z hint:
+2026-02-26T05:34:14.2961674Z hint: 	git branch -m <name>
+2026-02-26T05:34:14.2962160Z hint:
+2026-02-26T05:34:14.2962706Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-02-26T05:34:14.2963962Z Initialized empty Git repository in /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build/.git/
+2026-02-26T05:34:14.2966050Z [command]/usr/bin/git remote add origin https://github.com/nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:14.2992446Z ##[endgroup]
+2026-02-26T05:34:14.2993163Z ##[group]Disabling automatic garbage collection
+2026-02-26T05:34:14.2996095Z [command]/usr/bin/git config --local gc.auto 0
+2026-02-26T05:34:14.3020504Z ##[endgroup]
+2026-02-26T05:34:14.3021583Z ##[group]Setting up auth
+2026-02-26T05:34:14.3027810Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T05:34:14.3053108Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-26T05:34:14.3320539Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-26T05:34:14.3349120Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-26T05:34:14.3515699Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-26T05:34:14.3540479Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-26T05:34:14.3717327Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-02-26T05:34:14.3745079Z ##[endgroup]
+2026-02-26T05:34:14.3746414Z ##[group]Fetching the repository
+2026-02-26T05:34:14.3754104Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +35c0eaf65b3cac31d64e09375a8e9dbd2b8063f9:refs/remotes/origin/main
+2026-02-26T05:34:14.6825936Z From https://github.com/nothingfortune/zmk-multi-keyboard-build
+2026-02-26T05:34:14.6827059Z  * [new ref]         35c0eaf65b3cac31d64e09375a8e9dbd2b8063f9 -> origin/main
+2026-02-26T05:34:14.6851999Z ##[endgroup]
+2026-02-26T05:34:14.6853771Z ##[group]Determining the checkout info
+2026-02-26T05:34:14.6855913Z ##[endgroup]
+2026-02-26T05:34:14.6859798Z [command]/usr/bin/git sparse-checkout disable
+2026-02-26T05:34:14.6891648Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-02-26T05:34:14.6911629Z ##[group]Checking out the ref
+2026-02-26T05:34:14.6915380Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2026-02-26T05:34:14.7072771Z Switched to a new branch 'main'
+2026-02-26T05:34:14.7073817Z branch 'main' set up to track 'origin/main'.
+2026-02-26T05:34:14.7079638Z ##[endgroup]
+2026-02-26T05:34:14.7108338Z [command]/usr/bin/git log -1 --format=%H
+2026-02-26T05:34:14.7128231Z 35c0eaf65b3cac31d64e09375a8e9dbd2b8063f9
+2026-02-26T05:34:14.7334015Z ##[group]Run echo "build_matrix=$(yq -oj -I0 'build.yaml')" >> $GITHUB_ENV
+2026-02-26T05:34:14.7335427Z [36;1mecho "build_matrix=$(yq -oj -I0 'build.yaml')" >> $GITHUB_ENV[0m
+2026-02-26T05:34:14.7336175Z [36;1myq -oj "build.yaml"[0m
+2026-02-26T05:34:14.7376588Z shell: /usr/bin/bash -e {0}
+2026-02-26T05:34:14.7377277Z ##[endgroup]
+2026-02-26T05:34:15.9661331Z {
+2026-02-26T05:34:15.9662134Z   "include": [
+2026-02-26T05:34:15.9662648Z     {
+2026-02-26T05:34:15.9662987Z       "board": "slicemk_ergodox_202207_green_left",
+2026-02-26T05:34:15.9663503Z       "shield": "slicemk_ergodox_leftcentral"
+2026-02-26T05:34:15.9663837Z     }
+2026-02-26T05:34:15.9664091Z   ]
+2026-02-26T05:34:15.9664374Z }
+2026-02-26T05:34:15.9879400Z Post job cleanup.
+2026-02-26T05:34:16.0743189Z [command]/usr/bin/git version
+2026-02-26T05:34:16.0773647Z git version 2.53.0
+2026-02-26T05:34:16.0810554Z Temporarily overriding HOME='/home/runner/work/_temp/8ed70836-9ae0-4a14-ac75-70139c4181c2' before making global git config changes
+2026-02-26T05:34:16.0811391Z Adding repository directory to the temporary git global config as a safe directory
+2026-02-26T05:34:16.0822883Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:16.0851699Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-02-26T05:34:16.0877978Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-02-26T05:34:16.1051366Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-02-26T05:34:16.1069519Z http.https://github.com/.extraheader
+2026-02-26T05:34:16.1079660Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-02-26T05:34:16.1103652Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-02-26T05:34:16.1267236Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-02-26T05:34:16.1292061Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-02-26T05:34:16.1539709Z Evaluate and set job outputs
+2026-02-26T05:34:16.1547781Z Set output 'build_matrix'
+2026-02-26T05:34:16.1549424Z Cleaning up orphan processes

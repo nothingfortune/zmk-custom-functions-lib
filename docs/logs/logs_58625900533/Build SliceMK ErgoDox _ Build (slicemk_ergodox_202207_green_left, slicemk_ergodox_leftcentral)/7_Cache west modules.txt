@@ -1,0 +1,37 @@
+﻿2026-02-26T05:34:46.3246819Z ##[group]Run actions/cache@v4
+2026-02-26T05:34:46.3247089Z with:
+2026-02-26T05:34:46.3248275Z   path: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/modules/
+/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/tools/
+/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zephyr/
+/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/bootloader/
+/__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build/zmk/
+
+2026-02-26T05:34:46.3250220Z   key: Linux-build-cache-zephyr-4.1.0-modules-3043d4a7ce7cafd0f50e6de6d03f4b5546522e1f32e71344abb7b2a746461cfd
+2026-02-26T05:34:46.3250897Z   restore-keys: Linux-build-cache-zephyr-4.1.0-modules-
+Linux-build-
+Linux-
+
+2026-02-26T05:34:46.3251279Z   enableCrossOsArchive: false
+2026-02-26T05:34:46.3251507Z   fail-on-cache-miss: false
+2026-02-26T05:34:46.3251719Z   lookup-only: false
+2026-02-26T05:34:46.3251901Z   save-always: false
+2026-02-26T05:34:46.3252075Z env:
+2026-02-26T05:34:46.3252241Z   build_dir: /tmp/tmp.o07WgoBpuC
+2026-02-26T05:34:46.3252554Z   base_dir: /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build
+2026-02-26T05:34:46.3252919Z   zephyr_version: 4.1.0
+2026-02-26T05:34:46.3253112Z   extra_west_args: 
+2026-02-26T05:34:46.3253350Z   extra_cmake_args: -DSHIELD="slicemk_ergodox_leftcentral"
+2026-02-26T05:34:46.3253770Z   display_name: slicemk_ergodox_leftcentral - slicemk_ergodox_202207_green_left
+2026-02-26T05:34:46.3254267Z   artifact_name: slicemk_ergodox_leftcentral-slicemk_ergodox_202207_green_left-zmk
+2026-02-26T05:34:46.3254680Z   cache_name: cache-zephyr-4.1.0-modules
+2026-02-26T05:34:46.3254917Z ##[endgroup]
+2026-02-26T05:34:46.3260543Z ##[command]/usr/bin/docker exec  e8e80f61c73b4982b82874d7a56cfe5c6eb0c982f9bc5c77696be53c9d2892ac sh -c "cat /etc/*release | grep ^ID"
+2026-02-26T05:34:46.6853218Z Cache hit for: Linux-build-cache-zephyr-4.1.0-modules-3043d4a7ce7cafd0f50e6de6d03f4b5546522e1f32e71344abb7b2a746461cfd
+2026-02-26T05:34:47.8056334Z Received 134217728 of 697399207 (19.2%), 127.9 MBs/sec
+2026-02-26T05:34:48.8070026Z Received 327155712 of 697399207 (46.9%), 155.9 MBs/sec
+2026-02-26T05:34:49.8876883Z Received 536870912 of 697399207 (77.0%), 166.1 MBs/sec
+2026-02-26T05:34:50.7264921Z Received 697399207 of 697399207 (100.0%), 169.6 MBs/sec
+2026-02-26T05:34:50.7269422Z Cache Size: ~665 MB (697399207 B)
+2026-02-26T05:34:50.7356181Z [command]/usr/bin/tar -xf /__w/_temp/c959e5b9-1f68-4bf8-bdb3-05aa6a2394d9/cache.tgz -P -C /__w/zmk-multi-keyboard-build/zmk-multi-keyboard-build -z
+2026-02-26T05:35:00.8136464Z Cache restored successfully
+2026-02-26T05:35:00.9518283Z Cache restored from key: Linux-build-cache-zephyr-4.1.0-modules-3043d4a7ce7cafd0f50e6de6d03f4b5546522e1f32e71344abb7b2a746461cfd

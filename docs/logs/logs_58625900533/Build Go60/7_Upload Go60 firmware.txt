@@ -1,0 +1,24 @@
+﻿2026-02-26T05:35:58.2800527Z ##[group]Run actions/upload-artifact@v4
+2026-02-26T05:35:58.2800790Z with:
+2026-02-26T05:35:58.2800961Z   name: go60-firmware
+2026-02-26T05:35:58.2801151Z   path: result-go60/go60.uf2
+2026-02-26T05:35:58.2801358Z   retention-days: 90
+2026-02-26T05:35:58.2801541Z   if-no-files-found: warn
+2026-02-26T05:35:58.2801740Z   compression-level: 6
+2026-02-26T05:35:58.2801929Z   overwrite: false
+2026-02-26T05:35:58.2802112Z   include-hidden-files: false
+2026-02-26T05:35:58.2802313Z env:
+2026-02-26T05:35:58.2802477Z   NIX_PATH: nixpkgs=channel:nixos-22.05
+2026-02-26T05:35:58.2802740Z   TMPDIR: /home/runner/work/_temp
+2026-02-26T05:35:58.2802953Z ##[endgroup]
+2026-02-26T05:35:58.4980254Z With the provided path, there will be 1 file uploaded
+2026-02-26T05:35:58.4987009Z Artifact name is valid!
+2026-02-26T05:35:58.4988291Z Root directory input is valid!
+2026-02-26T05:35:58.6721392Z Beginning upload of artifact content to blob storage
+2026-02-26T05:35:58.9351335Z Uploaded bytes 338550
+2026-02-26T05:35:58.9712537Z Finished uploading artifact content to blob storage!
+2026-02-26T05:35:58.9716538Z SHA256 digest of uploaded artifact zip is d2c456bcc158961508ca077053869ad6a87ec120cd2113fe9ea61d80d4d19911
+2026-02-26T05:35:58.9718421Z Finalizing artifact upload
+2026-02-26T05:35:59.0755847Z Artifact go60-firmware.zip successfully finalized. Artifact ID 5666874236
+2026-02-26T05:35:59.0757074Z Artifact go60-firmware has been successfully uploaded! Final size is 338550 bytes. Artifact ID is 5666874236
+2026-02-26T05:35:59.0764862Z Artifact download URL: https://github.com/nothingfortune/zmk-multi-keyboard-build/actions/runs/22429341008/artifacts/5666874236
