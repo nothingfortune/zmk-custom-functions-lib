@@ -7,7 +7,7 @@
               &trans &trans &trans &trans &kp TILDE &kp DOLLAR &kp HASH &kp CARET &trans &trans 
               &trans &trans &trans &trans &trans &trans &trans &caps_word &kp MINUS &kp STAR 
               &kp PIPE &kp AMPS &trans &kp H &trans &trans &trans &trans &trans 
-              &magic LAYER_Magic 0 &pair_brace &kp RBRC &pair_angle &kp GT &trans &trans &trans 
+              &mo LAYER_Magic &pair_brace &kp RBRC &pair_angle &kp GT &trans &trans &trans 
               &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
               &trans &trans &trans &trans &trans &trans &trans &trans &to LAYER_Base &trans &trans 
               &trans &trans &trans &trans &trans 

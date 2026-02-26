@@ -6,7 +6,7 @@
               &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
               &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
               &kp UNDER &kp AT &kp PRCNT &kp GRAVE &kp COLON &caps_word &trans &trans &trans &trans 
-              &kp G &trans &pair_paren &kp RPAR &kp PLUS &kp EQUAL &kp SQT &magic LAYER_Magic 0 
+              &kp G &trans &pair_paren &kp RPAR &kp PLUS &kp EQUAL &kp SQT &mo LAYER_Magic 
               &trans &trans &trans &trans &trans &trans &trans &trans &pair_bracket &kp RBKT 
               &kp EXCL &kp QMARK &trans &trans &trans &trans &trans &trans &trans &trans &trans 
               &trans &trans &trans &trans &trans &trans &to LAYER_Base &trans &trans &trans &trans 
