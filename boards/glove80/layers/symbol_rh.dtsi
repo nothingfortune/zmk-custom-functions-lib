@@ -1,7 +1,7 @@
 /* glove80 — LAYER 13: Symbol
  * see boards/go60/layers/symbol.dtsi */
 
-        LAYER_Symbol {
+        LAYER_Symbol_rh {
             bindings = <
 
     /* Left Hand */
