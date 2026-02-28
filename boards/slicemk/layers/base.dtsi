@@ -20,6 +20,6 @@
 			/* Thumb Cluster - Left to Right*/
 				&thumb_v2_TKZ LAYER_Cursor SPACE    &thumb_v2_TKZ LAYER_Keypad RET  &thumb_v2_TKZ DEL QMARK         &thumb_v2_TKZ DEL PERIOD                         &bspc_word LA(BSPC) BSPC &thumb_v2_TKZ LAYER_Keypad SPACE
 			/* Inside Thumb Cluster */
-				&lt LAYER_NMPAD QUESTION            &lt LAYER_SYMB PERIOD
+				&lt LAYER_Keypad QUESTION            &lt LAYER_Symbol PERIOD
 			>;
 		};
