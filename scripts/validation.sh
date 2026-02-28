@@ -125,8 +125,8 @@ done
 for board in go60 glove80 slicemk; do
   case "$board" in
     go60)    keymap="$REPO_ROOT/boards/go60/go60.keymap";       expected_layers=21 ;;
-    glove80) keymap="$REPO_ROOT/boards/glove80/glove80.keymap"; expected_layers=19 ;;
-    slicemk) keymap="$REPO_ROOT/boards/slicemk/slicemk.keymap"; expected_layers=18 ;;
+    glove80) keymap="$REPO_ROOT/boards/glove80/glove80.keymap"; expected_layers=21 ;;
+    slicemk) keymap="$REPO_ROOT/boards/slicemk/slicemk.keymap"; expected_layers=20 ;;
   esac
   actual=$(grep -c '"layers/' "$keymap" 2>/dev/null || echo 0)
   if [[ "$actual" -eq "$expected_layers" ]]; then
