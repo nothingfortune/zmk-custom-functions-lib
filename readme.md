@@ -22,7 +22,7 @@ Shared ZMK firmware configuration for three keyboards, built automatically on ev
 zmk-multi-keyboard-build/
 │
 ├── shared/                         # Cross-keyboard behaviors (included by all boards)
-│   ├── layers.dtsi                 # LAYER_* index constants (0–18)
+│   ├── layers.dtsi                 # LAYER_* index constants (0–20, 21 total)
 │   ├── macros.dtsi
 │   ├── behaviors.dtsi
 │   ├── modMorphs.dtsi
@@ -44,7 +44,7 @@ zmk-multi-keyboard-build/
 │   │   ├── board_meta.dtsi         # Go60-specific: trackpad, RGB, tap-dance
 │   │   ├── go60.keymap
 │   │   ├── go60.conf
-│   │   └── layers/                 # 19 layer files — real bindings
+│   │   └── layers/                 # 21 layer files — real bindings
 │   │       ├── base.dtsi
 │   │       ├── typing.dtsi
 │   │       └── ...
@@ -54,9 +54,9 @@ zmk-multi-keyboard-build/
 │       └── layers/                 # 77-key grid; extra positions are board-specific
 │
 ├── boards/translations/            # Positional index maps used by keymapsync.sh
-│   ├── go60_to_glove80.txt         # go60 binding index → glove80 binding index (60 pairs)
-│   ├── go60_to_slicemk.txt         # go60 binding index → slicemk binding index (60 pairs)
-│   └── glove80_to_go60.txt         # glove80 binding index → go60 binding index (reverse)
+│   ├── go60_to_glove80.map         # go60 binding index → glove80 binding index (60 pairs)
+│   ├── go60_to_slicemk.map         # go60 binding index → slicemk binding index (60 pairs)
+│   └── glove80_to_go60.map         # glove80 binding index → go60 binding index (reverse)
 │
 ├── config/                         # SliceMK west entry point
 │   ├── west.yml                    # Declares slicemk/zmk as ZMK dependency
@@ -80,7 +80,7 @@ zmk-multi-keyboard-build/
 └── .github/workflows/build.yml     # CI: validates, then builds all 3 boards in parallel
 ```
 
-### Layers (19 total)
+### Layers (21 total)
 
 | # | Name | File |
 |---|---|---|
@@ -94,8 +94,10 @@ zmk-multi-keyboard-build/
 | 13 | Symbol | `layers/symbol.dtsi` |
 | 14–17 | Mouse / MouseSlow / MouseFast / MouseWarp | `layers/mouse*.dtsi` |
 | 18 | Magic | `layers/magic.dtsi` |
+| 19 | Symbol_lh | `layers/symbol_lh.dtsi` |
+| 20 | Symbol_rh | `layers/symbol_rh.dtsi` |
 
-> SliceMK excludes the Magic layer (RGB_STATUS is unsupported in the `slicemk/zmk` fork), so it has 18 active layers.
+> SliceMK excludes the Magic layer (RGB_STATUS is unsupported in the `slicemk/zmk` fork), so it has 20 active layers.
 
 ### Key position naming
 
@@ -165,6 +167,8 @@ This reads the translation maps in `boards/translations/` and propagates every g
 
 After syncing, review the diffs and commit all three boards together.
 
+> **Note:** `keymapsync.sh` requires bash 4+. On macOS the system bash is 3.2; the script auto-detects this and re-execs itself using the Homebrew bash at `/opt/homebrew/bin/bash` or `/usr/local/bin/bash`. Install with `brew install bash` if not already present.
+
 ### Editing a layer
 
 Open the go60 layer file first:
@@ -214,9 +218,10 @@ Edit `boards/go60/board_meta.dtsi`. Glove80 and SliceMK stubs are in their respe
 
 ### Adding or removing a layer
 
-1. Add/remove the `#define LAYER_Name N` entry in `shared/layers.dtsi` (keep indices contiguous).
+1. Add/remove the `#define LAYER_Name N` entry in `shared/layers.dtsi` (keep indices contiguous, 0-based).
 2. Create/delete the corresponding `layers/<name>.dtsi` file in **each** board's `layers/` directory.
 3. Add/remove the `#include "layers/<name>.dtsi"` line in **each** board's keymap file (inside the `/ { keymap { ... }; };` block).
+4. Update expected layer counts in `scripts/validation.sh`.
 
 ### Validating the repo structure
 
@@ -225,6 +230,22 @@ Edit `boards/go60/board_meta.dtsi`. Glove80 and SliceMK stubs are in their respe
 ```
 
 Runs 18 structural checks: required files, layer counts, binding counts per board, combo wrapper placement, include ordering, duplicate DTS labels, undefined `&label` references, and more. Also runs automatically in CI as the first job before any firmware build.
+
+---
+
+## Translation maps
+
+Maps live in `boards/translations/` as `src_idx dst_idx` pairs (one per line, `#` for comments):
+
+```
+# go60 key 0 (POS_LH_C6R1) → glove80 key 10 (same logical position)
+0 10
+1 11
+...
+54 69   # go60 POS_LH_T1 → glove80 POS_LH_T1
+```
+
+Each map covers the 60 positions that go60 and the target board share. To update a map, match logical position names between `boards/go60/positions.dtsi` and the target board's `positions.dtsi`.
 
 ---
 
@@ -241,12 +262,16 @@ To verify your PCB revision, put the keyboard into bootloader mode and check `IN
 
 Update `build.yaml` and `config/slicemk_ergodox_leftcentral.conf` if your board differs.
 
-Behaviors are reusable actions or functions (like key presses, layer toggles, or custom logic) that can be assigned to keys or referenced in combos/macros. They define what happens when a key is activated.
+---
 
-Combos are triggers that activate when multiple keys are pressed simultaneously. Instead of each key’s normal action, a combo can execute a behavior, such as sending a special keycode or running a macro.
+## ZMK concepts
 
-Tap Dances allow a single key to perform different actions based on how many times it’s tapped or held. For example, a key might send a letter on a single tap, a symbol on a double tap, or act as a modifier when held.
+**Behaviors** are reusable actions (key presses, layer toggles, custom logic) assigned to keys, combos, or macros.
 
-Macros are sequences of actions (like multiple key presses or behaviors) that execute in order when triggered. Macros can be referenced by keys, combos, or tap dances, and are useful for automating complex input patterns.
+**Combos** activate when multiple keys are pressed simultaneously, triggering a behavior instead of each key's normal action.
 
-In summary: behaviors are the building blocks, combos are multi-key triggers, tap dances are single-key multi-action triggers, and macros are ordered action sequences. Each offers a different way to enhance keyboard functionality in ZMK.
+**Tap Dances** let a single key perform different actions based on tap count or hold duration.
+
+**Macros** are ordered sequences of actions (key presses, behaviors) that execute when triggered.
+
+**Home Row Mods (HRM)** use hold-tap behaviors on home-row keys so each key sends a letter on tap and a modifier on hold. This repo uses bilateral positional HRM — the hold only fires when the opposite hand or a thumb key is pressed simultaneously.
